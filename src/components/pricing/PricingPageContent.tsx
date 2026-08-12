@@ -9,15 +9,18 @@ type Plan = {
   duration: string;
   months: number;
   price: number;
+  oldPrice?: number;
   saving: string;
   popular?: boolean;
+  isTrial?: boolean;
 };
 
 const plans: Plan[] = [
-  { id: "1-month", duration: "1 Month", months: 1, price: 14.95, saving: "Save 14%" },
-  { id: "3-months", duration: "3 Months", months: 3, price: 29.95, saving: "Save 33%" },
-  { id: "6-months", duration: "6 Months", months: 6, price: 44.95, saving: "Save 50%" },
-  { id: "12-months", duration: "12 Months", months: 12, price: 59.95, saving: "Save 67%", popular: true },
+  { id: "24-hours", duration: "24 Hours", months: 0, price: 0, saving: "Free Trial", isTrial: true },
+  { id: "1-month", duration: "1 Month", months: 1, price: 14.99, saving: "" },
+  { id: "3-months", duration: "3 Months", months: 3, price: 35, saving: "Save 22%" },
+  { id: "6-months", duration: "6 Months", months: 6, price: 49.99, saving: "Save 44%" },
+  { id: "12-months", duration: "12 Months", months: 12, price: 69.99, oldPrice: 80, saving: "Save 61%", popular: true },
 ];
 
 const planFeatures = [
@@ -90,18 +93,21 @@ export default function PricingSection() {
           </div>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4 xl:gap-6">
+        <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-6">
           {plans.map((plan) => (
-            <article key={plan.id} className={`relative flex flex-col rounded-2xl border p-6 ${plan.popular ? "border-indigo-400/70 bg-gradient-to-b from-indigo-600/35 to-[#10172a] shadow-[0_0_38px_rgba(99,102,241,0.25)] xl:-translate-y-3" : "border-white/10 bg-[#0c101d]/90"}`}>
+            <article key={plan.id} className={`relative flex flex-col rounded-2xl border p-6 transition-all duration-300 ${plan.isTrial ? "border-emerald-500/50 bg-gradient-to-b from-emerald-500/10 to-[#0c101d] shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(16,185,129,0.3)]" : plan.popular ? "border-indigo-400/70 bg-gradient-to-b from-indigo-600/35 to-[#10172a] shadow-[0_0_38px_rgba(99,102,241,0.25)] xl:-translate-y-3" : "border-white/10 bg-[#0c101d]/90 hover:-translate-y-1 hover:border-white/20"}`}>
               {plan.popular && <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full border border-violet-200/30 bg-violet-600 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white">Most popular</span>}
               <h2 className="text-center text-2xl font-bold text-white">{plan.duration}</h2>
-              <p className="mt-2 text-center text-sm text-slate-400">Subscription</p>
-              <p className="mt-2 text-center text-4xl font-extrabold tracking-tight text-white">${priceFor(plan)}</p>
-              <p className="mx-auto mt-3 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-center text-[11px] font-bold text-emerald-300">{plan.saving}</p>
+              <p className="mt-2 text-center text-sm text-slate-400">{plan.isTrial ? "Trial" : "Subscription"}</p>
+              <div className="mt-2 flex items-baseline justify-center gap-2">
+                <p className="text-4xl font-extrabold tracking-tight text-white">{plan.isTrial ? "Free" : `$${priceFor(plan)}`}</p>
+                {plan.oldPrice && <p className="text-lg font-medium text-slate-500 line-through">${(plan.oldPrice * devices).toFixed(2)}</p>}
+              </div>
+              <p className={`mx-auto mt-3 rounded-full border px-3 py-1 text-center text-[11px] font-bold ${plan.isTrial ? "animate-pulse border-emerald-400 bg-emerald-500/20 text-emerald-300 shadow-[0_0_15px_rgba(52,211,153,0.3)]" : "border-emerald-400/20 bg-emerald-400/10 text-emerald-300"}`}>{plan.saving}</p>
               <ul className="mt-6 flex-grow space-y-3 border-t border-white/10 pt-5">
-                {planFeatures.map((feature) => <li className="flex gap-2.5 text-sm text-slate-300" key={feature}><Check className="mt-0.5 h-4 w-4 shrink-0 text-cyan-300" strokeWidth={3} />{feature}</li>)}
+                {planFeatures.map((feature) => <li className="flex gap-2.5 text-sm text-slate-300" key={feature}><Check className={`mt-0.5 h-4 w-4 shrink-0 ${plan.isTrial ? "text-emerald-400" : "text-cyan-300"}`} strokeWidth={3} />{feature}</li>)}
               </ul>
-              <button type="button" onClick={() => handleOrder(plan)} className={`mt-7 w-full rounded-xl py-3.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 ${plan.popular ? "bg-gradient-to-r from-indigo-500 via-violet-500 to-cyan-500 shadow-[0_8px_22px_rgba(99,102,241,0.35)]" : "bg-indigo-600 hover:bg-indigo-500"}`}>Buy now</button>
+              <button type="button" onClick={() => handleOrder(plan)} className={`mt-7 w-full rounded-xl py-3.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 ${plan.isTrial ? "bg-gradient-to-r from-emerald-500 to-teal-500 shadow-[0_8px_22px_rgba(16,185,129,0.25)] hover:from-emerald-400 hover:to-teal-400" : plan.popular ? "bg-gradient-to-r from-indigo-500 via-violet-500 to-cyan-500 shadow-[0_8px_22px_rgba(99,102,241,0.35)]" : "bg-indigo-600 hover:bg-indigo-500"}`}>Buy now</button>
             </article>
           ))}
         </div>

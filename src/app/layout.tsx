@@ -77,8 +77,8 @@ export default function RootLayout({
 
         {/* Footer */}
         <footer className="w-full mt-auto border-t border-white/10 bg-[#080b12]">
-          <div className="grid max-w-[1400px] grid-cols-1 gap-12 px-6 py-16 sm:grid-cols-2 sm:px-10 xl:grid-cols-[1.8fr_1fr_1fr_1fr_1fr] xl:gap-10 xl:px-12 mx-auto">
-            <div className="min-w-0 max-w-[310px] space-y-4">
+          <div className="grid max-w-[1400px] grid-cols-2 gap-x-4 gap-y-12 px-6 py-16 sm:grid-cols-4 sm:gap-x-8 sm:px-10 xl:grid-cols-[1.8fr_1fr_1fr_1fr_1fr] xl:gap-10 xl:px-12 mx-auto">
+            <div className="col-span-2 sm:col-span-4 xl:col-span-1 min-w-0 max-w-[310px] space-y-4">
               <Link href="/"><BrandLogo /></Link>
               <p className="max-w-[285px] whitespace-normal break-normal text-sm leading-6 text-slate-400">
                 © 2024 iscreenhd. Premium 4K IPTV Streaming Services. All rights reserved.
@@ -96,51 +96,52 @@ export default function RootLayout({
               </a>
               <p className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-wider text-slate-500"><span className="h-2 w-2 rounded-full bg-emerald-400" /> All servers online · 99.9% uptime</p>
             </div>
-            <div className="min-w-[150px] space-y-6">
+            
+            <div className="col-span-1 min-w-0 space-y-6">
               <h4 className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Navigation</span></h4>
               <ul className="space-y-4 font-body-sm text-sm">
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/"><Home className="h-4 w-4 text-orange-500" /> Home</Link></li>
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/pricing"><DollarSign className="h-4 w-4 text-yellow-500" /> Pricing</Link></li>
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/contact"><MessageCircle className="h-4 w-4 text-green-500" /> Contact Support</Link></li>
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/installation"><Play className="h-4 w-4 text-blue-500" /> How It Works</Link></li>
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/faq"><HelpCircle className="h-4 w-4 text-red-500" /> FAQ</Link></li>
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/blog"><BookOpen className="h-4 w-4 text-slate-300" /> Blog <span className="ml-1 inline-flex h-[18px] w-[18px] items-center justify-center rounded bg-blue-500"><ExternalLink className="h-3 w-3 text-white" /></span></Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/"><Home className="h-4 w-4 text-orange-500 shrink-0" /> Home</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/pricing"><DollarSign className="h-4 w-4 text-yellow-500 shrink-0" /> Pricing</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/contact"><MessageCircle className="h-4 w-4 text-green-500 shrink-0" /> Contact</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/installation"><Play className="h-4 w-4 text-blue-500 shrink-0" /> How It Works</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/faq"><HelpCircle className="h-4 w-4 text-red-500 shrink-0" /> FAQ</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/blog"><BookOpen className="h-4 w-4 text-slate-300 shrink-0" /> Blog <span className="ml-1 inline-flex h-[18px] w-[18px] items-center justify-center rounded bg-blue-500"><ExternalLink className="h-3 w-3 text-white" /></span></Link></li>
               </ul>
             </div>
             
-            <div className="min-w-[150px] space-y-6">
+            <div className="col-span-1 min-w-0 space-y-6">
               <h4 className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Service</span></h4>
               <ul className="space-y-4 font-body-sm text-sm">
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/pricing"><Trophy className="h-4 w-4 text-yellow-500" /> Get Started</Link></li>
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="https://wa.me/213554246175"><MessageCircle className="h-4 w-4 text-blue-500" /> WhatsApp Support</Link></li>
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="mailto:support@iscreenhd.com"><Mail className="h-4 w-4 text-slate-300" /> Email Support</Link></li>
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/channels"><Grid className="h-4 w-4 text-slate-300" /> All Channels</Link></li>
-                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/installation"><Settings className="h-4 w-4 text-gray-400" /> Setup Guide</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/pricing"><Trophy className="h-4 w-4 text-yellow-500 shrink-0" /> Get Started</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="https://wa.me/213554246175"><MessageCircle className="h-4 w-4 text-blue-500 shrink-0" /> WhatsApp</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="mailto:support@iscreenhd.com"><Mail className="h-4 w-4 text-slate-300 shrink-0" /> Email</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/channels"><Grid className="h-4 w-4 text-slate-300 shrink-0" /> Channels</Link></li>
+                <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/installation"><Settings className="h-4 w-4 text-gray-400 shrink-0" /> Setup Guide</Link></li>
               </ul>
             </div>
             
-            <div className="min-w-[150px] space-y-6">
+            <div className="col-span-1 min-w-0 space-y-6">
               <h4 className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Legal</span></h4>
               <ul className="space-y-4 text-sm text-slate-400">
-                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="/privacy-policy"><Lock className="h-4 w-4 text-yellow-500" /> Privacy Policy</Link></li>
-                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="/refund-policy"><Play className="h-4 w-4 text-blue-500" /> Refund Policy</Link></li>
-                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="#"><ShieldCheck className="h-4 w-4 text-blue-500" /> Disclaimer</Link></li>
-                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="/dmca"><AlertCircle className="h-4 w-4 text-purple-500" /> DMCA</Link></li>
-                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="#"><Cookie className="h-4 w-4 text-orange-500" /> Cookie Policy</Link></li>
+                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="/privacy-policy"><Lock className="h-4 w-4 text-yellow-500 shrink-0" /> Privacy Policy</Link></li>
+                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="/refund-policy"><Play className="h-4 w-4 text-blue-500 shrink-0" /> Refund Policy</Link></li>
+                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="#"><ShieldCheck className="h-4 w-4 text-blue-500 shrink-0" /> Disclaimer</Link></li>
+                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="/dmca"><AlertCircle className="h-4 w-4 text-purple-500 shrink-0" /> DMCA</Link></li>
+                <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="#"><Cookie className="h-4 w-4 text-orange-500 shrink-0" /> Cookie Policy</Link></li>
               </ul>
             </div>
             
-            <div className="min-w-[150px] space-y-6">
+            <div className="col-span-1 min-w-0 space-y-6">
               <h4 className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Payment</span></h4>
               <ul className="space-y-4 text-sm text-slate-400">
-                <li className="flex items-center gap-2.5"><svg className="h-4 w-4 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM9 17H7V7h4.5c1.5 0 2.5 1 2.5 2.5S13 12 11.5 12H9v5zm0-7v-1h2.5c.5 0 1 .5 1 1s-.5 1-1 1H9z"/></svg> PayPal</li>
-                <li className="flex items-center gap-2.5"><CreditCard className="h-4 w-4 text-orange-500" /> Credit Card</li>
-                <li className="flex items-center gap-2.5"><Bitcoin className="h-4 w-4 text-slate-300" /> Bitcoin</li>
-                <li className="flex items-center gap-2.5"><svg className="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 9h8v2h-3v6h-2v-6H8V9z" fill="#080b12"/></svg> USDT / Crypto</li>
+                <li className="flex items-center gap-2.5"><svg className="h-4 w-4 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM9 17H7V7h4.5c1.5 0 2.5 1 2.5 2.5S13 12 11.5 12H9v5zm0-7v-1h2.5c.5 0 1 .5 1 1s-.5 1-1 1H9z"/></svg> PayPal</li>
+                <li className="flex items-center gap-2.5"><CreditCard className="h-4 w-4 text-orange-500 shrink-0" /> Credit Card</li>
+                <li className="flex items-center gap-2.5"><Bitcoin className="h-4 w-4 text-slate-300 shrink-0" /> Bitcoin</li>
+                <li className="flex items-center gap-2.5"><svg className="h-4 w-4 text-yellow-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 9h8v2h-3v6h-2v-6H8V9z" fill="#080b12"/></svg> USDT / Crypto</li>
               </ul>
             </div>
             
-            <div className="col-span-1 mt-8 flex flex-col gap-6 border-t border-white/10 pt-8 text-xs text-slate-400 sm:col-span-2 md:flex-row md:items-center md:justify-between xl:col-span-5">
+            <div className="col-span-2 mt-8 flex flex-col gap-6 border-t border-white/10 pt-8 text-xs text-slate-400 sm:col-span-4 md:flex-row md:items-center md:justify-between xl:col-span-5">
               <div className="flex flex-wrap gap-3">
                 <Link className="rounded-full border border-white/10 px-4 py-2 transition-colors hover:bg-white/5 hover:text-white" href="/privacy-policy">Privacy Policy</Link>
                 <Link className="rounded-full border border-white/10 px-4 py-2 transition-colors hover:bg-white/5 hover:text-white" href="/refund-policy">Refund Policy</Link>

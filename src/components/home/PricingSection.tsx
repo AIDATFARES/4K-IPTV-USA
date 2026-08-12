@@ -7,14 +7,15 @@ type Plan = {
   id: string;
   duration: string;
   price: number;
+  oldPrice?: number;
   saving: string;
   popular?: boolean;
 };
 
 const plans: Plan[] = [
-  { id: "3-months", duration: "3 Months", price: 29.95, saving: "Save 33%" },
-  { id: "12-months", duration: "1 Year", price: 59.95, saving: "Save 67%", popular: true },
-  { id: "6-months", duration: "6 Months", price: 44.95, saving: "Save 50%" },
+  { id: "3-months", duration: "3 Months", price: 35, saving: "Save 22%" },
+  { id: "12-months", duration: "1 Year", price: 69.99, oldPrice: 80, saving: "Save 61%", popular: true },
+  { id: "6-months", duration: "6 Months", price: 49.99, saving: "Save 44%" },
 ];
 
 const planFeatures = [
@@ -81,7 +82,10 @@ export default function PricingSection() {
               {plan.popular && <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full border border-violet-200/30 bg-violet-600 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white">Most popular</span>}
               <h3 className="text-center text-2xl font-bold text-white">{plan.duration}</h3>
               <p className="mt-2 text-center text-sm text-slate-400">Subscription</p>
-              <p className="mt-2 text-center text-4xl font-extrabold tracking-tight text-white">${priceFor(plan)}</p>
+              <div className="mt-2 flex items-baseline justify-center gap-2">
+                <p className="text-4xl font-extrabold tracking-tight text-white">${priceFor(plan)}</p>
+                {plan.oldPrice && <p className="text-lg font-medium text-slate-500 line-through">${(plan.oldPrice * devices).toFixed(2)}</p>}
+              </div>
               <p className="mx-auto mt-3 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-center text-[11px] font-bold text-emerald-300">{plan.saving}</p>
               <ul className="mt-6 flex-grow space-y-3 border-t border-white/10 pt-5">
                 {planFeatures.map((feature) => <li className="flex gap-2.5 text-sm text-slate-300" key={feature}><Check className="mt-0.5 h-4 w-4 shrink-0 text-cyan-300" strokeWidth={3} />{feature}</li>)}
