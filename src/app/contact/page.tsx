@@ -1,5 +1,7 @@
 "use client";
 
+import { Mail, MessageCircle, ArrowRight, Clock, Send } from "lucide-react";
+
 export default function Contact() {
   return (
     <main className="flex-grow pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full relative z-10">
@@ -19,7 +21,7 @@ export default function Contact() {
         <div className="lg:col-span-4 flex flex-col gap-md">
           <div className="glass-panel rounded-xl p-lg flex flex-col items-center text-center">
             <div className="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center mb-md">
-              <span className="material-symbols-outlined text-primary text-3xl">mail</span>
+              <Mail className="text-primary w-8 h-8" />
             </div>
             <h3 className="font-title-md text-title-md text-on-surface mb-xs">Email Us</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant mb-md">For general inquiries and support.</p>
@@ -33,7 +35,7 @@ export default function Contact() {
 
           <div className="glass-panel rounded-xl p-lg flex flex-col items-center text-center">
             <div className="w-16 h-16 rounded-full bg-tertiary-container/20 flex items-center justify-center mb-md">
-              <span className="material-symbols-outlined text-tertiary text-3xl">forum</span>
+              <MessageCircle className="text-tertiary w-8 h-8" />
             </div>
             <h3 className="font-title-md text-title-md text-on-surface mb-xs">WhatsApp Support</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant mb-md">
@@ -43,13 +45,13 @@ export default function Contact() {
               className="text-tertiary font-medium hover:text-tertiary-fixed transition-colors flex items-center gap-xs"
               href="#"
             >
-              Start Chat <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              Start Chat <ArrowRight className="w-4 h-4 ml-1" />
             </a>
           </div>
 
           <div className="glass-panel rounded-xl p-lg flex flex-col items-center text-center">
             <div className="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center mb-md">
-              <span className="material-symbols-outlined text-on-surface-variant text-3xl">schedule</span>
+              <Clock className="text-on-surface-variant w-8 h-8" />
             </div>
             <h3 className="font-title-md text-title-md text-on-surface mb-xs">Response Time</h3>
             <p className="font-body-sm text-body-sm text-on-surface-variant">
@@ -124,9 +126,7 @@ export default function Contact() {
                   type="submit"
                 >
                   <span>Send Message</span>
-                  <span className="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">
-                    send
-                  </span>
+                  <Send className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </button>
               </div>
             </form>

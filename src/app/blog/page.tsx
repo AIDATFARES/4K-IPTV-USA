@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
+import { ArrowRight, Mail } from "lucide-react";
 
 export default function Blog() {
   const featuredPost = blogPosts[0];
@@ -43,9 +44,7 @@ export default function Blog() {
                 </p>
                 <div className="flex items-center gap-4 mt-auto">
                   <span className="text-on-surface font-title-md text-title-md">Read Article</span>
-                  <span className="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">
-                    arrow_forward
-                  </span>
+                  <ArrowRight className="text-primary w-6 h-6 group-hover:translate-x-2 transition-transform" />
                 </div>
               </div>
             </div>
@@ -90,7 +89,7 @@ export default function Blog() {
       <section className="glass-panel rounded-2xl p-8 md:p-16 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-50 pointer-events-none"></div>
         <div className="relative z-10 max-w-2xl mx-auto">
-          <span className="material-symbols-outlined text-4xl text-tertiary mb-4">mail</span>
+          <Mail className="w-10 h-10 text-tertiary mb-4 mx-auto" />
           <h3 className="font-headline-lg text-headline-lg text-on-surface mb-4">Never Miss an Update</h3>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
             Subscribe to our newsletter for the latest streaming tips, platform updates, and exclusive reseller offers delivered straight to your inbox.

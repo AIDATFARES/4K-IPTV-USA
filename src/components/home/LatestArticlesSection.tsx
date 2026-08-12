@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
+import { ArrowRight } from "lucide-react";
 
 export default function LatestArticlesSection() {
   // Get the 3 most recently added articles (last 3 in the array, reversed)
@@ -49,7 +50,7 @@ export default function LatestArticlesSection() {
                     <span>{post.date}</span>
                     <span className="flex items-center text-primary group-hover:translate-x-1 transition-transform">
                       Read More 
-                      <span className="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                      <ArrowRight className="w-4 h-4 ml-1" />
                     </span>
                   </div>
                 </div>
@@ -62,7 +63,7 @@ export default function LatestArticlesSection() {
           <Link href="/blog">
             <button className="bg-surface-container border border-outline hover:border-primary text-on-surface px-8 py-3 rounded-full font-title-sm text-title-sm transition-all hover:bg-surface-container-high group flex items-center justify-center mx-auto gap-2">
               View All Articles
-              <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform text-primary">arrow_forward</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform text-primary" />
             </button>
           </Link>
         </div>

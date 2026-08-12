@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, HelpCircle } from "lucide-react";
+import { ChevronDown, HelpCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function FAQSection() {
@@ -118,7 +118,7 @@ export default function FAQSection() {
             className="glass-panel text-on-surface hover:text-white px-lg py-md rounded-full font-title-md text-body-sm font-semibold inline-flex items-center gap-xs hover:border-primary transition-all"
           >
             View Complete FAQ Knowledge Base{" "}
-            <span className="material-symbols-outlined text-sm">arrow_forward</span>
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>

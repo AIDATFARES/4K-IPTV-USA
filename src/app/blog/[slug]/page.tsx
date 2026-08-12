@@ -3,6 +3,7 @@ import { blogPosts } from "@/data/blog";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { ArrowLeft } from "lucide-react";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -35,7 +36,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   return (
     <main className="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-[1024px] mx-auto w-full relative z-10">
       <Link href="/blog" className="inline-flex items-center text-primary hover:text-primary-container mb-8 transition-colors group">
-        <span className="material-symbols-outlined mr-2 group-hover:-translate-x-1 transition-transform">arrow_back</span>
+        <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
         Back to Blog
       </Link>
 

@@ -64,10 +64,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${inter.variable} ${geist.variable} ${plusJakarta.variable}`}>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body className="bg-background text-on-background font-body-lg min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
         {/* Navbar Component */}
