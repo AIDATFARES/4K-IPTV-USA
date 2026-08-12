@@ -40,9 +40,9 @@ export default function LatestArticlesSection() {
                   </span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow bg-surface-container-lowest/50">
-                  <p className="font-title-md text-title-md text-on-surface mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold leading-snug text-white transition-colors group-hover:text-indigo-400 mb-3">
                     {post.title}
-                  </p>
+                  </h3>
                   <p className="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-3 flex-grow">
                     {post.description}
                   </p>

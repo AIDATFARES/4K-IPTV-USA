@@ -80,7 +80,7 @@ export default function PricingSection() {
           {plans.map((plan) => (
             <article className={`relative flex flex-col rounded-2xl border p-6 ${plan.popular ? "border-indigo-400/70 bg-gradient-to-b from-indigo-600/35 to-[#10172a] shadow-[0_0_38px_rgba(99,102,241,0.25)] md:-translate-y-3" : "border-white/10 bg-[#0c101d]/90"}`} key={plan.id}>
               {plan.popular && <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full border border-violet-200/30 bg-violet-600 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white">Most popular</span>}
-              <p className="text-center text-2xl font-bold text-white">{plan.duration}</p>
+              <h3 className="text-center text-2xl font-bold text-white">{plan.duration}</h3>
               <p className="mt-2 text-center text-sm text-slate-400">Subscription</p>
               <div className="mt-2 flex items-baseline justify-center gap-2">
                 <p className="text-4xl font-extrabold tracking-tight text-white">${priceFor(plan)}</p>
