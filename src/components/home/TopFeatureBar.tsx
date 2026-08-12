@@ -111,5 +111,5 @@ function AnimatedStat({ value, prefix, suffix }: { value: number; prefix: string
     return () => cancelAnimationFrame(frameId);
   }, [isInView, value]);
 
-  return <strong className="block text-3xl font-extrabold tracking-tight text-white sm:text-4xl" ref={ref}>{prefix}{count.toLocaleString()}{suffix}</strong>;
+  return <span className="block text-3xl font-extrabold tracking-tight text-white sm:text-4xl" ref={ref}>{prefix}{count.toLocaleString()}{suffix}</span>;
 }

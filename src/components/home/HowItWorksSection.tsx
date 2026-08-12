@@ -56,7 +56,7 @@ export default function HowItWorksSection() {
           <div className="grid grid-cols-4 gap-2.5">
             {stats.map((stat) => (
               <div className="rounded-lg border border-indigo-400/15 bg-[#0d1020] px-2 py-3 text-center" key={stat.label}>
-                <strong className="block text-sm font-extrabold text-indigo-300">{stat.value}</strong>
+                <span className="block text-sm font-extrabold text-indigo-300">{stat.value}</span>
                 <span className="mt-0.5 block text-[6px] font-bold tracking-[0.12em] text-slate-500">{stat.label}</span>
               </div>
             ))}

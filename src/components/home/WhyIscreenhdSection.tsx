@@ -40,7 +40,7 @@ export default function WhyIscreenhdSection() {
       </div>
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {benefits.map((benefit, index) => { const Icon = benefit.icon; return <motion.div key={benefit.title} initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.25 + index * 0.07 }} className="flex min-h-[112px] gap-3 rounded-xl border border-white/10 bg-[#0c0f19] p-5"><Icon className={`h-5 w-5 shrink-0 ${benefit.color}`} /><span><strong className="block text-sm text-white">{benefit.title}</strong><small className="mt-1 block text-[11px] leading-4 text-slate-500">{benefit.text}</small></span></motion.div>; })}
+        {benefits.map((benefit, index) => { const Icon = benefit.icon; return <motion.div key={benefit.title} initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.25 + index * 0.07 }} className="flex min-h-[112px] gap-3 rounded-xl border border-white/10 bg-[#0c0f19] p-5"><Icon className={`h-5 w-5 shrink-0 ${benefit.color}`} /><span><span className="block text-sm font-bold text-white">{benefit.title}</span><small className="mt-1 block text-[11px] leading-4 text-slate-500">{benefit.text}</small></span></motion.div>; })}
       </div>
     </div>
   </section>;

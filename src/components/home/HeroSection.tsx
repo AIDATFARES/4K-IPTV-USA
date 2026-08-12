@@ -41,7 +41,7 @@ export default function HeroSection() {
 
             {/* Description */}
             <p className="block w-full max-w-[620px] min-w-0 whitespace-normal break-normal [overflow-wrap:normal] text-pretty text-lg sm:text-xl leading-[1.65] text-slate-300 font-normal animate-fade-up [animation-delay:300ms] opacity-0">
-              Unlock a world of entertainment in HD &amp; 4K. Enjoy reliable IPTV with <strong className="font-bold text-white">50,000+ live channels</strong>, movies, and series on every device, worldwide.
+              Unlock a world of entertainment in HD &amp; 4K. Enjoy reliable IPTV with <span className="font-bold text-white">50,000+ live channels</span>, movies, and series on every device, worldwide.
             </p>
 
             {/* CTA buttons */}

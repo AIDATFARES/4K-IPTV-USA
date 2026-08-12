@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
       </div>
 
       <div className="mx-auto mt-10 grid max-w-[760px] grid-cols-2 gap-3 px-5 sm:grid-cols-5 sm:px-0">
-        {metrics.map((metric, index) => { const Icon = metric.icon; return <motion.div key={metric.label} initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.06 }} className="rounded-xl border border-white/10 bg-[#10131e]/90 px-3 py-4 text-center shadow-[0_0_20px_rgba(0,0,0,0.18)]"><Icon className={`mx-auto h-4 w-4 ${metric.tone}`} /><strong className="mt-2 block text-base text-white">{metric.value}</strong><small className="mt-0.5 block text-[8px] font-bold uppercase tracking-wide text-slate-500">{metric.label}</small></motion.div>; })}
+        {metrics.map((metric, index) => { const Icon = metric.icon; return <motion.div key={metric.label} initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.06 }} className="rounded-xl border border-white/10 bg-[#10131e]/90 px-3 py-4 text-center shadow-[0_0_20px_rgba(0,0,0,0.18)]"><Icon className={`mx-auto h-4 w-4 ${metric.tone}`} /><span className="mt-2 block text-base font-bold text-white">{metric.value}</span><small className="mt-0.5 block text-[8px] font-bold uppercase tracking-wide text-slate-500">{metric.label}</small></motion.div>; })}
       </div>
 
       <div className="mt-11 flex overflow-hidden select-none [mask-image:linear-gradient(to_right,transparent,black_7%,black_93%,transparent)]">
@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
             <div className="flex text-amber-300">{Array.from({ length: 5 }).map((_, star) => <Star key={star} className="h-3 w-3 fill-current" />)}</div>
             <span className="mt-3 inline-flex w-fit rounded-full border border-violet-400/20 bg-violet-500/10 px-2 py-1 text-[8px] font-bold uppercase tracking-wide text-violet-300">iscreenhd IPTV review</span>
             <p className="mt-3 line-clamp-3 text-[11px] leading-4 text-slate-300">“{review.text}”</p>
-            <div className="mt-auto flex items-center justify-between border-t border-white/5 pt-3"><span><strong className="block text-[10px] text-white">{review.name}</strong><small className="text-[9px] text-slate-500">{review.location}</small></span><span className="inline-flex items-center gap-1 text-[8px] font-bold text-emerald-400"><CheckCircle2 className="h-3 w-3" /> {review.tag}</span></div>
+            <div className="mt-auto flex items-center justify-between border-t border-white/5 pt-3"><span><span className="block text-[10px] font-bold text-white">{review.name}</span><small className="text-[9px] text-slate-500">{review.location}</small></span><span className="inline-flex items-center gap-1 text-[8px] font-bold text-emerald-400"><CheckCircle2 className="h-3 w-3" /> {review.tag}</span></div>
           </article>)}
         </motion.div>
       </div>
