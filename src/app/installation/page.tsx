@@ -2,6 +2,13 @@ import Link from "next/link";
 import DeviceSetupGuide from "@/components/installation/DeviceSetupGuide";
 import { Clock3, Download, Headphones, Link2, Monitor, PlayCircle } from "lucide-react";
 
+export const metadata = {
+  alternates: {
+    canonical: "/installation",
+  },
+};
+
+
 export default function Installation() {
   return (
     <main className="mx-auto w-full max-w-[1440px] flex-grow px-5 pb-20 pt-12 sm:px-8 md:px-12">

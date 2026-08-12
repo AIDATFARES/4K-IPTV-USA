@@ -4,6 +4,13 @@ import Link from "next/link";
 import { blogPosts } from "@/data/blog";
 import { ArrowRight, Mail } from "lucide-react";
 
+export const metadata = {
+  alternates: {
+    canonical: "/blog",
+  },
+};
+
+
 export default function Blog() {
   const featuredPost = blogPosts[0];
   const gridPosts = blogPosts.slice(1);

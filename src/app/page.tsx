@@ -1,6 +1,13 @@
 import HeroSection from "@/components/home/HeroSection";
 import dynamic from "next/dynamic";
 
+export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
+
 const TopFeatureBar = dynamic(() => import("@/components/home/TopFeatureBar"));
 const ChannelCategories = dynamic(() => import("@/components/home/ChannelCategories"));
 const DeviceSupport = dynamic(() => import("@/components/home/DeviceSupport"));

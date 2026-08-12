@@ -21,6 +21,13 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+export const metadata = {
+  alternates: {
+    canonical: "/channels",
+  },
+};
+
+
 // Category Overview Cards (matching reference image)
 const categoryCards = [
   {

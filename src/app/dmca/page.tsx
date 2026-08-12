@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Legal Disclaimer & DMCA | iscreenhd IPTV",
   description: "Legal Disclaimer and DMCA policy for iscreenhd IPTV.",
+  alternates: {
+    canonical: "/dmca",
+  },
 };
 
 const sections = [

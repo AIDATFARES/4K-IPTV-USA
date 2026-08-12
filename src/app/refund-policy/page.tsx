@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Refund Policy | iscreenhd IPTV",
   description: "Learn about the refund policy, eligibility, and process for iscreenhd IPTV.",
+  alternates: {
+    canonical: "/refund-policy",
+  },
 };
 
 const sections = [

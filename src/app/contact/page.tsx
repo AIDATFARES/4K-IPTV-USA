@@ -2,6 +2,13 @@
 
 import { Mail, MessageCircle, ArrowRight, Clock, Send } from "lucide-react";
 
+export const metadata = {
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
+
 export default function Contact() {
   return (
     <main className="flex-grow pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full relative z-10">

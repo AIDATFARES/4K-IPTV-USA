@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy | iscreenhd IPTV",
   description: "Learn how iscreenhd IPTV collects, uses, and protects personal information.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 const sections = [
