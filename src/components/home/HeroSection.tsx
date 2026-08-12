@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Globe2, List, Monitor, Trophy, Zap } from "lucide-react";
 import TVMockup from "./TVMockup";
-import { m, LazyMotion, domAnimation } from "framer-motion";
+import { m, LazyMotion } from "framer-motion";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
@@ -11,9 +11,11 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
 });
 
+const loadFeatures = () => import("framer-motion").then(res => res.domAnimation);
+
 export default function HeroSection() {
   return (
-    <LazyMotion features={domAnimation}>
+    <LazyMotion features={loadFeatures}>
       <section className="relative min-h-[calc(100vh-88px)] py-20 sm:py-28 lg:py-32 overflow-hidden flex items-center bg-[#0b0e14]">
       {/* Background Decorative Glow (FIREST SITE radial lighting) */}
       <div className="absolute top-[15%] left-[5%] w-[550px] h-[550px] bg-[radial-gradient(circle,rgba(0,245,255,0.12)_0%,transparent_65%)] rounded-full z-0 pointer-events-none"></div>
