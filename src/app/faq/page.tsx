@@ -4,13 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown, CircleHelp, Clock3, CreditCard, Mail, MessageCircle, MonitorPlay, Send, Settings2, UserRound } from "lucide-react";
 
-export const metadata = {
-  alternates: {
-    canonical: "/faq",
-  },
-};
-
-
 type Category = "About iscreenhd" | "Setup & streaming" | "Plans & access" | "Payments & support";
 
 type FAQItem = {
