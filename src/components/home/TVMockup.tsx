@@ -34,6 +34,7 @@ export default function TVMockup() {
           className="h-auto w-full object-contain filter drop-shadow-[0_12px_30px_rgba(6,182,212,0.2)]"
           height={1000}
           priority
+          sizes="(max-width: 1024px) 100vw, 60vw"
           src="/bunnystream-iptv-transparent.webp"
           width={1800}
         />
