@@ -32,7 +32,7 @@ export default function WhyIscreenhdSection() {
           const active = index === 1;
           return <motion.article key={feature.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} className={`flex min-h-[285px] flex-col rounded-2xl border p-6 ${active ? "border-indigo-400/70 bg-gradient-to-b from-indigo-500/[0.12] to-[#0c0f1c] shadow-[0_0_32px_rgba(99,102,241,0.13)]" : "border-white/10 bg-[#0c0f19]"}`}>
             <span className={`flex h-11 w-11 items-center justify-center rounded-xl border ${feature.accent === "orange" ? "border-orange-400/30 bg-orange-500/10 text-orange-400" : feature.accent === "cyan" ? "border-cyan-400/30 bg-cyan-500/10 text-cyan-400" : "border-violet-400/30 bg-violet-500/10 text-violet-300"}`}><Icon className="h-5 w-5" /></span>
-            <h3 className="mt-5 text-lg font-extrabold uppercase text-white">{feature.title}</h3>
+            <p className="mt-5 text-lg font-extrabold uppercase text-white">{feature.title}</p>
             <p className="mt-4 text-xs leading-5 text-slate-400">{feature.text}</p>
             <div className="mt-auto flex flex-wrap gap-2 pt-5">{feature.tags.map(tag => <span key={tag} className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-[9px] font-bold tracking-wide text-slate-300">{tag}</span>)}</div>
           </motion.article>;

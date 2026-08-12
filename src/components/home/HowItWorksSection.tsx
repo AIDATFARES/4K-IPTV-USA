@@ -44,7 +44,7 @@ export default function HowItWorksSection() {
               <motion.div className="relative flex gap-4" initial={{ opacity: 0, y: 10 }} key={step.number} transition={{ delay: 0.15 + index * 0.08 }} viewport={{ once: true }} whileInView={{ opacity: 1, y: 0 }}>
                 <span className="relative z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-indigo-400/50 bg-[#0b0d1b] text-[9px] font-bold text-indigo-200">{step.number}</span>
                 <div className="pt-0.5">
-                  <h3 className="text-xs font-bold text-white">{step.title}</h3>
+                  <p className="text-xs font-bold text-white">{step.title}</p>
                   <p className="mt-1 max-w-[365px] text-[10px] leading-4 text-slate-400">{step.text}</p>
                 </div>
               </motion.div>

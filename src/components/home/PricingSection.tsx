@@ -51,7 +51,7 @@ export default function PricingSection() {
           <h2 className="mt-5 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
             Choose your <span className="bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">iscreenhd IPTV plan</span>
           </h2>
-          <h3 className="mt-5 text-xl font-bold tracking-wide text-white sm:text-2xl">Simple, transparent pricing</h3>
+          <p className="mt-5 text-xl font-bold tracking-wide text-white sm:text-2xl">Simple, transparent pricing</p>
           <p className="mt-2 text-sm text-slate-400 sm:text-base">No contracts. No hidden fees. Instant delivery after purchase.</p>
         </header>
 
@@ -80,7 +80,7 @@ export default function PricingSection() {
           {plans.map((plan) => (
             <article className={`relative flex flex-col rounded-2xl border p-6 ${plan.popular ? "border-indigo-400/70 bg-gradient-to-b from-indigo-600/35 to-[#10172a] shadow-[0_0_38px_rgba(99,102,241,0.25)] md:-translate-y-3" : "border-white/10 bg-[#0c101d]/90"}`} key={plan.id}>
               {plan.popular && <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full border border-violet-200/30 bg-violet-600 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white">Most popular</span>}
-              <h3 className="text-center text-2xl font-bold text-white">{plan.duration}</h3>
+              <p className="text-center text-2xl font-bold text-white">{plan.duration}</p>
               <p className="mt-2 text-center text-sm text-slate-400">Subscription</p>
               <div className="mt-2 flex items-baseline justify-center gap-2">
                 <p className="text-4xl font-extrabold tracking-tight text-white">${priceFor(plan)}</p>
@@ -107,7 +107,7 @@ export default function PricingSection() {
 
           <div className="flex w-full max-w-[620px] items-center gap-4 rounded-2xl border border-green-500/30 bg-[#081810]/90 px-5 py-4 shadow-[0_0_35px_rgba(34,197,94,0.12)] sm:rounded-full sm:px-8 sm:py-5">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-green-500/30 bg-green-500/15"><Shield className="h-6 w-6 text-green-400" /></div>
-            <div className="min-w-0 text-left"><h3 className="text-base font-bold tracking-wide text-white sm:text-lg">Premium Quality Guaranteed</h3><p className="mt-1 text-xs font-medium text-green-400/80 sm:text-sm">100% Anti-freeze Technology • Ultra Fast Servers</p></div>
+            <div className="min-w-0 text-left"><p className="text-base font-bold tracking-wide text-white sm:text-lg">Premium Quality Guaranteed</p><p className="mt-1 text-xs font-medium text-green-400/80 sm:text-sm">100% Anti-freeze Technology • Ultra Fast Servers</p></div>
           </div>
         </div>
       </div>

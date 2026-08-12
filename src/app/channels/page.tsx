@@ -315,9 +315,9 @@ export default function ChannelsPage() {
                         alt={channel.country}
                         className="w-4 h-3 rounded-[2px] object-cover"
                       />
-                      <h3 className="text-xs font-bold text-white truncate group-hover:text-cyan-300">
+                      <p className="text-xs font-bold text-white truncate group-hover:text-cyan-300">
                         {channel.name}
-                      </h3>
+                      </p>
                     </div>
                     <div className="flex items-center gap-2 mt-1.5">
                       <span className="text-[9px] font-black px-1.5 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30">

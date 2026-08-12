@@ -90,7 +90,7 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <h4 className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Navigation</span></h4>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Navigation</span></p>
               <ul className="space-y-4 font-body-sm text-sm">
                 <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/"><Home className="h-4 w-4 text-orange-500 shrink-0" /> Home</Link></li>
                 <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/pricing"><DollarSign className="h-4 w-4 text-yellow-500 shrink-0" /> Pricing</Link></li>
@@ -102,7 +102,7 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <h4 className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Service</span></h4>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Service</span></p>
               <ul className="space-y-4 font-body-sm text-sm">
                 <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="/pricing"><Trophy className="h-4 w-4 text-yellow-500 shrink-0" /> Get Started</Link></li>
                 <li><Link className="flex items-center gap-2.5 text-slate-400 transition-colors hover:text-white" href="https://wa.me/213554246175"><MessageCircle className="h-4 w-4 text-blue-500 shrink-0" /> WhatsApp</Link></li>
@@ -113,7 +113,7 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <h4 className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Legal</span></h4>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Legal</span></p>
               <ul className="space-y-4 text-sm text-slate-400">
                 <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="/privacy-policy"><Lock className="h-4 w-4 text-yellow-500 shrink-0" /> Privacy Policy</Link></li>
                 <li><Link className="flex items-center gap-2.5 transition-colors hover:text-white" href="/refund-policy"><Play className="h-4 w-4 text-blue-500 shrink-0" /> Refund Policy</Link></li>
@@ -124,7 +124,7 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <h4 className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Payment</span></h4>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-300"><span className="border-b-2 border-violet-400 pb-1.5">Payment</span></p>
               <ul className="space-y-4 text-sm text-slate-400">
                 <li className="flex items-center gap-2.5"><svg className="h-4 w-4 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM9 17H7V7h4.5c1.5 0 2.5 1 2.5 2.5S13 12 11.5 12H9v5zm0-7v-1h2.5c.5 0 1 .5 1 1s-.5 1-1 1H9z"/></svg> PayPal</li>
                 <li className="flex items-center gap-2.5"><CreditCard className="h-4 w-4 text-orange-500 shrink-0" /> Credit Card</li>

@@ -88,9 +88,9 @@ export default function FeaturesSection() {
                 <div className="p-md rounded-xl bg-surface-container-high w-fit mb-md group-hover:scale-110 transition-transform">
                   <Icon className={`w-7 h-7 ${feature.color}`} />
                 </div>
-                <h3 className="font-title-md text-title-md text-on-surface font-semibold mb-xs group-hover:text-primary transition-colors">
+                <p className="font-title-md text-title-md text-on-surface font-semibold mb-xs group-hover:text-primary transition-colors">
                   {feature.title}
-                </h3>
+                </p>
                 <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                   {feature.desc}
                 </p>

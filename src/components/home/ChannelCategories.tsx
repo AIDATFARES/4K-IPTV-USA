@@ -76,7 +76,7 @@ export default function ChannelCategories() {
                 <span className="absolute left-1/2 top-0 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-[#060814] bg-cyan-500 text-slate-950 shadow-[0_6px_16px_rgba(6,182,212,0.35)]">
                   <Icon className="h-6 w-6" strokeWidth={2.5} />
                 </span>
-                <h3 className="text-center text-xl font-extrabold">{category.title}</h3>
+                <p className="text-center text-xl font-extrabold">{category.title}</p>
                 <ul className="mt-4 space-y-2.5">
                   {category.items.map((item) => (
                     <li className="flex items-start gap-2 text-sm leading-5 text-slate-300" key={item}>

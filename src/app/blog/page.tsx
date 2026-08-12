@@ -70,9 +70,9 @@ export default function Blog() {
                 </span>
               </div>
               <div className="p-6 flex flex-col flex-grow bg-surface-container-lowest/50">
-                <h3 className="font-title-md text-title-md text-on-surface mb-3 group-hover:text-primary transition-colors">
+                <p className="font-title-md text-title-md text-on-surface mb-3 group-hover:text-primary transition-colors">
                   {post.title}
-                </h3>
+                </p>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">
                   {post.description}
                 </p>
@@ -90,7 +90,7 @@ export default function Blog() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-50 pointer-events-none"></div>
         <div className="relative z-10 max-w-2xl mx-auto">
           <Mail className="w-10 h-10 text-tertiary mb-4 mx-auto" />
-          <h3 className="font-headline-lg text-headline-lg text-on-surface mb-4">Never Miss an Update</h3>
+          <h2 className="font-headline-lg text-headline-lg text-on-surface mb-4">Never Miss an Update</h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
             Subscribe to our newsletter for the latest streaming tips, platform updates, and exclusive reseller offers delivered straight to your inbox.
           </p>
