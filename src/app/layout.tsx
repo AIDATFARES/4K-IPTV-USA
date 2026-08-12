@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Geist, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Geist } from "next/font/google";
 import Link from "next/link";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { 
@@ -22,11 +22,7 @@ const geist = Geist({
   subsets: ["latin"],
 });
 
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
+
 
 export const metadata: Metadata = {
   title: "iscreenhd IPTV - Premium 4K Streaming Services",
@@ -62,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable} ${geist.variable} ${plusJakarta.variable}`}>
+    <html lang="en" className={`dark ${inter.variable} ${geist.variable}`}>
       <head>
       </head>
       <body className="bg-background text-on-background font-body-lg min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">

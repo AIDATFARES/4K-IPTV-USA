@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 export default function TVMockup() {
   return (
@@ -10,7 +10,7 @@ export default function TVMockup() {
       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/25 via-indigo-500/30 to-purple-500/25 blur-[100px] rounded-full transform scale-125 pointer-events-none animate-pulse duration-1000" />
       
       {/* Floating Animated Container */}
-      <motion.div
+      <m.div
         initial={{ opacity: 0, y: 20, scale: 0.95 }}
         animate={{ 
           opacity: 1, 
@@ -38,7 +38,7 @@ export default function TVMockup() {
           src="/bunnystream-iptv-transparent.webp"
           width={1800}
         />
-      </motion.div>
+      </m.div>
     </div>
   );
 }
