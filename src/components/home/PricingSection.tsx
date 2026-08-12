@@ -95,7 +95,7 @@ export default function PricingSection() {
           ))}
         </div>
 
-        <p className="mt-5 text-center text-sm text-slate-500">Reliable support for every iscreenhd IPTV subscription.</p>
+        <p className="mt-5 text-center text-sm text-slate-400">Reliable support for every iscreenhd IPTV subscription.</p>
 
         <div className="mx-auto mt-10 flex max-w-4xl flex-col items-center gap-7">
           <div aria-label="Supported payment methods" className="flex flex-wrap items-center justify-center gap-4">

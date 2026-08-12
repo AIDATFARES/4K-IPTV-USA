@@ -1,7 +1,7 @@
 import HeroSection from "@/components/home/HeroSection";
-import TopFeatureBar from "@/components/home/TopFeatureBar";
 import dynamic from "next/dynamic";
 
+const TopFeatureBar = dynamic(() => import("@/components/home/TopFeatureBar"));
 const ChannelCategories = dynamic(() => import("@/components/home/ChannelCategories"));
 const DeviceSupport = dynamic(() => import("@/components/home/DeviceSupport"));
 const WhyIscreenhdSection = dynamic(() => import("@/components/home/WhyIscreenhdSection"));

@@ -111,7 +111,7 @@ export default function PricingSection() {
             </article>
           ))}
         </div>
-        <p className="mt-5 text-center text-sm text-slate-500">Reliable support for every iscreenhd IPTV subscription.</p>
+        <p className="mt-5 text-center text-sm text-slate-400">Reliable support for every iscreenhd IPTV subscription.</p>
 
         <section className="mt-20 grid gap-8 rounded-3xl border border-white/10 bg-[#0b0f1c]/80 p-6 shadow-2xl lg:grid-cols-[1.2fr_0.8fr] lg:p-10">
           <div className="flex flex-col justify-center">

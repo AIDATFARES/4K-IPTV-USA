@@ -74,9 +74,9 @@ export default function TopFeatureBar() {
                   <Icon className="w-5 h-5" strokeWidth={2} />
                 </div>
                 <div className="min-w-0">
-                  <h4 className="text-xs sm:text-sm font-bold text-white leading-tight truncate">
+                  <p className="text-xs sm:text-sm font-bold text-white leading-tight truncate">
                     {item.title}
-                  </h4>
+                  </p>
                   <p className="text-[11px] text-slate-400 truncate mt-0.5">{item.desc}</p>
                 </div>
               </motion.div>

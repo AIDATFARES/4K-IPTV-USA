@@ -72,7 +72,7 @@ export default function RootLayout({
           <div className="grid max-w-[1400px] grid-cols-2 gap-x-4 gap-y-12 px-6 py-16 sm:grid-cols-4 sm:gap-x-8 sm:px-10 xl:grid-cols-[1.8fr_1fr_1fr_1fr_1fr] xl:gap-10 xl:px-12 mx-auto">
             <div className="col-span-2 sm:col-span-4 xl:col-span-1 min-w-0 max-w-[310px] space-y-4">
               <Link href="/"><BrandLogo /></Link>
-              <p className="max-w-[285px] whitespace-normal break-normal text-sm leading-6 text-slate-400">
+              <p className="max-w-[285px] whitespace-normal break-normal text-sm leading-6 text-slate-300">
                 © 2024 iscreenhd. Premium 4K IPTV Streaming Services. All rights reserved.
               </p>
               <a href="https://wa.me/213554246175" target="_blank" rel="noreferrer" className="flex max-w-[270px] items-center gap-3 rounded-2xl border border-emerald-400/25 bg-emerald-500/[0.07] p-3.5 transition-colors hover:bg-emerald-500/[0.12] group">
@@ -86,7 +86,7 @@ export default function RootLayout({
                   <span className="block whitespace-nowrap text-base font-bold text-white">WhatsApp</span>
                 </span>
               </a>
-              <p className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-wider text-slate-500"><span className="h-2 w-2 rounded-full bg-emerald-400" /> All servers online · 99.9% uptime</p>
+              <p className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-wider text-slate-400"><span className="h-2 w-2 rounded-full bg-emerald-400" /> All servers online · 99.9% uptime</p>
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
