@@ -1,26 +1,182 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-on-secondary-container: #c4abff;
+  --color-secondary-container: #571bc1;
+  --color-on-secondary-fixed-variant: #5516be;
+  --color-background: #10131a;
+  --color-on-secondary-fixed: #23005c;
+  --color-primary: #b8c3ff;
+  --color-on-primary-fixed-variant: #0035be;
+  --color-error: #ffb4ab;
+  --color-outline-variant: #434656;
+  --color-surface-container-lowest: #0b0e14;
+  --color-secondary: #d0bcff;
+  --color-on-primary: #002388;
+  --color-inverse-surface: #e1e2eb;
+  --color-surface-container-highest: #32353c;
+  --color-on-surface: #e1e2eb;
+  --color-tertiary: #00dce5;
+  --color-tertiary-fixed-dim: #00dce5;
+  --color-on-error-container: #ffdad6;
+  --color-on-primary-container: #efefff;
+  --color-error-container: #93000a;
+  --color-on-tertiary-container: #bbfbff;
+  --color-on-background: #e1e2eb;
+  --color-on-secondary: #3c0091;
+  --color-surface-container-high: #272a31;
+  --color-surface-bright: #363940;
+  --color-on-tertiary-fixed: #002021;
+  --color-inverse-primary: #124af0;
+  --color-surface-container-low: #191c22;
+  --color-tertiary-container: #00797e;
+  --color-tertiary-fixed: #63f7ff;
+  --color-primary-container: #2e5bff;
+  --color-inverse-on-surface: #2e3037;
+  --color-surface-container: #1d2026;
+  --color-surface-dim: #10131a;
+  --color-outline: #8e90a2;
+  --color-surface: #10131a;
+  --color-on-tertiary-fixed-variant: #004f53;
+  --color-surface-tint: #b8c3ff;
+  --color-on-error: #690005;
+  --color-on-tertiary: #003739;
+  --color-primary-fixed: #dde1ff;
+  --color-secondary-fixed: #e9ddff;
+  --color-on-surface-variant: #c4c5d9;
+  --color-surface-variant: #32353c;
+  --color-secondary-fixed-dim: #d0bcff;
+  --color-on-primary-fixed: #001356;
+  --color-primary-fixed-dim: #b8c3ff;
+
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  --spacing-margin-desktop: 64px;
+  --spacing-unit: 4px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-lg: 24px;
+  --spacing-md: 16px;
+  --spacing-xl: 32px;
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 16px;
+
+  --font-title-md: var(--font-inter);
+  --font-headline-lg-mobile: var(--font-inter);
+  --font-body-lg: var(--font-inter);
+  --font-headline-lg: var(--font-inter);
+  --font-label-caps: var(--font-geist);
+  --font-body-sm: var(--font-inter);
+  --font-display-lg: var(--font-inter);
+
+  /* Note: FontSize configuration inside Tailwind CSS v4 */
+  --text-title-md: 20px;
+  --text-title-md--line-height: 28px;
+  --text-title-md--font-weight: 500;
+
+  --text-headline-lg-mobile: 24px;
+  --text-headline-lg-mobile--line-height: 32px;
+  --text-headline-lg-mobile--font-weight: 600;
+
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 24px;
+  --text-body-lg--font-weight: 400;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 40px;
+  --text-headline-lg--letter-spacing: -0.01em;
+  --text-headline-lg--font-weight: 600;
+
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 16px;
+  --text-label-caps--letter-spacing: 0.05em;
+  --text-label-caps--font-weight: 600;
+
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 20px;
+  --text-body-sm--font-weight: 400;
+
+  --text-display-lg: 48px;
+  --text-display-lg--line-height: 56px;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body-lg min-h-screen flex flex-col antialiased;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .glass-panel {
+    background: rgba(22, 27, 34, 0.6);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .text-glow {
+    text-shadow: 0 0 20px rgba(184, 195, 255, 0.3);
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 30px rgba(255, 85, 40, 0.5);
+  }
+
+  .btn-primary-voltra {
+    background: linear-gradient(135deg, #FF5528 0%, #FF2A00 100%);
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-radius: 9999px;
+    box-shadow: 0 4px 20px rgba(255, 65, 30, 0.45);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-primary-voltra:hover {
+    box-shadow: 0 6px 30px rgba(255, 65, 30, 0.75);
+    transform: translateY(-2px);
+  }
+  .btn-primary-voltra:active {
+    transform: translateY(0);
+  }
+
+  .btn-secondary-voltra {
+    background: rgba(22, 27, 34, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e1e2eb;
+    font-weight: 600;
+    border-radius: 9999px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-secondary-voltra:hover {
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee-fast {
+  animation: marquee 24s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 26s linear infinite;
 }
