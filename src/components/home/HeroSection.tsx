@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] },
+  transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
 });
 
 export default function HeroSection() {
@@ -96,7 +96,7 @@ export default function HeroSection() {
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             className="w-full lg:col-span-7 min-w-0 flex justify-center lg:justify-end pt-6 lg:pt-0"
           >
             <div className="w-full max-w-[1250px] lg:scale-105 xl:scale-110 transform origin-center lg:origin-right transition-transform duration-500">
