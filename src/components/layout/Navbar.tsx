@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import BrandLogo from "@/components/ui/BrandLogo";
@@ -8,12 +9,23 @@ import BrandLogo from "@/components/ui/BrandLogo";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+  };
 
   return (
     <header
@@ -26,13 +38,13 @@ export default function Navbar() {
       <div className="max-w-[1480px] mx-auto px-4 sm:px-8 h-20 flex items-center justify-between relative">
         
         {/* LOGO */}
-        <Link href="/" className="flex items-center gap-2.5 group shrink-0 z-20">
+        <Link href="/" onClick={handleLogoClick} className="flex items-center gap-2.5 group shrink-0 z-20">
           <BrandLogo />
         </Link>
 
         {/* Nav Links */}
         <nav className="hidden lg:flex relative z-10 items-center gap-6 xl:gap-8 px-6 text-sm font-semibold">
-          <Link href="/" className="text-stone-300 hover:text-white transition-colors duration-200">
+          <Link href="/" onClick={handleLogoClick} className="text-stone-300 hover:text-white transition-colors duration-200">
             Home
           </Link>
           <Link href="/pricing" className="text-stone-300 hover:text-white transition-colors duration-200">
@@ -78,7 +90,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#121414] border-b border-white/10 px-6 py-6 space-y-4 animate-in slide-in-from-top duration-300">
           <nav className="flex flex-col space-y-3 font-semibold text-stone-300">
-            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="hover:text-white py-1">Home</Link>
+            <Link href="/" onClick={handleLogoClick} className="hover:text-white py-1">Home</Link>
             <Link href="/pricing" onClick={() => setMobileMenuOpen(false)} className="hover:text-white py-1">Pricing</Link>
             <Link href="/installation" onClick={() => setMobileMenuOpen(false)} className="hover:text-white py-1">Installation</Link>
             <Link href="/channels" onClick={() => setMobileMenuOpen(false)} className="hover:text-white py-1">Channels List</Link>
