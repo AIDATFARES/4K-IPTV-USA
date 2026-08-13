@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | iscreenhd IPTV",
-  description: "Learn how iscreenhd IPTV collects, uses, and protects personal information.",
+  title: "Privacy Policy | IPTVDoor",
+  description: "Learn how IPTVDoor collects, uses, and protects personal information.",
   alternates: {
     canonical: "/privacy-policy",
   },
@@ -13,7 +13,7 @@ const sections = [
   {
     title: "1. Data We Collect",
     content: [
-      <>We collect personal data that you voluntarily provide when you subscribe to our IPTV service, request information about our products or services, or <Link className="font-semibold text-cyan-400 hover:text-cyan-300" href="/contact">contact us</Link>. The personal data we collect may include the following:</>,
+      <>We collect personal data that you voluntarily provide when you subscribe to our IPTV service, request information about our products or services, or <Link className="font-semibold text-red-400 hover:text-red-300" href="/contact">contact us</Link>. The personal data we collect may include the following:</>,
     ],
     items: [
       "Contact information: Your email address, which we use for account creation and communication.",
@@ -69,7 +69,7 @@ const sections = [
       "Request erasure of your personal information in certain circumstances.",
       "Opt out of marketing and promotional communications at any time.",
     ],
-    after: <>To exercise any of these rights, please <Link className="font-semibold text-cyan-400 hover:text-cyan-300" href="/contact">contact our support team</Link>.</>,
+    after: <>To exercise any of these rights, please <Link className="font-semibold text-red-400 hover:text-red-300" href="/contact">contact our support team</Link>.</>,
   },
   {
     title: "9. Children's Privacy",
@@ -79,19 +79,19 @@ const sections = [
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="flex-grow px-5 pb-20 pt-12 sm:px-8 md:pt-16">
+    <main className="flex-grow px-5 pb-20 pt-12 sm:px-8 md:pt-16 text-format-legal">
       <article className="mx-auto max-w-4xl">
         <header className="border-b border-white/10 pb-10 text-center mx-auto max-w-3xl">
-          <span className="inline-flex rounded-full border border-indigo-400/35 bg-indigo-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-indigo-300">Legal information</span>
-          <h1 className="mt-6 text-4xl font-black uppercase leading-[0.98] tracking-tight text-white sm:text-5xl">
-            <span className="block">Privacy</span>
-            <span className="mt-1 block bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">Policy</span>
+          <span className="inline-flex rounded-full border border-red-400/35 bg-red-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-red-300">Legal information</span>
+          <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
+            <span className="block text-white">Privacy &amp; Data Protection</span>
+            <span className="mt-1 block text-[#d32f2f]">Official Policy.</span>
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-400">Last adjusted: September 14, 2025</p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400">Last adjusted: September 14, 2025</p>
         </header>
 
         <div className="mt-10 space-y-10 text-base leading-7 text-on-surface-variant">
-          <p>Welcome to iscreenhd IPTV. We are committed to protecting your personal information and respecting your privacy. If you have questions or concerns about this policy or our data practices, please <Link className="font-semibold text-cyan-400 hover:text-cyan-300" href="/contact">contact our support team</Link>.</p>
+          <p>Welcome to IPTVDoor. We are committed to protecting your personal information and respecting your privacy. If you have questions or concerns about this policy or our data practices, please <Link className="font-semibold text-red-400 hover:text-red-300" href="/contact">contact our support team</Link>.</p>
           {sections.map((section) => (
             <section key={section.title}>
               <h2 className="text-2xl font-bold text-white">{section.title}</h2>
@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
           ))}
           <section>
             <h2 className="text-2xl font-bold text-white">10. Contact Us</h2>
-            <p className="mt-4">If you would like to discuss this policy or our handling of your personal information, please contact our <Link className="font-semibold text-cyan-400 hover:text-cyan-300" href="/contact">support team</Link>.</p>
+            <p className="mt-4">If you would like to discuss this policy or our handling of your personal information, please contact our <Link className="font-semibold text-red-400 hover:text-red-300" href="/contact">support team</Link>.</p>
           </section>
         </div>
       </article>

@@ -1,98 +1,120 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Baby, Check, Film, Globe2, Layers3, Monitor, Newspaper, Trophy } from "lucide-react";
+import { Check, Monitor, Globe2, Tv, Headphones } from "lucide-react";
 import Link from "next/link";
 
-const categories = [
-  {
-    icon: Trophy,
-    title: "Sports Channels",
-    items: ["Football, basketball, UFC, boxing, F1, and more", "HD/FHD and 4K where available", "Fast channel switching"],
-  },
-  {
-    icon: Film,
-    title: "Movie Channels",
-    items: ["Premium movie networks", "Curated collections, updated frequently", "On-demand library available"],
-  },
-  {
-    icon: Newspaper,
-    title: "News Channels",
-    items: ["Global and local networks", "Breaking news and special reports", "Business, tech, finance"],
-  },
-  {
-    icon: Baby,
-    title: "Kids Channels",
-    items: ["Cartoons, learning & family content", "Parental-control friendly"],
-  },
-  {
-    icon: Monitor,
-    title: "Entertainment",
-    items: ["Reality, variety, music & lifestyle", "Popular everyday channels"],
-  },
-  {
-    icon: Globe2,
-    title: "International",
-    items: ["Country & language based packages", "Local sports and news options"],
-  },
-  {
-    icon: Layers3,
-    title: "Series & Shows",
-    items: ["Popular seasons with daily updates", "New releases and timeless favourites"],
-  },
-];
-
 export default function ChannelCategories() {
+  const features = [
+    {
+      icon: Monitor,
+      title: "For all devices",
+      desc: "Our IPTV is 100% compatible with all operating systems, applications, TV boxes and devices available on the market.",
+    },
+    {
+      icon: Globe2,
+      title: "Global Content",
+      desc: "Our IPTV subscription offers thousands of channels, movies, and series with the fastest and most stable server",
+    },
+    {
+      icon: Tv,
+      title: "Best quality FHD/4K",
+      desc: "Enjoy your favorite shows, movies and events with the highest quality and performance.",
+    },
+    {
+      icon: Headphones,
+      title: "24/7 Support",
+      desc: "We offer 24/7 support to help you throughout your subscription, including installation, activation, and technical issues.",
+    },
+  ];
+
+  const checks = [
+    "Access +50,000 Channels",
+    "Access +120,000 Films & Series",
+    "Access 200,000+ VODs",
+    "Automatic channel updates",
+    "Works with all your devices",
+    "Works with all IPTV apps",
+  ];
+
   return (
-    <section className="relative z-10 bg-[#060814] py-16 text-white sm:py-20">
-      <div className="mx-auto max-w-[1100px] px-5">
-        <div className="mx-auto mb-14 max-w-3xl text-center">
-          <span className="inline-flex rounded-full border border-cyan-400/35 bg-cyan-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-cyan-300">Explore Content</span>
-          <h2 className="mt-6 text-4xl font-black uppercase leading-[0.98] tracking-tight text-white sm:text-5xl">
-            <span className="block">Popular iscreenhd</span>
-            <span className="mt-1 block bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">IPTV Channel Categories</span>
-          </h2>
-          <div className="mt-8 flex justify-center">
-            <Link className="group inline-flex items-center gap-1.5 rounded-full border border-cyan-400/50 bg-cyan-500/10 px-6 py-2.5 text-xs font-bold text-cyan-200 transition-colors hover:bg-cyan-400 hover:text-slate-950" href="/channels">
-              View iscreenhd IPTV Channel List
-              <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
-            </Link>
+    <section className="relative z-10 bg-[#0c0f0f] py-16 text-white sm:py-24">
+      <div className="mx-auto max-w-[1200px] px-5">
+        
+        {/* Heading above Red Box */}
+        <div className="mx-auto mb-12 max-w-4xl text-center">
+          <div className="inline-flex items-center justify-center gap-2 mb-4">
+            <span className="h-px w-8 bg-gradient-to-r from-transparent to-[#d32f2f]"></span>
+            <span className="text-[#d32f2f] text-sm font-bold tracking-[0.2em] uppercase">Premium Quality</span>
+            <span className="h-px w-8 bg-gradient-to-l from-transparent to-[#d32f2f]"></span>
           </div>
+          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight">
+            We Are Proud to Offer the <br className="hidden md:block" />
+            <span className="text-[#d32f2f]">Premium IPTV Service.</span>
+          </h2>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((category, index) => {
-            const Icon = category.icon;
+        {/* White Feature Box */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-white rounded-2xl md:rounded-3xl p-8 md:p-12 mb-20 shadow-xl border border-stone-200"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+            {features.map((feature, i) => {
+              const Icon = feature.icon;
+              return (
+                <div key={i} className="flex flex-col items-center">
+                  <div className="mb-6 inline-flex p-4 rounded-full border border-stone-200 bg-stone-50">
+                    <Icon className="w-8 h-8 text-[#d32f2f]" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="text-xl font-bold text-stone-900 mb-4">{feature.title}</h3>
+                  <p className="text-stone-600 text-[15px] leading-relaxed max-w-[280px] mx-auto font-medium">
+                    {feature.desc}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </motion.div>
 
-            return (
-              <motion.article
-                className="relative min-h-[232px] rounded-xl border border-white/10 border-t-2 border-t-cyan-400 bg-[#0f1322] px-5 pb-5 pt-14 shadow-[0_10px_28px_rgba(0,0,0,0.18)]"
-                initial={{ opacity: 0, y: 16 }}
-                key={category.title}
-                transition={{ duration: 0.35, delay: index * 0.05 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, y: 0 }}
-              >
-                <span className="absolute left-1/2 top-0 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-[#060814] bg-cyan-500 text-slate-950 shadow-[0_6px_16px_rgba(6,182,212,0.35)]">
-                  <Icon className="h-6 w-6" strokeWidth={2.5} />
-                </span>
-                <p className="text-center text-xl font-extrabold">{category.title}</p>
-                <ul className="mt-4 space-y-2.5">
-                  {category.items.map((item) => (
-                    <li className="flex items-start gap-2 text-sm leading-5 text-slate-300" key={item}>
-                      <Check aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-cyan-400" strokeWidth={2.5} />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.article>
-            );
-          })}
-        </div>
+        {/* Pricing Intro section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-5xl font-extrabold text-[#d32f2f] mb-6 tracking-tight">
+            IPTVDoor IPTV subscription prices
+          </h2>
+          <p className="text-stone-300 text-sm md:text-base max-w-3xl mx-auto mb-8 font-medium">
+            Buying iptv from <span className="font-bold text-white">IPTVDoor</span> allows you to enjoy +50,000 Channels, +120,000 Films &amp; Series, and 200,000+ VODs.
+          </p>
+          <h3 className="text-2xl md:text-[28px] font-semibold text-white">
+            High-Quality IPTV Servers <span className="text-[#d32f2f]">with 24/7 Uptime</span> and Zero Buffering!
+          </h3>
+        </motion.div>
 
-        <p className="mt-8 text-center text-sm text-slate-400">
-          Find the comprehensive <Link className="font-semibold text-cyan-400 hover:text-cyan-300" href="/channels">iscreenhd IPTV Channel List</Link> or navigate to our <Link className="font-semibold text-cyan-400 hover:text-cyan-300" href="/installation">iscreenhd IPTV Installation Guide</Link> for a quick start.
-        </p>
+        {/* 3x2 Grid of Feature Pills */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[1100px] mx-auto"
+        >
+          {checks.map((text, i) => (
+            <div key={i} className="flex items-center gap-4 bg-transparent border border-[#3b3552] rounded-full py-4 px-6 hover:border-[#d32f2f] transition-colors duration-300 group">
+              <Check className="w-5 h-5 text-[#d32f2f] shrink-0" strokeWidth={3} />
+              <span className="text-sm md:text-[15px] font-bold text-white transition-colors">{text}</span>
+            </div>
+          ))}
+        </motion.div>
+
       </div>
     </section>
   );

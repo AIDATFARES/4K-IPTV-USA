@@ -1,134 +1,403 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle2, MessageCircle, Trophy, Tv } from "lucide-react";
-import { motion } from "framer-motion";
-
-const steps = [
-  { number: "01", title: "Choose Your Plan", text: "Pick 3 months, 6 months or 1 year. Select the number of devices you need and click Get Started above." },
-  { number: "02", title: "Receive Your Credentials", text: "After payment we send your M3U link or Xtream login directly to your WhatsApp or email — within minutes, 24/7." },
-  { number: "03", title: "Start Streaming Instantly", text: "Open TiviMate, IPTV Smarters or your preferred player, enter your credentials and enjoy live TV, movies and series in HD/4K." },
-];
-
-const stats = [
-  { value: "50K+", label: "LIVE CHANNELS" },
-  { value: "200K+", label: "MOVIES & SERIES" },
-  { value: "4K", label: "ULTRA HD" },
-  { value: "99.9%", label: "SERVER UPTIME" },
-];
 
 export default function HowItWorksSection() {
   return (
-    <section className="relative z-10 overflow-hidden border-y border-white/[0.06] bg-[#080a17] py-16 sm:py-20">
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-1/2 bg-[radial-gradient(ellipse_at_15%_45%,rgba(84,44,173,0.14),transparent_62%)]" />
-      <div className="relative mx-auto grid max-w-[1280px] items-center gap-10 px-5 lg:grid-cols-[0.72fr_1.28fr] lg:gap-14">
-        <motion.div initial={{ opacity: 0, x: -18 }} transition={{ duration: 0.45 }} viewport={{ once: true }} whileInView={{ opacity: 1, x: 0 }}>
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-violet-400/35 bg-violet-500/10 px-3 py-1 text-[8px] font-extrabold uppercase tracking-[0.14em] text-violet-200">
-            <Trophy className="h-3 w-3 text-amber-300" />
-            Setup in 60 seconds
+    <section className="py-20 bg-[#0c0f0f] text-white relative z-10 border-b border-white/10 overflow-hidden">
+      <div className="max-w-[1240px] mx-auto px-6">
+
+        {/* ========================================================================= */}
+        {/* PART 1: How does it work? IPTVDoor Timeline */}
+        {/* ========================================================================= */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#d32f2f] mb-2 block">
+            EASY 3-STEP PROCESS
           </span>
-          <span className="mt-5 flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-violet-500 to-indigo-600 text-white shadow-[0_0_22px_rgba(124,58,237,0.45)]">
-            <Tv className="h-5 w-5" />
-          </span>
-          <h2 className="mt-5 text-4xl font-black uppercase leading-[0.98] tracking-tight text-white sm:text-5xl">
-            <span className="block">Enjoy everything</span>
-            <span className="mt-1 block bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">on any device</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#d32f2f] tracking-tight">
+            How does it work? IPTVDoor
           </h2>
-          <p className="mt-5 max-w-[390px] text-xs leading-5 text-slate-400">
-            No satellite dish. No complicated setup. Subscribe, receive your credentials instantly on WhatsApp, and enjoy live TV, premium sports, movies and series in crystal-clear quality — from any device, anywhere in the world.
+          <p className="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed max-w-2xl mx-auto">
+            Get your{" "}
+            <Link
+              href="#pricing"
+              className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+            >
+              IPTV subscription
+            </Link>{" "}
+            in 3 easy steps. Choose the right plan, complete the payment, and receive your login details. Within minutes you can enjoy your favorite programs.
           </p>
+        </div>
 
-          <div className="relative mt-8 space-y-6 before:absolute before:bottom-4 before:left-[13px] before:top-4 before:w-px before:bg-indigo-400/30">
-            {steps.map((step, index) => (
-              <motion.div className="relative flex gap-4" initial={{ opacity: 0, y: 10 }} key={step.number} transition={{ delay: 0.15 + index * 0.08 }} viewport={{ once: true }} whileInView={{ opacity: 1, y: 0 }}>
-                <span className="relative z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-indigo-400/50 bg-[#0b0d1b] text-[9px] font-bold text-indigo-200">{step.number}</span>
-                <div className="pt-0.5">
-                  <p className="text-xs font-bold text-white">{step.title}</p>
-                  <p className="mt-1 max-w-[365px] text-[10px] leading-4 text-slate-400">{step.text}</p>
-                </div>
+        {/* Timeline Steps Container */}
+        <div className="relative max-w-[960px] mx-auto mb-28">
+          {/* Vertical Dashed Center Line */}
+          <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-0.5 border-l-2 border-dashed border-white/20 hidden md:block" />
+
+          {/* STEP 1 */}
+          <div className="relative mb-16 md:mb-20">
+            {/* Step Badge */}
+            <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
+              <span className="bg-[#d32f2f] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(211,47,47,0.6)]">
+                Step One
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
+              {/* Left Card */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
+              >
+                <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
+                  <Link
+                    href="#pricing"
+                    className="hover:text-red-700 transition-colors"
+                  >
+                    Place your order.
+                  </Link>
+                </h3>
+                <p className="text-stone-600 text-sm leading-relaxed">
+                  After placing your order from our{" "}
+                  <Link
+                    href="#pricing"
+                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                  >
+                    pricing plans
+                  </Link>
+                  , you will receive your subscription details within 20 minutes at most by email or{" "}
+                  <Link
+                    href="/contact"
+                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                  >
+                    WhatsApp
+                  </Link>
+                  .
+                </p>
               </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
-        <motion.div initial={{ opacity: 0, x: 18 }} transition={{ duration: 0.45, delay: 0.1 }} viewport={{ once: true }} whileInView={{ opacity: 1, x: 0 }}>
-          <div className="grid grid-cols-4 gap-2.5">
-            {stats.map((stat) => (
-              <div className="rounded-lg border border-indigo-400/15 bg-[#0d1020] px-2 py-3 text-center" key={stat.label}>
-                <span className="block text-sm font-extrabold text-indigo-300">{stat.value}</span>
-                <span className="mt-0.5 block text-[6px] font-bold tracking-[0.12em] text-slate-500">{stat.label}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* REALISTIC 4K SMART TV MOCKUP CONTAINER */}
-          <div className="relative mt-5 group">
-            {/* TV Outer Frame / Metallic Bezel */}
-            <div className="relative rounded-[20px] md:rounded-[28px] border-[7px] md:border-[12px] border-[#161a29] bg-[#05060d] p-1.5 md:p-2 shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_35px_rgba(6,182,212,0.18)] transition-all duration-500 group-hover:shadow-[0_25px_60px_rgba(0,0,0,0.9),0_0_45px_rgba(6,182,212,0.3)]">
-              
-              {/* Inner Screen Display */}
-              <div className="relative overflow-hidden rounded-xl md:rounded-2xl bg-black">
+              {/* Right Image */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
+              >
                 <Image
-                  alt="Live sports streaming available with iscreenhd IPTV"
-                  className="aspect-video w-full object-contain opacity-95 transition-transform duration-700"
-                  height={520}
-                  priority={false}
-                  src="/sport-banner.webp"
-                  width={800}
+                  src="/place-your-order.png"
+                  alt="Place your order online"
+                  width={600}
+                  height={380}
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
-
-                {/* Subtle Glass Screen Reflection Overlay */}
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.04] to-white/[0.08]" />
-
-                {/* Live Screen Badges */}
-                <span className="absolute right-3 top-3 rounded-md bg-[#061017]/90 px-2.5 py-1 text-[8px] font-extrabold text-cyan-300 backdrop-blur-sm border border-cyan-500/20">
-                  <span className="text-emerald-400 mr-1 animate-pulse">●</span>LIVE SPORTS
-                </span>
-
-                <div className="absolute bottom-3 left-3 rounded-lg border border-white/15 bg-[#080b11]/90 px-3 py-2 shadow-xl backdrop-blur-md">
-                  <span className="flex items-center gap-1.5 text-[9px] font-bold text-white">
-                    <i className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.9)] animate-pulse" /> Live Now
-                  </span>
-                  <small className="mt-0.5 block text-[8px] text-slate-300 font-medium">Premium sports · 4K HDR</small>
-                  <span className="mt-2 block h-1 w-24 overflow-hidden rounded-full bg-white/20">
-                    <i className="block h-full w-2/3 rounded-full bg-red-500" />
-                  </span>
-                </div>
-
-                <div className="absolute bottom-3 right-3 flex gap-2">
-                  <span className="rounded-md border border-white/15 bg-[#080b11]/90 px-2.5 py-1.5 text-[8px] font-extrabold text-slate-200 backdrop-blur-sm">
-                    LIVE EVENTS
-                  </span>
-                  <span className="rounded-md border border-white/15 bg-[#080b11]/90 px-2.5 py-1.5 text-[8px] font-extrabold text-cyan-300 backdrop-blur-sm">
-                    HD & 4K
-                  </span>
-                </div>
-              </div>
-
-              {/* TV Bottom Brand Logo & Power LED Indicator */}
-              <div className="mt-1 flex items-center justify-between px-3">
-                <span className="text-[7px] font-black tracking-[0.25em] text-slate-500 uppercase">iscreenhd 4K SMART TV</span>
-                <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(6,182,212,0.9)] animate-pulse" />
-              </div>
-            </div>
-
-            {/* TV Stand Base */}
-            <div className="relative mx-auto -mt-1 flex flex-col items-center">
-              <div className="h-2.5 w-24 md:w-36 rounded-b-xl bg-gradient-to-b from-[#1c2235] to-[#0c0f1a] shadow-md border-x border-b border-white/10" />
-              <div className="h-1 w-40 md:w-60 rounded-full bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent blur-[1px] mt-0.5" />
+              </motion.div>
             </div>
           </div>
 
-          <div className="mt-6 grid grid-cols-2 gap-3">
-            <Link className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 px-4 py-3.5 text-xs font-extrabold uppercase tracking-wide text-white shadow-[0_0_20px_rgba(124,58,237,0.35)] transition-transform hover:-translate-y-0.5" href="#pricing">
-              <Trophy className="h-4 w-4" /> Get started now
-            </Link>
-            <a className="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-400/55 px-4 py-3.5 text-xs font-extrabold uppercase tracking-wide text-emerald-400 transition-colors hover:bg-emerald-400/10" href="https://wa.me/213554246175?text=Hello%2C%20I%20would%20like%20a%20free%20trial%20for%20iscreenhd%20IPTV." rel="noreferrer" target="_blank">
-              <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
-            </a>
+          {/* STEP 2 */}
+          <div className="relative mb-16 md:mb-20">
+            {/* Step Badge */}
+            <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
+              <span className="bg-[#d32f2f] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(211,47,47,0.6)]">
+                Step Two
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
+              {/* Left Image */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl order-2 md:order-1"
+              >
+                <Image
+                  src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80"
+                  alt="Instant installation"
+                  width={600}
+                  height={380}
+                  unoptimized
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </motion.div>
+
+              {/* Right Card */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200 order-1 md:order-2"
+              >
+                <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
+                  <Link
+                    href="/installation"
+                    className="hover:text-red-700 transition-colors"
+                  >
+                    Installation & Setup
+                  </Link>
+                </h3>
+                <p className="text-stone-600 text-sm leading-relaxed">
+                  Follow our step-by-step{" "}
+                  <Link
+                    href="/installation"
+                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                  >
+                    installation guide
+                  </Link>{" "}
+                  to configure IPTV on Smart TV, Firestick, Android, iOS, and PC effortlessly.
+                </p>
+              </motion.div>
+            </div>
           </div>
-        </motion.div>
+
+          {/* STEP 3 */}
+          <div className="relative">
+            {/* Step Badge */}
+            <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
+              <span className="bg-[#d32f2f] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(211,47,47,0.6)]">
+                Step Three
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
+              {/* Left Card */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
+              >
+                <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
+                  <Link
+                    href="/channels"
+                    className="hover:text-red-700 transition-colors"
+                  >
+                    Watch and enjoy.
+                  </Link>
+                </h3>
+                <p className="text-stone-600 text-sm leading-relaxed">
+                  Stream all your favorite live sports, 4K movies, and premium channels from our complete{" "}
+                  <Link
+                    href="/channels"
+                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                  >
+                    channels catalog
+                  </Link>
+                  .
+                </p>
+              </motion.div>
+
+              {/* Right Image */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
+              >
+                <Image
+                  src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=800&q=80"
+                  alt="Watch and enjoy live TV"
+                  width={600}
+                  height={380}
+                  unoptimized
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </motion.div>
+            </div>
+          </div>
+        </div>
+
+        {/* ========================================================================= */}
+        {/* PART 2: Getting Started with IPTVDoor Is Easy */}
+        {/* ========================================================================= */}
+        <div className="pt-10 border-t border-white/10">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#d32f2f] tracking-tight">
+              Getting Started with IPTVDoor Is Easy
+            </h2>
+            <p className="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed">
+              Enjoy high quality IPTV streaming with IPTVDoor. Watch{" "}
+              <Link
+                href="/channels"
+                className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+              >
+                live TV channels
+              </Link>
+              , movies, and sports anytime, anywhere.
+            </p>
+          </div>
+
+          <div className="space-y-16 max-w-[1080px] mx-auto">
+            {/* Feature Block 1 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
+              >
+                <Image
+                  src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
+                  alt="Complete IPTV Subscription Experience"
+                  width={600}
+                  height={400}
+                  unoptimized
+                  className="w-full h-72 object-cover"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="space-y-4"
+              >
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
+                  <Link
+                    href="#pricing"
+                    className="hover:text-red-400 transition-colors"
+                  >
+                    We Offer You A Complete IPTV Subscription Experience
+                  </Link>
+                </h3>
+                <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
+                  Enjoy uninterrupted IPTV 4K/HD with an{" "}
+                  <Link
+                    href="#pricing"
+                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                  >
+                    IPTV subscription
+                  </Link>{" "}
+                  from IPTVDoor. Choose from 1, 3, 6 or 12 months packages and experience continuous entertainment with full access to our{" "}
+                  <Link
+                    href="/channels"
+                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                  >
+                    streaming library
+                  </Link>
+                  .
+                </p>
+              </motion.div>
+            </div>
+
+            {/* Feature Block 2 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="space-y-4 order-2 md:order-1"
+              >
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
+                  <Link
+                    href="/channels"
+                    className="hover:text-red-400 transition-colors"
+                  >
+                    +50,000 Channels & 200,000+ VODs With Our IPTV Smarters Pro
+                  </Link>
+                </h3>
+                <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
+                  Unlock a world of entertainment with over{" "}
+                  <Link
+                    href="/channels"
+                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                  >
+                    +50,000 live channels and +120,000 films & series
+                  </Link>{" "}
+                  for the ultimate viewing experience. Check out our{" "}
+                  <Link
+                    href="#pricing"
+                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                  >
+                    subscription plans
+                  </Link>{" "}
+                  to start watching immediately.
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5 order-1 md:order-2"
+              >
+                <Image
+                  src="/sport-banner.webp"
+                  alt="+50,000 Live Channels & VODs"
+                  width={600}
+                  height={400}
+                  className="w-full h-72 object-cover"
+                />
+              </motion.div>
+            </div>
+
+            {/* Feature Block 3 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
+              >
+                <Image
+                  src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80"
+                  alt="Live TV and TV Guide EPG"
+                  width={600}
+                  height={400}
+                  unoptimized
+                  className="w-full h-72 object-cover"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="space-y-4"
+              >
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
+                  <Link
+                    href="/installation"
+                    className="hover:text-red-400 transition-colors"
+                  >
+                    Live TV With IPTV Smarters Pro and TV Guide (EPG)
+                  </Link>
+                </h3>
+                <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
+                  With IPTVDoor you get access to an interactive TV guide (EPG), Live TV, and replay options. Read our{" "}
+                  <Link
+                    href="/installation"
+                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                  >
+                    IPTV setup guide
+                  </Link>{" "}
+                  or explore our{" "}
+                  <Link
+                    href="/faq"
+                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                  >
+                    FAQ support
+                  </Link>{" "}
+                  for complete device instructions.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

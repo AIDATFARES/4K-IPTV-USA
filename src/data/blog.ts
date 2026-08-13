@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     title: "IPTV Smarters Plus: The Ultimate Expert Guide for 2026",
     description: "The definitive guide to IPTV Smarters Plus: installation, advanced configuration, app comparisons, and expert tips for a flawless 4K experience.",
     date: "May 9, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/high-quality-iptv-service.webp",
     content: `## What No One Tells You About IPTV Players
@@ -42,7 +42,7 @@ What this means in practice: native management of HLS and MPEG-TS protocols, opt
 
 **M3U Playlist** — A text file containing direct links to each channel. Easier to understand but less robust: if the server changes a URL, you must manually update your file. Suitable for temporary setups or testing.
 
-For daily and professional use, **Xtream Codes is the only serious option**. This is the standard protocol used by [iscreenhd IPTV](/) in standard.
+For daily and professional use, **Xtream Codes is the only serious option**. This is the standard protocol used by [IPTVDoor](/) in standard.
 
 ## Advanced Features in Detail
 
@@ -58,7 +58,7 @@ Smarters Plus's EPG is synchronized in real-time with your provider. It's not ju
 
 The EPG offers several key functionalities that go beyond basic channel listings. You can access a full 7-day advance view for all channels, set program start reminders via device notifications, and filter content by specific genres such as sports, movies, news, and series. There is also an instant search feature that allows you to find content by title or actor in seconds.
 
-What most users don't know: by correctly configuring the EPG URL provided by [iscreenhd IPTV](/), you get enriched metadata — synopses, critic ratings, movie posters. The interface transforms from a simple TV guide into an experience close to Netflix.
+What most users don't know: by correctly configuring the EPG URL provided by [IPTVDoor](/), you get enriched metadata — synopses, critic ratings, movie posters. The interface transforms from a simple TV guide into an experience close to Netflix.
 
 ### Catch-up TV: Never Miss a Thing
 
@@ -79,13 +79,13 @@ This isn't a limitation — it's an open architecture that adapts to your ecosys
 
 Setting up the application is designed to be as simple as possible, even for those who aren't tech-savvy. First, you need to download the app; it is available directly through the Play Store or App Store for mobile devices, or via the official website for APK files if you are using a Fire Stick or Android Box. Once downloaded, open the application and select the "Add New User" option, then choose the **Xtream Codes API** method.
 
-Next, you will need to enter your [iscreenhd IPTV](/) credentials—specifically the server URL, your username, and your password. These three pieces of information are sent to your email immediately after your [subscription](/pricing) is activated. Once you confirm the details, simply wait 15 to 30 seconds. Your entire catalog of live channels, movies, and series will load automatically. There is no complex network configuration required, no ports to open, and no mandatory VPN needed to get started.
+Next, you will need to enter your [IPTVDoor](/) credentials—specifically the server URL, your username, and your password. These three pieces of information are sent to your email immediately after your [subscription](/pricing) is activated. Once you confirm the details, simply wait 15 to 30 seconds. Your entire catalog of live channels, movies, and series will load automatically. There is no complex network configuration required, no ports to open, and no mandatory VPN needed to get started.
 
 ## Real-World Use Cases
 
 ### Watching the 2026 World Cup on Smart TV
 
-Your Smart TV doesn't have Smarters Plus in its native store? No problem. Plug an **Amazon Fire Stick 4K Max** into an available HDMI port — it's less than $60 and transforms any TV into a state-of-the-art IPTV terminal. Install Smarters Plus via the "Unknown Sources" option, enter your [iscreenhd IPTV](/) credentials, and watch all 104 World Cup matches in 4K HDR from your couch.
+Your Smart TV doesn't have Smarters Plus in its native store? No problem. Plug an **Amazon Fire Stick 4K Max** into an available HDMI port — it's less than $60 and transforms any TV into a state-of-the-art IPTV terminal. Install Smarters Plus via the "Unknown Sources" option, enter your [IPTVDoor](/) credentials, and watch all 104 World Cup matches in 4K HDR from your couch.
 
 The Fire Stick 4K Max supports Wi-Fi 6 — if your router is compatible, you'll benefit from a more stable and faster connection than many Ethernet cables.
 
@@ -97,7 +97,7 @@ Pro Tip: on 4G/5G, set the quality to "SD" or "HD" in the stream settings to sav
 
 ### Family Use on Multiple Devices
 
-A family of 4 with a [iscreenhd IPTV](/) multi-connection plan can use Smarters Plus simultaneously on:
+A family of 4 with a [IPTVDoor](/) multi-connection plan can use Smarters Plus simultaneously on:
 - The main TV (via Fire Stick)
 - The parents' bedroom (via Android Box)
 - The kids' tablet
@@ -113,7 +113,7 @@ Each profile in the app keeps its own favorites and history. No interference, no
 
 Buffering isn't always due to your internet connection. The real causes, in order of frequency:
 
-- **Server Overload** — your provider has too many users for too little bandwidth. Choosing [iscreenhd IPTV](/) means choosing an infrastructure capable of handling traffic peaks during major events.
+- **Server Overload** — your provider has too many users for too little bandwidth. Choosing [IPTVDoor](/) means choosing an infrastructure capable of handling traffic peaks during major events.
 - **Unstable Wi-Fi** — a Wi-Fi signal at -75 dBm will always be less reliable than a wired connection, even at 100 Mbps.
 - **Software Decoding** — if your device decodes the H.265 stream via software instead of using the hardware video chip, the CPU heats up and lags. Smarters Plus automatically enables hardware acceleration if available.
 - **Misconfigured Buffer** — the app allows you to adjust the buffer from 0 to 10 seconds. On an unstable connection, 3 to 5 seconds of buffer absorb micro-cuts with no visible impact.
@@ -195,7 +195,7 @@ Instead of scrolling through 50,000 channels every time, create favorite groups 
 
 ## Comparison of IPTV Services
 
-| Feature | iscreenhd IPTV + Smarters Plus | Cable / Satellite | Generic IPTV |
+| Feature | IPTVDoor + Smarters Plus | Cable / Satellite | Generic IPTV |
 | --- | --- | --- | --- |
 | Max Quality | Native 4K HDR | Standard HD | Variable |
 | Number of Channels | 50,000+ | 200–500 | 1,000–5,000 |
@@ -212,7 +212,7 @@ Q: What internet speed do I actually need for 4K?
 A: With the HEVC (H.265) codec, 15 Mbps is enough for stable 4K. With AV1, you can go as low as 10 Mbps. For smooth Full HD, aim for a minimum of 8 Mbps. If you fall below these thresholds, switch the stream quality to HD in the app settings.
 
 Q: Can I use one subscription on multiple devices at the same time?
-A: It depends on your plan. [iscreenhd IPTV](/) offers 1, 2, and 4 simultaneous connection plans. For a family of 4, the 4-connection plan is the optimal choice. Explore our [pricing plans](/pricing) for more details.
+A: It depends on your plan. [IPTVDoor](/) offers 1, 2, and 4 simultaneous connection plans. For a family of 4, the 4-connection plan is the optimal choice. Explore our [pricing plans](/pricing) for more details.
 
 Q: Does the app work on my Samsung Smart TV without a Fire Stick?
 A: Samsung Tizen Smart TVs do not support Android APKs. The recommended solution is a Fire Stick (plugged into an HDMI port) or an Android Box. Smart IPTV is an alternative if you refuse any extra hardware — but its features are significantly more limited.
@@ -221,13 +221,13 @@ Q: What happens if my channel list changes after a server update?
 A: With Xtream Codes, the sync is automatic every time you launch the app. You won't lose any channels or favorites, even during major provider updates.
 
 Q: Is Catch-up TV available on all channels?
-A: No — it depends on which channels your provider archives on their server. Premium sports and movie channels are generally covered. Local or regional channels may not be. iscreenhd IPTV documents replay availability in its catalogue.
+A: No — it depends on which channels your provider archives on their server. Premium sports and movie channels are generally covered. Local or regional channels may not be. IPTVDoor documents replay availability in its catalogue.
 
 ## Useful Resources
 
 - [Video Installation Guide](#)
 - [Compatible Devices List](#)
-- [iscreenhd IPTV Technical Support](#)
+- [IPTVDoor Technical Support](#)
 `
   },
   {
@@ -236,7 +236,7 @@ A: No — it depends on which channels your provider archives on their server. P
     title: "World Cup 2026 Countdown – How Many Days Until FIFA World Cup",
     description: "Find out exactly how many days remain until the FIFA World Cup 2026 kicks off, and why this expanded 48-team edition will be unlike anything before.",
     date: "May 10, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Football",
     coverImage: "/blog/world-cup-2026-stadium-1-1024x731.webp",
     content: `## The Clock is Ticking
@@ -288,7 +288,7 @@ Local TV stations only broadcast a fraction of the 104 matches. The biggest game
 
 ### The IPTV Solution
 
-With [iscreenhd IPTV](/pricing), you get dedicated World Cup channels in every language, every match without exception, and the ability to watch in 4K HDR on any device — including your Firestick, Smart TV, phone, or tablet.
+With [IPTVDoor](/pricing), you get dedicated World Cup channels in every language, every match without exception, and the ability to watch in 4K HDR on any device — including your Firestick, Smart TV, phone, or tablet.
 
 ![World Cup Clubs](/blog/world-cup-clubes.webp)
 
@@ -326,7 +326,7 @@ Q: Which countries are hosting the 2026 World Cup?
 A: The USA, Canada, and Mexico are co-hosting. The USA will host the majority of matches with 11 cities, Canada has 2, and Mexico has 3.
 
 Q: How can I watch every single match live?
-A: With a [iscreenhd IPTV subscription](/pricing), you get access to dedicated channels for all 104 matches in HD and 4K, in multiple languages, on any device.
+A: With a [IPTVDoor subscription](/pricing), you get access to dedicated channels for all 104 matches in HD and 4K, in multiple languages, on any device.
 `
   },
   {
@@ -335,7 +335,7 @@ A: With a [iscreenhd IPTV subscription](/pricing), you get access to dedicated c
     title: "World Cup 2026 | The Biggest Football Tournament in History",
     description: "48 teams. 3 countries. 104 matches. The 2026 FIFA World Cup is the biggest, most ambitious, and most watched sporting event ever staged in history.",
     date: "May 10, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Football",
     coverImage: "/blog/d364de8d-384d-4e6f-b85d-cae505675813.webp",
     content: `## The FIFA World Cup 2026 — Football's Greatest Chapter
@@ -424,9 +424,9 @@ Even in major markets, local broadcasters will not air all 104 matches. Games th
 
 ### Why IPTV is the Superior Solution
 
-With a premium IPTV subscription from [iscreenhd IPTV](/pricing):
+With a premium IPTV subscription from [IPTVDoor](/pricing):
 
-With a premium IPTV subscription from [iscreenhd IPTV](/pricing), you are guaranteed access to all 104 matches, including every group stage game your local broadcaster might skip. You can choose from over 50 different language feeds for every match, ensuring you hear the commentary you prefer. Our service delivers native 4K streaming directly to your device, bypassing compressed broadcast signals. You also benefit from multi-screen capabilities to watch four matches at once and a full 7-day Catch-up TV service if you happen to miss a kickoff.
+With a premium IPTV subscription from [IPTVDoor](/pricing), you are guaranteed access to all 104 matches, including every group stage game your local broadcaster might skip. You can choose from over 50 different language feeds for every match, ensuring you hear the commentary you prefer. Our service delivers native 4K streaming directly to your device, bypassing compressed broadcast signals. You also benefit from multi-screen capabilities to watch four matches at once and a full 7-day Catch-up TV service if you happen to miss a kickoff.
 
 ## What You Need for the Best Streaming Experience
 
@@ -454,7 +454,7 @@ Every device you own can become a high-end World Cup screen. For Smart TVs, you 
 The Cause: Wi-Fi interference, ISP throttling, or provider server overload during peak match times.
 
 The Fix:
-If you experience buffering, the most effective fix is to switch from Wi-Fi to a wired Ethernet connection, which eliminates 80% of issues immediately. If you must use Wi-Fi, ensure you are on the 5 GHz band rather than 2.4 GHz. Additionally, enabling a VPN can help you bypass ISP throttling, which is common during major sporting events. Choosing a provider like iscreenhd IPTV with robust CDN infrastructure also ensures your connection can handle peak global loads.
+If you experience buffering, the most effective fix is to switch from Wi-Fi to a wired Ethernet connection, which eliminates 80% of issues immediately. If you must use Wi-Fi, ensure you are on the 5 GHz band rather than 2.4 GHz. Additionally, enabling a VPN can help you bypass ISP throttling, which is common during major sporting events. Choosing a provider like IPTVDoor with robust CDN infrastructure also ensures your connection can handle peak global loads.
 
 ### Problem 2: Low Video Quality
 
@@ -488,7 +488,7 @@ Fans who invest in a proper streaming setup now — a quality Firestick or Smart
 
 ## Get Ready Now — Every Match, Every Goal
 
-With iscreenhd IPTV, you get guaranteed access to all 104 matches in native 4K with over 50 language options. Our service works on every device you own and offers instant activation, so you can start watching in minutes with zero buffering. It is the ultimate way to experience every goal and every match without exceptions.
+With IPTVDoor, you get guaranteed access to all 104 matches in native 4K with over 50 language options. Our service works on every device you own and offers instant activation, so you can start watching in minutes with zero buffering. It is the ultimate way to experience every goal and every match without exceptions.
 
 [BUTTON](/pricing) SECURE YOUR WORLD CUP ACCESS
 
@@ -513,7 +513,7 @@ Q: What internet speed do I need for World Cup streaming?
 A: A minimum of 15 Mbps stable for HD (1080p), and 25–40 Mbps stable for 4K. The key word is *stable* — fluctuating speeds cause buffering. A wired Ethernet connection is always recommended over Wi-Fi for live sport.
 
 Q: What device is best for streaming the World Cup?
-A: The Amazon Firestick 4K Max provides the best value — it costs under $60 and delivers native 4K HDR with Wi-Fi 6 stability. Pair it with IPTV Smarters Pro and a [iscreenhd IPTV subscription](/pricing) for a flawless setup.
+A: The Amazon Firestick 4K Max provides the best value — it costs under $60 and delivers native 4K HDR with Wi-Fi 6 stability. Pair it with IPTV Smarters Pro and a [IPTVDoor subscription](/pricing) for a flawless setup.
 `
   },
   {
@@ -522,7 +522,7 @@ A: The Amazon Firestick 4K Max provides the best value — it costs under $60 an
     title: "NBA Finals 2026: Who Will Claim the Larry O'Brien Trophy?",
     description: "The race for the 2026 NBA Championship is wide open. Multiple elite contenders and a new generation of superstars are ready to make history.",
     date: "May 10, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Basketball",
     coverImage: "/blog/nba-finals-2026-hero.jpg",
     content: `## The Most Open NBA Title Race in Years
@@ -667,9 +667,9 @@ Many global markets are plagued by delayed broadcasts rather than true live game
 
 ### The IPTV Solution
 
-With [iscreenhd IPTV](/pricing), every game of the 2026 NBA Finals is available live, in full, in HD or 4K, with no blackouts and your choice of commentary language. You can watch from any country, on any device, at the moment the ball tips off.
+With [IPTVDoor](/pricing), every game of the 2026 NBA Finals is available live, in full, in HD or 4K, with no blackouts and your choice of commentary language. You can watch from any country, on any device, at the moment the ball tips off.
 
-With iscreenhd IPTV, you get all NBA Finals games live with zero delays, alongside multiple broadcast feeds in different languages to suit your preference. We provide high-quality HD and 4K streaming that works on every device you own, and our service is completely free of any geographic restrictions or blackouts.
+With IPTVDoor, you get all NBA Finals games live with zero delays, alongside multiple broadcast feeds in different languages to suit your preference. We provide high-quality HD and 4K streaming that works on every device you own, and our service is completely free of any geographic restrictions or blackouts.
 
 ## Common Streaming Challenges and Fixes
 
@@ -683,7 +683,7 @@ Fix: Set your IPTV app's buffer to 8,000–10,000ms for live sports. This pre-lo
 
 Some streams are region-locked at the provider level, not just at the app level.
 
-Fix: A premium IPTV provider like [iscreenhd IPTV](/) hosts channels from every major basketball market simultaneously, bypassing regional restrictions entirely. No VPN required.
+Fix: A premium IPTV provider like [IPTVDoor](/) hosts channels from every major basketball market simultaneously, bypassing regional restrictions entirely. No VPN required.
 
 ### Challenge 3: Audio-Video Sync Issues
 
@@ -745,7 +745,7 @@ Q: What is the Larry O'Brien Trophy?
 A: The Larry O'Brien Championship Trophy is the most prestigious award in professional basketball. Named after former NBA Commissioner Lawrence O'Brien, it has been awarded to the NBA champion since 1977. It stands 2 feet tall and weighs 16 pounds, and is made of sterling silver with 24-karat gold overlay.
 
 Q: Can I watch the NBA Finals online via IPTV?
-A: Yes. With a [iscreenhd IPTV subscription](/pricing), you get access to all NBA Finals games live in HD and 4K, from any country, on any device — Smart TV, Firestick, phone, tablet, or laptop.
+A: Yes. With a [IPTVDoor subscription](/pricing), you get access to all NBA Finals games live in HD and 4K, from any country, on any device — Smart TV, Firestick, phone, tablet, or laptop.
 
 Q: What internet speed do I need to stream the NBA Finals in 4K?
 A: A stable 25–40 Mbps is recommended for smooth 4K streaming. For HD (1080p), 15–20 Mbps stable is sufficient. Always use a wired Ethernet connection when possible for live sports.
@@ -757,7 +757,7 @@ A: A stable 25–40 Mbps is recommended for smooth 4K streaming. For HD (1080p),
     title: "Stabil IPTV – Så Får Du en Trygg, Snabb och Långsiktig IPTV-lösning",
     description: "Att hitta en stabil IPTV-lösning är avgörande. Lär dig vad som påverkar stabilitet, hur du väljer rätt tjänst och hur du undviker buffring.",
     date: "May 10, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/Stabil-IPTV-–-sa-far-du-en-trygg-snabb-och-langsiktig-IPTV-losning.webp",
     content: `## Varför IPTV-stabilitet är allt
@@ -808,7 +808,7 @@ Det enskilt viktigaste faktorn bakom IPTV-stabilitet är leverantörens serverin
 
 Utan ett CDN ansluter alla tittare till samma centrala servrar. Under stora evenemang, som en VM-final, kollapsar dessa servrar ofta under belastningen, vilket resulterar i buffring, avbrott eller helt svarta skärmar. Med ett CDN distribueras däremot trafiken till serverkluster som är strategiskt placerade nära din geografiska plats. En användare i Stockholm ansluter då till en nordeuropeisk server, medan en användare i Dubai ansluter till en server i Mellanöstern. Detta säkerställer att ingen enskild server blir överbelastad, oavsett hur många som tittar samtidigt.
 
-Premium leverantörer som [iscreenhd IPTV](/) använder CDN-arkitektur med redundanta servrar, vilket innebär att om ett serverkluster har problem, tar ett annat automatiskt över — utan att du märker något.
+Premium leverantörer som [IPTVDoor](/) använder CDN-arkitektur med redundanta servrar, vilket innebär att om ett serverkluster har problem, tar ett annat automatiskt över — utan att du märker något.
 
 ### 2. Din Internetanslutning
 
@@ -896,7 +896,7 @@ Med en premium IPTV-tjänst från oss får du tillgång till ett komplett utbud 
 
 ### Juridisk Klarhet i Sverige
 
-Det är viktigt att välja en leverantör som är transparent om sin verksamhet. En seriös IPTV-leverantör som [iscreenhd IPTV](/) erbjuder en tydlig affärsmodell och en tjänst som är utformad för att leverera värde till kunden.
+Det är viktigt att välja en leverantör som är transparent om sin verksamhet. En seriös IPTV-leverantör som [IPTVDoor](/) erbjuder en tydlig affärsmodell och en tjänst som är utformad för att leverera värde till kunden.
 
 ## Stabil IPTV för Sport och Live-evenemang
 
@@ -955,7 +955,7 @@ Ja — men med rätt leverantör. Säkerhetsaspekterna att tänka på:
 
 **Betalningssäkerhet**: Betala via säkra metoder (kreditkort, PayPal) och undvik leverantörer som endast accepterar kryptovaluta eller direktbanköverföring till okända konton.
 
-**Privacy**: Välj en leverantör med en tydlig integritetspolicy. [iscreenhd IPTV](/) lagrar minimalt med användardata och delar det aldrig med tredje part.
+**Privacy**: Välj en leverantör med en tydlig integritetspolicy. [IPTVDoor](/) lagrar minimalt med användardata och delar det aldrig med tredje part.
 
 ## Slutsats: Stabilitet är Inte Valfritt
 
@@ -982,10 +982,10 @@ Q: Vilken IPTV-app är bäst för stabilitet?
 A: IPTV Smarters Pro är bäst för de flesta användare tack vare sin hårdvaruacceleration och multi-skärm-funktion. TiviMate är bäst för avancerade användare som vill ha maximal kontroll och snabbaste möjliga kanalväxling.
 
 Q: Vad orsakar buffring i IPTV?
-A: De vanligaste orsakerna är: instabil Wi-Fi (lösning: Ethernet), ISP-begränsning av IPTV-trafik (lösning: VPN), och leverantörens servrar saknar CDN-kapacitet (lösning: byt till en premium-leverantör som iscreenhd IPTV).
+A: De vanligaste orsakerna är: instabil Wi-Fi (lösning: Ethernet), ISP-begränsning av IPTV-trafik (lösning: VPN), och leverantörens servrar saknar CDN-kapacitet (lösning: byt till en premium-leverantör som IPTVDoor).
 
 Q: Kan jag titta på VM 2026 via IPTV?
-A: Ja. Med en [iscreenhd IPTV-prenumeration](/pricing) får du tillgång till alla 104 VM-matcher live i HD och 4K, utan geografiska begränsningar, med valfritt kommentarsspråk, på vilken enhet som helst.
+A: Ja. Med en [IPTVDoor-prenumeration](/pricing) får du tillgång till alla 104 VM-matcher live i HD och 4K, utan geografiska begränsningar, med valfritt kommentarsspråk, på vilken enhet som helst.
 `
   },
   {
@@ -994,7 +994,7 @@ A: Ja. Med en [iscreenhd IPTV-prenumeration](/pricing) får du tillgång till al
     title: "How to Watch IPTV on Apple TV: Best Apps & Complete Setup Guide (2026)",
     description: "Apple TV is the premium choice for IPTV. Learn why it's a 4K powerhouse, which apps to use, and how to set up your subscription in minutes.",
     date: "May 10, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/apple-tv-iptv-guide-2026.jpg",
     content: `## The Premium IPTV Experience on tvOS
@@ -1072,7 +1072,7 @@ Chillio focuses on personalization and family use. In 2026, it is the only major
 
 ## Step-by-Step Setup Guide
 
-Follow these five steps to get your 4K IPTV running on Apple TV:
+Follow these five steps to get your 4K IPTV running on Apple TV (or check our [general installation guide](/installation) for other platforms):
 
 ### Step 1: Open the App Store
 On your Apple TV home screen, navigate to the App Store. Use the search icon to find your chosen player, such as "GSE Smart IPTV" or "iPlayTV," and click to open its store page.
@@ -1120,7 +1120,7 @@ To ensure you get the absolute most out of your hardware in 2026:
 
 ## Final Thoughts
 
-Apple TV is undoubtedly the most powerful IPTV device in 2026. If you own one, you are sitting on a 4K streaming powerhouse. By pairing it with a high-quality app like iPlayTV or GSE and a premium subscription, you can replace your expensive cable bill with a faster, better, and more flexible solution.
+Apple TV is undoubtedly the most powerful IPTV device in 2026. If you own one, you are sitting on a 4K streaming powerhouse. By pairing it with a high-quality app like iPlayTV or GSE and a [premium IPTVDoor plan](/pricing), you can replace your expensive cable bill with a faster, better, and more flexible solution. Browse our [channels list](/channels), visit our [FAQ page](/faq), or contact our [support team](/contact) to get started.
 
 [BUTTON](/pricing) START WATCHING TODAY
 
@@ -1145,7 +1145,7 @@ A: Yes, our plans support multiple connections so you can watch on your Apple TV
     title: "How to Setup IPTV on Firestick: Complete Guide 2026",
     description: "The definitive guide to setting up IPTV on Amazon Firestick. From developer options to installing TiviMate and Smarters, get streaming in 4K.",
     date: "May 10, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/firestick-setup-guide-2026.jpg",
     content: `## The Ultimate Firestick Streaming Machine
@@ -1208,7 +1208,7 @@ Pro Tip: Always delete the APK file after installation is complete. Firesticks h
 
 ### Phase 4: Connecting Your Subscription
 
-Now that your player is installed, it's time to connect it to your [iscreenhd IPTV](/) service. Launch the newly installed app from your dashboard. You will see several connection options; we strongly recommend selecting the .
+Now that your player is installed, it's time to connect it to your [IPTVDoor subscription](/pricing) service. Launch the newly installed app from your dashboard. If you encounter any login or connection issues, check our [IPTV Smarters authorization fix guide](/blog/iptv-smarters-failed-to-authorize).
 
 ### Phase 5: Initial Data Sync
 
@@ -1276,10 +1276,10 @@ If you are serious about live sports, **do not use Wi-Fi**. Buy a $15 Amazon Eth
 ## Frequently Asked Questions
 
 Q: 
-A: No. If you can follow a recipe or set up a new phone, you can set up IPTV on a Firestick. It takes about 10 minutes following our guide.
+A: No. If you can follow a recipe or set up a new phone, you can set up IPTV on a Firestick. It takes about 10 minutes following our guide. You can also view our general [installation instructions](/installation) for other devices.
 
 Q: 
-A: Using the Firestick and installing apps is 100% legal. The legality of the content depends on your local laws and the specific provider you use. We always recommend using a VPN for privacy.
+A: Using the Firestick and installing apps is 100% legal. The legality of the content depends on your local laws and the specific provider you use. We always recommend using a VPN for privacy. Have more questions? Visit our [IPTV FAQ page](/faq) or reach out to our [24/7 customer support](/contact).
 
 Q: 
 A: Yes. Our service provides every single World Cup match in 4K with multiple language commentary options. It is the best way to watch the tournament.
@@ -1306,12 +1306,12 @@ Get your credentials and start streaming in the next 10 minutes. Our service inc
     title: "Best IPTV Subscription Guide for 2026 | Choose the Right IPTV Service",
     description: "Choosing the right IPTV subscription requires understanding server stability and device compatibility. Find a premium, buffer-free service today.",
     date: "May 10, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/best-iptv-subscription-2026-guide.png",
     content: `## Introduction to IPTV in 2026
 
-IPTV has become one of the most popular ways to watch live TV, movies, sports, and on-demand entertainment online. As streaming technology continues to improve, many viewers are choosing IPTV subscriptions as a flexible alternative to traditional cable or satellite TV. However, with so many providers available, choosing the right subscription can feel confusing. Some services offer thousands of channels, while others focus on premium quality, sports, movies, or international content. This guide for 2026 will help you understand what to look for before choosing the best IPTV service for your needs.
+IPTV has become one of the most popular ways to watch live TV, movies, sports, and on-demand entertainment online. As streaming technology continues to improve, many viewers are choosing IPTV subscriptions as a flexible alternative to traditional cable or satellite TV. However, with so many providers available, choosing the right subscription can feel confusing. Some services offer thousands of channels, while others focus on premium quality, sports, movies, or international content. This guide for 2026 will help you understand what to look for before choosing the best IPTV service for your needs. Explore our [IPTVDoor subscription plans](/pricing) and view our full [20,000+ live channel list](/channels).
 
 ## What Is IPTV?
 
@@ -1334,7 +1334,7 @@ The best IPTV subscription should include the specific channels you actually wan
 Streaming quality is a decisive factor. A top-tier IPTV service should support HD, Full HD, and 4K content with stable servers and minimal buffering. A reliable subscription should perform flawlessly even during peak hours, ensuring fast channel loading and smooth playback during live events like the 2026 World Cup.
 
 ### 3. Verify Device Compatibility
-Your subscription must work on the hardware you already own. Most premium services support Smart TVs, Android boxes, Firesticks, smartphones, and laptops. Before buying, confirm that the service is compatible with your preferred IPTV player app to ensure a smooth setup process.
+Your subscription must work on the hardware you already own. Most premium services support Smart TVs, Android boxes, Firesticks, smartphones, and laptops. Before buying, confirm that the service is compatible with your preferred IPTV player app to ensure a smooth setup process. For device setup, consult our [Firestick setup guide](/blog/how-to-setup-iptv-on-firestick-2026) or [Apple TV setup guide](/blog/apple-tv-iptv-best-apps-setup-guide).
 
 ### 4. Compare Subscription Plans
 IPTV pricing varies based on the package and duration. While some services offer monthly plans, others provide 6-month or yearly subscriptions with better long-term value. When comparing plans, consider the number of device connections allowed and the quality of customer support. Often, a slightly higher price is worth the investment for better server stability and responsive help.
@@ -1352,7 +1352,7 @@ Sports fans should prioritize server stability and access to HD sports streams f
 
 ## Legality and Safety
 
-IPTV technology itself is legal, but your experience depends on using a provider that has the proper rights to distribute their content. We always recommend choosing legitimate, established services and avoiding providers that make unrealistic promises or lack transparent business practices.
+IPTV technology itself is legal, but your experience depends on using a provider that has the proper rights to distribute their content. We always recommend choosing legitimate, established services and avoiding providers that make unrealistic promises or lack transparent business practices. Read our full analysis on [Legal IPTV vs Illegal IPTV](/blog/legal-iptv-vs-illegal-iptv) and [How to Avoid IPTV Scams](/blog/how-to-choose-reliable-iptv-provider-scams-2026).
 
 ## Tips for a Better Experience
 
@@ -1360,7 +1360,7 @@ To enjoy the smoothest streaming in 2026, use a stable high-speed internet conne
 
 ## Conclusion
 
-Choosing the best IPTV subscription in 2026 depends on your specific needs and budget. A quality service provides stable streaming, device compatibility, and helpful support. By testing the service first and verifying the channel list, you can secure a flexible and enjoyable entertainment setup for your home.
+Choosing the best IPTV subscription in 2026 depends on your specific needs and budget. A quality service provides stable streaming, device compatibility, and helpful support. By testing the service first and verifying the channel list, you can secure a flexible and enjoyable entertainment setup for your home. Check our [installation guide](/installation), browse our [FAQ section](/faq), or reach out to our 24/7 [support team](/contact).
 
 [BUTTON](/pricing) START YOUR PREMIUM EXPERIENCE
 `
@@ -1368,17 +1368,17 @@ Choosing the best IPTV subscription in 2026 depends on your specific needs and b
   {
     id: "20",
     slug: "which-iptv-service-works-best",
-    title: "Which IPTV Service Works Best? | iscreenhd IPTV",
+    title: "Which IPTV Service Works Best? | IPTVDoor",
     description: "Discover which IPTV service works best. Learn how to choose a reliable provider based on streaming stability, picture quality, channels, and features.",
     date: "August 12, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/ChatGPT-Image-Oct-8-2025-06_17_55-PM-1024x683.png",
     content: `IPTV has changed the way many people watch television. Instead of relying exclusively on traditional cable or satellite services, viewers can stream live TV channels, movies, series, sports, and on-demand content over the internet.
 
 However, choosing an IPTV service can be challenging. Many providers advertise thousands of channels and high-quality streaming, but the actual viewing experience can vary significantly from one service to another.
 
-So, **which IPTV service works best?**
+So, **which IPTV service works best?** Learn how our platform compares in our [IPTV agency vs DIY guide](/blog/iptv-agency-vs-diy) and our [guide to avoiding IPTV scams](/blog/how-to-choose-reliable-iptv-provider-scams-2026).
 
 The answer depends on several factors, including streaming stability, picture quality, available content, device compatibility, customer support, and the quality of the provider's infrastructure.
 
@@ -1507,7 +1507,7 @@ Before subscribing, consider the following:
 * Is customer support available when you need it?
 * Does the price match the quality and features provided?
 
-For viewers considering **iscreenhd IPTV**, these are the same factors that should be used to evaluate whether the service is a good fit for their needs.
+For viewers considering [IPTVDoor](/pricing), these are the same factors that should be used to evaluate whether the service is a good fit for their needs. You can also read our [Best IPTV Subscription Guide 2026](/blog/best-iptv-subscription-guide-2026) for more details.
 
 ## Frequently Asked Questions
 
@@ -1545,20 +1545,20 @@ Your own internet connection is equally important, particularly when watching hi
 
 Choosing an IPTV service should be about more than finding the provider with the largest number of channels.
 
-A good service should offer a combination of .
+A good service should offer a combination of streaming stability, broad content selection, and responsive customer service. Check out our [IPTVDoor pricing plans](/pricing) or explore our [live channels list](/channels). For installation help, view our [step-by-step installation guide](/installation), or visit our [FAQ page](/faq) and [contact page](/contact) if you have any questions.
 
 Take the time to compare these factors based on your own viewing habits. Whether you primarily watch live television, movies, series, or sports, choosing a service that matches your needs can make the difference between a frustrating streaming experience and enjoyable everyday viewing.
 
-If you're evaluating **iscreenhd IPTV**, use the same criteria above to determine whether it meets your specific requirements and provides the experience you're looking for.
+If you're evaluating **IPTVDoor**, use the same criteria above to determine whether it meets your specific requirements and provides the experience you're looking for.
 `
   },
   {
     id: "21",
     slug: "iptv-agency-vs-diy",
-    title: "IPTV Agency vs DIY: Which IPTV Service Is Better? | iscreenhd IPTV",
+    title: "IPTV Agency vs DIY: Which IPTV Service Is Better? | IPTVDoor",
     description: "Compare using an IPTV agency vs a DIY setup. Learn the pros and cons of managed IPTV services, support, channel availability, and technical convenience.",
     date: "August 12, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/ChatGPT-Image-Sep-12-2025-05_23_43-PM-768x512.png",
     content: `Choosing an IPTV service is not always as simple as finding the provider with the largest channel list or the lowest subscription price.
@@ -1759,7 +1759,7 @@ A DIY solution can be more appealing to technically experienced users who prefer
 
 The most important thing is to choose an option that matches your technical abilities and actual viewing needs. If you need more help deciding, check out our [comprehensive guide to choosing the best IPTV subscription](/blog/best-iptv-subscription-guide-2026).
 
-If you are considering **iscreenhd IPTV**, evaluate it using the same criteria: streaming stability, content availability, device compatibility, features, pricing transparency, and customer support.
+If you are considering **IPTVDoor**, evaluate it using the same criteria: streaming stability, content availability, device compatibility, features, pricing transparency, and customer support.
 
 ## Frequently Asked Questions
 
@@ -1812,7 +1812,7 @@ Choosing between a managed IPTV service and a DIY setup ultimately comes down to
 
 A DIY configuration can be attractive for technically experienced users who enjoy customization and do not mind maintaining their own setup.
 
-For users who want a simpler experience, a managed service such as **iscreenhd IPTV** can be evaluated based on the quality of its streaming, content selection, device support, features, and customer service.
+For users who want a simpler experience, a managed service such as **IPTVDoor** can be evaluated based on the quality of its streaming, content selection, device support, features, and customer service.
 
 Whatever option you choose, focus on the actual quality and reliability of the service rather than simply choosing the provider with the biggest channel-count claim.
 `
@@ -1820,10 +1820,10 @@ Whatever option you choose, focus on the actual quality and reliability of the s
   {
     id: "22",
     slug: "how-to-choose-reliable-iptv-provider-scams-2026",
-    title: "How to Choose a Reliable IPTV Provider Without Getting Scammed in 2026 | iscreenhd IPTV",
+    title: "How to Choose a Reliable IPTV Provider Without Getting Scammed in 2026 | IPTVDoor",
     description: "Learn how to choose a reliable IPTV provider in 2026. Discover the warning signs of scams, evaluate streaming stability, and avoid unreliable subscriptions.",
     date: "August 12, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/ChatGPT-Image-Oct-8-2025-06_17_55-PM-1024x683.png",
     content: `Finding a reliable IPTV provider has become more challenging than ever. While IPTV streaming offers a flexible and modern alternative to traditional cable, the rapid growth of the market means there are countless services competing for your attention. 
@@ -1931,7 +1931,7 @@ Yes, IPTV technology is legal. However, users must ensure they subscribe to a pr
 
 Choosing a reliable IPTV provider in 2026 doesn't have to be a gamble. By watching out for scams, demanding transparency, and thoroughly testing services via trials, you can find a stable, high-quality viewing experience. Focus on streaming reliability and responsive support rather than falling for exaggerated channel counts.
 
-If you are evaluating **iscreenhd IPTV**, we encourage you to apply these exact same standards to ensure our service meets your needs and expectations.
+If you are evaluating **IPTVDoor**, we encourage you to apply these exact same standards to ensure our service meets your needs and expectations.
 `
   },
   {
@@ -1940,7 +1940,7 @@ If you are evaluating **iscreenhd IPTV**, we encourage you to apply these exact 
     title: "Legal IPTV vs Illegal IPTV: How to Tell the Difference",
     description: "Understand the difference between legal IPTV and illegal IPTV. Learn what makes an IPTV provider legitimate, how licensing works, and how to stay safe.",
     date: "August 12, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/legal-vs-illegal-iptv-hero.avif",
     content: `When exploring the world of internet television, one of the most common and confusing topics is the distinction between legal IPTV vs illegal IPTV. 
@@ -2062,7 +2062,7 @@ The line between legal and illegal IPTV comes down to one primary factor: author
 
 When you choose a legitimate IPTV service, you are paying for reliability, customer support, and the peace of mind that your data is secure and your service won't abruptly vanish. 
 
-As you evaluate different options in the market, including **iscreenhd IPTV**, always prioritize transparency, security, and a proven track record of reliable service.
+As you evaluate different options in the market, including **IPTVDoor**, always prioritize transparency, security, and a proven track record of reliable service.
 `
   },
   {
@@ -2071,7 +2071,7 @@ As you evaluate different options in the market, including **iscreenhd IPTV**, a
     title: "World Cup 2026 IPTV: Why Streams Crash and How to Prepare",
     description: "Discover why IPTV streams crash during World Cup 2026 matches. Learn how to prepare and troubleshoot buffering for stable live sports.",
     date: "August 12, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/world-cup-2026-stadium-1-1024x731.webp",
     content: `When the World Cup 2026 knockout stage begins, viewer excitement peaks. Unfortunately, for many viewers relying on internet streaming, this is also when their service is most likely to fail. 
@@ -2181,7 +2181,7 @@ When choosing an IPTV service, infrastructure matters more than an inflated chan
 
 However, it is important to acknowledge realistic limitations: **no provider can guarantee zero buffering under every circumstance**. The internet is a dynamic network, and uncontrollable factors like localized ISP outages can always occur. 
 
-If you're considering **iscreenhd IPTV** for major sporting events, evaluate the service by testing the channels you intend to watch during busy viewing periods before relying on it for an important match. You can review our available [pricing and plans](/pricing) or explore our features to see if our infrastructure aligns with your needs.
+If you're considering **IPTVDoor** for major sporting events, evaluate the service by testing the channels you intend to watch during busy viewing periods before relying on it for an important match. You can review our available [pricing and plans](/pricing) or explore our features to see if our infrastructure aligns with your needs.
 
 ## Frequently Asked Questions (FAQ)
 
@@ -2222,7 +2222,7 @@ Remember to prepare early, use an Ethernet connection where possible, and always
     title: "IPTV Smarters Failed to Authorize: Fix Login, Server URL and Xtream Codes Errors",
     description: "Fix IPTV Smarters 'Failed to Authorize' and login errors with this step-by-step troubleshooting guide. Learn how to correct Xtream Codes and server URL issues.",
     date: "August 12, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Troubleshooting",
     coverImage: "/blog/iptv-smarters-failed-to-authorize-fix.avif",
     content: `If you use IPTV Smarters (or IPTV Smarters Pro) to watch live television and movies, you may eventually encounter an error message stating **"Failed to Authorize"** or **"Authorization failed for above host."**
@@ -2369,7 +2369,7 @@ By following the troubleshooting steps outlined above, you can get back to strea
     title: "Best IPTV Players for 4K Streaming in 2026",
     description: "Discover the best IPTV players for 4K streaming in 2026. Compare TiviMate, IPTV Smarters, VLC, and more to find the right app for your Firestick or Smart TV.",
     date: "August 12, 2026",
-    author: "iscreenhd IPTV",
+    author: "IPTVDoor",
     category: "Guides",
     coverImage: "/blog/iptv-players-hero.png.avif",
     content: `When it comes to 4K IPTV streaming, the service you subscribe to is only half the equation. The other half is the software you use to play it. 
@@ -2475,7 +2475,7 @@ If you are experiencing issues with your 4K streams, do not immediately blame th
 
 ## Troubleshooting Common IPTV Player Problems
 
-If you have chosen a player and paired it with a reliable service like **iscreenhd IPTV**, you should enjoy a seamless experience. However, if technical issues arise, here is how to troubleshoot them:
+If you have chosen a player and paired it with a reliable service like **IPTVDoor**, you should enjoy a seamless experience. However, if technical issues arise, here is how to troubleshoot them:
 
 ### 1. 4K Buffering
 Buffering happens when your player processes the video faster than your network can download it. 
@@ -2539,7 +2539,7 @@ IPTV players are simply media playing applications; they are completely legal to
 
 Choosing the right IPTV player is a crucial step in building a premium 4K streaming setup. If you are using a Smart TV or Firestick,  is highly accessible. 
 
-Take the time to explore a few options to see which interface you prefer. Once you pair a high-quality player with a reliable provider like **iscreenhd IPTV** and a hardwired ethernet connection, you will unlock the true potential of modern 4K streaming. If you have questions about which player works best with our service, reach out to our [support team](/contact) today.
+Take the time to explore a few options to see which interface you prefer. Once you pair a high-quality player with a reliable provider like **IPTVDoor** and a hardwired ethernet connection, you will unlock the true potential of modern 4K streaming. If you have questions about which player works best with our service, reach out to our [support team](/contact) today.
 `
   }
 ];

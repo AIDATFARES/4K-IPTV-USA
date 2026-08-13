@@ -1,47 +1,126 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Tv, Smartphone, Laptop, MonitorPlay, Tablet, Radio } from "lucide-react";
+import { Check } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function DeviceSupport() {
-  const devices = [
-    { name: "Amazon Firestick / Fire TV", icon: Tv },
-    { name: "Smart TV (Samsung & LG)", icon: MonitorPlay },
-    { name: "Android TV & Box", icon: Tv },
-    { name: "Apple TV (tvOS)", icon: MonitorPlay },
-    { name: "iPhone & iPad (iOS)", icon: Smartphone },
-    { name: "Android Phones & Tablets", icon: Tablet },
-    { name: "MAG Box & Formuler", icon: Radio },
-    { name: "Windows PC & Mac", icon: Laptop },
-  ];
-
   return (
-    <section className="py-lg bg-surface-container-lowest border-y border-white/10 relative z-10 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-md text-center">
-        <span className="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">
-          Stream Everywhere — 100% Compatible with All Devices & Apps
-        </span>
-      </div>
+    <section className="py-20 bg-[#0c0f0f] text-white relative z-10 border-y border-white/10 overflow-hidden">
+      <div className="max-w-[1320px] mx-auto px-6">
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#d32f2f] mb-3 block">
+            MULTI-DEVICE COMPATIBILITY
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+            Our IPTV service supports{" "}
+            <Link
+              href="/installation"
+              className="text-[#d32f2f] hover:text-red-400 transition-colors"
+            >
+              all your favorite devices
+            </Link>
+          </h2>
+        </div>
 
-      <div className="flex overflow-hidden select-none [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <motion.div
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="flex flex-nowrap gap-md items-center whitespace-nowrap min-w-full"
-        >
-          {[...devices, ...devices].map((device, index) => {
-            const Icon = device.icon;
-            return (
-              <div
-                key={index}
-                className="glass-panel px-lg py-md rounded-xl border border-white/5 flex items-center gap-md text-on-surface hover:text-white hover:border-primary/40 transition-all shrink-0"
-              >
-                <Icon className="w-5 h-5 text-primary" />
-                <span className="font-title-md text-sm font-medium">{device.name}</span>
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left Column: Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center justify-center w-full"
+          >
+            <div className="relative w-full max-w-[550px] p-3 bg-white/5 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-md">
+              <Image
+                src="/setup-illustration.png"
+                alt="Supported IPTV Devices"
+                width={700}
+                height={500}
+                className="w-full h-auto object-contain rounded-2xl"
+              />
+            </div>
+          </motion.div>
+
+          {/* Right Column: Features List */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="space-y-8 w-full"
+          >
+            {/* Item 1 */}
+            <div className="flex gap-4 items-start group w-full">
+              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
+                <Check className="h-4 w-4 stroke-[3]" />
               </div>
-            );
-          })}
-        </motion.div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
+                  Smart TV, Smart Phone, Tablets, Android and TV BOX
+                </h3>
+                <p className="text-sm sm:text-base text-stone-300 leading-relaxed">
+                  You can use Our Server services on all Smart Phones & TVs, Android Box, and all devices that can play IPTV powered with different OS (Android, iOS, Windows & ...) via{" "}
+                  <Link
+                    href="/installation"
+                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                  >
+                    our installation guide
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+
+            {/* Item 2 */}
+            <div className="flex gap-4 items-start group w-full">
+              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
+                <Check className="h-4 w-4 stroke-[3]" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
+                  Mag Devices & Mag simulators
+                </h3>
+                <p className="text-sm sm:text-base text-stone-300 leading-relaxed">
+                  Just send us your Mac Address related to your MAG Device or your Mag simulator (like STB). We send you Mag portal and you have access to our{" "}
+                  <Link
+                    href="/channels"
+                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                  >
+                    channels playlist
+                  </Link>
+                  !
+                </p>
+              </div>
+            </div>
+
+            {/* Item 3 */}
+            <div className="flex gap-4 items-start group w-full">
+              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
+                <Check className="h-4 w-4 stroke-[3]" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
+                  Laptop & Computers
+                </h3>
+                <p className="text-sm sm:text-base text-stone-300 leading-relaxed">
+                  Our Server service is flexible and you can play line on almost all digital devices. You can install an{" "}
+                  <Link
+                    href="/installation"
+                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                  >
+                    IPTV player
+                  </Link>{" "}
+                  on your computer and enjoy watching IPTV.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

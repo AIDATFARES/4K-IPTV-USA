@@ -1,123 +1,225 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, HelpCircle, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import { ArrowRight, HelpCircle } from "lucide-react";
+
+const faqs = [
+  {
+    id: 1,
+    question: "1. What is IPTVDoor?",
+    answer: (
+      <>
+        IPTVDoor is a premium IPTV service that offers live TV, VOD movies, TV series, and sports channels in high-quality streaming, including 4K. Check out our{" "}
+        <Link
+          href="/channels"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          live TV channels
+        </Link>{" "}
+        and{" "}
+        <Link
+          href="#pricing"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          IPTV subscription plans
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    id: 2,
+    question: "2. Do I need a subscription to use IPTVDoor?",
+    answer: (
+      <>
+        Yes, a subscription is required. However, we offer a{" "}
+        <a
+          href="https://wa.me/213554246175?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV."
+          target="_blank"
+          rel="noreferrer"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          free trial
+        </a>{" "}
+        so you can test the service before committing to our{" "}
+        <Link
+          href="#pricing"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          subscription plans
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    id: 3,
+    question: "3. What devices are compatible with IPTVDoor?",
+    answer: (
+      <>
+        IPTVDoor works on Android TV, Firestick, Smart TVs, Android phones, tablets, and apps like Tivimate. Follow our step-by-step{" "}
+        <Link
+          href="/installation"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          installation guides
+        </Link>{" "}
+        to get started.
+      </>
+    ),
+  },
+  {
+    id: 4,
+    question: "4. Can I watch on multiple devices at the same time?",
+    answer: (
+      <>
+        Yes, we offer multi-device support. You can choose an{" "}
+        <Link
+          href="#pricing"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          IPTV subscription plan
+        </Link>{" "}
+        that allows streaming on more than one device simultaneously. Perfect for families or shared accounts.
+      </>
+    ),
+  },
+  {
+    id: 5,
+    question: "5. Can I watch sports on IPTVDoor?",
+    answer: (
+      <>
+        Absolutely. We offer a wide selection of live sports channels, including major leagues and international events. Explore our full{" "}
+        <Link
+          href="/channels"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          channels catalog
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    id: 6,
+    question: "6. What payment methods do you accept?",
+    answer: (
+      <>
+        We accept PayPal, cryptocurrency (such as Bitcoin), credit cards, and instant bank transfers for quick and secure payments. Contact our{" "}
+        <Link
+          href="/contact"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          support team
+        </Link>{" "}
+        for any payment inquiries.
+      </>
+    ),
+  },
+  {
+    id: 7,
+    question: "7. What kind of content is included?",
+    answer: (
+      <>
+        The service includes live TV channels, sports, movies, TV series, kids&apos; content, international channels, and more – all in HD or 4K quality. Learn more in our{" "}
+        <Link
+          href="/blog"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          IPTV articles & guides
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    id: 8,
+    question: "8. Do I need a VPN?",
+    answer: (
+      <>
+        A VPN is not required but is recommended in some regions to ensure unrestricted access and added privacy. Read our{" "}
+        <Link
+          href="/faq"
+          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+        >
+          FAQ knowledge base
+        </Link>{" "}
+        for further setup details.
+      </>
+    ),
+  },
+];
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const faqs = [
-    {
-      q: "What is iscreenhd IPTV and how does it work?",
-      a: "iscreenhd is a premium 4K IPTV service delivering over 50,000 live TV channels and 200,000+ movies & TV shows over high-speed internet. You simply install an IPTV app (such as IPTV Smarters, TiviMate, or XCIPTV) on your Smart TV, Firestick, phone, or PC and log in with your credentials.",
-    },
-    {
-      q: "Are Live Sports & PPV events available in 4K?",
-      a: "Yes! All major live sports leagues (Champions League, Premier League, La Liga, NBA, UFC, Formula 1, and global tournaments) are broadcast live in 4K Ultra HD at 60 FPS with zero buffering.",
-    },
-    {
-      q: "How fast will I receive my subscription credentials?",
-      a: "Activation is automated and instant! As soon as your order is confirmed, your login details (M3U Link, Xtream Codes API URL, Username & Password) are sent directly to your Email and WhatsApp within 5 minutes.",
-    },
-    {
-      q: "Which devices are supported?",
-      a: "iscreenhd supports Amazon Firestick, Fire TV, Samsung & LG Smart TVs, Android TV, Apple TV, iPhone, iPad, Android smartphones, MAG boxes, Formuler, Windows PC, and Mac.",
-    },
-    {
-      q: "Can I use my subscription on multiple devices simultaneously?",
-      a: "Our standard subscription includes 1 active connection. The 12-Month plan includes 2 simultaneous connections. Extra connection slots can be added upon request.",
-    },
-    {
-      q: "Do you offer a free trial?",
-      a: "Yes! You can test our service with a 24-hour test line by messaging our support team on WhatsApp.",
-    },
-  ];
-
   return (
-    <section className="py-xl relative z-10">
-      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
-        <div className="text-center max-w-2xl mx-auto mb-xl">
-          <motion.span
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-label-caps text-label-caps text-tertiary tracking-widest uppercase mb-xs block"
-          >
-            Got Questions?
-          </motion.span>
-          <motion.h2
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-semibold text-on-background mb-sm"
-          >
-            iscreenhd IPTV Frequently Asked Questions
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-body-lg text-body-lg text-on-surface-variant"
-          >
-            Everything you need to know about setting up and streaming with iscreenhd.
-          </motion.p>
+    <section className="py-20 bg-[#0c0f0f] text-white relative z-10 border-t border-white/10 overflow-hidden">
+      <div className="max-w-[1240px] mx-auto px-4 sm:px-6">
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            Frequently Asked Questions<br />(FAQ)
+          </h2>
+          <p className="text-stone-300 text-sm sm:text-base mt-5 leading-relaxed max-w-2xl mx-auto">
+            Find answers to common questions about our IPTV service, including{" "}
+            <Link
+              href="#pricing"
+              className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+            >
+              subscriptions
+            </Link>
+            ,{" "}
+            <Link
+              href="/installation"
+              className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+            >
+              devices
+            </Link>
+            , streaming quality, payments, and more. If you need further help, our{" "}
+            <Link
+              href="/contact"
+              className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+            >
+              support team
+            </Link>{" "}
+            is here for you.
+          </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-md">
-          {faqs.map((faq, index) => {
-            const isOpen = openIndex === index;
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="glass-panel rounded-xl border border-white/10 overflow-hidden"
-              >
-                <button
-                  onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full p-lg text-left flex justify-between items-center gap-md hover:bg-surface-container-high/50 transition-colors"
-                >
-                  <span className="font-title-md text-title-md text-on-surface font-medium flex items-center gap-xs">
-                    <HelpCircle className="w-5 h-5 text-primary shrink-0" />
-                    {faq.q}
-                  </span>
-                  <ChevronDown
-                    className={`w-5 h-5 text-on-surface-variant shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180 text-primary" : ""
-                    }`}
-                  />
-                </button>
+        {/* 2-Column FAQ Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 max-w-[1140px] mx-auto">
+          {faqs.map((faq, index) => (
+            <motion.div
+              key={faq.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
+              className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-red-500/40 transition-colors"
+            >
+              {/* Header Banner */}
+              <div className="bg-[#18202a] border-b border-white/10 px-5 py-4 flex items-center gap-3">
+                <HelpCircle className="w-5 h-5 text-red-500 shrink-0" />
+                <h3 className="text-base sm:text-lg font-bold text-white leading-snug">
+                  {faq.question}
+                </h3>
+              </div>
 
-                <AnimatePresence>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden border-t border-white/5 bg-surface-container-lowest/40"
-                    >
-                      <div className="p-lg font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                        {faq.a}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            );
-          })}
+              {/* Answer Content */}
+              <div className="p-5 sm:p-6 text-sm sm:text-base text-stone-300 leading-relaxed flex-1 bg-[#0f1419]/60">
+                <p>{faq.answer}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
 
-        <div className="mt-xl text-center">
+        {/* Bottom CTA to Knowledge Base */}
+        <div className="mt-12 text-center">
           <Link
             href="/faq"
-            className="glass-panel text-on-surface hover:text-white px-lg py-md rounded-full font-title-md text-body-sm font-semibold inline-flex items-center gap-xs hover:border-primary transition-all"
+            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#121620] border border-white/20 text-white font-bold text-xs sm:text-sm hover:bg-red-600 hover:border-red-600 transition-all duration-300 shadow-lg"
           >
-            View Complete FAQ Knowledge Base{" "}
+            <span>View Complete FAQ Knowledge Base</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

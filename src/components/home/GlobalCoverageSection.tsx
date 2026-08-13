@@ -81,7 +81,7 @@ export default function GlobalCoverageSection() {
   const marqueeCountries = [...ALL_COUNTRIES, ...ALL_COUNTRIES];
 
   return (
-    <section className="py-16 md:py-24 relative z-10 bg-[#060814] overflow-hidden border-y border-white/5">
+    <section className="py-16 md:py-24 relative z-10 bg-[#0c0f0f] overflow-hidden border-y border-white/5">
       {/* Top Infinite Marquee */}
       <div className="relative w-full border-b border-white/5 bg-[#080a15] overflow-hidden py-3 mb-16">
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#080a15] to-transparent z-10 pointer-events-none" />
@@ -99,10 +99,10 @@ export default function GlobalCoverageSection() {
                 height={13}
                 className="w-4 h-3 rounded-[2px] object-cover shadow-sm"
               />
-              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-widest whitespace-nowrap">
+              <span className="text-[11px] font-bold text-stone-400 uppercase tracking-widest whitespace-nowrap">
                 {country.name}
               </span>
-              <span className="text-slate-700 px-2">•</span>
+              <span className="text-stone-700 px-2">•</span>
             </div>
           ))}
         </div>
@@ -118,10 +118,10 @@ export default function GlobalCoverageSection() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center space-x-2 py-1.5 px-4 rounded-full border border-cyan-500/30 bg-[#120b29] mb-6 shadow-[0_0_15px_rgba(6,182,212,0.15)]"
+            className="inline-flex items-center space-x-2 py-1.5 px-4 rounded-full border border-red-500/30 bg-[#120b29] mb-6 shadow-[0_0_15px_rgba(6,182,212,0.15)]"
           >
-            <Globe className="w-3.5 h-3.5 text-cyan-400" />
-            <span className="text-[10px] font-bold text-cyan-300 uppercase tracking-widest">
+            <Globe className="w-3.5 h-3.5 text-red-400" />
+            <span className="text-[10px] font-bold text-red-300 uppercase tracking-widest">
               GLOBAL COVERAGE
             </span>
           </motion.div>
@@ -134,7 +134,7 @@ export default function GlobalCoverageSection() {
             className="text-4xl md:text-5xl font-extrabold font-sans uppercase tracking-tight mb-4"
           >
             <span className="text-white block mb-1">AVAILABLE IN</span>
-            <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 text-transparent bg-clip-text block">
+            <span className="bg-gradient-to-r from-red-400 via-purple-400 to-red-400 text-transparent bg-clip-text block">
               150+ COUNTRIES
             </span>
           </motion.h2>
@@ -158,12 +158,12 @@ export default function GlobalCoverageSection() {
               }}
               className={`px-5 py-2 rounded-full text-[10px] md:text-xs font-bold tracking-widest uppercase transition-all duration-300 border ${
                 activeRegion === region
-                  ? "bg-indigo-600/30 text-indigo-200 border-indigo-400/60 shadow-[0_0_20px_rgba(79,70,229,0.3)]"
-                  : "bg-[#0c0f1d]/80 text-slate-400 border-white/10 hover:border-white/20 hover:text-slate-200"
+                  ? "bg-red-600/30 text-red-200 border-red-400/60 shadow-[0_0_20px_rgba(79,70,229,0.3)]"
+                  : "bg-[#0c0f1d]/80 text-stone-400 border-white/10 hover:border-white/20 hover:text-stone-200"
               }`}
             >
               {region === "ALL" && activeRegion === "ALL" && (
-                <Globe className="w-3 h-3 inline mr-2 text-cyan-400 mb-0.5" />
+                <Globe className="w-3 h-3 inline mr-2 text-red-400 mb-0.5" />
               )}
               {region}
             </button>
@@ -181,7 +181,7 @@ export default function GlobalCoverageSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.2 }}
-                className="bg-[#0c0f1e]/90 border border-white/10 hover:border-cyan-500/40 hover:bg-[#12162d] rounded-xl px-3.5 py-2.5 flex items-center gap-3 transition-all cursor-default group shadow-sm"
+                className="bg-[#0c0f1e]/90 border border-white/10 hover:border-red-500/40 hover:bg-[#12162d] rounded-xl px-3.5 py-2.5 flex items-center gap-3 transition-all cursor-default group shadow-sm"
               >
                 <img
                   src={`https://flagcdn.com/w40/${country.code}.png`}
@@ -192,7 +192,7 @@ export default function GlobalCoverageSection() {
                   height={15}
                   className="w-5 h-auto rounded-[2px] object-cover shadow-sm group-hover:scale-110 transition-transform"
                 />
-                <span className="text-xs font-semibold text-slate-200 group-hover:text-white truncate">
+                <span className="text-xs font-semibold text-stone-200 group-hover:text-white truncate">
                   {country.name}
                 </span>
               </motion.div>
@@ -205,10 +205,10 @@ export default function GlobalCoverageSection() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-center mt-8">
             <button
               onClick={() => setIsExpanded(true)}
-              className="flex items-center space-x-2 px-6 py-2.5 rounded-full border border-white/15 bg-[#0c0f1e] text-xs font-bold text-slate-300 hover:text-white hover:border-cyan-500/40 transition-colors shadow-md"
+              className="flex items-center space-x-2 px-6 py-2.5 rounded-full border border-white/15 bg-[#0c0f1e] text-xs font-bold text-stone-300 hover:text-white hover:border-red-500/40 transition-colors shadow-md"
             >
               <span>SHOW ALL COUNTRIES</span>
-              <ChevronDown className="w-4 h-4 text-cyan-400" />
+              <ChevronDown className="w-4 h-4 text-red-400" />
             </button>
           </motion.div>
         )}
@@ -231,10 +231,10 @@ export default function GlobalCoverageSection() {
                 height={13}
                 className="w-4 h-3 rounded-[2px] object-cover shadow-sm"
               />
-              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-widest whitespace-nowrap">
+              <span className="text-[11px] font-bold text-stone-400 uppercase tracking-widest whitespace-nowrap">
                 {country.name}
               </span>
-              <span className="text-slate-700 px-2">•</span>
+              <span className="text-stone-700 px-2">•</span>
             </div>
           ))}
         </div>

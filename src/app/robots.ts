@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://worldcupiptv.us/sitemap.xml',
+    sitemap: 'https://dooriptv.shop/sitemap.xml',
   };
 }

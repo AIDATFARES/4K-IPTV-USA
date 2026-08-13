@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function BrandLogo({ compact = false }: { compact?: boolean }) {
   return (
     <Image
-      alt="iscreenhd IPTV"
-      className={`block shrink-0 object-cover object-center brightness-110 contrast-110 drop-shadow-[0_0_12px_rgba(34,211,238,0.25)] ${compact ? "h-11 w-32" : "h-16 w-48"}`}
-      src="/iscreenhd-logo.webp"
+      alt="IPTVDoor"
+      className={`block shrink-0 object-contain object-left drop-shadow-[0_2px_10px_rgba(211,47,47,0.2)] ${compact ? "h-11 w-32" : "h-16 w-48"}`}
+      src="/iptvdoor-new-logo-v2.png"
       width={192}
       height={64}
       priority

@@ -113,29 +113,29 @@
 
 @layer components {
   .glass-panel {
-    background: rgba(22, 27, 34, 0.6);
+    background: rgba(30, 32, 32, 0.6);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
   .text-glow {
-    text-shadow: 0 0 20px rgba(184, 195, 255, 0.3);
+    text-shadow: 0 0 20px rgba(211, 47, 47, 0.3);
   }
   .btn-glow:hover {
-    box-shadow: 0 0 30px rgba(255, 85, 40, 0.5);
+    box-shadow: 0 0 30px rgba(211, 47, 47, 0.5);
   }
 
   .btn-primary-voltra {
-    background: linear-gradient(135deg, #FF5528 0%, #FF2A00 100%);
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
     color: #ffffff;
     font-weight: 700;
     letter-spacing: 0.04em;
-    border-radius: 9999px;
-    box-shadow: 0 4px 20px rgba(255, 65, 30, 0.45);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.45);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .btn-primary-voltra:hover {
-    box-shadow: 0 6px 30px rgba(255, 65, 30, 0.75);
+    box-shadow: 0 6px 30px rgba(16, 185, 129, 0.75);
     transform: translateY(-2px);
   }
   .btn-primary-voltra:active {
@@ -143,19 +143,113 @@
   }
 
   .btn-secondary-voltra {
-    background: rgba(22, 27, 34, 0.7);
+    background: rgba(30, 32, 32, 0.7);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: #e1e2eb;
     font-weight: 600;
-    border-radius: 9999px;
+    border-radius: var(--radius);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .btn-secondary-voltra:hover {
     border-color: rgba(255, 255, 255, 0.35);
     color: #ffffff;
     transform: translateY(-2px);
+  }
+
+  /* -------------------------------------------------------------
+     Page-Type Specific Typography & Text Formatting System
+     ------------------------------------------------------------- */
+  
+  /* 1. MARKETING / SALES PAGES (Home, Pricing, Reseller, Channels) */
+  .text-format-marketing h1 {
+    @apply font-black uppercase tracking-tight text-white leading-tight text-3xl sm:text-5xl lg:text-6xl;
+  }
+  .text-format-marketing h2 {
+    @apply font-black uppercase tracking-tight text-white text-2xl sm:text-4xl;
+  }
+  .text-format-marketing h3 {
+    @apply font-extrabold uppercase tracking-wide text-white text-lg sm:text-xl;
+  }
+  .text-format-marketing p {
+    @apply text-stone-300 leading-relaxed text-sm sm:text-base font-normal;
+  }
+  .text-format-marketing strong, 
+  .text-format-marketing b {
+    @apply font-bold text-white;
+  }
+  .text-format-marketing mark,
+  .text-format-marketing .text-highlight {
+    @apply bg-transparent text-red-500 font-extrabold;
+  }
+  .text-format-marketing .badge-text {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-red-500/30 bg-red-500/10 px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-red-400;
+  }
+
+  /* 2. BLOG & EDITORIAL PAGES (Blog listing, Article detail) */
+  .text-format-blog h1 {
+    @apply font-bold tracking-tight text-white leading-snug text-3xl sm:text-4xl md:text-5xl capitalize;
+  }
+  .text-format-blog h2 {
+    @apply font-bold text-white tracking-normal mt-10 mb-4 text-xl sm:text-2xl border-b border-white/10 pb-2.5;
+  }
+  .text-format-blog h3 {
+    @apply font-semibold text-white tracking-normal mt-7 mb-3 text-lg sm:text-xl;
+  }
+  .text-format-blog p {
+    @apply text-stone-300 leading-8 text-base sm:text-lg mb-6 font-normal tracking-wide;
+  }
+  .text-format-blog strong, 
+  .text-format-blog b {
+    @apply font-bold text-white bg-white/[0.04] px-1 py-0.5 rounded;
+  }
+  .text-format-blog em,
+  .text-format-blog i {
+    @apply italic text-stone-200;
+  }
+  .text-format-blog a {
+    @apply text-red-400 font-medium underline underline-offset-4 decoration-red-500/40 hover:text-red-300 hover:decoration-red-400 transition-colors;
+  }
+
+  /* 3. TECHNICAL GUIDES & INSTALLATION PAGES */
+  .text-format-technical h1 {
+    @apply font-black uppercase tracking-tight text-white text-3xl sm:text-5xl;
+  }
+  .text-format-technical h2 {
+    @apply font-extrabold tracking-tight text-white text-xl sm:text-3xl mt-8 mb-4 flex items-center gap-3;
+  }
+  .text-format-technical h3 {
+    @apply font-bold text-white text-lg sm:text-xl mt-6 mb-2;
+  }
+  .text-format-technical p {
+    @apply text-stone-300 leading-7 text-sm sm:text-base mb-4 font-normal;
+  }
+  .text-format-technical code,
+  .text-format-technical pre {
+    @apply font-mono text-red-300 bg-[#161a23] px-2.5 py-1 rounded-md border border-white/10 text-xs sm:text-sm font-medium tracking-wide shadow-inner;
+  }
+  .text-format-technical strong,
+  .text-format-technical b {
+    @apply font-bold text-white underline decoration-emerald-500/50 decoration-2 underline-offset-2;
+  }
+
+  /* 4. LEGAL & POLICY DOCUMENTS */
+  .text-format-legal h1 {
+    @apply font-black uppercase tracking-tight text-white text-3xl sm:text-4xl lg:text-5xl;
+  }
+  .text-format-legal h2 {
+    @apply font-bold text-white text-xl sm:text-2xl tracking-normal mt-8 mb-3 border-l-4 border-red-500 pl-3;
+  }
+  .text-format-legal p {
+    @apply text-stone-300 leading-7 font-normal text-sm sm:text-base mb-4 tracking-normal;
+  }
+  .text-format-legal strong,
+  .text-format-legal b {
+    @apply font-semibold text-white;
+  }
+  .text-format-legal a {
+    @apply font-semibold text-red-400 hover:text-red-300 transition-colors underline underline-offset-2;
   }
 }
 

@@ -9,7 +9,7 @@ export default function TopFeatureBar() {
     { value: 7, label: "In Business", prefix: "", suffix: " Years" },
     { value: 7500, label: "Satisfied customers", prefix: "+", suffix: "" },
     { value: 120000, label: "Films & Series", prefix: "+", suffix: "" },
-    { value: 30000, label: "Channels", prefix: "+", suffix: "" },
+    { value: 50000, label: "Channels", prefix: "+", suffix: "" },
   ];
 
   const highlights = [
@@ -41,7 +41,7 @@ export default function TopFeatureBar() {
   ];
 
   return (
-    <section className="bg-[#080b15] border-y border-white/10 relative z-10">
+    <section className="bg-[#0c0f0f] border-y border-white/10 relative z-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-2 gap-8 border-b border-white/[0.08] py-10 text-center sm:grid-cols-4 sm:gap-4 sm:py-12">
           {stats.map((stat, index) => (
@@ -53,7 +53,7 @@ export default function TopFeatureBar() {
               transition={{ duration: 0.4, delay: index * 0.08 }}
             >
               <AnimatedStat {...stat} />
-              <span className="mt-1 block text-sm font-medium text-slate-300">{stat.label}</span>
+              <span className="mt-1 block text-sm font-medium text-stone-300">{stat.label}</span>
             </motion.div>
           ))}
         </div>
@@ -68,16 +68,16 @@ export default function TopFeatureBar() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="bg-[#0f1322]/90 border border-white/10 rounded-xl p-3.5 sm:p-4 flex items-center gap-3.5 hover:border-cyan-500/40 transition-all duration-300 group"
+                className="bg-[#121414]/90 border border-white/10 rounded-xl p-3.5 sm:p-4 flex items-center gap-3.5 hover:border-red-500/40 transition-all duration-300 group"
               >
-                <div className="p-2.5 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 group-hover:scale-110 transition-transform shrink-0">
+                <div className="p-2.5 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 group-hover:scale-110 transition-transform shrink-0">
                   <Icon className="w-5 h-5" strokeWidth={2} />
                 </div>
                 <div className="min-w-0">
                   <p className="text-xs sm:text-sm font-bold text-white leading-tight truncate">
                     {item.title}
                   </p>
-                  <p className="text-[11px] text-slate-400 truncate mt-0.5">{item.desc}</p>
+                  <p className="text-[11px] text-stone-400 truncate mt-0.5">{item.desc}</p>
                 </div>
               </motion.div>
             );

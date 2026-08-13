@@ -14,11 +14,11 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<import('next').Metadata> {
   const resolvedParams = await params;
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
-  
+
   if (!post) {
-    return { title: 'Post Not Found | iscreenhd IPTV' };
+    return { title: 'Post Not Found | IPTVDoor' };
   }
-  
+
   return {
     title: post.title,
     description: post.description,
@@ -37,8 +37,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   }
 
   return (
-    <main className="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-[1024px] mx-auto w-full relative z-10">
-      <Link href="/blog" className="inline-flex items-center text-primary hover:text-primary-container mb-8 transition-colors group">
+    <main className="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-[1024px] mx-auto w-full relative z-10 text-format-blog">
+      <Link href="/blog" className="inline-flex items-center text-primary hover:text-primary-container mb-8 transition-colors group font-semibold">
         <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
         Back to Blog
       </Link>
@@ -83,17 +83,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
-              h2: ({node, ...props}) => <h2 className="text-2xl font-bold mt-12 mb-6 text-on-surface" {...props} />,
-              h3: ({node, ...props}) => <h3 className="text-xl font-semibold mt-8 mb-4 text-on-surface" {...props} />,
-              p: ({node, ...props}) => <p className="mb-6 leading-relaxed" {...props} />,
-              ul: ({node, ...props}) => <ul className="list-disc pl-6 mb-6 space-y-2" {...props} />,
-              ol: ({node, ...props}) => <ol className="list-decimal pl-6 mb-6 space-y-2" {...props} />,
-              a: ({node, ...props}) => <a className="text-primary hover:underline" {...props} />,
-              blockquote: ({node, ...props}) => <blockquote className="border-l-4 border-primary pl-4 py-1 mb-6 italic bg-surface-container/30 rounded-r" {...props} />,
-              table: ({node, ...props}) => <div className="overflow-x-auto mb-8"><table className="w-full text-left border-collapse" {...props} /></div>,
-              th: ({node, ...props}) => <th className="border-b border-outline-variant py-3 px-4 font-semibold text-on-surface bg-surface-container" {...props} />,
-              td: ({node, ...props}) => <td className="border-b border-outline-variant/30 py-3 px-4" {...props} />,
-              img: ({node, alt, src, ...props}) => (
+              h2: ({ node, ...props }) => <h2 className="text-2xl font-bold mt-12 mb-6 text-on-surface" {...props} />,
+              h3: ({ node, ...props }) => <h3 className="text-xl font-semibold mt-8 mb-4 text-on-surface" {...props} />,
+              p: ({ node, ...props }) => <p className="mb-6 leading-relaxed" {...props} />,
+              ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-6 space-y-2" {...props} />,
+              ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-6 space-y-2" {...props} />,
+              a: ({ node, ...props }) => <a className="text-red-500 hover:text-red-400 no-underline font-semibold transition-colors" {...props} />,
+              blockquote: ({ node, ...props }) => <blockquote className="border-l-4 border-primary pl-4 py-1 mb-6 italic bg-surface-container/30 rounded-r" {...props} />,
+              table: ({ node, ...props }) => <div className="overflow-x-auto mb-8"><table className="w-full text-left border-collapse" {...props} /></div>,
+              th: ({ node, ...props }) => <th className="border-b border-outline-variant py-3 px-4 font-semibold text-on-surface bg-surface-container" {...props} />,
+              td: ({ node, ...props }) => <td className="border-b border-outline-variant/30 py-3 px-4" {...props} />,
+              img: ({ node, alt, src, ...props }) => (
                 <div className="my-8 flex flex-col items-center">
                   <img src={src} alt={alt} className="rounded-xl shadow-lg max-w-full" {...props} />
                   {alt && <span className="text-sm text-center block mt-2 opacity-70">{alt}</span>}
