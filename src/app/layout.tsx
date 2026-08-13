@@ -27,11 +27,11 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "iscreenhd IPTV - Premium 4K Streaming Services",
   description: "Ultimate 4K IPTV Experience. Access 20,000+ premium live channels and a massive VOD library.",
-  metadataBase: new URL("https://iscreenhd.vercel.app"),
+  metadataBase: new URL("https://www.iscreenhd-iptv.online"),
   openGraph: {
     title: "iscreenhd IPTV - Premium 4K Streaming",
     description: "Ultimate 4K IPTV Experience. Access 20,000+ premium live channels and a massive VOD library.",
-    url: "https://iscreenhd.vercel.app",
+    url: "https://www.iscreenhd-iptv.online",
     siteName: "iscreenhd IPTV",
     images: [
       {
