@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Geist, Chivo, JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
-import { Globe } from "lucide-react";
 import "./globals.css";
 
 import Navbar from "@/components/layout/Navbar";
@@ -104,42 +103,41 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-400 pb-1.5">Navigation</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">NAVIGATION</span></p>
               <ul className="space-y-3 font-body-sm text-sm">
                 <li><Link className="text-stone-400 transition-colors hover:text-white" href="/">Home</Link></li>
                 <li><Link className="text-stone-400 transition-colors hover:text-white" href="/pricing">Pricing</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/installation">Installation</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/channels">Channels List</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/contact">Contact Support</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/reseller">Reseller</Link></li>
+                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/contact">Contact</Link></li>
+                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/#how-it-works">How It Works</Link></li>
+                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/faq">FAQ</Link></li>
+                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/blog">Blog</Link></li>
               </ul>
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-400 pb-1.5">Service</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">SERVICE</span></p>
               <ul className="space-y-3 font-body-sm text-sm">
                 <li><Link className="text-stone-400 transition-colors hover:text-white" href="/pricing">Get Started</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/reseller">Reseller Program</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="https://wa.me/213554246175">WhatsApp</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="mailto:support@dooriptv.shop">Email</Link></li>
+                <li><a className="text-stone-400 transition-colors hover:text-white" href="https://wa.me/213554246175" target="_blank" rel="noreferrer">WhatsApp</a></li>
+                <li><a className="text-stone-400 transition-colors hover:text-white" href="mailto:support@dooriptv.shop">Email</a></li>
                 <li><Link className="text-stone-400 transition-colors hover:text-white" href="/channels">Channels</Link></li>
                 <li><Link className="text-stone-400 transition-colors hover:text-white" href="/installation">Setup Guide</Link></li>
               </ul>
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-400 pb-1.5">Legal</span></p>
-              <ul className="space-y-3 text-sm text-stone-400">
-                <li><Link className="transition-colors hover:text-white" href="/privacy-policy">Privacy Policy</Link></li>
-                <li><Link className="transition-colors hover:text-white" href="/refund-policy">Refund Policy</Link></li>
-                <li><Link className="transition-colors hover:text-white" href="#">Disclaimer</Link></li>
-                <li><Link className="transition-colors hover:text-white" href="/dmca">DMCA</Link></li>
-                <li><Link className="transition-colors hover:text-white" href="#">Cookie Policy</Link></li>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">LEGAL</span></p>
+              <ul className="space-y-3 text-sm">
+                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/privacy-policy">Privacy Policy</Link></li>
+                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/refund-policy">Refund Policy</Link></li>
+                <li><Link className="text-stone-400 transition-colors hover:text-white" href="#">Disclaimer</Link></li>
+                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/dmca">DMCA</Link></li>
+                <li><Link className="text-stone-400 transition-colors hover:text-white" href="#">Cookie Policy</Link></li>
               </ul>
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-400 pb-1.5">Payment</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">PAYMENT</span></p>
               <ul className="space-y-3 text-sm text-stone-400">
                 <li>PayPal</li>
                 <li>Credit Card</li>
@@ -156,10 +154,6 @@ export default function RootLayout({
                 <Link className="rounded-full border border-white/10 px-4 py-2 transition-colors hover:bg-white/5 hover:text-white" href="/dmca">DMCA</Link>
                 <Link className="rounded-full border border-white/10 px-4 py-2 transition-colors hover:bg-white/5 hover:text-white" href="#">Cookie Policy</Link>
               </div>
-              <p className="flex items-center gap-2 whitespace-nowrap font-bold uppercase tracking-widest text-stone-300">
-                <Globe className="h-4 w-4 text-blue-500" />
-                Built for the World Cup 2026
-              </p>
             </div>
           </div>
         </footer>

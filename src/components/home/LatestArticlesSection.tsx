@@ -5,19 +5,19 @@ import { blogPosts } from "@/data/blog";
 import { ArrowRight } from "lucide-react";
 
 export default function LatestArticlesSection() {
-  // Select 3 featured articles from our blog dataset
+  // Select featured articles from our blog dataset
   const featuredSlugs = [
-    "how-to-setup-iptv-on-firestick-2026",
-    "apple-tv-iptv-best-apps-setup-guide",
-    "world-cup-2026-biggest-football-tournament-history",
+    "iptv-epg-wrong-time-time-zone",
+    "iptv-buffering-only-at-night",
+    "iptv-channels-load-but-wont-play",
   ];
 
   const latestPosts = featuredSlugs
     .map((slug) => blogPosts.find((p) => p.slug === slug))
     .filter(Boolean) as typeof blogPosts;
 
-  // Fallback to first 3 posts if mapping fails
-  const displayPosts = latestPosts.length === 3 ? latestPosts : blogPosts.slice(0, 3);
+  // Fallback to all available blog posts
+  const displayPosts = latestPosts.length > 0 ? latestPosts : blogPosts;
 
   return (
     <section className="py-20 bg-[#0c0f0f] text-white relative z-10 border-t border-white/10 overflow-hidden">
@@ -37,7 +37,7 @@ export default function LatestArticlesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-14">
+        <div className={`grid gap-8 mb-14 ${displayPosts.length === 1 ? 'grid-cols-1 max-w-lg mx-auto' : displayPosts.length === 2 ? 'grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}>
           {displayPosts.map((post) => (
             <Link href={`/blog/${post.slug}`} key={post.id}>
               <article className="bg-[#121414] rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:-translate-y-2 transition-all duration-300 h-full border border-white/10 hover:border-[#d32f2f]/50 shadow-xl">
