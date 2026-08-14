@@ -15,3 +15,5 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+// Force Vercel deployment update for www.dooriptv.shop canonical domain alignment
+
