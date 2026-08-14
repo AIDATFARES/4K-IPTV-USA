@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function MovieStrips() {
   const row1 = [
@@ -46,17 +43,13 @@ export default function MovieStrips() {
 
       {/* Top Strip (Right to Left) */}
       <div className="relative flex w-max items-center">
-        <motion.div
-          className="flex gap-4 md:gap-6 px-2 md:px-3"
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{ ease: "linear", duration: 50, repeat: Infinity }}
-        >
+        <div className="flex gap-4 md:gap-6 px-2 md:px-3 animate-marquee" style={{ animationDuration: '50s' }}>
           {[...row1, ...row1].map((movie, i) => (
             <div key={i} className="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[300px] relative rounded-md overflow-hidden shadow-2xl border border-white/5 hover:scale-105 hover:border-white/30 hover:z-10 transition-all duration-300">
               <Image src={`/movies/${movie}`} alt="Movie Poster" fill sizes="(max-width: 640px) 140px, (max-width: 1024px) 180px, 200px" className="object-cover" />
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
 
       {/* Middle Text */}
@@ -68,19 +61,14 @@ export default function MovieStrips() {
 
       {/* Bottom Strip (Left to Right) */}
       <div className="relative flex w-max items-center">
-        <motion.div
-          className="flex gap-4 md:gap-6 px-2 md:px-3"
-          animate={{ x: ["-50%", "0%"] }}
-          transition={{ ease: "linear", duration: 50, repeat: Infinity }}
-        >
+        <div className="flex gap-4 md:gap-6 px-2 md:px-3 animate-marquee-reverse" style={{ animationDuration: '50s' }}>
           {[...row2, ...row2].map((movie, i) => (
             <div key={i} className="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[300px] relative rounded-md overflow-hidden shadow-2xl border border-white/5 hover:scale-105 hover:border-white/30 hover:z-10 transition-all duration-300">
               <Image src={`/movies/${movie}`} alt="Movie Poster" fill sizes="(max-width: 640px) 140px, (max-width: 1024px) 180px, 200px" className="object-cover" />
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
-      
       
       {/* Gradient Masks */}
       <div className="absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none" />

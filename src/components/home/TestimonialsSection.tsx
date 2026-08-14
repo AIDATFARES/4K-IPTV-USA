@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Globe2, Headphones, RefreshCw, ShieldCheck, Star, Trophy, Tv, Users } from "lucide-react";
 
 const reviewImages = [
@@ -33,13 +30,13 @@ export default function TestimonialsSection() {
           <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/40 bg-amber-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.15em] text-amber-300">
             <Trophy className="h-3 w-3" /> Verified IPTVDoor reviews
           </span>
-          <h2 className="mt-6 text-4xl font-black uppercase leading-[0.98] tracking-tight text-white sm:text-5xl">
+          <h2 className="mt-6 text-4xl font-black uppercase leading-[0.98] tracking-tight text-white sm:text-5xl animate-fade-up">
             <span className="block">Real Reviews from</span>
             <span className="mt-1 block bg-gradient-to-r from-red-400 via-red-400 to-red-400 bg-clip-text text-transparent">
               IPTVDoor Subscribers
             </span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400">
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400 animate-fade-up" style={{ animationDelay: '0.1s' }}>
             Discover why viewers around the world choose IPTVDoor for reliable live channels, movies, series, and responsive support.
           </p>
         </div>
@@ -48,30 +45,26 @@ export default function TestimonialsSection() {
           {metrics.map((metric, index) => {
             const Icon = metric.icon;
             return (
-              <motion.div
+              <div
                 key={metric.label}
-                initial={{ opacity: 0, y: 14 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.06 }}
-                className="rounded-xl border border-white/10 bg-[#10131e]/90 px-3 py-4 text-center shadow-[0_0_20px_rgba(0,0,0,0.18)]"
+                className="rounded-xl border border-white/10 bg-[#10131e]/90 px-3 py-4 text-center shadow-[0_0_20px_rgba(0,0,0,0.18)] animate-fade-up"
+                style={{ animationDelay: `${0.2 + (index * 0.06)}s`, animationFillMode: 'both' }}
               >
                 <Icon className={`mx-auto h-4 w-4 ${metric.tone}`} />
                 <span className="mt-2 block text-base font-bold text-white">{metric.value}</span>
                 <small className="mt-0.5 block text-[8px] font-bold uppercase tracking-wide text-stone-500">
                   {metric.label}
                 </small>
-              </motion.div>
+              </div>
             );
           })}
         </div>
 
         {/* Infinite Image Carousel of Real Reviews (Without background) */}
         <div className="mt-11 flex overflow-hidden select-none [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)] py-4">
-          <motion.div
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-            className="flex min-w-full gap-6 px-4"
+          <div
+            className="flex min-w-full gap-6 px-4 animate-marquee"
+            style={{ animationDuration: '40s' }}
           >
             {[...reviewImages, ...reviewImages, ...reviewImages].map((img, index) => (
               <div
@@ -87,15 +80,15 @@ export default function TestimonialsSection() {
                 />
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center animate-fade-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
           <a
             href="https://wa.me/213554246175?text=Hello%2C%20I%20would%20like%20a%20free%20trial%20for%20iptvdoor%20IPTV."
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-red-600 px-7 py-4 text-sm font-extrabold text-white shadow-[0_0_28px_rgba(211,47,47,0.42)] transition-transform hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-red-600 px-7 py-4 text-sm font-extrabold text-white shadow-[0_0_28px_rgba(211,47,47,0.42)] transition-transform hover:-translate-y-0.5 hover:scale-105"
           >
             <Trophy className="h-4 w-4" /> Get Your Free Trial
           </a>

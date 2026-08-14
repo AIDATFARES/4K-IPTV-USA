@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Geist, Chivo, JetBrains_Mono } from "next/font/google";
+import { Inter, Geist } from "next/font/google";
 import Link from "next/link";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import "./globals.css";
@@ -18,20 +18,6 @@ const geist = Geist({
   subsets: ["latin"],
   display: "swap",
 });
-
-const chivo = Chivo({
-  variable: "--font-chivo",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-
 
 export const metadata: Metadata = {
   title: "IPTVDoor - Premium 4K Streaming Services",
@@ -78,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable} ${geist.variable} ${chivo.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`dark ${inter.variable} ${geist.variable}`}>
       <head>
         <link rel="preload" href="/hero-custom-bg.webp" as="image" type="image/webp" fetchPriority="high" />
       </head>

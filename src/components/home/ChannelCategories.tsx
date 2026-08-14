@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Check, Monitor, Globe2, Tv, Headphones } from "lucide-react";
 import Link from "next/link";
 
@@ -48,19 +45,16 @@ export default function ChannelCategories() {
             <span className="text-[#d32f2f] text-sm font-bold tracking-[0.2em] uppercase">Premium Quality</span>
             <span className="h-px w-8 bg-gradient-to-l from-transparent to-[#d32f2f]"></span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight">
+          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight animate-fade-up">
             We Are Proud to Offer the <br className="hidden md:block" />
             <span className="text-[#d32f2f]">Premium IPTV Service.</span>
           </h2>
         </div>
 
         {/* White Feature Box */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-white rounded-2xl md:rounded-3xl p-8 md:p-12 mb-20 shadow-xl border border-stone-200"
+        <div 
+          className="bg-white rounded-2xl md:rounded-3xl p-8 md:p-12 mb-20 shadow-xl border border-stone-200 animate-fade-up"
+          style={{ animationDelay: '0.1s', animationFillMode: 'both' }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
             {features.map((feature, i) => {
@@ -78,15 +72,12 @@ export default function ChannelCategories() {
               );
             })}
           </div>
-        </motion.div>
+        </div>
 
         {/* Pricing Intro section */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center mb-16"
+        <div 
+          className="text-center mb-16 animate-fade-up"
+          style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
         >
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#d32f2f] mb-6 tracking-tight">
             IPTVDoor IPTV subscription prices
@@ -97,15 +88,12 @@ export default function ChannelCategories() {
           <h3 className="text-2xl md:text-[28px] font-semibold text-white">
             High-Quality IPTV Servers <span className="text-[#d32f2f]">with 24/7 Uptime</span> and Zero Buffering!
           </h3>
-        </motion.div>
+        </div>
 
         {/* 3x2 Grid of Feature Pills */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[1100px] mx-auto"
+        <div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[1100px] mx-auto animate-fade-up"
+          style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
         >
           {checks.map((text, i) => (
             <div key={i} className="flex items-center gap-4 bg-transparent border border-[#3b3552] rounded-full py-4 px-6 hover:border-[#d32f2f] transition-colors duration-300 group">
@@ -113,7 +101,7 @@ export default function ChannelCategories() {
               <span className="text-sm md:text-[15px] font-bold text-white transition-colors">{text}</span>
             </div>
           ))}
-        </motion.div>
+        </div>
 
       </div>
     </section>

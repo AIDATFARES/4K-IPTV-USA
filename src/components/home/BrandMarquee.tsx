@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 interface BrandMarqueeProps {
   imagesFolder?: string;
@@ -34,14 +31,8 @@ export default function BrandMarquee({
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0c0f0f] to-transparent z-10 pointer-events-none" />
       
       {/* The scrolling container */}
-      <motion.div
-        className="flex gap-6 md:gap-8 px-6 items-center w-max"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{
-          ease: "linear",
-          duration: brandList.length < 10 ? 25 : 40,
-          repeat: Infinity,
-        }}
+      <div
+        className={`flex gap-6 md:gap-8 px-6 items-center w-max ${brandList.length < 10 ? 'animate-marquee-fast' : 'animate-marquee'}`}
       >
         {repeatList.map((brand, i) => (
           <div 
@@ -59,7 +50,7 @@ export default function BrandMarquee({
             </div>
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

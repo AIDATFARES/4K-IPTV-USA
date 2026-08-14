@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, HelpCircle } from "lucide-react";
 
@@ -157,10 +154,10 @@ export default function FAQSection() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight animate-fade-up">
             Frequently Asked Questions<br />(FAQ)
           </h2>
-          <p className="text-stone-300 text-sm sm:text-base mt-5 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-stone-300 text-sm sm:text-base mt-5 leading-relaxed max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
             Find answers to common questions about our IPTV service, including{" "}
             <Link
               href="#pricing"
@@ -189,13 +186,10 @@ export default function FAQSection() {
         {/* 2-Column FAQ Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 max-w-[1140px] mx-auto">
           {faqs.map((faq, index) => (
-            <motion.div
+            <div
               key={faq.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-red-500/40 transition-colors"
+              className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-red-500/40 transition-colors animate-fade-up"
+              style={{ animationDelay: `${0.2 + (index * 0.05)}s`, animationFillMode: 'both' }}
             >
               {/* Header Banner */}
               <div className="bg-[#18202a] border-b border-white/10 px-5 py-4 flex items-center gap-3">
@@ -209,12 +203,12 @@ export default function FAQSection() {
               <div className="p-5 sm:p-6 text-sm sm:text-base text-stone-300 leading-relaxed flex-1 bg-[#0f1419]/60">
                 <p>{faq.answer}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Bottom CTA to Knowledge Base */}
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center animate-fade-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
           <Link
             href="/faq"
             className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#121620] border border-white/20 text-white font-bold text-xs sm:text-sm hover:bg-red-600 hover:border-red-600 transition-all duration-300 shadow-lg"
