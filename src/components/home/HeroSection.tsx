@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { Trophy, List, Monitor, Zap, Globe2, ArrowRight } from "lucide-react";
@@ -15,8 +13,9 @@ export default function HeroSection() {
           alt="IPTVDoor Background"
           fill
           priority
-          sizes="100vw"
-          quality={70}
+          fetchPriority="high"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
+          quality={50}
           className="object-cover opacity-[0.4]"
         />
         <div className="absolute inset-0 bg-[#121414]/70" />
