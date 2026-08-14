@@ -80,8 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${inter.variable} ${geist.variable} ${chivo.variable} ${jetbrainsMono.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preload" href="/hero-custom-bg.webp" as="image" type="image/webp" fetchPriority="high" />
       </head>
       <body className="bg-background text-on-background font-body-lg min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
         {/* Navbar Component */}

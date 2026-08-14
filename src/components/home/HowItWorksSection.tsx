@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -47,12 +44,7 @@ export default function HowItWorksSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
               {/* Left Card */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
+              <div className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
               >
                 <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
                   <Link
@@ -79,15 +71,10 @@ export default function HowItWorksSection() {
                   </Link>
                   .
                 </p>
-              </motion.div>
+              </div>
 
               {/* Right Image */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
+              <div className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
               >
                 <Image
                   src="/place-your-order.png"
@@ -96,7 +83,7 @@ export default function HowItWorksSection() {
                   height={380}
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
-              </motion.div>
+              </div>
             </div>
           </div>
 
@@ -111,12 +98,7 @@ export default function HowItWorksSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
               {/* Left Image */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl order-2 md:order-1"
+              <div className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl order-2 md:order-1"
               >
                 <Image
                   src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80"
@@ -126,15 +108,10 @@ export default function HowItWorksSection() {
                   unoptimized
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
-              </motion.div>
+              </div>
 
               {/* Right Card */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200 order-1 md:order-2"
+              <div className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200 order-1 md:order-2"
               >
                 <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
                   <Link
@@ -154,7 +131,7 @@ export default function HowItWorksSection() {
                   </Link>{" "}
                   to configure IPTV on Smart TV, Firestick, Android, iOS, and PC effortlessly.
                 </p>
-              </motion.div>
+              </div>
             </div>
           </div>
 
@@ -169,12 +146,7 @@ export default function HowItWorksSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
               {/* Left Card */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
+              <div className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
               >
                 <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
                   <Link
@@ -194,15 +166,10 @@ export default function HowItWorksSection() {
                   </Link>
                   .
                 </p>
-              </motion.div>
+              </div>
 
               {/* Right Image */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
+              <div className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
               >
                 <Image
                   src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=800&q=80"
@@ -212,7 +179,7 @@ export default function HowItWorksSection() {
                   unoptimized
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -240,12 +207,7 @@ export default function HowItWorksSection() {
           <div className="space-y-16 max-w-[1080px] mx-auto">
             {/* Feature Block 1 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
+              <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
               >
                 <Image
                   src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
@@ -255,13 +217,8 @@ export default function HowItWorksSection() {
                   unoptimized
                   className="w-full h-72 object-cover"
                 />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="space-y-4"
+              </div>
+              <div className="space-y-4"
               >
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
                   <Link
@@ -288,17 +245,12 @@ export default function HowItWorksSection() {
                   </Link>
                   .
                 </p>
-              </motion.div>
+              </div>
             </div>
 
             {/* Feature Block 2 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="space-y-4 order-2 md:order-1"
+              <div className="space-y-4 order-2 md:order-1"
               >
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
                   <Link
@@ -325,13 +277,8 @@ export default function HowItWorksSection() {
                   </Link>{" "}
                   to start watching immediately.
                 </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5 order-1 md:order-2"
+              </div>
+              <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5 order-1 md:order-2"
               >
                 <Image
                   src="/sport-banner.webp"
@@ -340,17 +287,12 @@ export default function HowItWorksSection() {
                   height={400}
                   className="w-full h-72 object-cover"
                 />
-              </motion.div>
+              </div>
             </div>
 
             {/* Feature Block 3 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
+              <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
               >
                 <Image
                   src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80"
@@ -360,13 +302,8 @@ export default function HowItWorksSection() {
                   unoptimized
                   className="w-full h-72 object-cover"
                 />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="space-y-4"
+              </div>
+              <div className="space-y-4"
               >
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
                   <Link
@@ -393,7 +330,7 @@ export default function HowItWorksSection() {
                   </Link>{" "}
                   for complete device instructions.
                 </p>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>

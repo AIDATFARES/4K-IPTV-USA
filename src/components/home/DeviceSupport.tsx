@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,13 +25,7 @@ export default function DeviceSupport() {
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column: Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center justify-center w-full"
-          >
+          <div className="flex items-center justify-center w-full">
             <div className="relative w-full max-w-[550px] p-3 bg-white/5 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-md">
               <Image
                 src="/setup-illustration.webp"
@@ -45,16 +36,10 @@ export default function DeviceSupport() {
                 className="w-full h-auto object-contain rounded-2xl"
               />
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Column: Features List */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="space-y-8 w-full"
-          >
+          <div className="space-y-8 w-full">
             {/* Item 1 */}
             <div className="flex gap-4 items-start group w-full">
               <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
@@ -120,7 +105,7 @@ export default function DeviceSupport() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -14,8 +14,7 @@ export default function HeroSection() {
           fill
           priority
           fetchPriority="high"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
-          quality={50}
+          unoptimized
           className="object-cover opacity-[0.4]"
         />
         <div className="absolute inset-0 bg-[#121414]/70" />

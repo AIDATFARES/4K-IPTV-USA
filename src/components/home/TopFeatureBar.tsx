@@ -1,6 +1,5 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Tv, Film, ShieldCheck, Zap, Headphones } from "lucide-react";
 
@@ -44,17 +43,11 @@ export default function TopFeatureBar() {
     <section className="bg-[#0c0f0f] border-y border-white/10 relative z-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-2 gap-8 border-b border-white/[0.08] py-10 text-center sm:grid-cols-4 sm:gap-4 sm:py-12">
-          {stats.map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.08 }}
-            >
+          {stats.map((stat) => (
+            <div key={stat.label} className="transition-all duration-300">
               <AnimatedStat {...stat} />
               <span className="mt-1 block text-sm font-medium text-stone-300">{stat.label}</span>
-            </motion.div>
+            </div>
           ))}
         </div>
 
@@ -62,12 +55,8 @@ export default function TopFeatureBar() {
           {highlights.map((item, index) => {
             const Icon = item.icon;
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.08 }}
                 className="bg-[#121414]/90 border border-white/10 rounded-xl p-3.5 sm:p-4 flex items-center gap-3.5 hover:border-red-500/40 transition-all duration-300 group"
               >
                 <div className="p-2.5 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 group-hover:scale-110 transition-transform shrink-0">
@@ -79,7 +68,7 @@ export default function TopFeatureBar() {
                   </p>
                   <p className="text-[11px] text-stone-400 truncate mt-0.5">{item.desc}</p>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>
@@ -90,13 +79,27 @@ export default function TopFeatureBar() {
 
 function AnimatedStat({ value, prefix, suffix }: { value: number; prefix: string; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.6 });
+  const [isInView, setIsInView] = useState(false);
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (!isInView) return;
 
-    const duration = 1300;
+    const duration = 1200;
     const startedAt = performance.now();
     let frameId = 0;
 

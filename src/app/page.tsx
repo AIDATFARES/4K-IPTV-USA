@@ -1,5 +1,4 @@
 import HeroSection from "@/components/home/HeroSection";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 
 export const metadata = {
@@ -8,17 +7,17 @@ export const metadata = {
   },
 };
 
-const TopFeatureBar = dynamic(() => import("@/components/home/TopFeatureBar"));
-const BrandMarquee = dynamic(() => import("@/components/home/BrandMarquee"));
-const MovieStrips = dynamic(() => import("@/components/home/MovieStrips"));
-const ChannelCategories = dynamic(() => import("@/components/home/ChannelCategories"));
-const DeviceSupport = dynamic(() => import("@/components/home/DeviceSupport"));
-const HowItWorksSection = dynamic(() => import("@/components/home/HowItWorksSection"));
-const PricingSection = dynamic(() => import("@/components/home/PricingSection"));
-const TestimonialsSection = dynamic(() => import("@/components/home/TestimonialsSection"));
-const FAQSection = dynamic(() => import("@/components/home/FAQSection"));
-const LatestArticlesSection = dynamic(() => import("@/components/home/LatestArticlesSection"));
-const SupportCtaSection = dynamic(() => import("@/components/home/SupportCtaSection"));
+import TopFeatureBar from "@/components/home/TopFeatureBar";
+import BrandMarquee from "@/components/home/BrandMarquee";
+import MovieStrips from "@/components/home/MovieStrips";
+import ChannelCategories from "@/components/home/ChannelCategories";
+import DeviceSupport from "@/components/home/DeviceSupport";
+import HowItWorksSection from "@/components/home/HowItWorksSection";
+import PricingSection from "@/components/home/PricingSection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
+import FAQSection from "@/components/home/FAQSection";
+import LatestArticlesSection from "@/components/home/LatestArticlesSection";
+import SupportCtaSection from "@/components/home/SupportCtaSection";
 
 export default function Home() {
   return (
