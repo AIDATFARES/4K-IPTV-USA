@@ -17,6 +17,7 @@ const geist = Geist({
   variable: "--font-geist",
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -66,7 +67,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${inter.variable} ${geist.variable}`}>
       <head>
-        <link rel="preload" href="/hero-custom-bg.webp" as="image" type="image/webp" fetchPriority="high" />
       </head>
       <body className="bg-background text-on-background font-body-lg min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
         {/* Navbar Component */}

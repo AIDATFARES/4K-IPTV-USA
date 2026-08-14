@@ -80,7 +80,6 @@ export default function TopFeatureBar() {
 function AnimatedStat({ value, prefix, suffix }: { value: number; prefix: string; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [isInView, setIsInView] = useState(false);
-  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -97,22 +96,24 @@ function AnimatedStat({ value, prefix, suffix }: { value: number; prefix: string
   }, []);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || !ref.current) return;
 
     const duration = 1200;
     const startedAt = performance.now();
     let frameId = 0;
+    const element = ref.current;
 
     const tick = (now: number) => {
       const progress = Math.min((now - startedAt) / duration, 1);
       const eased = 1 - (1 - progress) ** 3;
-      setCount(Math.round(value * eased));
+      const currentCount = Math.round(value * eased);
+      element.textContent = `${prefix}${currentCount.toLocaleString()}${suffix}`;
       if (progress < 1) frameId = requestAnimationFrame(tick);
     };
 
     frameId = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frameId);
-  }, [isInView, value]);
+  }, [isInView, value, prefix, suffix]);
 
-  return <span className="block text-3xl font-extrabold tracking-tight text-white sm:text-4xl" ref={ref}>{prefix}{count.toLocaleString()}{suffix}</span>;
+  return <span className="block text-3xl font-extrabold tracking-tight text-white sm:text-4xl" ref={ref}>{prefix}0{suffix}</span>;
 }

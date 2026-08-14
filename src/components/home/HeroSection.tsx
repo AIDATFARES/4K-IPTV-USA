@@ -8,14 +8,12 @@ export default function HeroSection() {
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
+        <img
           src="/hero-custom-bg.webp"
           alt="IPTVDoor Background"
-          fill
-          priority
           fetchPriority="high"
-          unoptimized
-          className="object-cover opacity-[0.4]"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-[#121414]/70" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#121414] via-transparent to-transparent" />
