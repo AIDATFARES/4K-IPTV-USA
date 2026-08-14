@@ -10,21 +10,25 @@ import BrandLogo from "@/components/ui/BrandLogo";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geist = Geist({
   variable: "--font-geist",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const chivo = Chivo({
   variable: "--font-chivo",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 
@@ -32,7 +36,10 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "IPTVDoor - Premium 4K Streaming Services",
   description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-  metadataBase: new URL("https://dooriptv.shop"),
+  metadataBase: new URL("https://www.dooriptv.shop"),
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png" },
@@ -44,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "IPTVDoor - Premium 4K Streaming",
     description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-    url: "https://dooriptv.shop",
+    url: "https://www.dooriptv.shop",
     siteName: "IPTVDoor",
     images: [
       {

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://dooriptv.shop/sitemap.xml',
+    sitemap: 'https://www.dooriptv.shop/sitemap.xml',
   };
 }

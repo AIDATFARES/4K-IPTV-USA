@@ -53,7 +53,7 @@ export default function MovieStrips() {
         >
           {[...row1, ...row1].map((movie, i) => (
             <div key={i} className="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[300px] relative rounded-md overflow-hidden shadow-2xl border border-white/5 hover:scale-105 hover:border-white/30 hover:z-10 transition-all duration-300">
-              <Image src={`/movies/${movie}`} alt="Movie Poster" fill sizes="200px" className="object-cover" />
+              <Image src={`/movies/${movie}`} alt="Movie Poster" fill sizes="(max-width: 640px) 140px, (max-width: 1024px) 180px, 200px" className="object-cover" />
             </div>
           ))}
         </motion.div>
@@ -75,7 +75,7 @@ export default function MovieStrips() {
         >
           {[...row2, ...row2].map((movie, i) => (
             <div key={i} className="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[300px] relative rounded-md overflow-hidden shadow-2xl border border-white/5 hover:scale-105 hover:border-white/30 hover:z-10 transition-all duration-300">
-              <Image src={`/movies/${movie}`} alt="Movie Poster" fill sizes="200px" className="object-cover" />
+              <Image src={`/movies/${movie}`} alt="Movie Poster" fill sizes="(max-width: 640px) 140px, (max-width: 1024px) 180px, 200px" className="object-cover" />
             </div>
           ))}
         </motion.div>

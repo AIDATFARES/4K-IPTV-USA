@@ -11,10 +11,12 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero-custom-bg.png"
+          src="/hero-custom-bg.webp"
           alt="IPTVDoor Background"
           fill
           priority
+          sizes="100vw"
+          quality={70}
           className="object-cover opacity-[0.4]"
         />
         <div className="absolute inset-0 bg-[#121414]/70" />
@@ -24,7 +26,7 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 flex flex-col items-center gap-5 pt-0 -mt-2 sm:-mt-4">
 
         {/* Top Tag */}
-        <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded px-4 py-1.5 backdrop-blur-md animate-fade-up opacity-0">
+        <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded px-4 py-1.5 backdrop-blur-md">
           <span className="w-2 h-2 rounded-full bg-[#d32f2f] shadow-[0_0_8px_rgba(211,47,47,0.8)] animate-pulse"></span>
           <span className="text-xs font-bold text-white tracking-widest uppercase font-mono">
             LIVE NOW: Cinematic 4K Streaming
@@ -32,14 +34,14 @@ export default function HeroSection() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.08] animate-fade-up [animation-delay:100ms] opacity-0 drop-shadow-2xl text-center">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.08] drop-shadow-2xl text-center">
           <span className="text-[#d32f2f]">IPTVDoor</span> <span className="text-white">The Best IPTV</span> <br />
           <span className="text-white">Service Provider for</span> <br />
           <span className="text-white">2026</span>
         </h1>
 
         {/* Promotional Sub-Headline */}
-        <div className="text-xl sm:text-2xl md:text-3xl font-bold mt-3 animate-fade-up [animation-delay:150ms] opacity-0 drop-shadow-lg">
+        <div className="text-xl sm:text-2xl md:text-3xl font-bold mt-3 drop-shadow-lg">
           <span className="text-white">Get High-Quality Streaming for Just </span>
           <Link href="#pricing" className="text-amber-400 hover:text-amber-300 transition-colors">
             $4.2/Month!
@@ -47,7 +49,7 @@ export default function HeroSection() {
         </div>
 
         {/* Description */}
-        <p className="text-lg sm:text-xl text-stone-300 font-normal leading-[1.6] max-w-[850px] mt-5 animate-fade-up [animation-delay:200ms] opacity-0">
+        <p className="text-lg sm:text-xl text-stone-300 font-normal leading-[1.6] max-w-[850px] mt-5">
           Choose from{" "}
           <Link href="/channels" className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors">
             50,000+ Live Channels
@@ -60,7 +62,7 @@ export default function HeroSection() {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-5 mt-8 animate-fade-up [animation-delay:300ms] opacity-0 justify-center">
+        <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center">
           <a
             href="https://wa.me/213554246175?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV."
             target="_blank"
@@ -82,7 +84,7 @@ export default function HeroSection() {
         </div>
 
         {/* Feature Tags */}
-        <div className="flex w-full max-w-[750px] flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm sm:text-base text-stone-300 pt-4 animate-fade-up [animation-delay:400ms] opacity-0">
+        <div className="flex w-full max-w-[750px] flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm sm:text-base text-stone-300 pt-4">
           <Link href="/channels" className="flex items-center gap-2 hover:text-[#d32f2f] transition-colors">
             <Trophy className="h-4 w-4 text-amber-400" /> Live Sports & PPV
           </Link>

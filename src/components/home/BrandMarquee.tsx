@@ -53,7 +53,7 @@ export default function BrandMarquee({
                 src={`/${imagesFolder}/${brand}`} 
                 alt="Channel Logo" 
                 fill
-                sizes="(max-width: 768px) 160px, 260px"
+                sizes="(max-width: 640px) 100px, (max-width: 1024px) 140px, 160px"
                 className={imageClassName || "object-contain drop-shadow-md rounded-lg"}
               />
             </div>
