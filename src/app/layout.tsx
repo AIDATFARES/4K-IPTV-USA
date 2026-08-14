@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "IPTVDoor",
     images: [
       {
-        url: "/iptv-hero-opt.webp",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "IPTVDoor Premium IPTV Service",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "IPTVDoor - Premium 4K Streaming",
     description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-    images: ["/iptv-hero-opt.webp"],
+    images: ["/og-image.png"],
   },
 };
 
