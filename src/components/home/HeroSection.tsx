@@ -12,7 +12,6 @@ export default function HeroSection() {
           src="/hero-custom-bg.webp"
           alt="IPTVDoor Background"
           fetchPriority="high"
-          decoding="async"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-[#121414]/70" />
@@ -47,11 +46,11 @@ export default function HeroSection() {
         {/* Description */}
         <p className="text-lg sm:text-xl text-stone-300 font-normal leading-[1.6] max-w-[850px] mt-5">
           Choose from{" "}
-          <Link href="/channels" className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors">
+          <Link prefetch={false} href="/channels" className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors">
             50,000+ Live Channels
           </Link>
           , +120,000 Films & Series, and 200,000+ VODs. Enjoy your time with excellent image quality up to 4K on{" "}
-          <Link href="/installation" className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors">
+          <Link prefetch={false} href="/installation" className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors">
             any device of your choice
           </Link>{" "}
           including Smart TV, Android Box, PC, tablet, and smartphone—anytime and anywhere.

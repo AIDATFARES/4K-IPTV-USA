@@ -11,6 +11,7 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 const geist = Geist({
@@ -99,34 +100,34 @@ export default function RootLayout({
             <div className="col-span-1 min-w-0 space-y-6">
               <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">NAVIGATION</span></p>
               <ul className="space-y-3 font-body-sm text-sm">
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/">Home</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/pricing">Pricing</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/contact">Contact</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/#how-it-works">How It Works</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/faq">FAQ</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/blog">Blog</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/">Home</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/pricing">Pricing</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/contact">Contact</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/#how-it-works">How It Works</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/faq">FAQ</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/blog">Blog</Link></li>
               </ul>
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
               <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">SERVICE</span></p>
               <ul className="space-y-3 font-body-sm text-sm">
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/pricing">Get Started</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/pricing">Get Started</Link></li>
                 <li><a className="text-stone-400 transition-colors hover:text-white" href="https://wa.me/213554246175" target="_blank" rel="noreferrer">WhatsApp</a></li>
                 <li><a className="text-stone-400 transition-colors hover:text-white" href="mailto:support@dooriptv.shop">Email</a></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/channels">Channels</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/installation">Setup Guide</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/channels">Channels</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/installation">Setup Guide</Link></li>
               </ul>
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
               <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">LEGAL</span></p>
               <ul className="space-y-3 text-sm">
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/privacy-policy">Privacy Policy</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/refund-policy">Refund Policy</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="#">Disclaimer</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="/dmca">DMCA</Link></li>
-                <li><Link className="text-stone-400 transition-colors hover:text-white" href="#">Cookie Policy</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/privacy-policy">Privacy Policy</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/refund-policy">Refund Policy</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="#">Disclaimer</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/dmca">DMCA</Link></li>
+                <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="#">Cookie Policy</Link></li>
               </ul>
             </div>
             
