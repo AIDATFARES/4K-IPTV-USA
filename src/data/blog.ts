@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     title: "IPTV EPG Shows the Wrong Time: How to Fix Time Zone Issues",
     description: "Is your IPTV EPG showing the wrong time? Learn how to fix time zone, EPG offset, daylight saving, and guide synchronization issues.",
     date: "August 14, 2026",
-    author: "IPTVDoor",
+    author: "IPTV Fiesta",
     category: "Guides",
     coverImage: "/blog/iptv-epg-wrong-time-1.png",
     content: `An IPTV Electronic Program Guide (EPG) is supposed to make live television easier to navigate by showing what is currently playing and what is coming next. But sometimes the programs appear one, two, or even several hours earlier or later than they should.
@@ -405,7 +405,7 @@ The most important rule is simple: check the time zone before changing complicat
     title: "IPTV Buffering Only at Night: Why It Happens in 2026",
     description: "Learn why your IPTV buffers only at night and how to fix evening streaming freezes. Troubleshoot peak hour congestion, Wi-Fi interference, server load, and ISP throttling.",
     date: "August 14, 2026",
-    author: "IPTVDoor",
+    author: "IPTV Fiesta",
     category: "Guides",
     coverImage: "/blog/iptv-buffering-only-at-night-1.png",
     content: `If your IPTV works perfectly during the day but starts buffering every evening, you are not necessarily dealing with a problem on your device.
@@ -848,7 +848,7 @@ The key is to troubleshoot systematically and change one variable at a time. Thi
     title: "IPTV Channels Load but Won't Play: What to Check in 2026",
     description: "Learn what to check when IPTV channels load but won't play. Troubleshoot playlist loading, decoder settings, connection limits, and video codecs step by step.",
     date: "August 14, 2026",
-    author: "IPTVDoor",
+    author: "IPTV Fiesta",
     category: "Guides",
     coverImage: "/blog/iptv-channels-load-wont-play-1.png",
     content: `Seeing your IPTV channel list load correctly but getting no playback when you select a channel can be confusing. The playlist appears to be working, the channel names are visible, and sometimes the electronic program guide even loads — yet the video refuses to start.
@@ -1272,7 +1272,7 @@ If the problem continues, test another compatible IPTV player and check the devi
 
 Most importantly, identify whether the problem affects one channel, multiple channels, one device, or every device. That single distinction can significantly reduce the amount of troubleshooting required.
 
-For IPTVDoor users, keeping your streaming device, IPTV player, and network properly configured can help provide a smoother viewing experience.`
+For IPTV Fiesta users, keeping your streaming device, IPTV player, and network properly configured can help provide a smoother viewing experience.`
   },
   {
     id: "1",
@@ -1280,7 +1280,7 @@ For IPTVDoor users, keeping your streaming device, IPTV player, and network prop
     title: "IPTV Black Screen but Audio Works: Causes and Fixes in 2026",
     description: "Troubleshoot and fix IPTV black screen with working audio. Learn about hardware decoding, H.265/HEVC codec issues, player settings, and step-by-step solutions.",
     date: "August 14, 2026",
-    author: "IPTVDoor",
+    author: "IPTV Fiesta",
     category: "Guides",
     coverImage: "/blog/iptv-black-screen-audio-works-1.png",
     content: `Have you ever opened an IPTV channel and heard the audio normally while the screen remained completely black?
@@ -1630,6 +1630,6 @@ Start with the simplest tests: try another channel, restart the player, switch t
 
 If the problem only affects certain channels or formats, pay particular attention to codec and device compatibility. If the same stream fails everywhere, the issue may be with the stream itself rather than your device.
 
-For users building an IPTV setup around IPTVDoor, choosing a compatible player and device is just as important as having a stable internet connection. A properly configured player can make a significant difference in everyday viewing.`
+For users building an IPTV setup around IPTV Fiesta, choosing a compatible player and device is just as important as having a stable internet connection. A properly configured player can make a significant difference in everyday viewing.`
   }
 ];

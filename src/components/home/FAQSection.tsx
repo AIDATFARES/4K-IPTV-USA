@@ -4,20 +4,20 @@ import { ArrowRight, HelpCircle } from "lucide-react";
 const faqs = [
   {
     id: 1,
-    question: "1. What is IPTVDoor?",
+    question: "1. What is IPTV Fiesta?",
     answer: (
       <>
-        IPTVDoor is a premium IPTV service that offers live TV, VOD movies, TV series, and sports channels in high-quality streaming, including 4K. Check out our{" "}
+        IPTV Fiesta is a premium IPTV service that offers live TV, VOD movies, TV series, and sports channels in high-quality streaming, including 4K. Check out our{" "}
         <Link
           href="/channels"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           live TV channels
         </Link>{" "}
         and{" "}
         <Link
           href="#pricing"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           IPTV subscription plans
         </Link>
@@ -27,22 +27,22 @@ const faqs = [
   },
   {
     id: 2,
-    question: "2. Do I need a subscription to use IPTVDoor?",
+    question: "2. Do I need a subscription to use IPTV Fiesta?",
     answer: (
       <>
         Yes, a subscription is required. However, we offer a{" "}
         <a
-          href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV."
+          href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20fiestaiptv%20IPTV."
           target="_blank"
           rel="noreferrer"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           free trial
         </a>{" "}
         so you can test the service before committing to our{" "}
         <Link
           href="#pricing"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           subscription plans
         </Link>
@@ -52,13 +52,13 @@ const faqs = [
   },
   {
     id: 3,
-    question: "3. What devices are compatible with IPTVDoor?",
+    question: "3. What devices are compatible with IPTV Fiesta?",
     answer: (
       <>
-        IPTVDoor works on Android TV, Firestick, Smart TVs, Android phones, tablets, and apps like Tivimate. Follow our step-by-step{" "}
+        IPTV Fiesta works on Android TV, Firestick, Smart TVs, Android phones, tablets, and apps like Tivimate. Follow our step-by-step{" "}
         <Link
           href="/installation"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           installation guides
         </Link>{" "}
@@ -74,7 +74,7 @@ const faqs = [
         Yes, we offer multi-device support. You can choose an{" "}
         <Link
           href="#pricing"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           IPTV subscription plan
         </Link>{" "}
@@ -84,13 +84,13 @@ const faqs = [
   },
   {
     id: 5,
-    question: "5. Can I watch sports on IPTVDoor?",
+    question: "5. Can I watch sports on IPTV Fiesta?",
     answer: (
       <>
         Absolutely. We offer a wide selection of live sports channels, including major leagues and international events. Explore our full{" "}
         <Link
           href="/channels"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           channels catalog
         </Link>
@@ -106,7 +106,7 @@ const faqs = [
         We accept PayPal, cryptocurrency (such as Bitcoin), credit cards, and instant bank transfers for quick and secure payments. Contact our{" "}
         <Link
           href="/contact"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           support team
         </Link>{" "}
@@ -122,7 +122,7 @@ const faqs = [
         The service includes live TV channels, sports, movies, TV series, kids&apos; content, international channels, and more – all in HD or 4K quality. Learn more in our{" "}
         <Link
           href="/blog"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           IPTV articles & guides
         </Link>
@@ -138,7 +138,7 @@ const faqs = [
         A VPN is not required but is recommended in some regions to ensure unrestricted access and added privacy. Read our{" "}
         <Link
           href="/faq"
-          className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+          className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           FAQ knowledge base
         </Link>{" "}
@@ -161,21 +161,21 @@ export default function FAQSection() {
             Find answers to common questions about our IPTV service, including{" "}
             <Link
               href="#pricing"
-              className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+              className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
             >
               subscriptions
             </Link>
             ,{" "}
             <Link
               href="/installation"
-              className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+              className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
             >
               devices
             </Link>
             , streaming quality, payments, and more. If you need further help, our{" "}
             <Link
               href="/contact"
-              className="text-red-500 font-semibold hover:text-red-400 transition-colors"
+              className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
             >
               support team
             </Link>{" "}
@@ -188,12 +188,12 @@ export default function FAQSection() {
           {faqs.map((faq, index) => (
             <div
               key={faq.id}
-              className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-red-500/40 transition-colors animate-fade-up"
+              className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-orange-500/40 transition-colors animate-fade-up"
               style={{ animationDelay: `${0.2 + (index * 0.05)}s`, animationFillMode: 'both' }}
             >
               {/* Header Banner */}
               <div className="bg-[#18202a] border-b border-white/10 px-5 py-4 flex items-center gap-3">
-                <HelpCircle className="w-5 h-5 text-red-500 shrink-0" />
+                <HelpCircle className="w-5 h-5 text-orange-500 shrink-0" />
                 <h3 className="text-base sm:text-lg font-bold text-white leading-snug">
                   {faq.question}
                 </h3>
@@ -211,7 +211,7 @@ export default function FAQSection() {
         <div className="mt-12 text-center animate-fade-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
           <Link
             href="/faq"
-            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#121620] border border-white/20 text-white font-bold text-xs sm:text-sm hover:bg-red-600 hover:border-red-600 transition-all duration-300 shadow-lg"
+            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#121620] border border-white/20 text-white font-bold text-xs sm:text-sm hover:bg-orange-600 hover:border-orange-600 transition-all duration-300 shadow-lg"
           >
             <span>View Complete FAQ Knowledge Base</span>
             <ArrowRight className="w-4 h-4" />

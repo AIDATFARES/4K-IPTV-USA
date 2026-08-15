@@ -7,20 +7,20 @@ export default function HowItWorksSection() {
       <div className="max-w-[1240px] mx-auto px-6">
 
         {/* ========================================================================= */}
-        {/* PART 1: How does it work? IPTVDoor Timeline */}
+        {/* PART 1: How does it work? IPTV Fiesta Timeline */}
         {/* ========================================================================= */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-[#d32f2f] mb-2 block">
             EASY 3-STEP PROCESS
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#d32f2f] tracking-tight">
-            How does it work? IPTVDoor
+            How does it work? IPTV Fiesta
           </h2>
           <p className="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed max-w-2xl mx-auto">
             Get your{" "}
             <Link
               href="#pricing"
-              className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+              className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
             >
               IPTV subscription
             </Link>{" "}
@@ -49,7 +49,7 @@ export default function HowItWorksSection() {
                 <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
                   <Link
                     href="#pricing"
-                    className="hover:text-red-700 transition-colors"
+                    className="hover:text-orange-700 transition-colors"
                   >
                     Place your order.
                   </Link>
@@ -58,14 +58,14 @@ export default function HowItWorksSection() {
                   After placing your order from our{" "}
                   <Link
                     href="#pricing"
-                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-700 transition-colors"
                   >
                     pricing plans
                   </Link>
                   , you will receive your subscription details within 20 minutes at most by email or{" "}
                   <Link
                     href="/contact"
-                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-700 transition-colors"
                   >
                     WhatsApp
                   </Link>
@@ -116,7 +116,7 @@ export default function HowItWorksSection() {
                 <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
                   <Link
                     href="/installation"
-                    className="hover:text-red-700 transition-colors"
+                    className="hover:text-orange-700 transition-colors"
                   >
                     Installation & Setup
                   </Link>
@@ -125,7 +125,7 @@ export default function HowItWorksSection() {
                   Follow our step-by-step{" "}
                   <Link
                     href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-700 transition-colors"
                   >
                     installation guide
                   </Link>{" "}
@@ -151,7 +151,7 @@ export default function HowItWorksSection() {
                 <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
                   <Link
                     href="/channels"
-                    className="hover:text-red-700 transition-colors"
+                    className="hover:text-orange-700 transition-colors"
                   >
                     Watch and enjoy.
                   </Link>
@@ -160,7 +160,7 @@ export default function HowItWorksSection() {
                   Stream all your favorite live sports, 4K movies, and premium channels from our complete{" "}
                   <Link
                     href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-700 transition-colors"
                   >
                     channels catalog
                   </Link>
@@ -185,18 +185,18 @@ export default function HowItWorksSection() {
         </div>
 
         {/* ========================================================================= */}
-        {/* PART 2: Getting Started with IPTVDoor Is Easy */}
+        {/* PART 2: Getting Started with IPTV Fiesta Is Easy */}
         {/* ========================================================================= */}
         <div className="pt-10 border-t border-white/10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#d32f2f] tracking-tight">
-              Getting Started with IPTVDoor Is Easy
+              Getting Started with IPTV Fiesta Is Easy
             </h2>
             <p className="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed">
-              Enjoy high quality IPTV streaming with IPTVDoor. Watch{" "}
+              Enjoy high quality IPTV streaming with IPTV Fiesta. Watch{" "}
               <Link
                 href="/channels"
-                className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
               >
                 live TV channels
               </Link>
@@ -223,7 +223,7 @@ export default function HowItWorksSection() {
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
                   <Link
                     href="#pricing"
-                    className="hover:text-red-400 transition-colors"
+                    className="hover:text-orange-400 transition-colors"
                   >
                     We Offer You A Complete IPTV Subscription Experience
                   </Link>
@@ -232,14 +232,14 @@ export default function HowItWorksSection() {
                   Enjoy uninterrupted IPTV 4K/HD with an{" "}
                   <Link
                     href="#pricing"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
                   >
                     IPTV subscription
                   </Link>{" "}
-                  from IPTVDoor. Choose from 1, 3, 6 or 12 months packages and experience continuous entertainment with full access to our{" "}
+                  from IPTV Fiesta. Choose from 1, 3, 6 or 12 months packages and experience continuous entertainment with full access to our{" "}
                   <Link
                     href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
                   >
                     streaming library
                   </Link>
@@ -255,7 +255,7 @@ export default function HowItWorksSection() {
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
                   <Link
                     href="/channels"
-                    className="hover:text-red-400 transition-colors"
+                    className="hover:text-orange-400 transition-colors"
                   >
                     +50,000 Channels & 200,000+ VODs With Our IPTV Smarters Pro
                   </Link>
@@ -264,14 +264,14 @@ export default function HowItWorksSection() {
                   Unlock a world of entertainment with over{" "}
                   <Link
                     href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
                   >
                     +50,000 live channels and +120,000 films & series
                   </Link>{" "}
                   for the ultimate viewing experience. Check out our{" "}
                   <Link
                     href="#pricing"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
                   >
                     subscription plans
                   </Link>{" "}
@@ -308,23 +308,23 @@ export default function HowItWorksSection() {
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
                   <Link
                     href="/installation"
-                    className="hover:text-red-400 transition-colors"
+                    className="hover:text-orange-400 transition-colors"
                   >
                     Live TV With IPTV Smarters Pro and TV Guide (EPG)
                   </Link>
                 </h3>
                 <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-                  With IPTVDoor you get access to an interactive TV guide (EPG), Live TV, and replay options. Read our{" "}
+                  With IPTV Fiesta you get access to an interactive TV guide (EPG), Live TV, and replay options. Read our{" "}
                   <Link
                     href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
                   >
                     IPTV setup guide
                   </Link>{" "}
                   or explore our{" "}
                   <Link
                     href="/faq"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
                   >
                     FAQ support
                   </Link>{" "}

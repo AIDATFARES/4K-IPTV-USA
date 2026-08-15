@@ -179,7 +179,7 @@ export default function ResellerPageContent() {
         
         {/* HERO SECTION */}
         <header className="relative mx-auto max-w-4xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-red-400">
+          <span className="inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-orange-400">
             <Sparkles className="h-3.5 w-3.5" />
             IPTV Reseller Program
           </span>
@@ -196,7 +196,7 @@ export default function ResellerPageContent() {
           <div className="mt-8 flex items-center justify-center gap-4">
             <button
               onClick={handleFreeTrial}
-              className="rounded-full bg-[#d32f2f] px-8 py-3.5 text-base font-bold text-white shadow-[0_0_25px_rgba(211,47,47,0.4)] transition-all duration-300 hover:bg-red-700 hover:shadow-[0_0_35px_rgba(211,47,47,0.6)] active:scale-[0.98]"
+              className="rounded-full bg-[#d32f2f] px-8 py-3.5 text-base font-bold text-white shadow-[0_0_25px_rgba(211,47,47,0.4)] transition-all duration-300 hover:bg-orange-700 hover:shadow-[0_0_35px_rgba(211,47,47,0.6)] active:scale-[0.98]"
             >
               Free Trial
             </button>
@@ -256,7 +256,7 @@ export default function ResellerPageContent() {
                 <ul className="flex-grow space-y-3 border-t border-stone-100 pt-4 text-xs font-semibold text-stone-700">
                   {planFeatures.map((feature) => (
                     <li className="flex items-center gap-2" key={feature}>
-                      <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-red-100 text-[#d32f2f]">
+                      <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-orange-100 text-[#d32f2f]">
                         <Check className="h-3 w-3 stroke-[3]" />
                       </span>
                       <span>{feature}</span>
@@ -267,7 +267,7 @@ export default function ResellerPageContent() {
                 <button
                   type="button"
                   onClick={() => handleOrderPanel(plan)}
-                  className="mt-6 w-full rounded-2xl bg-[#d32f2f] py-3.5 text-sm font-extrabold text-white shadow-[0_4px_15px_rgba(211,47,47,0.3)] transition-all duration-300 hover:bg-red-700 hover:shadow-[0_6px_20px_rgba(211,47,47,0.4)] active:scale-[0.98]"
+                  className="mt-6 w-full rounded-2xl bg-[#d32f2f] py-3.5 text-sm font-extrabold text-white shadow-[0_4px_15px_rgba(211,47,47,0.3)] transition-all duration-300 hover:bg-orange-700 hover:shadow-[0_6px_20px_rgba(211,47,47,0.4)] active:scale-[0.98]"
                 >
                   Get A Panel
                 </button>
@@ -289,9 +289,9 @@ export default function ResellerPageContent() {
               return (
                 <div
                   key={item.title}
-                  className="flex flex-col items-center text-center p-6 rounded-2xl border border-white/10 bg-[#121414]/90 backdrop-blur-md shadow-xl hover:border-red-500/40 transition-colors"
+                  className="flex flex-col items-center text-center p-6 rounded-2xl border border-white/10 bg-[#121414]/90 backdrop-blur-md shadow-xl hover:border-orange-500/40 transition-colors"
                 >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-red-500/15 text-red-500 mb-5">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-500/15 text-orange-500 mb-5">
                     <Icon className="h-8 w-8" />
                   </div>
                   <h3 className="text-sm font-extrabold uppercase tracking-wider text-white">
@@ -319,18 +319,18 @@ export default function ResellerPageContent() {
               return (
                 <div
                   key={faq.question}
-                  className="overflow-hidden rounded-xl border border-white/10 bg-[#121414]/90 shadow-md transition-colors hover:border-red-500/30"
+                  className="overflow-hidden rounded-xl border border-white/10 bg-[#121414]/90 shadow-md transition-colors hover:border-orange-500/30"
                 >
                   <button
                     onClick={() => toggleFaq(index)}
                     className="flex w-full items-center justify-between px-6 py-4 text-left font-bold text-white transition-colors hover:bg-white/[0.03]"
                   >
                     <span className="text-sm sm:text-base tracking-wide uppercase font-extrabold flex items-center gap-3">
-                      <span className="text-red-500">▶</span>
+                      <span className="text-orange-500">▶</span>
                       {faq.question}
                     </span>
                     {isOpen ? (
-                      <ChevronUp className="h-5 w-5 shrink-0 text-red-500" />
+                      <ChevronUp className="h-5 w-5 shrink-0 text-orange-500" />
                     ) : (
                       <ChevronDown className="h-5 w-5 shrink-0 text-stone-400" />
                     )}
@@ -349,7 +349,7 @@ export default function ResellerPageContent() {
           <div className="mt-12 flex justify-center">
             <button
               onClick={() => handleOrderPanel()}
-              className="rounded-full bg-red-600 px-10 py-4 text-base font-extrabold uppercase tracking-wider text-white shadow-[0_0_30px_rgba(211,47,47,0.5)] transition-all duration-300 hover:bg-red-500 hover:shadow-[0_0_40px_rgba(211,47,47,0.7)] active:scale-[0.98]"
+              className="rounded-full bg-orange-600 px-10 py-4 text-base font-extrabold uppercase tracking-wider text-white shadow-[0_0_30px_rgba(211,47,47,0.5)] transition-all duration-300 hover:bg-orange-500 hover:shadow-[0_0_40px_rgba(211,47,47,0.7)] active:scale-[0.98]"
             >
               Become Reseller
             </button>

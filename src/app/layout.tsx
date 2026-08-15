@@ -22,9 +22,9 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "IPTVDoor - Premium 4K Streaming Services",
+  title: "IPTV Fiesta - Premium 4K Streaming Services",
   description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-  metadataBase: new URL("https://www.dooriptv.shop"),
+  metadataBase: new URL("https://www.fiestaiptv.shop"),
   alternates: {
     canonical: "/",
   },
@@ -37,16 +37,16 @@ export const metadata: Metadata = {
     apple: "/favicon.png",
   },
   openGraph: {
-    title: "IPTVDoor - Premium 4K Streaming",
+    title: "IPTV Fiesta - Premium 4K Streaming",
     description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-    url: "https://www.dooriptv.shop",
-    siteName: "IPTVDoor",
+    url: "https://www.fiestaiptv.shop",
+    siteName: "IPTV Fiesta",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "IPTVDoor Premium IPTV Service",
+        alt: "IPTV Fiesta Premium IPTV Service",
       },
     ],
     locale: "en_US",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IPTVDoor - Premium 4K Streaming",
+    title: "IPTV Fiesta - Premium 4K Streaming",
     description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
     images: ["/og-image.png"],
   },
@@ -81,7 +81,7 @@ export default function RootLayout({
             <div className="col-span-2 sm:col-span-4 xl:col-span-1 min-w-0 max-w-[310px] space-y-4">
               <Link href="/"><BrandLogo /></Link>
               <p className="max-w-[285px] whitespace-normal break-normal text-sm leading-6 text-stone-300">
-                © 2024 iptvdoor. Premium 4K IPTV Streaming Services. All rights reserved.
+                © 2024 fiestaiptv. Premium 4K IPTV Streaming Services. All rights reserved.
               </p>
               <a href="https://wa.me/213552069874" target="_blank" rel="noreferrer" className="flex max-w-[270px] items-center gap-3 rounded-2xl border border-emerald-500/30 bg-emerald-500/[0.08] p-3.5 transition-colors hover:bg-emerald-500/[0.15] group">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-white shadow-lg shadow-emerald-500/20 transition-transform group-hover:scale-105">
@@ -98,7 +98,7 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">NAVIGATION</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-orange-500 pb-1.5">NAVIGATION</span></p>
               <ul className="space-y-3 font-body-sm text-sm">
                 <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/">Home</Link></li>
                 <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/pricing">Pricing</Link></li>
@@ -110,18 +110,18 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">SERVICE</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-orange-500 pb-1.5">SERVICE</span></p>
               <ul className="space-y-3 font-body-sm text-sm">
                 <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/pricing">Get Started</Link></li>
                 <li><a className="text-stone-400 transition-colors hover:text-white" href="https://wa.me/213552069874" target="_blank" rel="noreferrer">WhatsApp</a></li>
-                <li><a className="text-stone-400 transition-colors hover:text-white" href="mailto:support@dooriptv.shop">Email</a></li>
+                <li><a className="text-stone-400 transition-colors hover:text-white" href="mailto:support@fiestaiptv.shop">Email</a></li>
                 <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/channels">Channels</Link></li>
                 <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/installation">Setup Guide</Link></li>
               </ul>
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">LEGAL</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-orange-500 pb-1.5">LEGAL</span></p>
               <ul className="space-y-3 text-sm">
                 <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/privacy-policy">Privacy Policy</Link></li>
                 <li><Link prefetch={false} className="text-stone-400 transition-colors hover:text-white" href="/refund-policy">Refund Policy</Link></li>
@@ -132,7 +132,7 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-red-500 pb-1.5">PAYMENT</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-stone-300"><span className="border-b-2 border-orange-500 pb-1.5">PAYMENT</span></p>
               <ul className="space-y-3 text-sm text-stone-400">
                 <li>PayPal</li>
                 <li>Credit Card</li>

@@ -37,7 +37,7 @@ export default function MovieStrips() {
           href="/channels"
           className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-[#d32f2f] text-white text-sm md:text-base font-medium bg-black/20 hover:bg-[#d32f2f]/10 transition-colors duration-300 gap-2"
         >
-          View IPTVDoor Channel List <span aria-hidden="true">&rarr;</span>
+          View IPTV Fiesta Channel List <span aria-hidden="true">&rarr;</span>
         </Link>
       </div>
 

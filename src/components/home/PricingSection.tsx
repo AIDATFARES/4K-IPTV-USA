@@ -38,7 +38,7 @@ export default function PricingSection() {
 
   function handleOrder(plan: Plan) {
     const text = encodeURIComponent(
-      `Hello! I would like to purchase the IPTVDoor ${plan.duration} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
+      `Hello! I would like to purchase the IPTV Fiesta ${plan.duration} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
     );
     window.open(`https://wa.me/213552069874?text=${text}`, "_blank", "noopener,noreferrer");
   }
@@ -48,9 +48,9 @@ export default function PricingSection() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-950/20 via-[#060814] to-transparent" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <header className="mx-auto max-w-3xl text-center">
-          <p className="inline-flex rounded-full border border-red-500/30 bg-red-950/40 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-red-300">Premium IPTV plans</p>
+          <p className="inline-flex rounded-full border border-orange-500/30 bg-red-950/40 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-orange-300">Premium IPTV plans</p>
           <h2 className="mt-5 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-            Choose your <span className="bg-gradient-to-r from-red-400 via-red-400 to-red-400 bg-clip-text text-transparent">IPTVDoor plan</span>
+            Choose your <span className="bg-gradient-to-r from-orange-400 via-orange-400 to-orange-400 bg-clip-text text-transparent">IPTV Fiesta plan</span>
           </h2>
           <p className="mt-5 text-xl font-bold tracking-wide text-white sm:text-2xl">Simple, transparent pricing</p>
           <p className="mt-2 text-sm text-stone-400 sm:text-base">No contracts. No hidden fees. Instant delivery after purchase.</p>
@@ -58,13 +58,13 @@ export default function PricingSection() {
 
         <div className="mx-auto mt-8 max-w-2xl" role="radiogroup" aria-label="Number of device connections">
           <p className="mb-3 text-center text-xs font-bold uppercase tracking-[0.15em] text-stone-400">Choose your connections</p>
-          <div className="grid grid-cols-3 rounded-2xl border border-red-500/30 bg-[#121414]/90 p-1.5 shadow-[0_0_30px_rgba(239,68,68,0.1)]">
+          <div className="grid grid-cols-3 rounded-2xl border border-orange-500/30 bg-[#121414]/90 p-1.5 shadow-[0_0_30px_rgba(239,68,68,0.1)]">
             {[1, 2, 3].map((count) => {
               const selected = devices === count;
               return (
                 <button
                   aria-checked={selected}
-                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-red-600 text-white shadow-lg shadow-red-600/30" : "text-stone-400 hover:text-white"}`}
+                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-orange-600 text-white shadow-lg shadow-orange-600/30" : "text-stone-400 hover:text-white"}`}
                   key={count}
                   onClick={() => setDevices(count)}
                   role="radio"
@@ -79,24 +79,24 @@ export default function PricingSection() {
 
         <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 xl:gap-6 items-stretch">
           {plans.map((plan) => (
-            <article className={`relative flex flex-col rounded-3xl p-7 text-stone-900 transition-all duration-300 ${plan.popular ? "bg-white border-2 border-red-600 shadow-[0_10px_40px_rgba(239,68,68,0.25)] md:-translate-y-3" : "bg-white border border-stone-200 shadow-xl hover:-translate-y-1"}`} key={plan.id}>
-              {plan.popular && <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full border border-red-500 bg-red-600 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white shadow-md">Most popular</span>}
+            <article className={`relative flex flex-col rounded-3xl p-7 text-stone-900 transition-all duration-300 ${plan.popular ? "bg-white border-2 border-orange-600 shadow-[0_10px_40px_rgba(239,68,68,0.25)] md:-translate-y-3" : "bg-white border border-stone-200 shadow-xl hover:-translate-y-1"}`} key={plan.id}>
+              {plan.popular && <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full border border-orange-500 bg-orange-600 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white shadow-md">Most popular</span>}
               <h3 className="text-center text-2xl font-bold text-stone-900">{plan.duration}</h3>
               <p className="mt-1 text-center text-sm text-stone-500 font-medium">Subscription</p>
               <div className="mt-3 flex items-baseline justify-center gap-2">
                 <p className="text-4xl font-black tracking-tight text-stone-900">${priceFor(plan)}</p>
                 {plan.oldPrice && <p className="text-lg font-semibold text-stone-400 line-through">${(plan.oldPrice * devices).toFixed(2)}</p>}
               </div>
-              <p className="mx-auto mt-3 rounded-full border border-red-200 bg-red-50 px-3.5 py-1 text-center text-[11px] font-bold text-red-600">{plan.saving}</p>
+              <p className="mx-auto mt-3 rounded-full border border-orange-200 bg-red-50 px-3.5 py-1 text-center text-[11px] font-bold text-orange-600">{plan.saving}</p>
               <ul className="mt-6 flex-grow space-y-3 border-t border-stone-100 pt-5">
-                {planFeatures.map((feature) => <li className="flex gap-2.5 text-sm font-medium text-stone-700" key={feature}><Check className="mt-0.5 h-4 w-4 shrink-0 text-red-500" strokeWidth={3} />{feature}</li>)}
+                {planFeatures.map((feature) => <li className="flex gap-2.5 text-sm font-medium text-stone-700" key={feature}><Check className="mt-0.5 h-4 w-4 shrink-0 text-orange-500" strokeWidth={3} />{feature}</li>)}
               </ul>
               <button className="mt-7 w-full rounded-2xl bg-emerald-600 py-3.5 text-sm font-bold text-white shadow-[0_4px_15px_rgba(16,185,129,0.3)] transition-all hover:bg-emerald-500 hover:shadow-[0_6px_20px_rgba(16,185,129,0.4)] active:scale-[0.98]" onClick={() => handleOrder(plan)} type="button">Buy now</button>
             </article>
           ))}
         </div>
 
-        <p className="mt-6 text-center text-sm text-stone-400">Reliable support for every IPTVDoor subscription.</p>
+        <p className="mt-6 text-center text-sm text-stone-400">Reliable support for every IPTV Fiesta subscription.</p>
 
         <div className="mx-auto mt-10 flex max-w-4xl flex-col items-center gap-7">
           <div aria-label="Supported payment methods" className="flex flex-wrap items-center justify-center gap-4">

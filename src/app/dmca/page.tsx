@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Legal Disclaimer & DMCA | IPTVDoor",
-  description: "Legal Disclaimer and DMCA policy for IPTVDoor.",
+  title: "Legal Disclaimer & DMCA | IPTV Fiesta",
+  description: "Legal Disclaimer and DMCA policy for IPTV Fiesta.",
   alternates: {
     canonical: "/dmca",
   },
@@ -19,13 +19,13 @@ const sections = [
   {
     title: "Content Ownership and Hosting",
     content: [
-      "IPTVDoor does not possess, manage, upload, store, or distribute copyrighted materials. All streams available via your account are sourced from external parties on the public internet. Mentions of channels, logos, or trademarks are solely for identification purposes and are owned by their respective entities.",
+      "IPTV Fiesta does not possess, manage, upload, store, or distribute copyrighted materials. All streams available via your account are sourced from external parties on the public internet. Mentions of channels, logos, or trademarks are solely for identification purposes and are owned by their respective entities.",
     ],
   },
   {
     title: "Availability and Service Changes",
     content: [
-      <>Channel and VOD options may vary in availability, quality (including 4K/FHD/HD), features, plans, and <Link className="font-semibold text-red-400 hover:text-red-300" href="/pricing">pricing</Link>, and can be modified or removed by region without prior notification. We do not assure the availability of any particular <Link className="font-semibold text-red-400 hover:text-red-300" href="/channels">channel</Link>, event, or title.</>,
+      <>Channel and VOD options may vary in availability, quality (including 4K/FHD/HD), features, plans, and <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/pricing">pricing</Link>, and can be modified or removed by region without prior notification. We do not assure the availability of any particular <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/channels">channel</Link>, event, or title.</>,
     ],
   },
   {
@@ -49,13 +49,13 @@ const sections = [
   {
     title: "Limitation of Liability",
     content: [
-      "IPTVDoor, its owners, affiliates, employees, and agents shall not be liable to the fullest extent permitted by law for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of data, profits, or goodwill connected to your use of the site or service.",
+      "IPTV Fiesta, its owners, affiliates, employees, and agents shall not be liable to the fullest extent permitted by law for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of data, profits, or goodwill connected to your use of the site or service.",
     ],
   },
   {
     title: "Indemnification",
     content: [
-      "You agree to defend, indemnify, and shield IPTVDoor from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) related to your use of the service or any infringement of this disclaimer or applicable law.",
+      "You agree to defend, indemnify, and shield IPTV Fiesta from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) related to your use of the service or any infringement of this disclaimer or applicable law.",
     ],
   },
   {
@@ -88,7 +88,7 @@ export default function DmcaPage() {
     <main className="flex-grow px-5 pb-20 pt-12 sm:px-8 md:pt-16">
       <article className="mx-auto max-w-4xl">
         <header className="border-b border-white/10 pb-10 text-center mx-auto max-w-3xl">
-          <span className="inline-flex rounded-full border border-red-400/35 bg-red-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-red-300">Legal information</span>
+          <span className="inline-flex rounded-full border border-orange-400/35 bg-orange-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-orange-300">Legal information</span>
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
             <span className="block text-white">Legal Disclaimer</span>
             <span className="mt-1 block text-[#d32f2f]">&amp; DMCA Notice.</span>
@@ -100,7 +100,7 @@ export default function DmcaPage() {
           <div className="space-y-4">
             <p>Content featured on this website is meant for general informational use and does not serve as legal advice. By engaging with our site or services, you agree to this disclaimer.</p>
             <div className="rounded-xl border border-blue-500/20 bg-blue-500/10 p-5 text-sm">
-              <strong className="text-white">Important:</strong> IPTVDoor delivers an intuitive IPTV service interface alongside account provisioning. We do not host, upload, store, or archive any audiovisual content. The details on this site are provided 'as is' for general guidance, not legal counsel.
+              <strong className="text-white">Important:</strong> IPTV Fiesta delivers an intuitive IPTV service interface alongside account provisioning. We do not host, upload, store, or archive any audiovisual content. The details on this site are provided 'as is' for general guidance, not legal counsel.
             </div>
           </div>
 
@@ -115,7 +115,7 @@ export default function DmcaPage() {
           
           <section>
             <h2 className="text-2xl font-bold text-white">11. Contact</h2>
-            <p className="mt-4">For any inquiries, refer to our Terms of Service and <Link className="font-semibold text-red-400 hover:text-red-300" href="/privacy-policy">Privacy Policy</Link>, or contact <Link className="font-semibold text-red-400 hover:text-red-300" href="/contact">support</Link>.</p>
+            <p className="mt-4">For any inquiries, refer to our Terms of Service and <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/privacy-policy">Privacy Policy</Link>, or contact <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">support</Link>.</p>
           </section>
         </div>
       </article>

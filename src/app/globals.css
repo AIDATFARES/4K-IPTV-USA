@@ -49,6 +49,12 @@
   --color-on-primary-fixed: #001356;
   --color-primary-fixed-dim: #b8c3ff;
 
+  /* Brand Colors */
+  --color-orange-400: #FF8533;
+  --color-orange-500: #FF6B00;
+  --color-orange-600: #E66000;
+  --color-blue-500: #049EFF;
+
   --radius: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
@@ -119,10 +125,10 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
   .text-glow {
-    text-shadow: 0 0 20px rgba(211, 47, 47, 0.3);
+    text-shadow: 0 0 20px rgba(255, 107, 0, 0.3);
   }
   .btn-glow:hover {
-    box-shadow: 0 0 30px rgba(211, 47, 47, 0.5);
+    box-shadow: 0 0 30px rgba(255, 107, 0, 0.5);
   }
 
   .btn-primary-voltra {
@@ -181,10 +187,10 @@
   }
   .text-format-marketing mark,
   .text-format-marketing .text-highlight {
-    @apply bg-transparent text-red-500 font-extrabold;
+    @apply bg-transparent text-orange-500 font-extrabold;
   }
   .text-format-marketing .badge-text {
-    @apply inline-flex items-center gap-1.5 rounded-full border border-red-500/30 bg-red-500/10 px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-red-400;
+    @apply inline-flex items-center gap-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-orange-400;
   }
 
   /* 2. BLOG & EDITORIAL PAGES (Blog listing, Article detail) */
@@ -209,7 +215,7 @@
     @apply italic text-stone-200;
   }
   .text-format-blog a {
-    @apply text-red-400 font-medium underline underline-offset-4 decoration-red-500/40 hover:text-red-300 hover:decoration-red-400 transition-colors;
+    @apply text-orange-400 font-medium underline underline-offset-4 decoration-orange-500/40 hover:text-orange-300 hover:decoration-orange-400 transition-colors;
   }
 
   /* 3. TECHNICAL GUIDES & INSTALLATION PAGES */
@@ -227,7 +233,7 @@
   }
   .text-format-technical code,
   .text-format-technical pre {
-    @apply font-mono text-red-300 bg-[#161a23] px-2.5 py-1 rounded-md border border-white/10 text-xs sm:text-sm font-medium tracking-wide shadow-inner;
+    @apply font-mono text-orange-300 bg-[#161a23] px-2.5 py-1 rounded-md border border-white/10 text-xs sm:text-sm font-medium tracking-wide shadow-inner;
   }
   .text-format-technical strong,
   .text-format-technical b {
@@ -239,7 +245,7 @@
     @apply font-black uppercase tracking-tight text-white text-3xl sm:text-4xl lg:text-5xl;
   }
   .text-format-legal h2 {
-    @apply font-bold text-white text-xl sm:text-2xl tracking-normal mt-8 mb-3 border-l-4 border-red-500 pl-3;
+    @apply font-bold text-white text-xl sm:text-2xl tracking-normal mt-8 mb-3 border-l-4 border-orange-500 pl-3;
   }
   .text-format-legal p {
     @apply text-stone-300 leading-7 font-normal text-sm sm:text-base mb-4 tracking-normal;
@@ -249,7 +255,7 @@
     @apply font-semibold text-white;
   }
   .text-format-legal a {
-    @apply font-semibold text-red-400 hover:text-red-300 transition-colors underline underline-offset-2;
+    @apply font-semibold text-orange-400 hover:text-orange-300 transition-colors underline underline-offset-2;
   }
 }
 

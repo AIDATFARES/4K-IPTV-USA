@@ -80,10 +80,10 @@ export default function ChannelCategories() {
           style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
         >
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#d32f2f] mb-6 tracking-tight">
-            IPTVDoor IPTV subscription prices
+            IPTV Fiesta IPTV subscription prices
           </h2>
           <p className="text-stone-300 text-sm md:text-base max-w-3xl mx-auto mb-8 font-medium">
-            Buying iptv from <span className="font-bold text-white">IPTVDoor</span> allows you to enjoy +50,000 Channels, +120,000 Films &amp; Series, and 200,000+ VODs.
+            Buying iptv from <span className="font-bold text-white">IPTV Fiesta</span> allows you to enjoy +50,000 Channels, +120,000 Films &amp; Series, and 200,000+ VODs.
           </p>
           <h3 className="text-2xl md:text-[28px] font-semibold text-white">
             High-Quality IPTV Servers <span className="text-[#d32f2f]">with 24/7 Uptime</span> and Zero Buffering!

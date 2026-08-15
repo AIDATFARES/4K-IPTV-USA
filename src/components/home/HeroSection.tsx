@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="/hero-custom-bg.webp"
-          alt="IPTVDoor Background"
+          alt="IPTV Fiesta Background"
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
@@ -30,7 +30,7 @@ export default function HeroSection() {
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.08] drop-shadow-2xl text-center">
-          <span className="text-[#d32f2f]">IPTVDoor</span> <span className="text-white">The Best IPTV</span> <br />
+          <span className="text-[#d32f2f]">IPTV Fiesta</span> <span className="text-white">The Best IPTV</span> <br />
           <span className="text-white">Service Provider for</span> <br />
           <span className="text-white">2026</span>
         </h1>
@@ -46,11 +46,11 @@ export default function HeroSection() {
         {/* Description */}
         <p className="text-lg sm:text-xl text-stone-300 font-normal leading-[1.6] max-w-[850px] mt-5">
           Choose from{" "}
-          <Link prefetch={false} href="/channels" className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors">
+          <Link prefetch={false} href="/channels" className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors">
             50,000+ Live Channels
           </Link>
           , +120,000 Films & Series, and 200,000+ VODs. Enjoy your time with excellent image quality up to 4K on{" "}
-          <Link prefetch={false} href="/installation" className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors">
+          <Link prefetch={false} href="/installation" className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors">
             any device of your choice
           </Link>{" "}
           including Smart TV, Android Box, PC, tablet, and smartphone—anytime and anywhere.
@@ -59,7 +59,7 @@ export default function HeroSection() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center">
           <a
-            href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV."
+            href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20fiestaiptv%20IPTV."
             target="_blank"
             rel="noreferrer"
             aria-label="Get free trial"
@@ -84,7 +84,7 @@ export default function HeroSection() {
             <Trophy className="h-4 w-4 text-amber-400" /> Live Sports & PPV
           </Link>
           <Link href="/installation" className="flex items-center gap-2 hover:text-[#d32f2f] transition-colors">
-            <Monitor className="h-4 w-4 text-red-400" /> All Devices
+            <Monitor className="h-4 w-4 text-orange-400" /> All Devices
           </Link>
           <Link href="/installation" className="flex items-center gap-2 hover:text-[#d32f2f] transition-colors">
             <Zap className="h-4 w-4 text-amber-400" /> Instant Setup

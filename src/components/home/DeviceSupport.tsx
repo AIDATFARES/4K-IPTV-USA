@@ -15,7 +15,7 @@ export default function DeviceSupport() {
             Our IPTV service supports{" "}
             <Link
               href="/installation"
-              className="text-[#d32f2f] hover:text-red-400 transition-colors"
+              className="text-[#d32f2f] hover:text-orange-400 transition-colors"
             >
               all your favorite devices
             </Link>
@@ -53,7 +53,7 @@ export default function DeviceSupport() {
                   You can use Our Server services on all Smart Phones & TVs, Android Box, and all devices that can play IPTV powered with different OS (Android, iOS, Windows & ...) via{" "}
                   <Link
                     href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
                   >
                     our installation guide
                   </Link>
@@ -75,7 +75,7 @@ export default function DeviceSupport() {
                   Just send us your Mac Address related to your MAG Device or your Mag simulator (like STB). We send you Mag portal and you have access to our{" "}
                   <Link
                     href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
                   >
                     channels playlist
                   </Link>
@@ -97,7 +97,7 @@ export default function DeviceSupport() {
                   Our Server service is flexible and you can play line on almost all digital devices. You can install an{" "}
                   <Link
                     href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
                   >
                     IPTV player
                   </Link>{" "}
