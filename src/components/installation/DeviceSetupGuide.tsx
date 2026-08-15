@@ -2,6 +2,7 @@
 
 import { Apple, Box, ChevronDown, Download, HelpCircle, Monitor, Satellite, Smartphone, Tv } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 const devices = [
   { id: "smart-tv", label: "Smart TV", icon: Monitor, title: "Smart TV Setup (Samsung, LG, Sony, etc.)", app: "Smart IPTV or IPTV Smarters", note: "Samsung TVs commonly use Smart IPTV, while LG TVs can use IPTV Smarters or SS IPTV." },
@@ -28,46 +29,91 @@ export default function DeviceSetupGuide() {
   return (
     <section className="mb-16 md:mb-[100px]">
       <header className="mx-auto mb-9 max-w-2xl text-center">
-        <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Device Setup Instructions</h2>
-        <p className="mt-3 text-base text-stone-400">Select your device to receive clear setup instructions.</p>
+        <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-4xl">Device Setup Instructions</h2>
+        <p className="mt-3 text-base text-slate-600">Select your device to receive clear setup instructions.</p>
       </header>
 
       <div className="mb-7 flex flex-wrap justify-center gap-2">
         {devices.map((item) => {
           const Icon = item.icon;
           const active = item.id === activeDevice;
-          return <button className={`inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors ${active ? "border-orange-600 bg-orange-600 text-white shadow-lg shadow-orange-600/30" : "border-white/15 bg-white/[0.03] text-stone-400 hover:border-orange-500/60 hover:text-white"}`} key={item.id} onClick={() => setActiveDevice(item.id)} type="button"><Icon className="h-4 w-4" />{item.label}</button>;
+          return (
+            <button 
+              className={`inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors ${active ? "border-orange-600 bg-[#FF6B00] text-white shadow-lg shadow-orange-600/30" : "border-black/15 bg-white text-slate-600 hover:border-orange-500/60 hover:text-black hover:bg-orange-50"}`} 
+              key={item.id} 
+              onClick={() => setActiveDevice(item.id)} 
+              type="button"
+            >
+              <Icon className="h-4 w-4" />{item.label}
+            </button>
+          );
         })}
       </div>
 
-      <article className="mx-auto max-w-[940px] rounded-3xl border border-white/10 bg-[#121620]/90 p-7 sm:p-10 shadow-2xl">
-        <div className="flex items-center gap-3 border-b border-white/10 pb-5">
-          <DeviceIcon className="h-7 w-7 text-orange-400" />
-          <h3 className="text-xl font-bold text-white sm:text-2xl">{device.title}</h3>
+      <article className="mx-auto max-w-[1000px] rounded-3xl border-2 border-[#FF6B00] bg-white p-6 sm:p-10 shadow-2xl overflow-hidden">
+        
+        {/* Device Header */}
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 border-b border-slate-100 pb-6 mb-8">
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-50 shrink-0">
+            <DeviceIcon className="h-8 w-8 text-[#FF6B00]" />
+          </div>
+          <div>
+            <h3 className="text-2xl font-black text-black sm:text-3xl">{device.title}</h3>
+            <p className="mt-1 text-slate-500 font-medium">Follow these steps to configure your {device.label} for IPTV Fiesta.</p>
+          </div>
         </div>
-        <div className="mt-8 space-y-8">
-          <SetupStep number="1" title="Install IPTV App">Navigate to your device&apos;s app store, find <strong>{device.app}</strong>, and install the app.</SetupStep>
-          <div className="rounded-xl border-l-4 border-orange-500 bg-red-950/30 px-4 py-3 text-sm leading-5 text-stone-300">{device.note}</div>
-          <SetupStep number="2" title="Configure your playlist">Launch the IPTV app, open its settings, and enter the playlist details supplied in your welcome email.</SetupStep>
-          <CodeLine label="M3U URL" text="Use the secure playlist URL from your welcome email" />
-          <SetupStep number="3" title="Add EPG (optional)">Enable the TV guide by entering your EPG URL in the app&apos;s settings menu.</SetupStep>
-          <CodeLine label="EPG URL" text="Use the EPG URL from your welcome email" />
-          <SetupStep number="4" title="Start Watching">Reopen the app to load your playlist and start watching IPTV Fiesta channels.</SetupStep>
+        
+        {/* Important Note */}
+        {device.note && (
+          <div className="mb-8 rounded-2xl border border-orange-200 bg-orange-50/50 p-5 flex items-start gap-4">
+            <HelpCircle className="h-6 w-6 text-[#FF6B00] shrink-0" />
+            <div>
+              <h4 className="font-bold text-black mb-1">Important Note</h4>
+              <p className="text-sm leading-relaxed text-slate-700">{device.note}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Steps Grid */}
+        <div className="space-y-6">
+          <SetupStep 
+            number="1" 
+            title="Install IPTV App"
+          >
+            Navigate to your device's app store, search for <strong>{device.app}</strong>, and install the application directly to your device.
+          </SetupStep>
+          
+          <SetupStep 
+            number="2" 
+            title="Configure your playlist"
+          >
+            Launch the IPTV app, open its settings menu, and enter the M3U playlist details or Xtream Codes credentials supplied in your welcome email.
+            <div className="mt-4">
+              <CodeLine label="M3U URL" text="Use the secure playlist URL from your welcome email" />
+            </div>
+          </SetupStep>
+          
+          <SetupStep 
+            number="3" 
+            title="Start Watching"
+          >
+            Save your settings and allow the app a few moments to load the channels. You now have immediate access to live channels, movies and TV shows in stunning 4K quality!
+          </SetupStep>
         </div>
       </article>
 
-      <div className="mx-auto mt-16 max-w-[1140px]">
-        <h2 className="mb-8 text-center text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Installation FAQ</h2>
+      <div className="mx-auto mt-20 max-w-[1000px]">
+        <h2 className="mb-8 text-center text-3xl font-extrabold tracking-tight text-black sm:text-4xl">Installation FAQ</h2>
         <div className="grid gap-5 md:grid-cols-2">
           {faqs.map((faq) => (
-            <div className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-orange-500/40 transition-colors" key={faq.question}>
-              <div className="bg-[#18202a] border-b border-white/10 px-5 py-4 flex items-center gap-3">
-                <HelpCircle className="w-5 h-5 text-orange-500 shrink-0" />
-                <h3 className="text-base sm:text-lg font-bold text-white leading-snug">
+            <div className="flex flex-col rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:border-orange-200 transition-colors" key={faq.question}>
+              <div className="bg-slate-50 border-b border-slate-100 px-5 py-4 flex items-center gap-3">
+                <HelpCircle className="w-5 h-5 text-[#FF6B00] shrink-0" />
+                <h3 className="text-base sm:text-lg font-bold text-black leading-snug">
                   {faq.question}
                 </h3>
               </div>
-              <div className="p-5 text-sm text-stone-300 leading-relaxed bg-[#0f1419]/60 flex-1">
+              <div className="p-5 text-sm text-slate-700 leading-relaxed bg-white flex-1">
                 <p>{faq.answer}</p>
               </div>
             </div>
@@ -79,9 +125,31 @@ export default function DeviceSetupGuide() {
 }
 
 function SetupStep({ children, number, title }: { children: React.ReactNode; number: string; title: string }) {
-  return <div className="flex gap-4"><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange-600 text-sm font-extrabold text-white shadow-md">{number}</span><div><h4 className="text-base font-bold text-white sm:text-lg">{title}</h4><p className="mt-1 text-sm leading-6 text-stone-300">{children}</p></div></div>;
+  return (
+    <div className="flex flex-col sm:flex-row gap-6 bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm hover:border-orange-300 transition-colors">
+      
+      {/* Content */}
+      <div className="flex flex-1 gap-5 items-start">
+         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FF6B00] text-lg font-extrabold text-white shadow-md">
+           {number}
+         </span>
+         <div className="flex-1 mt-1">
+           <h4 className="text-lg font-bold text-black sm:text-xl">{title}</h4>
+           <div className="mt-3 text-sm leading-relaxed text-slate-600">
+             {children}
+           </div>
+         </div>
+      </div>
+      
+    </div>
+  );
 }
 
 function CodeLine({ label, text }: { label: string; text: string }) {
-  return <div className="rounded-xl bg-black/40 border border-white/5 px-4 py-3 font-mono text-xs text-stone-400"><span className="font-bold text-orange-400">{label}:</span> {text}</div>;
+  return (
+    <div className="rounded-xl bg-slate-50 border border-slate-200 px-4 py-3 font-mono text-xs text-slate-700 break-all">
+      <span className="font-bold text-[#FF6B00] mr-2">{label}:</span> 
+      {text}
+    </div>
+  );
 }

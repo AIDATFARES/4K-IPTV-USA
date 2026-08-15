@@ -190,7 +190,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((relPost) => (
                 <Link href={`/blog/${relPost.slug}`} key={relPost.id}>
-                  <article className="glass-panel rounded-xl overflow-hidden flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300 h-full border border-white/10 hover:border-primary/50">
+                  <article className="glass-panel rounded-xl overflow-hidden flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300 h-full border border-black/10 hover:border-primary/50">
                     <div className="h-40 relative overflow-hidden shrink-0">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img

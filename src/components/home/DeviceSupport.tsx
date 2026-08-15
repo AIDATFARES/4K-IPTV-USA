@@ -1,112 +1,111 @@
-import { Check } from "lucide-react";
+import { Monitor, Smartphone, Tv, Box, Laptop } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function DeviceSupport() {
   return (
-    <section className="py-20 bg-[#0c0f0f] text-white relative z-10 border-y border-white/10 overflow-hidden">
-      <div className="max-w-[1320px] mx-auto px-6">
+    <section className="py-24 bg-slate-50 text-black relative z-10 border-y border-black/10 overflow-hidden">
+      <div className="max-w-[1240px] mx-auto px-6">
+        
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#d32f2f] mb-3 block">
-            MULTI-DEVICE COMPATIBILITY
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#FF6B00] mb-3 block">
+            SUPPORTED IPTV DEVICES
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-            Our IPTV service supports{" "}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black tracking-tight">
+            Watch the Best IPTV Service on{" "}
             <Link
               href="/installation"
-              className="text-[#d32f2f] hover:text-orange-400 transition-colors"
+              className="text-[#FF6B00] hover:text-orange-400 transition-colors"
             >
-              all your favorite devices
+              All Your Favorite Devices
             </Link>
           </h2>
         </div>
 
-        {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Image */}
-          <div className="flex items-center justify-center w-full">
-            <div className="relative w-full max-w-[550px] p-3 bg-white/5 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-md">
-              <Image
-                src="/setup-illustration.webp"
-                alt="Supported IPTV Devices"
-                width={700}
-                height={500}
-                sizes="(max-width: 768px) 100vw, 550px"
-                className="w-full h-auto object-contain rounded-2xl"
-              />
-            </div>
-          </div>
-
-          {/* Right Column: Features List */}
-          <div className="space-y-8 w-full">
-            {/* Item 1 */}
-            <div className="flex gap-4 items-start group w-full">
-              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
-                <Check className="h-4 w-4 stroke-[3]" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
-                  Smart TV, Smart Phone, Tablets, Android and TV BOX
-                </h3>
-                <p className="text-sm sm:text-base text-stone-300 leading-relaxed">
-                  You can use Our Server services on all Smart Phones & TVs, Android Box, and all devices that can play IPTV powered with different OS (Android, iOS, Windows & ...) via{" "}
-                  <Link
-                    href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-                  >
-                    our installation guide
-                  </Link>
-                  .
-                </p>
-              </div>
-            </div>
-
-            {/* Item 2 */}
-            <div className="flex gap-4 items-start group w-full">
-              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
-                <Check className="h-4 w-4 stroke-[3]" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
-                  Mag Devices & Mag simulators
-                </h3>
-                <p className="text-sm sm:text-base text-stone-300 leading-relaxed">
-                  Just send us your Mac Address related to your MAG Device or your Mag simulator (like STB). We send you Mag portal and you have access to our{" "}
-                  <Link
-                    href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-                  >
-                    channels playlist
-                  </Link>
-                  !
-                </p>
-              </div>
-            </div>
-
-            {/* Item 3 */}
-            <div className="flex gap-4 items-start group w-full">
-              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
-                <Check className="h-4 w-4 stroke-[3]" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
-                  Laptop & Computers
-                </h3>
-                <p className="text-sm sm:text-base text-stone-300 leading-relaxed">
-                  Our Server service is flexible and you can play line on almost all digital devices. You can install an{" "}
-                  <Link
-                    href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-                  >
-                    IPTV player
-                  </Link>{" "}
-                  on your computer and enjoy watching IPTV.
-                </p>
-              </div>
-            </div>
+        {/* Center Image Display */}
+        <div className="relative mx-auto max-w-[800px] mb-16 group">
+          {/* Subtle background glow for the image */}
+          <div className="absolute inset-0 bg-orange-400/10 blur-[80px] rounded-full scale-90 -z-10 group-hover:bg-orange-400/20 transition-all duration-700"></div>
+          
+          <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-xl transition-transform duration-500 hover:scale-[1.02]">
+            <Image
+              src="/devices-banner.webp"
+              alt="Supported IPTV Devices - Smart TV, Laptop, Smartphone"
+              width={1200}
+              height={500}
+              sizes="(max-width: 1024px) 100vw, 800px"
+              className="w-full aspect-[21/9] sm:aspect-[2.5/1] object-cover object-center"
+              priority
+            />
           </div>
         </div>
+
+        {/* 3-Column Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          {/* Card 1 */}
+          <div className="relative bg-white rounded-2xl p-8 border-y border-r border-slate-200 border-l-4 border-l-[#FF6B00] shadow-lg hover:shadow-xl hover:border-orange-200 hover:border-l-[#FF6B00] transition-all duration-300 group overflow-hidden">
+            <div className="h-12 w-12 rounded-xl bg-orange-50 text-[#FF6B00] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10">
+              <Tv className="h-6 w-6 stroke-[2.5]" />
+            </div>
+            <h3 className="text-xl font-bold text-black mb-3">
+              Smart TVs, Android Boxes & Firestick
+            </h3>
+            <p className="text-slate-600 leading-relaxed text-sm">
+              Our premium IPTV subscription is fully compatible with Samsung and LG Smart TVs, Amazon Firestick, Android TV boxes, and smartphones. Enjoy buffer-free live TV on any screen using our simple{" "}
+              <Link
+                href="/installation"
+                className="text-[#FF6B00] font-semibold hover:text-orange-400 transition-colors"
+              >
+                installation guide
+              </Link>
+              .
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="relative bg-white rounded-2xl p-8 border-y border-r border-slate-200 border-l-4 border-l-[#FF6B00] shadow-lg hover:shadow-xl hover:border-orange-200 hover:border-l-[#FF6B00] transition-all duration-300 group overflow-hidden">
+            <div className="h-12 w-12 rounded-xl bg-orange-50 text-[#FF6B00] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10">
+              <Box className="h-6 w-6 stroke-[2.5]" />
+            </div>
+            <h3 className="text-xl font-bold text-black mb-3">
+              MAG Devices & STB Emulators
+            </h3>
+            <p className="text-slate-600 leading-relaxed text-sm">
+              Connect your MAG box or STB emulator instantly. Just provide your MAC address, and we will send you our high-speed IPTV portal for access to thousands of live channels and our{" "}
+              <Link
+                href="/channels"
+                className="text-[#FF6B00] font-semibold hover:text-orange-400 transition-colors"
+              >
+                VOD library
+              </Link>
+              .
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="relative bg-white rounded-2xl p-8 border-y border-r border-slate-200 border-l-4 border-l-[#FF6B00] shadow-lg hover:shadow-xl hover:border-orange-200 hover:border-l-[#FF6B00] transition-all duration-300 group overflow-hidden">
+            <div className="h-12 w-12 rounded-xl bg-orange-50 text-[#FF6B00] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10">
+              <Laptop className="h-6 w-6 stroke-[2.5]" />
+            </div>
+            <h3 className="text-xl font-bold text-black mb-3">
+              Windows & Mac Computers
+            </h3>
+            <p className="text-slate-600 leading-relaxed text-sm">
+              Stream live sports and 4K movies directly on your computer. Whether you use Windows or Mac, you can easily watch our IPTV service using popular{" "}
+              <Link
+                href="/installation"
+                className="text-[#FF6B00] font-semibold hover:text-orange-400 transition-colors"
+              >
+                IPTV players
+              </Link>{" "}
+              like VLC or IPTV Smarters Pro.
+            </p>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );

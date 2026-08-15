@@ -188,14 +188,14 @@ export default function FAQ() {
   }
 
   return (
-    <main className="flex-grow px-4 sm:px-6 pb-20 pt-12 md:pt-16 bg-[#0c0f0f]">
+    <main className="flex-grow px-4 sm:px-6 pb-20 pt-12 md:pt-16 bg-white">
       <div className="mx-auto max-w-[1140px]">
         <header className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-orange-400">Help center</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black tracking-tight leading-tight">
             Frequently Asked Questions<br />(FAQ)
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-sm sm:text-base leading-relaxed text-stone-300">
+          <p className="mx-auto mt-5 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-700">
             Find answers to common questions about our IPTV service, including{" "}
             <Link href="/pricing" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">subscriptions</Link>,{" "}
             <Link href="/installation" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">devices</Link>, streaming quality, payments, and more. If you need further help, our{" "}
@@ -205,7 +205,7 @@ export default function FAQ() {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-[250px_minmax(0,1fr)] md:gap-10">
           <aside aria-label="FAQ categories" className="md:sticky md:top-28 md:self-start">
-            <div className="rounded-2xl border border-white/10 bg-[#121620]/80 p-3">
+            <div className="rounded-2xl border border-black/10 bg-white p-3">
               <div className="flex gap-2 overflow-x-auto pb-1 md:flex-col md:overflow-visible md:pb-0">
                 {categories.map(({ label, icon: Icon }) => {
                   const isSelected = activeCategory === label;
@@ -214,8 +214,8 @@ export default function FAQ() {
                       aria-pressed={isSelected}
                       className={`flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold transition-all md:w-full ${
                         isSelected
-                          ? "bg-orange-600 text-white shadow-lg shadow-orange-600/30"
-                          : "text-stone-400 hover:bg-white/[0.07] hover:text-white"
+                          ? "bg-orange-600 text-black shadow-lg shadow-orange-600/30"
+                          : "text-slate-600 hover:bg-white/[0.07] hover:text-black"
                       }`}
                       key={label}
                       onClick={() => selectCategory(label)}
@@ -233,7 +233,7 @@ export default function FAQ() {
           <section aria-live="polite" className="space-y-4">
             <div className="mb-5 flex items-center gap-3">
               <MonitorPlay className="h-5 w-5 text-orange-500" />
-              <h2 className="text-xl font-bold text-white">{activeCategory}</h2>
+              <h2 className="text-xl font-bold text-black">{activeCategory}</h2>
             </div>
             <div className="grid grid-cols-1 gap-5">
               {visibleFaqs.map((faq, index) => {
@@ -241,19 +241,19 @@ export default function FAQ() {
                 const contentId = `faq-${activeCategory.replaceAll(" ", "-").toLowerCase()}-${index}`;
 
                 return (
-                  <article className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-orange-500/40 transition-colors" key={faq.question}>
+                  <article className="flex flex-col rounded-2xl overflow-hidden border border-black/10 bg-white shadow-xl hover:border-orange-500/40 transition-colors" key={faq.question}>
                     {/* Header Banner */}
-                    <div className="bg-[#18202a] border-b border-white/10 px-5 py-4 flex items-center justify-between gap-3">
+                    <div className="bg-slate-100 border-b border-black/10 px-5 py-4 flex items-center justify-between gap-3">
                       <div className="flex items-center gap-3">
                         <HelpCircle className="w-5 h-5 text-orange-500 shrink-0" />
-                        <h3 className="text-base sm:text-lg font-bold text-white leading-snug">
+                        <h3 className="text-base sm:text-lg font-bold text-black leading-snug">
                           {faq.question}
                         </h3>
                       </div>
                       <button
                         aria-controls={contentId}
                         aria-expanded={isOpen}
-                        className="text-stone-400 hover:text-white transition-colors"
+                        className="text-slate-600 hover:text-black transition-colors"
                         onClick={() => setActiveIndex(isOpen ? null : index)}
                         type="button"
                       >
@@ -262,7 +262,7 @@ export default function FAQ() {
                     </div>
 
                     {/* Answer Content */}
-                    <div className="p-5 sm:p-6 text-sm sm:text-base text-stone-300 leading-relaxed flex-1 bg-[#0f1419]/60" id={contentId}>
+                    <div className="p-5 sm:p-6 text-sm sm:text-base text-slate-700 leading-relaxed flex-1 bg-white" id={contentId}>
                       <p>{faq.answer}</p>
                     </div>
                   </article>
@@ -272,42 +272,42 @@ export default function FAQ() {
           </section>
         </div>
 
-        <section className="mt-20 border-t border-white/10 pt-16 sm:pt-20">
+        <section className="mt-20 border-t border-black/10 pt-16 sm:pt-20">
           <header className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white">Get in Touch with Our Support Team</h2>
-            <p className="mt-3 text-sm leading-6 text-stone-400">We&apos;re here to help you get the best streaming experience. Send us a message and we&apos;ll get back to you quickly.</p>
+            <h2 className="text-3xl font-bold tracking-tight text-black">Get in Touch with Our Support Team</h2>
+            <p className="mt-3 text-sm leading-6 text-slate-600">We&apos;re here to help you get the best streaming experience. Send us a message and we&apos;ll get back to you quickly.</p>
           </header>
           <div className="mt-10 grid gap-8 xl:grid-cols-[278px_minmax(0,1fr)] xl:gap-10">
             <div className="grid gap-3 sm:grid-cols-3 xl:grid-cols-1">
-              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-white/10 bg-[#121620]/80 p-5 text-center transition-colors hover:border-orange-500/50" href="mailto:support@fiestaiptv.shop">
+              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center transition-colors hover:border-orange-500/50" href="mailto:support@fiestaiptv.shop">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500/20 text-orange-400"><Mail className="h-5 w-5" /></span>
-                <span className="mt-4 block text-base font-bold text-white">Email Us</span>
-                <span className="mt-2 block text-xs leading-5 text-stone-400">For general inquiries and support.</span>
+                <span className="mt-4 block text-base font-bold text-black">Email Us</span>
+                <span className="mt-2 block text-xs leading-5 text-slate-600">For general inquiries and support.</span>
                 <span className="mt-3 block text-xs font-semibold text-orange-400">support@fiestaiptv.shop</span>
               </a>
-              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-white/10 bg-[#121620]/80 p-5 text-center transition-colors hover:border-orange-500/50" href="https://wa.me/213552069874?text=Hello%20fiestaiptv%20IPTV%20support%2C%20I%20need%20help." rel="noreferrer" target="_blank">
+              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center transition-colors hover:border-orange-500/50" href="https://wa.me/213552069874?text=Hello%20fiestaiptv%20IPTV%20support%2C%20I%20need%20help." rel="noreferrer" target="_blank">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400"><MessageCircle className="h-5 w-5" /></span>
-                <span className="mt-4 block text-base font-bold text-white">WhatsApp Support</span>
-                <span className="mt-2 block text-xs leading-5 text-stone-400">Fastest way to reach us for technical issues.</span>
+                <span className="mt-4 block text-base font-bold text-black">WhatsApp Support</span>
+                <span className="mt-2 block text-xs leading-5 text-slate-600">Fastest way to reach us for technical issues.</span>
                 <span className="mt-3 block text-xs font-semibold text-emerald-400">Start Chat →</span>
               </a>
-              <div className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-white/10 bg-[#121620]/80 p-5 text-center">
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-stone-300"><Clock3 className="h-5 w-5" /></span>
-                <span className="mt-4 block text-base font-bold text-white">Response Time</span>
-                <span className="mt-2 block text-xs leading-5 text-stone-400">We typically reply within <strong className="text-white">2 hours</strong> during standard business hours.</span>
+              <div className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/10 text-slate-700"><Clock3 className="h-5 w-5" /></span>
+                <span className="mt-4 block text-base font-bold text-black">Response Time</span>
+                <span className="mt-2 block text-xs leading-5 text-slate-600">We typically reply within <strong className="text-black">2 hours</strong> during standard business hours.</span>
               </div>
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-[#121620]/80 p-6 sm:p-8">
-              <h3 className="text-xl font-bold text-white">Send us a message</h3>
+            <div className="rounded-2xl border border-black/10 bg-white p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-black">Send us a message</h3>
               <form action={sendSupportMessage} className="mt-6 space-y-4">
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <label className="block text-xs font-semibold text-stone-400">Name<input className="mt-2 w-full rounded-xl border border-white/10 bg-black/40 px-3.5 py-3 text-sm text-white outline-none transition-colors placeholder:text-stone-500 focus:border-orange-500" name="name" placeholder="John Doe" required /></label>
-                  <label className="block text-xs font-semibold text-stone-400">Email address<input className="mt-2 w-full rounded-xl border border-white/10 bg-black/40 px-3.5 py-3 text-sm text-white outline-none transition-colors placeholder:text-stone-500 focus:border-orange-500" name="email" placeholder="john@example.com" required type="email" /></label>
+                  <label className="block text-xs font-semibold text-slate-600">Name<input className="mt-2 w-full rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-orange-500" name="name" placeholder="John Doe" required /></label>
+                  <label className="block text-xs font-semibold text-slate-600">Email address<input className="mt-2 w-full rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-orange-500" name="email" placeholder="john@example.com" required type="email" /></label>
                 </div>
-                <label className="block text-xs font-semibold text-stone-400">Subject<input className="mt-2 w-full rounded-xl border border-white/10 bg-black/40 px-3.5 py-3 text-sm text-white outline-none transition-colors placeholder:text-stone-500 focus:border-orange-500" name="subject" placeholder="How can we help?" /></label>
-                <label className="block text-xs font-semibold text-stone-400">Message<textarea className="mt-2 min-h-32 w-full resize-y rounded-xl border border-white/10 bg-black/40 px-3.5 py-3 text-sm text-white outline-none transition-colors placeholder:text-stone-500 focus:border-orange-500" name="message" placeholder="Describe your question or issue..." required /></label>
-                <button className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-600/30 transition-all hover:-translate-y-0.5 active:translate-y-0" type="submit"><Send className="h-4 w-4" />Send message via WhatsApp</button>
+                <label className="block text-xs font-semibold text-slate-600">Subject<input className="mt-2 w-full rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-orange-500" name="subject" placeholder="How can we help?" /></label>
+                <label className="block text-xs font-semibold text-slate-600">Message<textarea className="mt-2 min-h-32 w-full resize-y rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-orange-500" name="message" placeholder="Describe your question or issue..." required /></label>
+                <button className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 py-3.5 text-sm font-bold text-black shadow-lg shadow-emerald-600/30 transition-all hover:-translate-y-0.5 active:translate-y-0" type="submit"><Send className="h-4 w-4" />Send message via WhatsApp</button>
               </form>
             </div>
           </div>

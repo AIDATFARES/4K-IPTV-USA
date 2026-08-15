@@ -87,26 +87,26 @@ export default function DmcaPage() {
   return (
     <main className="flex-grow px-5 pb-20 pt-12 sm:px-8 md:pt-16">
       <article className="mx-auto max-w-4xl">
-        <header className="border-b border-white/10 pb-10 text-center mx-auto max-w-3xl">
+        <header className="border-b border-black/10 pb-10 text-center mx-auto max-w-3xl">
           <span className="inline-flex rounded-full border border-orange-400/35 bg-orange-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-orange-300">Legal information</span>
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
-            <span className="block text-white">Legal Disclaimer</span>
-            <span className="mt-1 block text-[#d32f2f]">&amp; DMCA Notice.</span>
+            <span className="block text-black">Legal Disclaimer</span>
+            <span className="mt-1 block text-[#FF6B00]">&amp; DMCA Notice.</span>
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400">Last updated: {currentDate}</p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600">Last updated: {currentDate}</p>
         </header>
 
         <div className="mt-10 space-y-10 text-base leading-7 text-on-surface-variant">
           <div className="space-y-4">
             <p>Content featured on this website is meant for general informational use and does not serve as legal advice. By engaging with our site or services, you agree to this disclaimer.</p>
             <div className="rounded-xl border border-blue-500/20 bg-blue-500/10 p-5 text-sm">
-              <strong className="text-white">Important:</strong> IPTV Fiesta delivers an intuitive IPTV service interface alongside account provisioning. We do not host, upload, store, or archive any audiovisual content. The details on this site are provided 'as is' for general guidance, not legal counsel.
+              <strong className="text-black">Important:</strong> IPTV Fiesta delivers an intuitive IPTV service interface alongside account provisioning. We do not host, upload, store, or archive any audiovisual content. The details on this site are provided 'as is' for general guidance, not legal counsel.
             </div>
           </div>
 
           {sections.map((section, index) => (
             <section key={section.title}>
-              <h2 className="text-2xl font-bold text-white">{index + 1}. {section.title}</h2>
+              <h2 className="text-2xl font-bold text-black">{index + 1}. {section.title}</h2>
               {section.content.map((paragraph, i) => <p className="mt-4" key={i}>{paragraph}</p>)}
               {section.items && section.items.length > 0 && <ul className="mt-4 list-disc space-y-2 pl-6 marker:text-tertiary">{section.items.map((item, i) => <li key={i}>{item}</li>)}</ul>}
               {section.after && <p className="mt-4">{section.after}</p>}
@@ -114,7 +114,7 @@ export default function DmcaPage() {
           ))}
           
           <section>
-            <h2 className="text-2xl font-bold text-white">11. Contact</h2>
+            <h2 className="text-2xl font-bold text-black">11. Contact</h2>
             <p className="mt-4">For any inquiries, refer to our Terms of Service and <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/privacy-policy">Privacy Policy</Link>, or contact <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">support</Link>.</p>
           </section>
         </div>

@@ -83,7 +83,7 @@ export default function FeaturesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="glass-panel rounded-xl p-lg border border-white/10 hover:border-primary/50 transition-all duration-300 group"
+                className="glass-panel rounded-xl p-lg border border-black/10 hover:border-primary/50 transition-all duration-300 group"
               >
                 <div className="p-md rounded-xl bg-surface-container-high w-fit mb-md group-hover:scale-110 transition-transform">
                   <Icon className={`w-7 h-7 ${feature.color}`} />

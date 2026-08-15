@@ -3,81 +3,74 @@ import Link from "next/link";
 
 export default function HowItWorksSection() {
   return (
-    <section className="py-20 bg-[#0c0f0f] text-white relative z-10 border-b border-white/10 overflow-hidden">
+    <section className="py-20 bg-white text-black relative z-10 border-b border-black/10 overflow-hidden">
       <div className="max-w-[1240px] mx-auto px-6">
 
         {/* ========================================================================= */}
         {/* PART 1: How does it work? IPTV Fiesta Timeline */}
         {/* ========================================================================= */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#d32f2f] mb-2 block">
-            EASY 3-STEP PROCESS
+          <span className="text-xs font-bold uppercase tracking-widest text-[#FF6B00] mb-2 block">
+            EASY IPTV SETUP
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#d32f2f] tracking-tight">
-            How does it work? IPTV Fiesta
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#FF6B00] tracking-tight">
+            How to Start Your Premium IPTV Subscription
           </h2>
-          <p className="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed max-w-2xl mx-auto">
-            Get your{" "}
-            <Link
-              href="#pricing"
-              className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-            >
-              IPTV subscription
-            </Link>{" "}
-            in 3 easy steps. Choose the right plan, complete the payment, and receive your login details. Within minutes you can enjoy your favorite programs.
+          <p className="text-slate-700 text-sm sm:text-base mt-4 leading-relaxed max-w-2xl mx-auto">
+            Setting up your IPTV Fiesta account is quick and simple. Follow our 3-step process to get instant access to live TV, movies, and series.
           </p>
         </div>
 
         {/* Timeline Steps Container */}
         <div className="relative max-w-[960px] mx-auto mb-28">
           {/* Vertical Dashed Center Line */}
-          <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-0.5 border-l-2 border-dashed border-white/20 hidden md:block" />
+          <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-0.5 border-l-2 border-dashed border-black/20 hidden md:block" />
 
           {/* STEP 1 */}
           <div className="relative mb-16 md:mb-20">
             {/* Step Badge */}
             <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
-              <span className="bg-[#d32f2f] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(211,47,47,0.6)]">
+              <span className="bg-[#FF6B00] text-black font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(255,107,0,0.6)]">
                 Step One
               </span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
               {/* Left Card */}
-              <div className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
+              <div className="bg-white text-slate-100 p-8 rounded-2xl shadow-xl relative border border-stone-200"
               >
-                <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
+                <h3 className="text-xl font-extrabold text-[#FF6B00] mb-3">
                   <Link
                     href="#pricing"
                     className="hover:text-orange-700 transition-colors"
                   >
-                    Place your order.
+                    1. Choose Your IPTV Plan
                   </Link>
                 </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  After placing your order from our{" "}
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Select the best IPTV subscription package for your needs from our{" "}
                   <Link
                     href="#pricing"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-700 transition-colors"
+                    className="text-[#FF6B00] font-semibold hover:text-orange-700 transition-colors"
                   >
                     pricing plans
                   </Link>
-                  , you will receive your subscription details within 20 minutes at most by email or{" "}
+                  . Once you complete the payment, we will email or{" "}
                   <Link
                     href="/contact"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-700 transition-colors"
+                    className="text-[#FF6B00] font-semibold hover:text-orange-700 transition-colors"
                   >
                     WhatsApp
-                  </Link>
-                  .
+                  </Link>{" "}
+                  your login details instantly.
                 </p>
               </div>
 
               {/* Right Image */}
-              <div className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
+              <div className="overflow-hidden rounded-2xl bg-black/5 border border-black/10 shadow-xl"
               >
                 <Image
-                  src="/place-your-order.png"
+                  src="/step-1-order-v2.webp"
                   alt="Place your order online"
                   width={600}
                   height={380}
@@ -91,45 +84,44 @@ export default function HowItWorksSection() {
           <div className="relative mb-16 md:mb-20">
             {/* Step Badge */}
             <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
-              <span className="bg-[#d32f2f] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(211,47,47,0.6)]">
+              <span className="bg-[#FF6B00] text-black font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(255,107,0,0.6)]">
                 Step Two
               </span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
               {/* Left Image */}
-              <div className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl order-2 md:order-1"
+              <div className="overflow-hidden rounded-2xl bg-black/5 border border-black/10 shadow-xl order-2 md:order-1"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80"
+                  src="/step-2-setup-v2.webp"
                   alt="Instant installation"
                   width={600}
                   height={380}
-                  unoptimized
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
               {/* Right Card */}
-              <div className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200 order-1 md:order-2"
+              <div className="bg-white text-slate-100 p-8 rounded-2xl shadow-xl relative border border-stone-200 order-1 md:order-2"
               >
-                <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
+                <h3 className="text-xl font-extrabold text-[#FF6B00] mb-3">
                   <Link
                     href="/installation"
                     className="hover:text-orange-700 transition-colors"
                   >
-                    Installation & Setup
+                    2. Install Your IPTV App
                   </Link>
                 </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  Follow our step-by-step{" "}
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Use our step-by-step{" "}
                   <Link
                     href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-700 transition-colors"
+                    className="text-[#FF6B00] font-semibold hover:text-orange-700 transition-colors"
                   >
-                    installation guide
+                    IPTV installation guides
                   </Link>{" "}
-                  to configure IPTV on Smart TV, Firestick, Android, iOS, and PC effortlessly.
+                  to set up the service on your Smart TV, Firestick, Android Box, or Apple device using top apps like IPTV Smarters or Tivimate.
                 </p>
               </div>
             </div>
@@ -139,202 +131,49 @@ export default function HowItWorksSection() {
           <div className="relative">
             {/* Step Badge */}
             <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
-              <span className="bg-[#d32f2f] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(211,47,47,0.6)]">
+              <span className="bg-[#FF6B00] text-black font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(255,107,0,0.6)]">
                 Step Three
               </span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
               {/* Left Card */}
-              <div className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
+              <div className="bg-white text-slate-100 p-8 rounded-2xl shadow-xl relative border border-stone-200"
               >
-                <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
+                <h3 className="text-xl font-extrabold text-[#FF6B00] mb-3">
                   <Link
                     href="/channels"
                     className="hover:text-orange-700 transition-colors"
                   >
-                    Watch and enjoy.
+                    3. Watch Live TV & VOD
                   </Link>
                 </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  Stream all your favorite live sports, 4K movies, and premium channels from our complete{" "}
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Start streaming! Enjoy over 50,000 live HD and 4K channels, plus a massive Video on Demand (VOD) library of movies and series from our{" "}
                   <Link
                     href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-700 transition-colors"
+                    className="text-[#FF6B00] font-semibold hover:text-orange-700 transition-colors"
                   >
                     channels catalog
                   </Link>
-                  .
+                  {" "}without any buffering.
                 </p>
               </div>
 
               {/* Right Image */}
-              <div className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
+              <div className="overflow-hidden rounded-2xl bg-black/5 border border-black/10 shadow-xl"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=800&q=80"
+                  src="/step-3-watch-v2.webp"
                   alt="Watch and enjoy live TV"
                   width={600}
                   height={380}
-                  unoptimized
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
           </div>
         </div>
-
-        {/* ========================================================================= */}
-        {/* PART 2: Getting Started with IPTV Fiesta Is Easy */}
-        {/* ========================================================================= */}
-        <div className="pt-10 border-t border-white/10">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#d32f2f] tracking-tight">
-              Getting Started with IPTV Fiesta Is Easy
-            </h2>
-            <p className="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed">
-              Enjoy high quality IPTV streaming with IPTV Fiesta. Watch{" "}
-              <Link
-                href="/channels"
-                className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-              >
-                live TV channels
-              </Link>
-              , movies, and sports anytime, anywhere.
-            </p>
-          </div>
-
-          <div className="space-y-16 max-w-[1080px] mx-auto">
-            {/* Feature Block 1 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
-              >
-                <Image
-                  src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
-                  alt="Complete IPTV Subscription Experience"
-                  width={600}
-                  height={400}
-                  unoptimized
-                  className="w-full h-72 object-cover"
-                />
-              </div>
-              <div className="space-y-4"
-              >
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
-                  <Link
-                    href="#pricing"
-                    className="hover:text-orange-400 transition-colors"
-                  >
-                    We Offer You A Complete IPTV Subscription Experience
-                  </Link>
-                </h3>
-                <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-                  Enjoy uninterrupted IPTV 4K/HD with an{" "}
-                  <Link
-                    href="#pricing"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-                  >
-                    IPTV subscription
-                  </Link>{" "}
-                  from IPTV Fiesta. Choose from 1, 3, 6 or 12 months packages and experience continuous entertainment with full access to our{" "}
-                  <Link
-                    href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-                  >
-                    streaming library
-                  </Link>
-                  .
-                </p>
-              </div>
-            </div>
-
-            {/* Feature Block 2 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <div className="space-y-4 order-2 md:order-1"
-              >
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
-                  <Link
-                    href="/channels"
-                    className="hover:text-orange-400 transition-colors"
-                  >
-                    +50,000 Channels & 200,000+ VODs With Our IPTV Smarters Pro
-                  </Link>
-                </h3>
-                <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-                  Unlock a world of entertainment with over{" "}
-                  <Link
-                    href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-                  >
-                    +50,000 live channels and +120,000 films & series
-                  </Link>{" "}
-                  for the ultimate viewing experience. Check out our{" "}
-                  <Link
-                    href="#pricing"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-                  >
-                    subscription plans
-                  </Link>{" "}
-                  to start watching immediately.
-                </p>
-              </div>
-              <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5 order-1 md:order-2"
-              >
-                <Image
-                  src="/sport-banner.webp"
-                  alt="+50,000 Live Channels & VODs"
-                  width={600}
-                  height={400}
-                  className="w-full h-72 object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Feature Block 3 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
-              >
-                <Image
-                  src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80"
-                  alt="Live TV and TV Guide EPG"
-                  width={600}
-                  height={400}
-                  unoptimized
-                  className="w-full h-72 object-cover"
-                />
-              </div>
-              <div className="space-y-4"
-              >
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
-                  <Link
-                    href="/installation"
-                    className="hover:text-orange-400 transition-colors"
-                  >
-                    Live TV With IPTV Smarters Pro and TV Guide (EPG)
-                  </Link>
-                </h3>
-                <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-                  With IPTV Fiesta you get access to an interactive TV guide (EPG), Live TV, and replay options. Read our{" "}
-                  <Link
-                    href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-                  >
-                    IPTV setup guide
-                  </Link>{" "}
-                  or explore our{" "}
-                  <Link
-                    href="/faq"
-                    className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors"
-                  >
-                    FAQ support
-                  </Link>{" "}
-                  for complete device instructions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   );

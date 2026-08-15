@@ -1,95 +1,84 @@
 import Link from "next/link";
-import Image from "next/image";
-import { Trophy, List, Monitor, Zap, Globe2, ArrowRight } from "lucide-react";
+import { Monitor, Laptop, Smartphone, Tablet } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[calc(100vh-88px)] pt-6 sm:pt-8 lg:pt-10 pb-16 flex items-start justify-center bg-[#121414] overflow-hidden text-center">
+    <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 flex items-center justify-center bg-black overflow-hidden text-center">
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-custom-bg.webp"
-          alt="IPTV Fiesta Background"
+          src="/hero-family.webp"
+          alt="Family watching IPTV Fiesta"
           fetchPriority="high"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-[#121414]/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#121414] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute top-0 inset-x-0 h-16 md:h-24 bg-gradient-to-b from-white via-white/50 to-transparent" />
+        <div className="absolute bottom-0 inset-x-0 h-16 md:h-24 bg-gradient-to-t from-white via-white/50 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-[1100px] mx-auto px-6 flex flex-col items-center gap-5 pt-0 -mt-2 sm:-mt-4">
+      <div className="relative z-10 max-w-[1000px] mx-auto px-6 flex flex-col items-center gap-6">
 
         {/* Top Tag */}
-        <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded px-4 py-1.5 backdrop-blur-md">
-          <span className="w-2 h-2 rounded-full bg-[#d32f2f] shadow-[0_0_8px_rgba(211,47,47,0.8)] animate-pulse"></span>
-          <span className="text-xs font-bold text-white tracking-widest uppercase font-mono">
-            LIVE NOW: Cinematic 4K Streaming
+        <div className="inline-flex items-center border border-[#FF6B00] rounded-full px-4 py-1.5 backdrop-blur-sm bg-black/30">
+          <span className="w-2 h-2 rounded-full bg-[#FF6B00] mr-2 animate-pulse"></span>
+          <span className="text-[10px] sm:text-xs font-bold text-[#FF6B00] tracking-widest uppercase">
+            TRUSTED BY 154,000+ STREAMERS WORLDWIDE
           </span>
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.08] drop-shadow-2xl text-center">
-          <span className="text-[#d32f2f]">IPTV Fiesta</span> <span className="text-white">The Best IPTV</span> <br />
-          <span className="text-white">Service Provider for</span> <br />
-          <span className="text-white">2026</span>
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-black tracking-tight leading-[1] text-white uppercase drop-shadow-2xl mt-4">
+          BEST <span className="text-[#FF6B00]">IPTV</span> STREAMING –<br />
+          IPTV FIESTA
         </h1>
 
-        {/* Promotional Sub-Headline */}
-        <div className="text-xl sm:text-2xl md:text-3xl font-bold mt-3 drop-shadow-lg">
-          <span className="text-white">Get High-Quality Streaming for Just </span>
-          <Link href="#pricing" className="text-amber-400 hover:text-amber-300 transition-colors">
-            $4.2/Month!
-          </Link>
-        </div>
-
-        {/* Description */}
-        <p className="text-lg sm:text-xl text-stone-300 font-normal leading-[1.6] max-w-[850px] mt-5">
-          Choose from{" "}
-          <Link prefetch={false} href="/channels" className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors">
-            50,000+ Live Channels
-          </Link>
-          , +120,000 Films & Series, and 200,000+ VODs. Enjoy your time with excellent image quality up to 4K on{" "}
-          <Link prefetch={false} href="/installation" className="text-[#d32f2f] font-semibold hover:text-orange-400 transition-colors">
-            any device of your choice
-          </Link>{" "}
-          including Smart TV, Android Box, PC, tablet, and smartphone—anytime and anywhere.
+        {/* Subtitle */}
+        <p className="text-lg sm:text-xl text-white/90 font-medium max-w-2xl mt-2 drop-shadow-lg">
+          Everything you want to watch. One subscription. Any screen, anywhere.
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center">
+        <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center w-full sm:w-auto">
           <a
             href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20fiestaiptv%20IPTV."
             target="_blank"
             rel="noreferrer"
-            aria-label="Get free trial"
-            className="group relative py-4 px-10 text-base sm:text-lg font-bold text-white bg-[#d32f2f] hover:bg-[#b71c1c] transition-all duration-300 flex items-center justify-center gap-2.5 hover:scale-105 hover:-translate-y-1 shadow-[0_0_30px_rgba(211,47,47,0.3)] hover:shadow-[0_0_40px_rgba(211,47,47,0.6)] active:scale-95"
+            className="py-4 px-8 text-sm sm:text-base font-bold text-black bg-[#FF6B00] hover:bg-[#E66000] transition-all duration-300 flex items-center justify-center tracking-wider hover:scale-105"
           >
-            <span>Get Free Trial</span>
-            <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            GET 12 MONTHS — 2 MONTHS FREE →
           </a>
           <Link
             href="#pricing"
-            aria-label="View plans"
-            className="py-4 px-10 text-base sm:text-lg font-bold text-white bg-transparent border-[1.5px] border-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2.5 hover:scale-105 hover:-translate-y-1 active:scale-95"
+            className="py-4 px-8 text-sm sm:text-base font-bold text-[#FF6B00] bg-transparent border-2 border-[#FF6B00] hover:bg-[#FF6B00]/10 transition-all duration-300 flex items-center justify-center tracking-wider hover:scale-105"
           >
-            <List className="h-5 w-5" />
-            <span>View Plans</span>
+            SEE PLANS →
           </Link>
         </div>
 
-        {/* Feature Tags */}
-        <div className="flex w-full max-w-[750px] flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm sm:text-base text-stone-300 pt-4">
-          <Link href="/channels" className="flex items-center gap-2 hover:text-[#d32f2f] transition-colors">
-            <Trophy className="h-4 w-4 text-amber-400" /> Live Sports & PPV
-          </Link>
-          <Link href="/installation" className="flex items-center gap-2 hover:text-[#d32f2f] transition-colors">
-            <Monitor className="h-4 w-4 text-orange-400" /> All Devices
-          </Link>
-          <Link href="/installation" className="flex items-center gap-2 hover:text-[#d32f2f] transition-colors">
-            <Zap className="h-4 w-4 text-amber-400" /> Instant Setup
-          </Link>
-          <span className="flex items-center gap-2"><Globe2 className="h-4 w-4 text-sky-400" /> 150+ Countries 🇺🇸🇬🇧🇨🇦🇩🇪🇫🇷🇪🇸</span>
+        {/* Bottom Icons */}
+        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 text-white/90 mt-4">
+          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+            <Monitor className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
+            <span className="text-[10px] sm:text-xs font-semibold tracking-wider">Smart TV</span>
+          </div>
+          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+            <Laptop className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
+            <span className="text-[10px] sm:text-xs font-semibold tracking-wider">Laptop / PC</span>
+          </div>
+          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+            <Smartphone className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
+            <span className="text-[10px] sm:text-xs font-semibold tracking-wider">Android</span>
+          </div>
+          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+            <Tablet className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
+            <span className="text-[10px] sm:text-xs font-semibold tracking-wider">IOS</span>
+          </div>
+          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+            <Monitor className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
+            <span className="text-[10px] sm:text-xs font-semibold tracking-wider">Windows</span>
+          </div>
         </div>
 
       </div>

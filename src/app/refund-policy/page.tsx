@@ -95,26 +95,26 @@ export default function RefundPolicyPage() {
   return (
     <main className="flex-grow px-5 pb-20 pt-12 sm:px-8 md:pt-16 text-format-legal">
       <article className="mx-auto max-w-4xl">
-        <header className="border-b border-white/10 pb-10 text-center mx-auto max-w-3xl">
+        <header className="border-b border-black/10 pb-10 text-center mx-auto max-w-3xl">
           <span className="inline-flex rounded-full border border-orange-400/35 bg-orange-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-orange-300">Legal information</span>
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
-            <span className="block text-white">Refund &amp; Money-Back</span>
-            <span className="mt-1 block text-[#d32f2f]">Official Policy.</span>
+            <span className="block text-black">Refund &amp; Money-Back</span>
+            <span className="mt-1 block text-[#FF6B00]">Official Policy.</span>
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400">Last adjusted: {currentDate}</p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600">Last adjusted: {currentDate}</p>
         </header>
 
         <div className="mt-10 space-y-10 text-base leading-7 text-on-surface-variant">
           {sections.map((section, index) => (
             <section key={section.title}>
-              <h2 className="text-2xl font-bold text-white">{index + 1}. {section.title}</h2>
+              <h2 className="text-2xl font-bold text-black">{index + 1}. {section.title}</h2>
               {section.content.map((paragraph, i) => <p className="mt-4" key={i}>{paragraph}</p>)}
               {section.items && section.items.length > 0 && <ul className="mt-4 list-disc space-y-2 pl-6 marker:text-tertiary">{section.items.map((item, i) => <li key={i}>{item}</li>)}</ul>}
               {section.after && <p className="mt-4">{section.after}</p>}
             </section>
           ))}
           <section>
-            <h2 className="text-2xl font-bold text-white">9. Contact Us</h2>
+            <h2 className="text-2xl font-bold text-black">9. Contact Us</h2>
             <p className="mt-4">If you have any questions regarding our Refund Policy, please contact our <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">support team</Link>.</p>
           </section>
         </div>

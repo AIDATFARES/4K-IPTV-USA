@@ -1,37 +1,78 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
-import { Check, CreditCard, Headphones, HelpCircle, MonitorSmartphone, ShieldCheck, Sparkles, Tv, Zap } from "lucide-react";
+import Link from "next/link";
+import { CheckCircle2, X, CreditCard, Headphones, HelpCircle, MonitorSmartphone, ShieldCheck, Sparkles, Tv, Zap, Bitcoin, Wallet } from "lucide-react";
+
+type PlanFeature = {
+  text: string;
+  included: boolean;
+};
 
 type Plan = {
   id: string;
-  duration: string;
-  months: number;
+  name: string;
+  subtitle: string;
   price: number;
   oldPrice?: number;
-  saving: string;
+  duration: string;
+  saving?: string;
   popular?: boolean;
-  isTrial?: boolean;
+  features: PlanFeature[];
+  buttonText: string;
 };
 
 const plans: Plan[] = [
-  { id: "24-hours", duration: "24 Hours", months: 0, price: 0, saving: "Free Trial", isTrial: true },
-  { id: "1-month", duration: "1 Month", months: 1, price: 14.99, saving: "" },
-  { id: "3-months", duration: "3 Months", months: 3, price: 35, saving: "Save 22%" },
-  { id: "6-months", duration: "6 Months", months: 6, price: 49.99, saving: "Save 44%" },
-  { id: "12-months", duration: "12 Months", months: 12, price: 69.99, oldPrice: 80, saving: "Save 61%", popular: true },
-];
-
-const planFeatures = [
-  "+50,000 Channels",
-  "+120,000 Films & Series",
-  "200,000+ VODs",
-  "All supported devices",
-  "4K, Full HD & HD quality",
-  "99.9% server stability",
-  "Updated TV guide (EPG)",
-  "24/7 support",
+  {
+    id: "3-months",
+    name: "Fiesta Basic",
+    subtitle: "Perfect for trying out our premium service.",
+    price: 35,
+    duration: "/ 3 Months",
+    saving: "Save 22%",
+    features: [
+      { text: "HD/4K Streaming Quality", included: true },
+      { text: "Full EPG Support", included: true },
+      { text: "Antifreeze Technology", included: true },
+      { text: "24/7 Standard Support", included: true },
+      { text: "Multi-device connection", included: false },
+    ],
+    buttonText: "Select Basic",
+  },
+  {
+    id: "12-months",
+    name: "Fiesta Ultimate",
+    subtitle: "The ultimate entertainment experience for a full year.",
+    price: 69.99,
+    oldPrice: 80,
+    duration: "/ 12 Months",
+    saving: "Save 61%",
+    popular: true,
+    features: [
+      { text: "Premium HD/4K/8K Quality", included: true },
+      { text: "Advanced EPG & Catchup", included: true },
+      { text: "Premium Antifreeze Tech v2", included: true },
+      { text: "24/7 Priority VIP Support", included: true },
+      { text: "Up to 3 simultaneous devices", included: true },
+    ],
+    buttonText: "Get Ultimate Pass",
+  },
+  {
+    id: "6-months",
+    name: "Fiesta Pro",
+    subtitle: "A solid choice for half a year of uninterrupted joy.",
+    price: 49.99,
+    duration: "/ 6 Months",
+    saving: "Save 44%",
+    features: [
+      { text: "HD/4K Streaming Quality", included: true },
+      { text: "Full EPG Support", included: true },
+      { text: "Antifreeze Technology", included: true },
+      { text: "24/7 Priority Support", included: true },
+      { text: "Multi-device connection", included: false },
+    ],
+    buttonText: "Select Pro",
+  },
 ];
 
 const includedFeatures = [
@@ -44,117 +85,164 @@ const includedFeatures = [
 ];
 
 const billingQuestions = [
-  { question: "1. Which payment methods can I use?", answer: <>Available payment options are shown when you place your order. <Link className="font-semibold text-orange-500 hover:text-orange-400 transition-colors" href="/contact">Contact IPTV Fiesta support</Link> if you need help before purchasing.</> },
+  { question: "1. Which payment methods can I use?", answer: <>Available payment options are shown when you place your order. <Link className="font-semibold text-orange-500 hover:text-orange-600 transition-colors" href="/contact">Contact IPTV Fiesta support</Link> if you need help before purchasing.</> },
   { question: "2. Is my payment protected?", answer: "Please use the official IPTV Fiesta payment process and never share payment details through an unverified link or message." },
-  { question: "3. Will my subscription renew automatically?", answer: <>Renewal details are provided when you order. If you have any questions about your subscription period or renewal, <Link className="font-semibold text-orange-500 hover:text-orange-400 transition-colors" href="/contact">contact support</Link> before your plan expires.</> },
-  { question: "4. Can I change my plan or number of connections?", answer: <>Yes. <Link className="font-semibold text-orange-500 hover:text-orange-400 transition-colors" href="/contact">Contact the support team</Link> with your order email and the plan or connection change you need, and they will advise on the available options.</> },
+  { question: "3. Will my subscription renew automatically?", answer: <>Renewal details are provided when you order. If you have any questions about your subscription period or renewal, <Link className="font-semibold text-orange-500 hover:text-orange-600 transition-colors" href="/contact">contact support</Link> before your plan expires.</> },
+  { question: "4. Can I change my plan or number of connections?", answer: <>Yes. <Link className="font-semibold text-orange-500 hover:text-orange-600 transition-colors" href="/contact">Contact the support team</Link> with your order email and the plan or connection change you need, and they will advise on the available options.</> },
 ];
 
-export default function PricingSection() {
+export default function PricingPageContent() {
   const [devices, setDevices] = useState(1);
-
-  function priceFor(plan: Plan) {
-    return (plan.price * devices).toFixed(2);
-  }
+  const priceFor = (plan: Plan) => (plan.price * devices).toFixed(2);
 
   function handleOrder(plan: Plan) {
     const text = encodeURIComponent(
-      `Hello! I would like to purchase the IPTV Fiesta ${plan.duration} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
+      `Hello! I would like to purchase the ${plan.name} plan (${plan.duration}) with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
     );
     window.open(`https://wa.me/213552069874?text=${text}`, "_blank", "noopener,noreferrer");
   }
 
   return (
-    <section className="relative overflow-hidden bg-[#0c0f0f] py-16 sm:py-20 lg:py-24">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[780px] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-950/20 via-[#060814] to-transparent" />
-
+    <section className="relative overflow-hidden bg-[#f8fafc] py-16 sm:py-20 lg:py-24">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <header className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full border border-orange-400/35 bg-orange-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-orange-300">IPTV Fiesta</span>
+        <header className="mx-auto max-w-3xl text-center mb-16">
+          <span className="inline-flex rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-orange-600">IPTV Fiesta</span>
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
-            <span className="block text-white">Choose Your Exclusive</span>
-            <span className="mt-1 block text-[#d32f2f]">Subscription Plans &amp; Pricing.</span>
+            <span className="block text-black uppercase">Choose Your Exclusive</span>
+            <span className="mt-1 block text-orange-500 uppercase">Subscription Plans.</span>
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400 sm:text-base">Choose the IPTV Fiesta plan that fits you, with secure checkout and helpful 24/7 support.</p>
-          <p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-stone-500">Need help getting started? Visit our <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/installation">installation guide</Link> or browse the <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/channels">channel list</Link> before you order.</p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">Choose the IPTV Fiesta plan that fits you, with secure checkout and helpful 24/7 support.</p>
+          <p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-slate-500">Need help getting started? Visit our <Link className="font-semibold text-orange-500 hover:text-orange-600" href="/installation">installation guide</Link> or browse the <Link className="font-semibold text-orange-500 hover:text-orange-600" href="/channels">channel list</Link> before you order.</p>
         </header>
 
-        <div className="mx-auto mt-10 max-w-2xl" role="radiogroup" aria-label="Number of device connections">
-          <p className="mb-3 text-center text-xs font-bold uppercase tracking-[0.15em] text-stone-400">Choose your connections</p>
-          <div className="grid grid-cols-3 rounded-2xl border border-orange-500/30 bg-[#121414]/90 p-1.5 shadow-[0_0_30px_rgba(239,68,68,0.1)]">
+        {/* Device Selector */}
+        <div className="mx-auto mb-10 max-w-2xl" role="radiogroup" aria-label="Number of device connections">
+          <p className="mb-3 text-center text-xs font-bold uppercase tracking-[0.15em] text-slate-500">Choose your connections</p>
+          <div className="grid grid-cols-3 rounded-2xl border border-orange-500/30 bg-white p-1.5 shadow-sm">
             {[1, 2, 3].map((count) => {
               const selected = devices === count;
               return (
-                <button key={count} type="button" role="radio" aria-checked={selected} onClick={() => setDevices(count)} className={`rounded-xl px-4 py-3 text-sm font-bold transition-all ${selected ? "bg-orange-600 text-white shadow-lg shadow-orange-600/30" : "text-stone-400 hover:text-white"}`}>
-                  {count} {count === 1 ? "Device" : "Devices"}
+                <button
+                  aria-checked={selected}
+                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-[#FF6B00] text-white shadow-lg shadow-orange-600/30" : "text-slate-500 hover:text-black hover:bg-orange-50"}`}
+                  key={count}
+                  onClick={() => setDevices(count)}
+                  role="radio"
+                  type="button"
+                >
+                  {count} Device{count > 1 ? "s" : ""}
                 </button>
               );
             })}
           </div>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-6 items-stretch">
+        {/* Pricing Cards */}
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 md:gap-8 items-start pt-4">
           {plans.map((plan) => (
-            <article key={plan.id} className={`relative flex flex-col rounded-3xl p-6 text-stone-900 transition-all duration-300 ${plan.isTrial ? "bg-white border-2 border-orange-500/60 shadow-[0_0_25px_rgba(239,68,68,0.15)] hover:-translate-y-2" : plan.popular ? "bg-white border-2 border-orange-600 shadow-[0_10px_40px_rgba(239,68,68,0.25)] xl:-translate-y-3" : "bg-white border border-stone-200 shadow-xl hover:-translate-y-1"}`}>
-              {plan.popular && <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full border border-orange-500 bg-orange-600 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white shadow-md">Most popular</span>}
-              <h2 className="text-center text-2xl font-bold text-stone-900">{plan.duration}</h2>
-              <p className="mt-1 text-center text-sm text-stone-500 font-medium">{plan.isTrial ? "Trial" : "Subscription"}</p>
-              <div className="mt-3 flex items-baseline justify-center gap-2">
-                <p className="text-4xl font-black tracking-tight text-stone-900">{plan.isTrial ? "Free" : `$${priceFor(plan)}`}</p>
-                {plan.oldPrice && <p className="text-lg font-semibold text-stone-400 line-through">${(plan.oldPrice * devices).toFixed(2)}</p>}
-              </div>
-              {plan.saving ? (
-                <p className="mx-auto mt-3 rounded-full border border-orange-200 bg-red-50 px-3.5 py-1 text-center text-[11px] font-bold text-orange-600">{plan.saving}</p>
-              ) : (
-                <div className="h-7 mt-3" />
+            <article 
+              key={plan.id}
+              className={`relative flex flex-col rounded-2xl bg-white p-8 transition-transform duration-300 hover:-translate-y-1 border-2 ${
+                plan.popular 
+                  ? "border-orange-500 shadow-[0_15px_40px_-10px_rgba(255,107,0,0.25)] md:-mt-4" 
+                  : "border-orange-300 shadow-sm hover:shadow-md hover:border-orange-400"
+              }`}
+            >
+              {plan.popular && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center justify-center rounded-b-xl rounded-t-sm bg-gradient-to-r from-orange-500 to-slate-800 px-5 py-1.5 shadow-md whitespace-nowrap">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wide text-white">Best Value - Most Popular</span>
+                </div>
               )}
-              <ul className="mt-6 flex-grow space-y-3 border-t border-stone-100 pt-5">
-                {planFeatures.map((feature) => <li className="flex gap-2.5 text-sm font-medium text-stone-700" key={feature}><Check className="mt-0.5 h-4 w-4 shrink-0 text-orange-500" strokeWidth={3} />{feature}</li>)}
+              
+              <h3 className="text-xl font-bold text-black">{plan.name}</h3>
+              <p className="mt-2 text-sm text-slate-500 leading-relaxed min-h-[40px]">{plan.subtitle}</p>
+              
+              <div className="mt-6 flex items-baseline">
+                <span className="text-5xl font-black tracking-tighter text-orange-500">${priceFor(plan)}</span>
+                <span className="ml-1 text-xs font-semibold text-slate-400">{plan.duration}</span>
+              </div>
+              
+              <div className="min-h-[24px] mt-1 flex items-center gap-2">
+                {plan.saving && (
+                  <p className="text-xs font-bold text-blue-500">{plan.saving}</p>
+                )}
+                {plan.oldPrice && (
+                   <p className="text-xs font-semibold text-slate-400 line-through">${(plan.oldPrice * devices).toFixed(2)}</p>
+                )}
+              </div>
+
+              <ul className="mt-6 flex-grow space-y-4">
+                {plan.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    {feature.included ? (
+                      <CheckCircle2 className={`h-5 w-5 shrink-0 ${plan.popular ? "text-orange-500" : "text-blue-500"}`} strokeWidth={2.5} />
+                    ) : (
+                      <X className="h-5 w-5 shrink-0 text-slate-300" strokeWidth={2.5} />
+                    )}
+                    <span className={`text-sm font-medium ${feature.included ? "text-slate-700" : "text-slate-300"}`}>
+                      {feature.text}
+                    </span>
+                  </li>
+                ))}
               </ul>
-              <button type="button" onClick={() => handleOrder(plan)} className="mt-7 w-full rounded-2xl bg-emerald-600 py-3.5 text-sm font-bold text-white shadow-[0_4px_15px_rgba(16,185,129,0.3)] transition-all hover:bg-emerald-500 hover:shadow-[0_6px_20px_rgba(16,185,129,0.4)] active:scale-[0.98]">Buy now</button>
+              
+              <button 
+                type="button"
+                onClick={() => handleOrder(plan)}
+                className={`mt-8 w-full rounded-xl py-4 text-sm font-bold text-white transition-all duration-300 ${
+                  plan.popular 
+                    ? "bg-[#FF6B00] shadow-[0_8px_20px_rgba(255,107,0,0.3)] hover:bg-[#E66000] hover:-translate-y-0.5" 
+                    : "bg-slate-800 hover:bg-black hover:shadow-lg hover:-translate-y-0.5"
+                }`}
+              >
+                {plan.buttonText}
+              </button>
             </article>
           ))}
         </div>
-        <p className="mt-6 text-center text-sm text-stone-400">Reliable support for every IPTV Fiesta subscription.</p>
 
-        <section className="mt-20 grid gap-8 rounded-3xl border border-white/10 bg-[#0b0f1c]/80 p-6 shadow-2xl lg:grid-cols-[1.2fr_0.8fr] lg:p-10">
-          <div className="flex flex-col justify-center">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-orange-300">Diamond plan</p>
-            <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">24 Months — our best subscription value</h2>
-            <p className="mt-4 max-w-2xl leading-7 text-stone-400">Enjoy uninterrupted IPTV Fiesta streaming across supported devices, with fast activation, 4K and Full HD quality, a TV guide, and ongoing support.</p>
-            <div className="mt-6 grid grid-cols-1 gap-3 text-sm text-stone-300 sm:grid-cols-2">
-              {["4K & High Definition", "+50,000 Channels", "+120,000 Films & Series", "200,000+ VODs", "All supported devices", "Updated TV guide"].map((feature) => <p className="flex items-center gap-2" key={feature}><Check className="h-4 w-4 text-orange-400" strokeWidth={3} />{feature}</p>)}
+        {/* Bottom Security Banner */}
+        <div className="mx-auto mt-16 max-w-4xl">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl bg-white p-6 shadow-sm border border-slate-100 border-l-4 border-l-orange-500">
+            <div>
+              <h4 className="text-lg font-bold text-black">Secure Payments & Instant Access</h4>
+              <p className="mt-1 text-sm text-slate-500 font-medium">Pay safely using Crypto, Credit Card, or PayPal. Your details are encrypted instantly.</p>
+            </div>
+            <div className="flex shrink-0 items-center gap-4 text-slate-600">
+              <CreditCard className="h-7 w-7" strokeWidth={1.5} />
+              <Bitcoin className="h-7 w-7" strokeWidth={1.5} />
+              <Wallet className="h-7 w-7" strokeWidth={1.5} />
             </div>
           </div>
-          <div className="rounded-3xl bg-white p-7 text-stone-900 border-2 border-orange-600 shadow-2xl">
-            <p className="text-center text-xl font-bold text-stone-900">24 Months</p>
-            <p className="mt-1 text-center text-sm text-stone-500 font-medium">Subscription</p>
-            <p className="mt-3 text-center text-4xl font-black text-stone-900">${(99.95 * devices).toFixed(2)}</p>
-            <p className="mx-auto mt-3 w-fit rounded-full border border-orange-200 bg-red-50 px-3.5 py-1 text-xs font-bold text-orange-600">Best value</p>
-            <ul className="mt-6 space-y-3 border-t border-stone-100 pt-5">{planFeatures.map((feature) => <li className="flex gap-2.5 text-sm font-medium text-stone-700" key={feature}><Check className="mt-0.5 h-4 w-4 shrink-0 text-orange-500" strokeWidth={3} />{feature}</li>)}</ul>
-            <button type="button" onClick={() => handleOrder({ id: "24-months", duration: "24 Months", months: 24, price: 99.95, saving: "Best value" })} className="mt-7 w-full rounded-2xl bg-emerald-600 py-3.5 text-sm font-bold text-white shadow-[0_4px_15px_rgba(16,185,129,0.3)] transition-all hover:bg-emerald-500 hover:shadow-[0_6px_20px_rgba(16,185,129,0.4)] active:scale-[0.98]">Buy now</button>
-          </div>
-        </section>
+        </div>
 
-        <section className="mt-20">
-          <h2 className="text-center text-3xl font-bold text-white">Every plan includes</h2>
+        <section className="mt-24">
+          <h2 className="text-center text-3xl font-bold text-black uppercase">Every plan includes</h2>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {includedFeatures.map(({ icon: Icon, title, text }) => <article className="rounded-2xl border border-white/10 bg-[#121414]/80 p-6 text-center" key={title}><div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-500/15 text-orange-300"><Icon className="h-6 w-6" /></div><h3 className="mt-5 text-lg font-bold text-white">{title}</h3><p className="mt-3 text-sm leading-6 text-stone-400">{text}</p></article>)}
+            {includedFeatures.map(({ icon: Icon, title, text }) => (
+              <article className="rounded-2xl border border-slate-100 bg-white p-6 text-center shadow-sm" key={title}>
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-orange-500">
+                  <Icon className="h-6 w-6" />
+                </div>
+                <h3 className="mt-5 text-lg font-bold text-black">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{text}</p>
+              </article>
+            ))}
           </div>
         </section>
 
-        <section className="mx-auto mt-20 max-w-[1140px]">
-          <h2 className="text-center text-3xl font-extrabold text-white">Billing &amp; Subscription FAQ</h2>
+        <section className="mx-auto mt-24 max-w-4xl">
+          <h2 className="text-center text-3xl font-black text-black uppercase">Billing &amp; Subscription FAQ</h2>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
             {billingQuestions.map((item) => (
-              <div className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-orange-500/40 transition-colors" key={item.question}>
-                <div className="bg-[#18202a] border-b border-white/10 px-5 py-4 flex items-center gap-3">
-                  <HelpCircle className="w-5 h-5 text-orange-500 shrink-0" />
-                  <h3 className="text-base sm:text-lg font-bold text-white leading-snug">
+              <div className="flex flex-col rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:border-orange-200 transition-colors" key={item.question}>
+                <div className="bg-slate-50 border-b border-slate-100 px-5 py-4 flex items-start gap-3">
+                  <HelpCircle className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
+                  <h3 className="text-base sm:text-lg font-bold text-black leading-snug">
                     {item.question}
                   </h3>
                 </div>
-                <div className="p-5 text-sm text-stone-300 leading-relaxed bg-[#0f1419]/60 flex-1">
+                <div className="p-5 text-sm text-slate-600 leading-relaxed bg-white flex-1">
                   <p>{item.answer}</p>
                 </div>
               </div>
@@ -162,7 +250,10 @@ export default function PricingSection() {
           </div>
         </section>
 
-        <div className="mt-12 flex items-center justify-center gap-2 text-sm text-orange-300"><ShieldCheck className="h-5 w-5 text-orange-500" />Secure ordering and friendly IPTV Fiesta support.</div>
+        <div className="mt-16 flex items-center justify-center gap-2 text-sm text-slate-600">
+          <ShieldCheck className="h-5 w-5 text-orange-500" />
+          <span className="font-semibold text-black">Secure ordering</span> and friendly IPTV Fiesta support.
+        </div>
       </div>
     </section>
   );

@@ -14,9 +14,9 @@ export default function BrandMarquee({
   imageClassName
 }: BrandMarqueeProps) {
   const defaultBrands = [
-    "0.png", "1.png", "10-National-Geographic-Channel.png", "10.png", "11.png",
-    "13.png", "14.png", "15.png", "16 (1).png", "17.png", "2.png", "20-disney.png",
-    "21.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png"
+    "0.webp", "1.webp", "10-National-Geographic-Channel.webp", "10.webp", "11.webp",
+    "13.webp", "14.webp", "15.webp", "16 (1).webp", "17.webp", "2.webp", "20-disney.webp",
+    "21.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp", "9.webp"
   ];
 
   const brandList = images || defaultBrands;
@@ -25,10 +25,10 @@ export default function BrandMarquee({
     : [...brandList, ...brandList];
 
   return (
-    <div className="w-full overflow-hidden bg-[#0c0f0f] py-6 relative flex items-center">
+    <div className="w-full overflow-hidden bg-white py-6 relative flex items-center">
       {/* Left/Right Gradient Masks for smooth fading edges */}
-      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0c0f0f] to-transparent z-10 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0c0f0f] to-transparent z-10 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
       
       {/* The scrolling container */}
       <div

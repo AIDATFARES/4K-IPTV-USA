@@ -8,10 +8,10 @@ export default function Contact() {
       <div className="mx-auto mb-14 max-w-3xl text-center">
         <span className="inline-flex rounded-full border border-orange-400/35 bg-orange-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-orange-300">Contact Support</span>
         <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
-          <span className="block text-white">Get in Touch with</span>
-          <span className="mt-1 block text-[#d32f2f]">Our Support Team.</span>
+          <span className="block text-black">Get in Touch with</span>
+          <span className="mt-1 block text-[#FF6B00]">Our Support Team.</span>
         </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400">
+        <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600">
           We&apos;re here to help you get the best streaming experience. Send us a message and we&apos;ll get back to you quickly.
         </p>
       </div>
@@ -75,7 +75,7 @@ export default function Contact() {
                     Name
                   </label>
                   <input
-                    className="bg-surface-container-lowest/80 border border-white/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all"
+                    className="bg-surface-container-lowest/80 border border-black/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all"
                     id="name"
                     name="name"
                     placeholder="John Doe"
@@ -87,7 +87,7 @@ export default function Contact() {
                     Email Address
                   </label>
                   <input
-                    className="bg-surface-container-lowest/80 border border-white/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all"
+                    className="bg-surface-container-lowest/80 border border-black/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all"
                     id="email"
                     name="email"
                     placeholder="john@example.com"
@@ -101,7 +101,7 @@ export default function Contact() {
                   Subject
                 </label>
                 <input
-                  className="bg-surface-container-lowest/80 border border-white/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all"
+                  className="bg-surface-container-lowest/80 border border-black/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all"
                   id="subject"
                   name="subject"
                   placeholder="How can we help?"
@@ -114,7 +114,7 @@ export default function Contact() {
                   Message
                 </label>
                 <textarea
-                  className="bg-surface-container-lowest/80 border border-white/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all resize-none"
+                  className="bg-surface-container-lowest/80 border border-black/10 focus:border-primary rounded-lg px-md py-sm text-on-surface placeholder:text-outline focus:outline-none transition-all resize-none"
                   id="message"
                   name="message"
                   placeholder="Describe your issue or question in detail..."

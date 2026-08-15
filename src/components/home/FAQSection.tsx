@@ -150,14 +150,14 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="py-20 bg-[#0c0f0f] text-white relative z-10 border-t border-white/10 overflow-hidden">
+    <section className="py-20 bg-white text-black relative z-10 border-t border-black/10 overflow-hidden">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight animate-fade-up">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black tracking-tight leading-tight animate-fade-up">
             Frequently Asked Questions<br />(FAQ)
           </h2>
-          <p className="text-stone-300 text-sm sm:text-base mt-5 leading-relaxed max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
+          <p className="text-slate-700 text-sm sm:text-base mt-5 leading-relaxed max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
             Find answers to common questions about our IPTV service, including{" "}
             <Link
               href="#pricing"
@@ -188,19 +188,19 @@ export default function FAQSection() {
           {faqs.map((faq, index) => (
             <div
               key={faq.id}
-              className="flex flex-col rounded-2xl overflow-hidden border border-white/10 bg-[#0f1419]/90 shadow-xl hover:border-orange-500/40 transition-colors animate-fade-up"
+              className="flex flex-col rounded-2xl overflow-hidden border border-black/10 bg-white shadow-xl hover:border-orange-500/40 transition-colors animate-fade-up"
               style={{ animationDelay: `${0.2 + (index * 0.05)}s`, animationFillMode: 'both' }}
             >
               {/* Header Banner */}
-              <div className="bg-[#18202a] border-b border-white/10 px-5 py-4 flex items-center gap-3">
+              <div className="bg-slate-100 border-b border-black/10 px-5 py-4 flex items-center gap-3">
                 <HelpCircle className="w-5 h-5 text-orange-500 shrink-0" />
-                <h3 className="text-base sm:text-lg font-bold text-white leading-snug">
+                <h3 className="text-base sm:text-lg font-bold text-black leading-snug">
                   {faq.question}
                 </h3>
               </div>
 
               {/* Answer Content */}
-              <div className="p-5 sm:p-6 text-sm sm:text-base text-stone-300 leading-relaxed flex-1 bg-[#0f1419]/60">
+              <div className="p-5 sm:p-6 text-sm sm:text-base text-slate-700 leading-relaxed flex-1 bg-white">
                 <p>{faq.answer}</p>
               </div>
             </div>
@@ -211,7 +211,7 @@ export default function FAQSection() {
         <div className="mt-12 text-center animate-fade-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
           <Link
             href="/faq"
-            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#121620] border border-white/20 text-white font-bold text-xs sm:text-sm hover:bg-orange-600 hover:border-orange-600 transition-all duration-300 shadow-lg"
+            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-white border border-black/20 text-white font-bold text-xs sm:text-sm hover:bg-orange-600 hover:border-orange-600 transition-all duration-300 shadow-lg"
           >
             <span>View Complete FAQ Knowledge Base</span>
             <ArrowRight className="w-4 h-4" />

@@ -65,7 +65,7 @@ export default function Blog() {
                   src={post.coverImage || ""}
                 />
                 <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
-                <span className="absolute top-4 left-4 px-2 py-1 bg-surface-container/80 backdrop-blur-md text-on-surface rounded font-label-caps text-label-caps border border-white/10">
+                <span className="absolute top-4 left-4 px-2 py-1 bg-surface-container/80 backdrop-blur-md text-on-surface rounded font-label-caps text-label-caps border border-black/10">
                   {post.category}
                 </span>
               </div>
@@ -101,7 +101,7 @@ export default function Blog() {
               type="email"
             />
             <button
-              className="bg-gradient-to-r from-primary-container to-secondary-container text-white font-title-md text-title-md px-8 py-3 rounded-lg whitespace-nowrap hover:opacity-90 transition-opacity"
+              className="bg-gradient-to-r from-primary-container to-secondary-container text-black font-title-md text-title-md px-8 py-3 rounded-lg whitespace-nowrap hover:opacity-90 transition-opacity"
               type="submit"
             >
               Subscribe

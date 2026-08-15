@@ -1,115 +1,211 @@
 "use client";
 
 import { useState } from "react";
-import { Check, Shield } from "lucide-react";
+import { CheckCircle2, X, CreditCard, Bitcoin, Wallet } from "lucide-react";
+
+type PlanFeature = {
+  text: string;
+  included: boolean;
+};
 
 type Plan = {
   id: string;
-  duration: string;
+  name: string;
+  subtitle: string;
   price: number;
   oldPrice?: number;
-  saving: string;
+  duration: string;
+  saving?: string;
   popular?: boolean;
+  features: PlanFeature[];
+  buttonText: string;
 };
 
 const plans: Plan[] = [
-  { id: "3-months", duration: "3 Months", price: 35, saving: "Save 22%" },
-  { id: "12-months", duration: "1 Year", price: 69.99, oldPrice: 80, saving: "Save 61%", popular: true },
-  { id: "6-months", duration: "6 Months", price: 49.99, saving: "Save 44%" },
-];
-
-const planFeatures = [
-  "+50,000 Channels",
-  "+120,000 Films & Series",
-  "200,000+ VODs",
-  "All supported devices",
-  "4K, Full HD & HD quality",
-  "99.9% server stability",
-  "Updated TV guide (EPG)",
-  "24/7 support",
+  {
+    id: "3-months",
+    name: "Fiesta Basic",
+    subtitle: "Perfect for trying out our premium service.",
+    price: 35,
+    duration: "/ 3 Months",
+    saving: "Save 22%",
+    features: [
+      { text: "HD/4K Streaming Quality", included: true },
+      { text: "Full EPG Support", included: true },
+      { text: "Antifreeze Technology", included: true },
+      { text: "24/7 Standard Support", included: true },
+      { text: "Multi-device connection", included: false },
+    ],
+    buttonText: "Select Basic",
+  },
+  {
+    id: "12-months",
+    name: "Fiesta Ultimate",
+    subtitle: "The ultimate entertainment experience for a full year.",
+    price: 69.99,
+    oldPrice: 80,
+    duration: "/ 12 Months",
+    saving: "Save 61%",
+    popular: true,
+    features: [
+      { text: "Premium HD/4K/8K Quality", included: true },
+      { text: "Advanced EPG & Catchup", included: true },
+      { text: "Premium Antifreeze Tech v2", included: true },
+      { text: "24/7 Priority VIP Support", included: true },
+      { text: "Up to 3 simultaneous devices", included: true },
+    ],
+    buttonText: "Get Ultimate Pass",
+  },
+  {
+    id: "6-months",
+    name: "Fiesta Pro",
+    subtitle: "A solid choice for half a year of uninterrupted joy.",
+    price: 49.99,
+    duration: "/ 6 Months",
+    saving: "Save 44%",
+    features: [
+      { text: "HD/4K Streaming Quality", included: true },
+      { text: "Full EPG Support", included: true },
+      { text: "Antifreeze Technology", included: true },
+      { text: "24/7 Priority Support", included: true },
+      { text: "Multi-device connection", included: false },
+    ],
+    buttonText: "Select Pro",
+  },
 ];
 
 export default function PricingSection() {
   const [devices, setDevices] = useState(1);
 
-  function priceFor(plan: Plan) {
-    return (plan.price * devices).toFixed(2);
-  }
+  const priceFor = (plan: Plan) => (plan.price * devices).toFixed(2);
 
   function handleOrder(plan: Plan) {
     const text = encodeURIComponent(
-      `Hello! I would like to purchase the IPTV Fiesta ${plan.duration} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
+      `Hello! I would like to purchase the ${plan.name} plan (${plan.duration}) with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
     );
     window.open(`https://wa.me/213552069874?text=${text}`, "_blank", "noopener,noreferrer");
   }
 
   return (
-    <section id="pricing" className="relative overflow-hidden bg-[#0c0f0f] py-20 sm:py-24">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-950/20 via-[#060814] to-transparent" />
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <header className="mx-auto max-w-3xl text-center">
-          <p className="inline-flex rounded-full border border-orange-500/30 bg-red-950/40 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-orange-300">Premium IPTV plans</p>
-          <h2 className="mt-5 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">
-            Choose your <span className="bg-gradient-to-r from-orange-400 via-orange-400 to-orange-400 bg-clip-text text-transparent">IPTV Fiesta plan</span>
+    <section id="pricing" className="relative bg-[#f8fafc] py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        
+        <header className="mx-auto max-w-3xl text-center mb-10">
+          <p className="inline-flex rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.2em] text-orange-600">IPTV SUBSCRIPTION PLANS</p>
+          <h2 className="mt-5 text-4xl font-black leading-[1.1] tracking-tight text-black sm:text-5xl uppercase">
+            Choose Your <span className="text-orange-500">Premium IPTV Plan</span>
           </h2>
-          <p className="mt-5 text-xl font-bold tracking-wide text-white sm:text-2xl">Simple, transparent pricing</p>
-          <p className="mt-2 text-sm text-stone-400 sm:text-base">No contracts. No hidden fees. Instant delivery after purchase.</p>
+          <p className="mt-5 text-xl font-bold tracking-wide text-black sm:text-2xl">Affordable, Buffer-Free Streaming</p>
+          <p className="mt-2 text-sm text-slate-500 sm:text-base">No hidden fees. Instant activation. Unlock unlimited live TV and VOD today.</p>
         </header>
 
-        <div className="mx-auto mt-8 max-w-2xl" role="radiogroup" aria-label="Number of device connections">
-          <p className="mb-3 text-center text-xs font-bold uppercase tracking-[0.15em] text-stone-400">Choose your connections</p>
-          <div className="grid grid-cols-3 rounded-2xl border border-orange-500/30 bg-[#121414]/90 p-1.5 shadow-[0_0_30px_rgba(239,68,68,0.1)]">
+        {/* Device Selector */}
+        <div className="mx-auto mb-10 max-w-2xl" role="radiogroup" aria-label="Number of device connections">
+          <p className="mb-3 text-center text-xs font-bold uppercase tracking-[0.15em] text-slate-500">Choose your connections</p>
+          <div className="grid grid-cols-3 rounded-2xl border border-orange-500/30 bg-white p-1.5 shadow-sm">
             {[1, 2, 3].map((count) => {
               const selected = devices === count;
               return (
                 <button
                   aria-checked={selected}
-                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-orange-600 text-white shadow-lg shadow-orange-600/30" : "text-stone-400 hover:text-white"}`}
+                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-[#FF6B00] text-white shadow-lg shadow-orange-600/30" : "text-slate-500 hover:text-black hover:bg-orange-50"}`}
                   key={count}
                   onClick={() => setDevices(count)}
                   role="radio"
                   type="button"
                 >
-                  {count} {count === 1 ? "Device" : "Devices"}
+                  {count} Device{count > 1 ? "s" : ""}
                 </button>
               );
             })}
           </div>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 xl:gap-6 items-stretch">
+        {/* Pricing Cards */}
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 md:gap-8 items-start pt-4">
           {plans.map((plan) => (
-            <article className={`relative flex flex-col rounded-3xl p-7 text-stone-900 transition-all duration-300 ${plan.popular ? "bg-white border-2 border-orange-600 shadow-[0_10px_40px_rgba(239,68,68,0.25)] md:-translate-y-3" : "bg-white border border-stone-200 shadow-xl hover:-translate-y-1"}`} key={plan.id}>
-              {plan.popular && <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full border border-orange-500 bg-orange-600 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white shadow-md">Most popular</span>}
-              <h3 className="text-center text-2xl font-bold text-stone-900">{plan.duration}</h3>
-              <p className="mt-1 text-center text-sm text-stone-500 font-medium">Subscription</p>
-              <div className="mt-3 flex items-baseline justify-center gap-2">
-                <p className="text-4xl font-black tracking-tight text-stone-900">${priceFor(plan)}</p>
-                {plan.oldPrice && <p className="text-lg font-semibold text-stone-400 line-through">${(plan.oldPrice * devices).toFixed(2)}</p>}
+            <article 
+              key={plan.id}
+              className={`relative flex flex-col rounded-2xl bg-white p-8 transition-transform duration-300 hover:-translate-y-1 border-2 ${
+                plan.popular 
+                  ? "border-orange-500 shadow-[0_15px_40px_-10px_rgba(255,107,0,0.25)] md:-mt-4" 
+                  : "border-orange-300 shadow-sm hover:shadow-md hover:border-orange-400"
+              }`}
+            >
+              {plan.popular && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center justify-center rounded-b-xl rounded-t-sm bg-gradient-to-r from-orange-500 to-slate-800 px-5 py-1.5 shadow-md whitespace-nowrap">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wide text-white">Best Value - Most Popular</span>
+                </div>
+              )}
+              
+              <h3 className="text-xl font-bold text-black">{plan.name}</h3>
+              <p className="mt-2 text-sm text-slate-500 leading-relaxed min-h-[40px]">{plan.subtitle}</p>
+              
+              <div className="mt-6 flex items-baseline">
+                <span className="text-5xl font-black tracking-tighter text-orange-500">${priceFor(plan)}</span>
+                <span className="ml-1 text-xs font-semibold text-slate-400">{plan.duration}</span>
               </div>
-              <p className="mx-auto mt-3 rounded-full border border-orange-200 bg-red-50 px-3.5 py-1 text-center text-[11px] font-bold text-orange-600">{plan.saving}</p>
-              <ul className="mt-6 flex-grow space-y-3 border-t border-stone-100 pt-5">
-                {planFeatures.map((feature) => <li className="flex gap-2.5 text-sm font-medium text-stone-700" key={feature}><Check className="mt-0.5 h-4 w-4 shrink-0 text-orange-500" strokeWidth={3} />{feature}</li>)}
+              
+              <div className="min-h-[24px] mt-1 flex items-center gap-2">
+                {plan.saving && (
+                  <p className="text-xs font-bold text-blue-500">{plan.saving}</p>
+                )}
+                {plan.oldPrice && (
+                   <p className="text-xs font-semibold text-slate-400 line-through">${(plan.oldPrice * devices).toFixed(2)}</p>
+                )}
+              </div>
+
+              <ul className="mt-6 flex-grow space-y-4">
+                {plan.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    {feature.included ? (
+                      <CheckCircle2 className={`h-5 w-5 shrink-0 ${plan.popular ? "text-orange-500" : "text-blue-500"}`} strokeWidth={2.5} />
+                    ) : (
+                      <X className="h-5 w-5 shrink-0 text-slate-300" strokeWidth={2.5} />
+                    )}
+                    <span className={`text-sm font-medium ${feature.included ? "text-slate-700" : "text-slate-300"}`}>
+                      {feature.text}
+                    </span>
+                  </li>
+                ))}
               </ul>
-              <button className="mt-7 w-full rounded-2xl bg-emerald-600 py-3.5 text-sm font-bold text-white shadow-[0_4px_15px_rgba(16,185,129,0.3)] transition-all hover:bg-emerald-500 hover:shadow-[0_6px_20px_rgba(16,185,129,0.4)] active:scale-[0.98]" onClick={() => handleOrder(plan)} type="button">Buy now</button>
+              
+              <button 
+                type="button"
+                onClick={() => handleOrder(plan)}
+                className={`mt-8 w-full rounded-xl py-4 text-sm font-bold text-white transition-all duration-300 ${
+                  plan.popular 
+                    ? "bg-[#FF6B00] shadow-[0_8px_20px_rgba(255,107,0,0.3)] hover:bg-[#E66000] hover:-translate-y-0.5" 
+                    : "bg-slate-800 hover:bg-black hover:shadow-lg hover:-translate-y-0.5"
+                }`}
+              >
+                {plan.buttonText}
+              </button>
             </article>
           ))}
         </div>
 
-        <p className="mt-6 text-center text-sm text-stone-400">Reliable support for every IPTV Fiesta subscription.</p>
+        {/* Payment Methods & Guarantee */}
+        <div className="mx-auto mt-16 max-w-4xl">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+            
+            <div className="flex flex-col gap-2 text-center sm:text-left">
+              <h4 className="text-base font-bold text-black flex items-center justify-center sm:justify-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-orange-500" />
+                Secure Payments & Instant Access
+              </h4>
+              <p className="text-sm text-slate-500">Pay safely using Crypto, Credit Card, or PayPal. Your details are encrypted instantly.</p>
+            </div>
 
-        <div className="mx-auto mt-10 flex max-w-4xl flex-col items-center gap-7">
-          <div aria-label="Supported payment methods" className="flex flex-wrap items-center justify-center gap-4">
-            <div className="rounded-xl border border-white/10 bg-[#0c0f1c]/80 px-5 py-2.5 text-lg font-black italic tracking-tighter text-blue-500">PayPal</div>
-            <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-[#0c0f1c]/80 px-5 py-2.5 text-[11px] font-bold uppercase tracking-wider text-stone-300"><span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#F7931A] text-[10px] text-white">₿</span><span>Crypto</span></div>
-            <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-[#0c0f1c]/80 px-5 py-2.5 text-[11px] font-bold uppercase tracking-wider text-stone-300"><span className="flex h-5 items-center justify-center rounded bg-[#1434CB] px-1.5 text-[10px] text-white italic font-serif">VISA</span><span>Cards</span></div>
-          </div>
+            <div className="flex items-center gap-4 text-slate-400">
+              <CreditCard className="h-8 w-8 hover:text-[#FF6B00] transition-colors" />
+              <Bitcoin className="h-8 w-8 hover:text-[#FF6B00] transition-colors" />
+              <Wallet className="h-8 w-8 hover:text-[#FF6B00] transition-colors" />
+            </div>
 
-          <div className="flex w-full max-w-[620px] items-center gap-4 rounded-2xl border border-green-500/30 bg-[#081810]/90 px-5 py-4 shadow-[0_0_35px_rgba(34,197,94,0.12)] sm:rounded-full sm:px-8 sm:py-5">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-green-500/30 bg-green-500/15"><Shield className="h-6 w-6 text-green-400" /></div>
-            <div className="min-w-0 text-left"><p className="text-base font-bold tracking-wide text-white sm:text-lg">Premium Quality Guaranteed</p><p className="mt-1 text-xs font-medium text-green-400/80 sm:text-sm">100% Anti-freeze Technology • Ultra Fast Servers</p></div>
           </div>
         </div>
+
       </div>
     </section>
   );

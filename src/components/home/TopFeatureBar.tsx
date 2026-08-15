@@ -40,13 +40,13 @@ export default function TopFeatureBar() {
   ];
 
   return (
-    <section className="bg-[#0c0f0f] border-y border-white/10 relative z-10">
+    <section className="bg-white border-y border-black/10 relative z-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-2 gap-8 border-b border-white/[0.08] py-10 text-center sm:grid-cols-4 sm:gap-4 sm:py-12">
+        <div className="grid grid-cols-2 gap-8 border-b border-black/[0.08] py-10 text-center sm:grid-cols-4 sm:gap-4 sm:py-12">
           {stats.map((stat) => (
             <div key={stat.label} className="transition-all duration-300">
               <AnimatedStat {...stat} />
-              <span className="mt-1 block text-sm font-medium text-stone-300">{stat.label}</span>
+              <span className="mt-1 block text-sm font-medium text-slate-700">{stat.label}</span>
             </div>
           ))}
         </div>
@@ -57,16 +57,16 @@ export default function TopFeatureBar() {
             return (
               <div
                 key={index}
-                className="bg-[#121414]/90 border border-white/10 rounded-xl p-3.5 sm:p-4 flex items-center gap-3.5 hover:border-orange-500/40 transition-all duration-300 group"
+                className="bg-white/90 border border-black/10 rounded-xl p-3.5 sm:p-4 flex items-center gap-3.5 hover:border-orange-500/40 transition-all duration-300 group"
               >
                 <div className="p-2.5 rounded-lg bg-orange-500/10 border border-orange-500/20 text-orange-400 group-hover:scale-110 transition-transform shrink-0">
                   <Icon className="w-5 h-5" strokeWidth={2} />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-xs sm:text-sm font-bold text-white leading-tight truncate">
+                  <p className="text-xs sm:text-sm font-bold text-black leading-tight truncate">
                     {item.title}
                   </p>
-                  <p className="text-[11px] text-stone-400 truncate mt-0.5">{item.desc}</p>
+                  <p className="text-[11px] text-slate-600 truncate mt-0.5">{item.desc}</p>
                 </div>
               </div>
             );
@@ -115,5 +115,5 @@ function AnimatedStat({ value, prefix, suffix }: { value: number; prefix: string
     return () => cancelAnimationFrame(frameId);
   }, [isInView, value, prefix, suffix]);
 
-  return <span className="block text-3xl font-extrabold tracking-tight text-white sm:text-4xl" ref={ref}>{prefix}0{suffix}</span>;
+  return <span className="block text-3xl font-extrabold tracking-tight text-black sm:text-4xl" ref={ref}>{prefix}0{suffix}</span>;
 }

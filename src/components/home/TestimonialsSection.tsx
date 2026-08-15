@@ -23,21 +23,21 @@ const metrics = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative z-10 overflow-hidden bg-[#0c0f0f] py-24 sm:py-28">
+    <section className="relative z-10 overflow-hidden bg-white py-24 sm:py-28">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_22%_36%,rgba(92,49,153,0.12),transparent_28%),radial-gradient(ellipse_at_76%_52%,rgba(30,94,185,0.09),transparent_28%)]" />
       <div className="relative">
         <div className="mx-auto max-w-3xl px-5 text-center">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/40 bg-amber-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.15em] text-amber-300">
-            <Trophy className="h-3 w-3" /> Verified IPTV Fiesta reviews
+            <Trophy className="h-3 w-3" /> TOP RATED IPTV PROVIDER
           </span>
-          <h2 className="mt-6 text-4xl font-black uppercase leading-[0.98] tracking-tight text-white sm:text-5xl animate-fade-up">
-            <span className="block">Real Reviews from</span>
+          <h2 className="mt-6 text-4xl font-black uppercase leading-[0.98] tracking-tight text-black sm:text-5xl animate-fade-up">
+            <span className="block">Trusted by Thousands of</span>
             <span className="mt-1 block bg-gradient-to-r from-orange-400 via-orange-400 to-orange-400 bg-clip-text text-transparent">
-              IPTV Fiesta Subscribers
+              Happy Cord-Cutters
             </span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Discover why viewers around the world choose IPTV Fiesta for reliable live channels, movies, series, and responsive support.
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+            Read real reviews from our global community. Discover why IPTV Fiesta is rated as the most reliable, buffer-free IPTV service for live sports, movies, and international channels.
           </p>
         </div>
 
@@ -47,12 +47,12 @@ export default function TestimonialsSection() {
             return (
               <div
                 key={metric.label}
-                className="rounded-xl border border-white/10 bg-[#10131e]/90 px-3 py-4 text-center shadow-[0_0_20px_rgba(0,0,0,0.18)] animate-fade-up"
+                className="rounded-xl border border-black/10 bg-slate-50/90 px-3 py-4 text-center shadow-[0_0_20px_rgba(0,0,0,0.18)] animate-fade-up"
                 style={{ animationDelay: `${0.2 + (index * 0.06)}s`, animationFillMode: 'both' }}
               >
                 <Icon className={`mx-auto h-4 w-4 ${metric.tone}`} />
-                <span className="mt-2 block text-base font-bold text-white">{metric.value}</span>
-                <small className="mt-0.5 block text-[8px] font-bold uppercase tracking-wide text-stone-500">
+                <span className="mt-2 block text-base font-bold text-black">{metric.value}</span>
+                <small className="mt-0.5 block text-[8px] font-bold uppercase tracking-wide text-slate-500">
                   {metric.label}
                 </small>
               </div>
@@ -88,11 +88,11 @@ export default function TestimonialsSection() {
             href="https://wa.me/213552069874?text=Hello%2C%20I%20would%20like%20a%20free%20trial%20for%20fiestaiptv%20IPTV."
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-7 py-4 text-sm font-extrabold text-white shadow-[0_0_28px_rgba(211,47,47,0.42)] transition-transform hover:-translate-y-0.5 hover:scale-105"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-7 py-4 text-sm font-extrabold text-black shadow-[0_0_28px_rgba(255,107,0,0.42)] transition-transform hover:-translate-y-0.5 hover:scale-105"
           >
             <Trophy className="h-4 w-4" /> Get Your Free Trial
           </a>
-          <div className="mt-7 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] text-stone-500">
+          <div className="mt-7 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] text-slate-500">
             <span className="flex items-center gap-1.5">
               <Headphones className="h-3 w-3 text-emerald-400" /> Instant WhatsApp delivery
             </span>

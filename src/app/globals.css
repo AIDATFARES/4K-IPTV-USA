@@ -1,55 +1,55 @@
 @import "tailwindcss";
 
 @theme {
-  --color-on-secondary-container: #c4abff;
-  --color-secondary-container: #571bc1;
-  --color-on-secondary-fixed-variant: #5516be;
-  --color-background: #10131a;
-  --color-on-secondary-fixed: #23005c;
-  --color-primary: #b8c3ff;
-  --color-on-primary-fixed-variant: #0035be;
-  --color-error: #ffb4ab;
-  --color-outline-variant: #434656;
-  --color-surface-container-lowest: #0b0e14;
-  --color-secondary: #d0bcff;
-  --color-on-primary: #002388;
-  --color-inverse-surface: #e1e2eb;
-  --color-surface-container-highest: #32353c;
-  --color-on-surface: #e1e2eb;
-  --color-tertiary: #00dce5;
-  --color-tertiary-fixed-dim: #00dce5;
-  --color-on-error-container: #ffdad6;
-  --color-on-primary-container: #efefff;
-  --color-error-container: #93000a;
-  --color-on-tertiary-container: #bbfbff;
-  --color-on-background: #e1e2eb;
-  --color-on-secondary: #3c0091;
-  --color-surface-container-high: #272a31;
-  --color-surface-bright: #363940;
-  --color-on-tertiary-fixed: #002021;
-  --color-inverse-primary: #124af0;
-  --color-surface-container-low: #191c22;
-  --color-tertiary-container: #00797e;
-  --color-tertiary-fixed: #63f7ff;
-  --color-primary-container: #2e5bff;
-  --color-inverse-on-surface: #2e3037;
-  --color-surface-container: #1d2026;
-  --color-surface-dim: #10131a;
-  --color-outline: #8e90a2;
-  --color-surface: #10131a;
-  --color-on-tertiary-fixed-variant: #004f53;
-  --color-surface-tint: #b8c3ff;
-  --color-on-error: #690005;
-  --color-on-tertiary: #003739;
-  --color-primary-fixed: #dde1ff;
-  --color-secondary-fixed: #e9ddff;
-  --color-on-surface-variant: #c4c5d9;
-  --color-surface-variant: #32353c;
-  --color-secondary-fixed-dim: #d0bcff;
-  --color-on-primary-fixed: #001356;
-  --color-primary-fixed-dim: #b8c3ff;
+  --color-surface: #FFFFFF;
+  --color-surface-dim: #dadada;
+  --color-surface-bright: #f9f9f9;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f4;
+  --color-surface-container: #F4F4F4;
+  --color-surface-container-high: #E5E5E5;
+  --color-surface-container-highest: #e2e2e2;
+  --color-on-surface: #000000;
+  --color-on-surface-variant: #5a4136;
+  --color-inverse-surface: #2f3131;
+  --color-inverse-on-surface: #f0f1f1;
+  --color-outline: #D1D1D1;
+  --color-outline-variant: #e2bfb0;
+  --color-surface-tint: #a04100;
+  --color-primary: #a04100;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #ff6b00;
+  --color-on-primary-container: #572000;
+  --color-inverse-primary: #ffb693;
+  --color-secondary: #5e5e5e;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #e2e2e2;
+  --color-on-secondary-container: #646464;
+  --color-tertiary: #0062a1;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #059eff;
+  --color-on-tertiary-container: #003357;
+  --color-error: #DE3730;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ffdbcc;
+  --color-primary-fixed-dim: #ffb693;
+  --color-on-primary-fixed: #351000;
+  --color-on-primary-fixed-variant: #7a3000;
+  --color-secondary-fixed: #e2e2e2;
+  --color-secondary-fixed-dim: #c6c6c6;
+  --color-on-secondary-fixed: #1b1b1b;
+  --color-on-secondary-fixed-variant: #474747;
+  --color-tertiary-fixed: #d0e4ff;
+  --color-tertiary-fixed-dim: #9ccaff;
+  --color-on-tertiary-fixed: #001d35;
+  --color-on-tertiary-fixed-variant: #00497b;
+  --color-background: #ffffff;
+  --color-on-background: #1a1c1c;
+  --color-surface-variant: #e2e2e2;
 
-  /* Brand Colors */
+  /* Brand Colors Override */
   --color-orange-400: #FF8533;
   --color-orange-500: #FF6B00;
   --color-orange-600: #E66000;
@@ -170,92 +170,92 @@
   
   /* 1. MARKETING / SALES PAGES (Home, Pricing, Reseller, Channels) */
   .text-format-marketing h1 {
-    @apply font-black uppercase tracking-tight text-white leading-tight text-3xl sm:text-5xl lg:text-6xl;
+    @apply font-black uppercase tracking-tight text-black leading-tight text-3xl sm:text-5xl lg:text-6xl;
   }
   .text-format-marketing h2 {
-    @apply font-black uppercase tracking-tight text-white text-2xl sm:text-4xl;
+    @apply font-black uppercase tracking-tight text-black text-2xl sm:text-4xl;
   }
   .text-format-marketing h3 {
-    @apply font-extrabold uppercase tracking-wide text-white text-lg sm:text-xl;
+    @apply font-extrabold uppercase tracking-wide text-black text-lg sm:text-xl;
   }
   .text-format-marketing p {
-    @apply text-stone-300 leading-relaxed text-sm sm:text-base font-normal;
+    @apply text-slate-600 leading-relaxed text-sm sm:text-base font-normal;
   }
   .text-format-marketing strong, 
   .text-format-marketing b {
-    @apply font-bold text-white;
+    @apply font-bold text-black;
   }
   .text-format-marketing mark,
   .text-format-marketing .text-highlight {
     @apply bg-transparent text-orange-500 font-extrabold;
   }
   .text-format-marketing .badge-text {
-    @apply inline-flex items-center gap-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-orange-400;
+    @apply inline-flex items-center gap-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-orange-600;
   }
 
   /* 2. BLOG & EDITORIAL PAGES (Blog listing, Article detail) */
   .text-format-blog h1 {
-    @apply font-bold tracking-tight text-white leading-snug text-3xl sm:text-4xl md:text-5xl capitalize;
+    @apply font-bold tracking-tight text-black leading-snug text-3xl sm:text-4xl md:text-5xl capitalize;
   }
   .text-format-blog h2 {
-    @apply font-bold text-white tracking-normal mt-10 mb-4 text-xl sm:text-2xl border-b border-white/10 pb-2.5;
+    @apply font-bold text-black tracking-normal mt-10 mb-4 text-xl sm:text-2xl border-b border-black/10 pb-2.5;
   }
   .text-format-blog h3 {
-    @apply font-semibold text-white tracking-normal mt-7 mb-3 text-lg sm:text-xl;
+    @apply font-semibold text-black tracking-normal mt-7 mb-3 text-lg sm:text-xl;
   }
   .text-format-blog p {
-    @apply text-stone-300 leading-8 text-base sm:text-lg mb-6 font-normal tracking-wide;
+    @apply text-slate-700 leading-8 text-base sm:text-lg mb-6 font-normal tracking-wide;
   }
   .text-format-blog strong, 
   .text-format-blog b {
-    @apply font-bold text-white bg-white/[0.04] px-1 py-0.5 rounded;
+    @apply font-bold text-black bg-black/[0.04] px-1 py-0.5 rounded;
   }
   .text-format-blog em,
   .text-format-blog i {
-    @apply italic text-stone-200;
+    @apply italic text-slate-600;
   }
   .text-format-blog a {
-    @apply text-orange-400 font-medium underline underline-offset-4 decoration-orange-500/40 hover:text-orange-300 hover:decoration-orange-400 transition-colors;
+    @apply text-orange-500 font-medium underline underline-offset-4 decoration-orange-500/40 hover:text-orange-600 hover:decoration-orange-500 transition-colors;
   }
 
   /* 3. TECHNICAL GUIDES & INSTALLATION PAGES */
   .text-format-technical h1 {
-    @apply font-black uppercase tracking-tight text-white text-3xl sm:text-5xl;
+    @apply font-black uppercase tracking-tight text-black text-3xl sm:text-5xl;
   }
   .text-format-technical h2 {
-    @apply font-extrabold tracking-tight text-white text-xl sm:text-3xl mt-8 mb-4 flex items-center gap-3;
+    @apply font-extrabold tracking-tight text-black text-xl sm:text-3xl mt-8 mb-4 flex items-center gap-3;
   }
   .text-format-technical h3 {
-    @apply font-bold text-white text-lg sm:text-xl mt-6 mb-2;
+    @apply font-bold text-black text-lg sm:text-xl mt-6 mb-2;
   }
   .text-format-technical p {
-    @apply text-stone-300 leading-7 text-sm sm:text-base mb-4 font-normal;
+    @apply text-slate-600 leading-7 text-sm sm:text-base mb-4 font-normal;
   }
   .text-format-technical code,
   .text-format-technical pre {
-    @apply font-mono text-orange-300 bg-[#161a23] px-2.5 py-1 rounded-md border border-white/10 text-xs sm:text-sm font-medium tracking-wide shadow-inner;
+    @apply font-mono text-orange-600 bg-slate-100 px-2.5 py-1 rounded-md border border-black/10 text-xs sm:text-sm font-medium tracking-wide shadow-inner;
   }
   .text-format-technical strong,
   .text-format-technical b {
-    @apply font-bold text-white underline decoration-emerald-500/50 decoration-2 underline-offset-2;
+    @apply font-bold text-black underline decoration-emerald-500/50 decoration-2 underline-offset-2;
   }
 
   /* 4. LEGAL & POLICY DOCUMENTS */
   .text-format-legal h1 {
-    @apply font-black uppercase tracking-tight text-white text-3xl sm:text-4xl lg:text-5xl;
+    @apply font-black uppercase tracking-tight text-black text-3xl sm:text-4xl lg:text-5xl;
   }
   .text-format-legal h2 {
-    @apply font-bold text-white text-xl sm:text-2xl tracking-normal mt-8 mb-3 border-l-4 border-orange-500 pl-3;
+    @apply font-bold text-black text-xl sm:text-2xl tracking-normal mt-8 mb-3 border-l-4 border-orange-500 pl-3;
   }
   .text-format-legal p {
-    @apply text-stone-300 leading-7 font-normal text-sm sm:text-base mb-4 tracking-normal;
+    @apply text-slate-600 leading-7 font-normal text-sm sm:text-base mb-4 tracking-normal;
   }
   .text-format-legal strong,
   .text-format-legal b {
-    @apply font-semibold text-white;
+    @apply font-semibold text-black;
   }
   .text-format-legal a {
-    @apply font-semibold text-orange-400 hover:text-orange-300 transition-colors underline underline-offset-2;
+    @apply font-semibold text-orange-500 hover:text-orange-600 transition-colors underline underline-offset-2;
   }
 }
 

@@ -4,8 +4,8 @@ export default function BrandLogo({ compact = false }: { compact?: boolean }) {
   return (
     <Image
       alt="IPTV Fiesta"
-      className={`block shrink-0 object-contain object-left drop-shadow-[0_2px_10px_rgba(211,47,47,0.2)] ${compact ? "h-11 w-32" : "h-16 w-48"}`}
-      src="/fiestaiptv-new-logo-v2.webp"
+      className={`block shrink-0 object-contain object-left drop-shadow-[0_2px_10px_rgba(255,107,0,0.2)] ${compact ? "h-11 w-32" : "h-16 w-48"}`}
+      src="/fiestaiptv-new-logo-v4.webp"
       width={192}
       height={64}
       sizes="(max-width: 768px) 128px, 192px"
