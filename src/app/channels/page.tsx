@@ -358,7 +358,7 @@ export default function ChannelsPage() {
                 View IPTV Subscription Plans
               </Link>
               <a
-                href="https://wa.me/213554246175?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV."
+                href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV."
                 target="_blank"
                 rel="noreferrer"
                 className="px-8 py-4 rounded-full bg-[#12162a] border border-white/20 text-white font-black text-sm uppercase tracking-wider hover:border-red-400 transition-colors"

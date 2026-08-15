@@ -144,7 +144,7 @@ const faqs: FAQItem[] = [
     question: "1. Does IPTVDoor offer a free trial?",
     answer: (
       <>
-        Yes, we offer a <a href="https://wa.me/213554246175?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV." target="_blank" rel="noreferrer" className="text-red-500 font-semibold hover:text-red-400 transition-colors">free trial</a> so you can test our service before subscribing.
+        Yes, we offer a <a href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV." target="_blank" rel="noreferrer" className="text-red-500 font-semibold hover:text-red-400 transition-colors">free trial</a> so you can test our service before subscribing.
       </>
     ),
   },
@@ -184,7 +184,7 @@ export default function FAQ() {
     const subject = String(formData.get("subject") || "General support").trim();
     const message = String(formData.get("message") || "").trim();
     const text = encodeURIComponent(`Hello IPTVDoor support,\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`);
-    window.open(`https://wa.me/213554246175?text=${text}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/213552069874?text=${text}`, "_blank", "noopener,noreferrer");
   }
 
   return (
@@ -285,7 +285,7 @@ export default function FAQ() {
                 <span className="mt-2 block text-xs leading-5 text-stone-400">For general inquiries and support.</span>
                 <span className="mt-3 block text-xs font-semibold text-red-400">support@dooriptv.shop</span>
               </a>
-              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-white/10 bg-[#121620]/80 p-5 text-center transition-colors hover:border-red-500/50" href="https://wa.me/213554246175?text=Hello%20iptvdoor%20IPTV%20support%2C%20I%20need%20help." rel="noreferrer" target="_blank">
+              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-white/10 bg-[#121620]/80 p-5 text-center transition-colors hover:border-red-500/50" href="https://wa.me/213552069874?text=Hello%20iptvdoor%20IPTV%20support%2C%20I%20need%20help." rel="noreferrer" target="_blank">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400"><MessageCircle className="h-5 w-5" /></span>
                 <span className="mt-4 block text-base font-bold text-white">WhatsApp Support</span>
                 <span className="mt-2 block text-xs leading-5 text-stone-400">Fastest way to reach us for technical issues.</span>

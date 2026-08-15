@@ -40,7 +40,7 @@ export default function PricingSection() {
     const text = encodeURIComponent(
       `Hello! I would like to purchase the IPTVDoor ${plan.duration} plan with ${devices} device connection${devices > 1 ? "s" : ""} for $${priceFor(plan)}.`
     );
-    window.open(`https://wa.me/213554246175?text=${text}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/213552069874?text=${text}`, "_blank", "noopener,noreferrer");
   }
 
   return (

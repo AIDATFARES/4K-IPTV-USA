@@ -43,7 +43,7 @@ export default function Contact() {
             </p>
             <a
               className="text-emerald-400 font-medium hover:text-emerald-300 transition-colors flex items-center gap-xs"
-              href="https://wa.me/213554246175?text=Hello,%20I%20need%20support%20for%20IPTVDoor."
+              href="https://wa.me/213552069874?text=Hello,%20I%20need%20support%20for%20IPTVDoor."
               target="_blank"
               rel="noreferrer"
             >

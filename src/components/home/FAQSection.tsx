@@ -32,7 +32,7 @@ const faqs = [
       <>
         Yes, a subscription is required. However, we offer a{" "}
         <a
-          href="https://wa.me/213554246175?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV."
+          href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20iptvdoor%20IPTV."
           target="_blank"
           rel="noreferrer"
           className="text-red-500 font-semibold hover:text-red-400 transition-colors"

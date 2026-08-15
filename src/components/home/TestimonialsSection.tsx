@@ -85,7 +85,7 @@ export default function TestimonialsSection() {
 
         <div className="mt-12 text-center animate-fade-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
           <a
-            href="https://wa.me/213554246175?text=Hello%2C%20I%20would%20like%20a%20free%20trial%20for%20iptvdoor%20IPTV."
+            href="https://wa.me/213552069874?text=Hello%2C%20I%20would%20like%20a%20free%20trial%20for%20iptvdoor%20IPTV."
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-red-600 px-7 py-4 text-sm font-extrabold text-white shadow-[0_0_28px_rgba(211,47,47,0.42)] transition-transform hover:-translate-y-0.5 hover:scale-105"
