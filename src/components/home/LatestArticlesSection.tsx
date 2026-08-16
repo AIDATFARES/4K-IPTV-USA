@@ -3,19 +3,8 @@ import { blogPosts } from "@/data/blog";
 import { ArrowRight } from "lucide-react";
 
 export default function LatestArticlesSection() {
-  // Select featured articles from our blog dataset
-  const featuredSlugs = [
-    "iptv-epg-wrong-time-time-zone",
-    "iptv-buffering-only-at-night",
-    "iptv-channels-load-but-wont-play",
-  ];
-
-  const latestPosts = featuredSlugs
-    .map((slug) => blogPosts.find((p) => p.slug === slug))
-    .filter(Boolean) as typeof blogPosts;
-
-  // Fallback to all available blog posts
-  const displayPosts = latestPosts.length > 0 ? latestPosts : blogPosts;
+  // Select the 3 newest articles
+  const displayPosts = blogPosts.slice(0, 3);
 
   return (
     <section className="py-20 bg-white text-black relative z-10 border-t border-black/10 overflow-hidden">
@@ -38,7 +27,7 @@ export default function LatestArticlesSection() {
         <div className={`grid gap-8 mb-14 ${displayPosts.length === 1 ? 'grid-cols-1 max-w-lg mx-auto' : displayPosts.length === 2 ? 'grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}>
           {displayPosts.map((post) => (
             <Link href={`/blog/${post.slug}`} key={post.id}>
-              <article className="bg-white rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:-translate-y-2 transition-all duration-300 h-full border border-black/10 hover:border-[#FF6B00]/50 shadow-xl">
+              <article className="bg-white rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:-translate-y-2 transition-all duration-300 h-full border border-black/10 hover:border-[#FF6B00]/50">
                 <div className="h-48 relative overflow-hidden shrink-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -73,7 +62,7 @@ export default function LatestArticlesSection() {
 
         <div className="text-center">
           <Link href="/blog">
-            <button className="bg-black/5 hover:bg-[#FF6B00] text-black border border-black/15 hover:border-[#FF6B00] px-8 py-3.5 rounded-full font-bold text-sm transition-all duration-300 flex items-center justify-center mx-auto gap-2 shadow-lg">
+            <button className="bg-black/5 hover:bg-[#FF6B00] text-black border border-black/15 hover:border-[#FF6B00] px-8 py-3.5 rounded-full font-bold text-sm transition-all duration-300 flex items-center justify-center mx-auto gap-2">
               View All Articles
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>

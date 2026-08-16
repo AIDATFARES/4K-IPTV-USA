@@ -22,7 +22,7 @@ export default function Blog() {
       {featuredPost && (
         <section className="mb-24">
           <Link href={`/blog/${featuredPost.slug}`}>
-            <div className="glass-panel rounded-2xl overflow-hidden flex flex-col md:flex-row group cursor-pointer hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500">
+            <div className="bg-white border border-black/10 rounded-2xl overflow-hidden flex flex-col md:flex-row group cursor-pointer transition-all duration-500">
               <div className="md:w-3/5 h-64 md:h-96 relative overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -56,7 +56,7 @@ export default function Blog() {
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
         {gridPosts.map((post) => (
           <Link href={`/blog/${post.slug}`} key={post.id}>
-            <article className="glass-panel rounded-xl overflow-hidden flex flex-col group cursor-pointer hover:-translate-y-2 transition-transform duration-300 h-full">
+            <article className="bg-white border border-black/10 rounded-xl overflow-hidden flex flex-col group cursor-pointer hover:-translate-y-2 transition-transform duration-300 h-full">
               <div className="h-48 relative overflow-hidden shrink-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -86,7 +86,7 @@ export default function Blog() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="glass-panel rounded-2xl p-8 md:p-16 text-center relative overflow-hidden">
+      <section className="bg-white border border-black/10 rounded-2xl p-8 md:p-16 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-50 pointer-events-none"></div>
         <div className="relative z-10 max-w-2xl mx-auto">
           <Mail className="w-10 h-10 text-tertiary mb-4 mx-auto" />

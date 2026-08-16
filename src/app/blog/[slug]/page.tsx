@@ -102,7 +102,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     img: ({ node, alt, src, ...props }: any) => (
       <div className="my-8 flex flex-col items-center">
-        <img src={src} alt={alt} className="rounded-xl shadow-lg max-w-full" {...props} />
+        <img src={src} alt={alt} className="rounded-xl max-w-full" {...props} />
         {alt && <span className="text-sm text-center block mt-2 opacity-70">{alt}</span>}
       </div>
     ),
@@ -122,7 +122,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         Back to Blog
       </Link>
 
-      <article className="glass-panel rounded-2xl p-6 md:p-12">
+      <article className="bg-white border border-black/10 rounded-2xl p-6 md:p-12">
         <header className="mb-10 text-center">
           <span className="inline-block px-3 py-1 bg-tertiary/20 text-tertiary rounded-full font-label-caps text-label-caps mb-4 w-max border border-tertiary/30">
             {post.category}
@@ -138,7 +138,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         </header>
 
         {post.coverImage && (
-          <div className="mb-12 rounded-xl overflow-hidden shadow-2xl relative w-full h-[300px] md:h-[500px]">
+          <div className="mb-12 rounded-xl overflow-hidden relative w-full h-[300px] md:h-[500px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={post.coverImage}
@@ -148,14 +148,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </div>
         )}
 
-        <div className="prose prose-invert prose-lg max-w-none text-on-surface-variant 
+        <div className="prose prose-lg max-w-none text-on-surface-variant 
           prose-headings:text-on-surface prose-headings:font-headline-md 
           prose-a:text-primary hover:prose-a:text-primary-container
           prose-strong:text-on-surface prose-strong:font-bold
           prose-code:text-secondary prose-code:bg-surface-container/50 prose-code:px-1 prose-code:rounded
           prose-pre:bg-surface-container prose-pre:border prose-pre:border-outline-variant
           prose-blockquote:border-l-primary prose-blockquote:bg-surface-container/30 prose-blockquote:py-1 prose-blockquote:px-4 prose-blockquote:not-italic
-          prose-img:rounded-xl prose-img:shadow-lg
+          prose-img:rounded-xl
           prose-th:text-on-surface prose-th:border-b prose-th:border-outline-variant prose-th:py-2
           prose-td:border-b prose-td:border-outline-variant/50 prose-td:py-2"
         >
