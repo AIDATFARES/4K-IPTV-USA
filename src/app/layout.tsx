@@ -65,7 +65,7 @@ export default function RootLayout({
         {/* Navbar Component */}
         <Navbar />
 
-        <div className="flex-grow pt-[88px] flex flex-col">{children}</div>
+        <div className="flex-grow pt-[124px] flex flex-col">{children}</div>
 
         {/* Footer */}
         <footer className="w-full mt-auto border-t border-black/10 bg-white">

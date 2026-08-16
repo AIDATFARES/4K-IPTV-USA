@@ -29,12 +29,26 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 flex flex-col ${
         scrolled
           ? "bg-white/95 backdrop-blur-xl border-b border-black/10 shadow-2xl"
           : "bg-white/80 backdrop-blur-md"
       }`}
     >
+      {/* Promotional Top Bar */}
+      <div className="w-full bg-[#FF6B00] text-black py-2 px-4 flex items-center justify-center text-xs sm:text-sm font-semibold tracking-wide shadow-sm">
+        <span className="flex items-center gap-2">
+          🎁 Special Offer: We offer a <span className="font-extrabold underline uppercase tracking-widest">Free Trial</span> to test our service! 
+          <a 
+            href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20fiestaiptv%20IPTV." 
+            target="_blank" 
+            rel="noreferrer"
+            className="hidden sm:inline-block ml-2 bg-black text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-white hover:text-black transition-colors shadow-sm"
+          >
+            Claim Now
+          </a>
+        </span>
+      </div>
       <div className="max-w-[1480px] mx-auto px-4 sm:px-8 h-20 flex items-center justify-between relative">
         
         {/* LOGO */}
