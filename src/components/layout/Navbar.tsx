@@ -36,18 +36,22 @@ export default function Navbar() {
       }`}
     >
       {/* Promotional Top Bar */}
-      <div className="w-full bg-[#FF6B00] text-black py-2 px-4 flex items-center justify-center text-xs sm:text-sm font-semibold tracking-wide shadow-sm">
-        <span className="flex items-center gap-2">
-          🎁 Special Offer: We offer a <span className="font-extrabold underline uppercase tracking-widest">Free Trial</span> to test our service! 
-          <a 
-            href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20fiestaiptv%20IPTV." 
-            target="_blank" 
-            rel="noreferrer"
-            className="hidden sm:inline-block ml-2 bg-black text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-white hover:text-black transition-colors shadow-sm"
-          >
-            Claim Now
-          </a>
-        </span>
+      <div className="w-full bg-[#FF6B00] text-black py-2 overflow-hidden flex items-center shadow-sm">
+        <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+          {[...Array(6)].map((_, i) => (
+            <span key={i} className="flex items-center gap-2 px-8 text-xs sm:text-sm font-semibold tracking-wide whitespace-nowrap">
+              🎁 Special Offer: We offer a <span className="font-extrabold underline uppercase tracking-widest">Free Trial</span> to test our service! 
+              <a 
+                href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20fiestaiptv%20IPTV." 
+                target="_blank" 
+                rel="noreferrer"
+                className="inline-block ml-2 bg-black text-white px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold hover:bg-white hover:text-black transition-colors shadow-sm"
+              >
+                Claim Now
+              </a>
+            </span>
+          ))}
+        </div>
       </div>
       <div className="max-w-[1480px] mx-auto px-4 sm:px-8 h-20 flex items-center justify-between relative">
         
