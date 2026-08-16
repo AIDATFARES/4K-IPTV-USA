@@ -15,12 +15,12 @@ const faqs = [
           live TV channels
         </Link>{" "}
         and{" "}
-        <Link
+        <a
           href="#pricing"
           className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           IPTV subscription plans
-        </Link>
+        </a>
         .
       </>
     ),
@@ -40,12 +40,12 @@ const faqs = [
           free trial
         </a>{" "}
         so you can test the service before committing to our{" "}
-        <Link
+        <a
           href="#pricing"
           className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           subscription plans
-        </Link>
+        </a>
         .
       </>
     ),
@@ -72,12 +72,12 @@ const faqs = [
     answer: (
       <>
         Yes, we offer multi-device support. You can choose an{" "}
-        <Link
+        <a
           href="#pricing"
           className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
         >
           IPTV subscription plan
-        </Link>{" "}
+        </a>{" "}
         that allows streaming on more than one device simultaneously. Perfect for families or shared accounts.
       </>
     ),
@@ -159,12 +159,12 @@ export default function FAQSection() {
           </h2>
           <p className="text-slate-700 text-sm sm:text-base mt-5 leading-relaxed max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
             Find answers to common questions about our IPTV service, including{" "}
-            <Link
+            <a
               href="#pricing"
               className="text-orange-500 font-semibold hover:text-orange-400 transition-colors"
             >
               subscriptions
-            </Link>
+            </a>
             ,{" "}
             <Link
               href="/installation"

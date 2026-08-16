@@ -49,12 +49,12 @@ export default function HeroSection() {
           >
             GET 12 MONTHS — 2 MONTHS FREE →
           </a>
-          <Link
+          <a
             href="#pricing"
             className="py-4 px-8 text-sm sm:text-base font-bold text-[#FF6B00] bg-transparent border-2 border-[#FF6B00] hover:bg-[#FF6B00]/10 transition-all duration-300 flex items-center justify-center tracking-wider hover:scale-105"
           >
             SEE PLANS →
-          </Link>
+          </a>
         </div>
 
         {/* Bottom Icons */}

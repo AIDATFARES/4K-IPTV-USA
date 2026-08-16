@@ -40,21 +40,21 @@ export default function HowItWorksSection() {
               <div className="bg-white text-slate-100 p-8 rounded-2xl shadow-xl relative border border-stone-200"
               >
                 <h3 className="text-xl font-extrabold text-[#FF6B00] mb-3">
-                  <Link
+                  <a
                     href="#pricing"
                     className="hover:text-orange-700 transition-colors"
                   >
                     1. Choose Your IPTV Plan
-                  </Link>
+                  </a>
                 </h3>
                 <p className="text-slate-400 text-sm leading-relaxed">
                   Select the best IPTV subscription package for your needs from our{" "}
-                  <Link
+                  <a
                     href="#pricing"
                     className="text-[#FF6B00] font-semibold hover:text-orange-700 transition-colors"
                   >
                     pricing plans
-                  </Link>
+                  </a>
                   . Once you complete the payment, we will email or{" "}
                   <Link
                     href="/contact"

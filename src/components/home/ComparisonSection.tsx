@@ -70,12 +70,12 @@ export default function ComparisonSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link
+          <a
             href="#pricing"
             className="inline-flex items-center justify-center bg-[#FF6B00] text-white font-bold px-10 py-4 rounded-md shadow-[0_4px_14px_rgba(255,107,0,0.3)] hover:bg-[#E66000] hover:shadow-[0_6px_20px_rgba(255,107,0,0.4)] transition-all hover:scale-105"
           >
             View Plans & Pricing
-          </Link>
+          </a>
         </div>
       </div>
     </section>
