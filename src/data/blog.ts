@@ -422,7 +422,7 @@ Start with the simplest checks: restart the device, test the internet connection
 If the problem continues, check decoder settings, EPG configuration, device compatibility, and the application version. Testing the same playlist in another compatible player is also one of the fastest ways to determine whether the updated application is responsible.
 
 The key is to troubleshoot one variable at a time. This makes it much easier to determine whether the problem comes from the application, device, network, account, or streaming service.
-\`,
+`,
   },
   {
     id: "iptv-buffering-every-few-minutes-causes-and-fixes",
