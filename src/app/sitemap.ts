@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.iptvus4k.site'; // Update to your production URL
+  const baseUrl = 'https://www.iptv-us4k.shop'; // Update to your production URL
 
   // Define static routes
   const staticRoutes: MetadataRoute.Sitemap = [

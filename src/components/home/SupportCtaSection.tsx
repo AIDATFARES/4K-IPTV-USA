@@ -33,7 +33,7 @@ export default function SupportCtaSection() {
           </a>
           <a
             className="inline-flex items-center justify-center gap-2 rounded-full border border-black/15 px-4 py-2.5 text-[10px] font-extrabold uppercase tracking-wide text-black transition-all hover:border-black/30 hover:bg-black/[0.04] hover:scale-105"
-            href="mailto:support@iptvus4k.site"
+            href="mailto:support@iptv-us4k.shop"
           >
             <Mail className="h-3.5 w-3.5" />
             Send email

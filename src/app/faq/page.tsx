@@ -279,11 +279,11 @@ export default function FAQ() {
           </header>
           <div className="mt-10 grid gap-8 xl:grid-cols-[278px_minmax(0,1fr)] xl:gap-10">
             <div className="grid gap-3 sm:grid-cols-3 xl:grid-cols-1">
-              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center transition-colors hover:border-blue-500/50" href="mailto:support@iptvus4k.site">
+              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center transition-colors hover:border-blue-500/50" href="mailto:support@iptv-us4k.shop">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/20 text-blue-400"><Mail className="h-5 w-5" /></span>
                 <span className="mt-4 block text-base font-bold text-black">Email Us</span>
                 <span className="mt-2 block text-xs leading-5 text-slate-600">For general inquiries and support.</span>
-                <span className="mt-3 block text-xs font-semibold text-blue-400">support@iptvus4k.site</span>
+                <span className="mt-3 block text-xs font-semibold text-blue-400">support@iptv-us4k.shop</span>
               </a>
               <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center transition-colors hover:border-blue-500/50" href="https://wa.me/213552069874?text=Hello%204kiptvusa%20IPTV%20support%2C%20I%20need%20help." rel="noreferrer" target="_blank">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400"><MessageCircle className="h-5 w-5" /></span>

@@ -27,9 +27,9 @@ export default function Contact() {
             <p className="font-body-sm text-body-sm text-on-surface-variant mb-md">For general inquiries and support.</p>
             <a
               className="text-primary font-medium hover:text-primary-fixed transition-colors"
-              href="mailto:support@iptvus4k.site"
+              href="mailto:support@iptv-us4k.shop"
             >
-              support@iptvus4k.site
+              support@iptv-us4k.shop
             </a>
           </div>
 

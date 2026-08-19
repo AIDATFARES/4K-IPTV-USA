@@ -24,14 +24,14 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "4K IPTV USA - Premium 4K Streaming Services",
   description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-  metadataBase: new URL("https://www.iptvus4k.site"),
+  metadataBase: new URL("https://www.iptv-us4k.shop"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "4K IPTV USA - Premium 4K Streaming",
     description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-    url: "https://www.iptvus4k.site",
+    url: "https://www.iptv-us4k.shop",
     siteName: "4K IPTV USA",
     images: [
       {
@@ -106,7 +106,7 @@ export default function RootLayout({
               <ul className="space-y-3 font-body-sm text-sm">
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/pricing">Get Started</Link></li>
                 <li><a className="text-slate-600 transition-colors hover:text-black" href="https://wa.me/213552069874" target="_blank" rel="noreferrer">WhatsApp</a></li>
-                <li><a className="text-slate-600 transition-colors hover:text-black" href="mailto:support@iptvus4k.site">Email</a></li>
+                <li><a className="text-slate-600 transition-colors hover:text-black" href="mailto:support@iptv-us4k.shop">Email</a></li>
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/channels">Channels</Link></li>
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/installation">Setup Guide</Link></li>
               </ul>
