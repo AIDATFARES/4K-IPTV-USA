@@ -36,7 +36,7 @@ export default function HeroSection() {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl text-white/90 font-medium max-w-2xl mt-2 drop-shadow-lg">
-          Everything you want to watch. One subscription. Any screen, anywhere.
+          Unlock 50,000+ live channels and 120,000+ blockbuster movies & series in crystal-clear 4K. Say goodbye to buffering and enjoy unlimited entertainment on any device, anywhere.
         </p>
 
         {/* Buttons */}
