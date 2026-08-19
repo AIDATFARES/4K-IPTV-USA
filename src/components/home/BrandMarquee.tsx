@@ -41,11 +41,12 @@ export default function BrandMarquee({
           >
             <div className="relative w-full h-full overflow-hidden rounded-xl">
               <Image 
-                src={`/${imagesFolder}/${brand}`} 
+                src={`/${imagesFolder}/${encodeURIComponent(brand)}`} 
                 alt="Channel Logo" 
                 fill
                 sizes="(max-width: 640px) 100px, (max-width: 1024px) 140px, 160px"
                 className={imageClassName || "object-contain drop-shadow-md rounded-lg"}
+                unoptimized
               />
             </div>
           </div>
