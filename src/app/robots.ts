@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://www.4kiptvusa.com/sitemap.xml',
+    sitemap: 'https://www.iptvus4k.site/sitemap.xml',
   };
 }
