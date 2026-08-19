@@ -3,12 +3,34 @@ import Link from "next/link";
 
 export default function MovieStrips() {
   const channelImages = [
-    "efc10d_58769540c3af46e4b1b8373d25053dce_mv2.webp",
-    "efc10d_82f6ea18c2494be98c46c59b9e55cf71_mv2.webp",
-    "efc10d_c4763bc9523c4fc89ba4e9f22e5ce52d_mv2.webp",
-    "efc10d_cf5918f2dcf64cf39fcefe135495cc43_mv2.webp",
-    "efc10d_d0631c9b9c3f4be9bd6caef12c4d0694_mv2.webp",
-    "efc10d_e83995fe1b33435a982de93f05c82c29_mv2.webp"
+    "46803563a8701aa615fb654fb4ef7639.webp",
+    "6da9e60dfd50f7ad0e5e344ee94e4c7e.webp",
+    "8f516efb87c6d10460e585bb938d8fe1.jpg",
+    "bf75b83425cb9b5d998ae005d5ee7147.webp",
+    "dffs.webp",
+    "f33fe284009a72dbbd043f18f05ace39.webp",
+    "new-movie1-e1736574874664.jpg.webp",
+    "new-movie10-e1736574986310.jpg.webp",
+    "new-movie12-e1736575004499.jpg.webp",
+    "new-movie13-e1736575043741.jpg.webp",
+    "new-movie18-e1736575106703.jpg.webp",
+    "new-movie19-e1736575114454.jpg.webp",
+    "new-movie2-e1736574891758.jpg.webp",
+    "new-movie20-e1736575123747.jpg.webp",
+    "new-movie22-e1736575140704.jpg.webp",
+    "new-movie23-e1736575149450.jpg.webp",
+    "new-movie24-e1736575160161.jpg.webp",
+    "new-movie3-e1736574911385.jpg.webp",
+    "new-movie4-e1736574926107.jpg.webp",
+    "new-movie5-e1736574938665.jpg.webp",
+    "new-movie6-e1736574948584.jpg.webp",
+    "new-movie7-e1736574959152.jpg.webp",
+    "new-movie8-e1736574969539.jpg.webp",
+    "new-movie9-e1736574978899.jpg.webp",
+    "oMutDMODnbCZf46w0dK4wncQmDB.webp",
+    "original-1-3-1-e1736575205343.jpg.webp",
+    "original-2-e1736575195529.jpg.webp",
+    "original-e1736575215311.jpg.webp"
   ];
 
   return (
@@ -34,10 +56,10 @@ export default function MovieStrips() {
 
       {/* Top Strip (Right to Left) */}
       <div className="relative flex w-max items-center">
-        <div className="flex gap-4 md:gap-6 px-2 md:px-3 animate-marquee" style={{ animationDuration: '30s' }}>
+        <div className="flex gap-4 md:gap-6 px-2 md:px-3 animate-marquee" style={{ animationDuration: '180s' }}>
           {[...channelImages, ...channelImages, ...channelImages, ...channelImages, ...channelImages].map((img, i) => (
             <div key={i} className="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[300px] relative rounded-md overflow-hidden shadow-2xl border border-black/5 hover:scale-105 hover:border-black/30 hover:z-10 transition-all duration-300">
-              <Image src={`/channel/${img}`} alt="Media Poster" fill sizes="(max-width: 640px) 140px, (max-width: 1024px) 180px, 200px" className="object-cover" />
+              <Image src={`/filem/${img}`} alt="Media Poster" fill sizes="(max-width: 640px) 140px, (max-width: 1024px) 180px, 200px" className="object-cover" />
             </div>
           ))}
         </div>

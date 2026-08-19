@@ -30,7 +30,7 @@ export default function DeviceSupport() {
 
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-xl transition-transform duration-500 hover:scale-[1.02]">
             <Image
-              src="/devices-banner.webp"
+              src="/devices-banner.png"
               alt="Supported IPTV Devices - Smart TV, Laptop, Smartphone"
               width={1200}
               height={500}

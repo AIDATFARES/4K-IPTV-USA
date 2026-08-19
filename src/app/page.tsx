@@ -30,13 +30,11 @@ export default function Home() {
       <TopFeatureBar />
       <MovieStrips />
       <BrandMarquee 
-        imagesFolder="channel2" 
+        imagesFolder="dawryate2" 
         images={[
-          "Bundesliga-1-1.webp", "Champions-League-1.webp", "Design-sans-titre-3-1.webp", 
-          "Liga-1.webp", "MLS-1.webp", "Sans-titre-1-1.webp", "Sans-titre-11.webp", 
-          "Sans-titre-2-1-2.webp", "Sans-titre-2-2.webp", "Sans-titre-3-1-2.webp", 
-          "Sans-titre-6-1-2.webp", "Sans-titre-7-2.webp", "Sans-titre-8-2.webp", 
-          "Sans-titre-9-1-2.webp", "Serie-A-1.webp"
+          "Untitled-design-50.webp", "Untitled-design-51.webp", "Untitled-design-52.webp",
+          "Untitled-design-53.webp", "Untitled-design-54.webp", "Untitled-design-55.webp",
+          "Untitled-design-56.webp", "Untitled-design-57.webp", "Untitled-design-58.webp"
         ]}
         cardClassName="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[280px] relative rounded-xl overflow-hidden shadow-2xl border border-black/10 bg-white hover:border-[#2E5BFF]/60 transition-all duration-300 group"
         imageClassName="object-cover rounded-xl"
