@@ -173,13 +173,16 @@ export default function PricingSection() {
               <button 
                 type="button"
                 onClick={() => handleOrder(plan)}
-                className={`mt-8 w-full rounded-xl py-4 text-sm font-bold text-white transition-all duration-300 ${
+                className={`group mt-8 w-full rounded-xl py-4 text-sm font-bold text-white transition-all duration-300 ${
                   plan.popular 
-                    ? "bg-[#2E5BFF] shadow-[0_8px_20px_rgba(255,107,0,0.3)] hover:bg-[#2E5BFF] hover:-translate-y-0.5" 
-                    : "bg-slate-800 hover:bg-black hover:shadow-lg hover:-translate-y-0.5"
+                    ? "bg-[#2E5BFF] animate-pulse-glow hover:bg-blue-600" 
+                    : "bg-slate-800 hover:bg-black hover:scale-[1.02] shadow-sm hover:shadow-md"
                 }`}
               >
-                {plan.buttonText}
+                <span className="inline-flex items-center">
+                  {plan.buttonText}
+                  <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
+                </span>
               </button>
             </article>
           ))}

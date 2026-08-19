@@ -45,15 +45,15 @@ export default function HeroSection() {
             href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%204kiptvusa%20IPTV."
             target="_blank"
             rel="noreferrer"
-            className="py-4 px-8 text-sm sm:text-base font-bold text-black bg-[#2E5BFF] hover:bg-[#2E5BFF] transition-all duration-300 flex items-center justify-center tracking-wider hover:scale-105"
+            className="group py-4 px-8 text-sm sm:text-base font-bold text-black bg-[#2E5BFF] hover:bg-blue-500 transition-all duration-300 flex items-center justify-center tracking-wider animate-pulse-glow"
           >
-            GET 12 MONTHS — 2 MONTHS FREE →
+            GET 12 MONTHS — 2 MONTHS FREE <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
           </a>
           <a
             href="#pricing"
-            className="py-4 px-8 text-sm sm:text-base font-bold text-[#2E5BFF] bg-transparent border-2 border-[#2E5BFF] hover:bg-[#2E5BFF]/10 transition-all duration-300 flex items-center justify-center tracking-wider hover:scale-105"
+            className="group py-4 px-8 text-sm sm:text-base font-bold text-[#2E5BFF] bg-transparent border-2 border-[#2E5BFF] hover:bg-[#2E5BFF]/10 transition-all duration-300 flex items-center justify-center tracking-wider"
           >
-            SEE PLANS →
+            SEE PLANS <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
           </a>
         </div>
 
