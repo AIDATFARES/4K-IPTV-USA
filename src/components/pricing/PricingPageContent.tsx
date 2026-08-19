@@ -124,7 +124,7 @@ export default function PricingPageContent() {
               return (
                 <button
                   aria-checked={selected}
-                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-[#2563EB] text-white shadow-lg shadow-blue-600/30" : "text-slate-500 hover:text-black hover:bg-blue-50"}`}
+                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-[#2E5BFF] text-white shadow-lg shadow-blue-600/30" : "text-slate-500 hover:text-black hover:bg-blue-50"}`}
                   key={count}
                   onClick={() => setDevices(count)}
                   role="radio"
@@ -191,7 +191,7 @@ export default function PricingPageContent() {
                 onClick={() => handleOrder(plan)}
                 className={`mt-8 w-full rounded-xl py-4 text-sm font-bold text-white transition-all duration-300 ${
                   plan.popular 
-                    ? "bg-[#2563EB] shadow-[0_8px_20px_rgba(255,107,0,0.3)] hover:bg-[#E66000] hover:-translate-y-0.5" 
+                    ? "bg-[#2E5BFF] shadow-[0_8px_20px_rgba(255,107,0,0.3)] hover:bg-[#2E5BFF] hover:-translate-y-0.5" 
                     : "bg-slate-800 hover:bg-black hover:shadow-lg hover:-translate-y-0.5"
                 }`}
               >

@@ -9,7 +9,7 @@ export default function Contact() {
         <span className="inline-flex rounded-full border border-blue-400/35 bg-blue-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-blue-300">Contact Support</span>
         <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
           <span className="block text-black">Get in Touch with</span>
-          <span className="mt-1 block text-[#2563EB]">Our Support Team.</span>
+          <span className="mt-1 block text-[#2E5BFF]">Our Support Team.</span>
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600">
           We&apos;re here to help you get the best streaming experience. Send us a message and we&apos;ll get back to you quickly.

@@ -175,9 +175,9 @@ export default function ChannelsPage() {
           <motion.div 
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex rounded-full border border-[#2563EB]/30 bg-[#2563EB]/5 px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#2563EB] mb-6"
+            className="inline-flex rounded-full border border-[#2E5BFF]/30 bg-[#2E5BFF]/5 px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#2E5BFF] mb-6"
           >
-            <Radio className="w-3.5 h-3.5 mr-2 text-[#2563EB] animate-pulse inline" />
+            <Radio className="w-3.5 h-3.5 mr-2 text-[#2E5BFF] animate-pulse inline" />
             <span>+50,000 CHANNELS · +120,000 FILMS &amp; SERIES · 200,000+ VODS</span>
           </motion.div>
 
@@ -188,7 +188,7 @@ export default function ChannelsPage() {
             className="mt-2 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight"
           >
             <span className="block text-black">Popular 4K IPTV USA</span>
-            <span className="mt-1 block text-[#2563EB]">Live Channels &amp; VOD.</span>
+            <span className="mt-1 block text-[#2E5BFF]">Live Channels &amp; VOD.</span>
           </motion.h1>
 
           <motion.p 
@@ -214,10 +214,10 @@ export default function ChannelsPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.35, delay: index * 0.05 }}
-                  className="relative min-h-[240px] rounded-2xl border-2 border-slate-100 bg-white px-6 pb-6 pt-14 shadow-sm hover:border-[#2563EB] hover:shadow-lg hover:shadow-[#2563EB]/10 transition-all duration-300 group"
+                  className="relative min-h-[240px] rounded-2xl border-2 border-slate-100 bg-white px-6 pb-6 pt-14 shadow-sm hover:border-[#2E5BFF] hover:shadow-lg hover:shadow-[#2E5BFF]/10 transition-all duration-300 group"
                 >
                   {/* Top Floating Badge Icon */}
-                  <span className="absolute left-1/2 top-0 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-white bg-[#2563EB] text-white shadow-md shadow-[#2563EB]/30 group-hover:scale-110 group-hover:bg-blue-500 transition-transform">
+                  <span className="absolute left-1/2 top-0 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-white bg-[#2E5BFF] text-white shadow-md shadow-[#2E5BFF]/30 group-hover:scale-110 group-hover:bg-blue-500 transition-transform">
                     <Icon className="h-6 w-6" strokeWidth={2.5} />
                   </span>
 
@@ -235,7 +235,7 @@ export default function ChannelsPage() {
                   <ul className="mt-4 space-y-2.5">
                     {category.items.map((item) => (
                       <li key={item} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600 leading-tight">
-                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#2563EB]" strokeWidth={2.5} />
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#2E5BFF]" strokeWidth={2.5} />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -243,7 +243,7 @@ export default function ChannelsPage() {
 
                   <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Total Available</span>
-                    <span className="text-xs font-black text-[#2563EB]">{category.count}</span>
+                    <span className="text-xs font-black text-[#2E5BFF]">{category.count}</span>
                   </div>
                 </motion.article>
               );
@@ -261,7 +261,7 @@ export default function ChannelsPage() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mb-8">
             <div>
               <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-black flex items-center gap-3">
-                <Flame className="w-6 h-6 text-[#2563EB]" />
+                <Flame className="w-6 h-6 text-[#2E5BFF]" />
                 Live Channel Directory Explorer
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm mt-1">
@@ -277,7 +277,7 @@ export default function ChannelsPage() {
                 placeholder="Search channel or country..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-full bg-slate-50 border border-slate-200 text-xs text-black placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB] transition-colors"
+                className="w-full pl-10 pr-4 py-2.5 rounded-full bg-slate-50 border border-slate-200 text-xs text-black placeholder-slate-400 focus:outline-none focus:border-[#2E5BFF] focus:ring-1 focus:ring-[#2E5BFF] transition-colors"
               />
             </div>
           </div>
@@ -290,7 +290,7 @@ export default function ChannelsPage() {
                 onClick={() => setSelectedTab(tab)}
                 className={`px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all ${
                   selectedTab === tab
-                    ? "bg-[#2563EB] text-white shadow-md shadow-[#2563EB]/20"
+                    ? "bg-[#2E5BFF] text-white shadow-md shadow-[#2E5BFF]/20"
                     : "bg-white text-slate-500 hover:text-black border border-slate-200"
                 }`}
               >
@@ -309,7 +309,7 @@ export default function ChannelsPage() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
-                  className="bg-white border-2 border-slate-100 hover:border-[#2563EB] rounded-2xl p-4 flex items-center gap-3.5 transition-all hover:shadow-md hover:shadow-[#2563EB]/10 group"
+                  className="bg-white border-2 border-slate-100 hover:border-[#2E5BFF] rounded-2xl p-4 flex items-center gap-3.5 transition-all hover:shadow-md hover:shadow-[#2E5BFF]/10 group"
                 >
                   <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
                     {channel.logo}
@@ -321,17 +321,17 @@ export default function ChannelsPage() {
                         alt={channel.country}
                         className="w-4 h-3 rounded-[2px] object-cover"
                       />
-                      <p className="text-xs font-bold text-black truncate group-hover:text-[#2563EB]">
+                      <p className="text-xs font-bold text-black truncate group-hover:text-[#2E5BFF]">
                         {channel.name}
                       </p>
                     </div>
                     <div className="flex items-center gap-2 mt-1.5">
-                      <span className="text-[9px] font-black px-1.5 py-0.5 rounded bg-[#2563EB]/10 text-[#2563EB] border border-[#2563EB]/20">
+                      <span className="text-[9px] font-black px-1.5 py-0.5 rounded bg-[#2E5BFF]/10 text-[#2E5BFF] border border-[#2E5BFF]/20">
                         {channel.quality}
                       </span>
                       {channel.isLive && (
-                        <span className="text-[8px] font-bold text-[#2563EB] flex items-center gap-1">
-                          <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB] animate-pulse" /> LIVE
+                        <span className="text-[8px] font-bold text-[#2E5BFF] flex items-center gap-1">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#2E5BFF] animate-pulse" /> LIVE
                         </span>
                       )}
                     </div>
@@ -343,9 +343,9 @@ export default function ChannelsPage() {
         </section>
 
         {/* SECTION 3: CTA Bottom Box */}
-        <section className="mt-16 bg-[#2563EB]/5 rounded-3xl border-2 border-[#2563EB]/20 p-8 sm:p-12 text-center shadow-lg relative overflow-hidden">
+        <section className="mt-16 bg-[#2E5BFF]/5 rounded-3xl border-2 border-[#2E5BFF]/20 p-8 sm:p-12 text-center shadow-lg relative overflow-hidden">
           <div className="relative z-10 max-w-2xl mx-auto">
-            <CirclePlay className="w-10 h-10 text-[#2563EB] mx-auto mb-4 animate-bounce" />
+            <CirclePlay className="w-10 h-10 text-[#2E5BFF] mx-auto mb-4 animate-bounce" />
             <h2 className="text-3xl font-black uppercase text-black">Ready to start watching?</h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
               Choose your subscription plan to receive instant access credentials on WhatsApp within minutes.
@@ -353,7 +353,7 @@ export default function ChannelsPage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/pricing"
-                className="px-8 py-4 rounded-full bg-black text-white font-black text-sm uppercase tracking-wider hover:bg-[#2563EB] transition-colors"
+                className="px-8 py-4 rounded-full bg-black text-white font-black text-sm uppercase tracking-wider hover:bg-[#2E5BFF] transition-colors"
               >
                 View IPTV Subscription Plans
               </Link>
@@ -361,7 +361,7 @@ export default function ChannelsPage() {
                 href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%204kiptvusa%20IPTV."
                 target="_blank"
                 rel="noreferrer"
-                className="px-8 py-4 rounded-full bg-white border-2 border-slate-200 text-black font-black text-sm uppercase tracking-wider hover:border-[#2563EB] transition-colors"
+                className="px-8 py-4 rounded-full bg-white border-2 border-slate-200 text-black font-black text-sm uppercase tracking-wider hover:border-[#2E5BFF] transition-colors"
               >
                 Get Free Trial via WhatsApp
               </a>

@@ -18,7 +18,7 @@
   --color-surface-tint: #a04100;
   --color-primary: #a04100;
   --color-on-primary: #ffffff;
-  --color-primary-container: #2563EB;
+  --color-primary-container: #2E5BFF;
   --color-on-primary-container: #572000;
   --color-inverse-primary: #ffb693;
   --color-secondary: #5e5e5e;
@@ -50,10 +50,10 @@
   --color-surface-variant: #e2e2e2;
 
   /* Brand Colors Override */
-  --color-blue-400: #FF8533;
-  --color-blue-500: #2563EB;
-  --color-blue-600: #E66000;
-  --color-blue-500: #049EFF;
+  --color-blue-400: #2E5BFF;
+  --color-blue-500: #2E5BFF;
+  --color-blue-600: #2E5BFF;
+  --color-blue-500: #2E5BFF;
 
   --radius: 0.25rem;
   --radius-lg: 0.5rem;

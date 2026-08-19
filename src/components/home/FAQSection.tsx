@@ -211,7 +211,7 @@ export default function FAQSection() {
         <div className="mt-12 text-center animate-fade-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
           <Link
             href="/faq"
-            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-white border border-black/20 text-white font-bold text-xs sm:text-sm hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 shadow-lg"
+            className="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#2E5BFF] border border-[#2E5BFF] text-white font-bold text-xs sm:text-sm hover:bg-blue-700 hover:border-blue-700 transition-all duration-300 shadow-lg"
           >
             <span>View Complete FAQ Knowledge Base</span>
             <ArrowRight className="w-4 h-4" />

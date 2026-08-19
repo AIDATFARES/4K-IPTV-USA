@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "4K IPTV USA",
     images: [
       {
-        url: "/og-image-v2.webp",
+        url: "/og-image-new.png",
         width: 1200,
         height: 630,
         alt: "4K IPTV USA Premium IPTV Service",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "4K IPTV USA - Premium 4K Streaming",
     description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-    images: ["/og-image-v2.webp"],
+    images: ["/og-image-new.png"],
   },
 };
 

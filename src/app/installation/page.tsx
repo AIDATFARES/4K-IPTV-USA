@@ -18,7 +18,7 @@ export default function Installation() {
         <span className="inline-flex rounded-full border border-blue-400/35 bg-blue-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-blue-300">Installation Guide</span>
         <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
           <span className="block text-black">How to Setup IPTV Service</span>
-          <span className="mt-1 block text-[#2563EB]">On Any Device Quickly.</span>
+          <span className="mt-1 block text-[#2E5BFF]">On Any Device Quickly.</span>
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-6 text-slate-600">Comprehensive step-by-step instructions to configure 4K IPTV USA on all your devices.</p>
         <p className="mx-auto mt-2 max-w-2xl text-base leading-6 text-slate-600">4K IPTV USA works on Smart TVs, Firestick, Android, iOS, MAG, and more. New to 4K IPTV USA? Check <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/pricing">4K IPTV USA Pricing</Link>, or browse the <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/channels">4K IPTV USA Channel List</Link> before you start.</p>
@@ -84,7 +84,7 @@ function QuickStartCard({ children, icon: Icon, step, title }: { children: React
     <article className="flex flex-col rounded-2xl border-2 border-blue-500 bg-white overflow-hidden shadow-xl hover:-translate-y-1 transition-all duration-300">
       <div className="p-7 text-center flex-1 flex flex-col items-center">
         <Icon className="h-10 w-10 text-blue-400 mb-5" strokeWidth={1.5} />
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#2563EB] text-sm font-extrabold text-white shadow-md mb-3">{step}</span>
+        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#2E5BFF] text-sm font-extrabold text-white shadow-md mb-3">{step}</span>
         <h3 className="text-xl font-bold text-black">{title}</h3>
         <p className="mt-3 text-sm leading-relaxed text-slate-600">{children}</p>
       </div>

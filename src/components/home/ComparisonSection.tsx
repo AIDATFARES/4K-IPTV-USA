@@ -5,7 +5,7 @@ export default function ComparisonSection() {
     <section className="bg-white text-black relative z-10 border-b border-black/10 overflow-hidden py-20">
       <div className="max-w-[1240px] mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#2563EB] mb-2 block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#2E5BFF] mb-2 block">
             IPTV VS CABLE TV
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black tracking-tight">
@@ -17,12 +17,12 @@ export default function ComparisonSection() {
         </div>
 
         <div className="max-w-[1080px] mx-auto overflow-x-auto pb-4 px-4 sm:px-0">
-          <div className="min-w-[800px] bg-white rounded-2xl shadow-xl border-2 border-[#2563EB] overflow-hidden relative flex">
+          <div className="min-w-[800px] bg-white rounded-2xl shadow-xl border-2 border-[#2E5BFF] overflow-hidden relative flex">
             
             {/* Orange Side Design Element (Internal Link) */}
             <Link 
               href="/how-it-works"
-              className="w-14 bg-[#2563EB] hover:bg-[#E66000] transition-colors flex items-center justify-center group cursor-pointer shrink-0 border-r border-blue-700/20 shadow-[inset_-4px_0_10px_rgba(0,0,0,0.1)]"
+              className="w-14 bg-[#2E5BFF] hover:bg-[#2E5BFF] transition-colors flex items-center justify-center group cursor-pointer shrink-0 border-r border-blue-700/20 shadow-[inset_-4px_0_10px_rgba(0,0,0,0.1)]"
               title="Learn How It Works"
             >
               <span className="-rotate-90 text-white font-black tracking-[0.2em] uppercase whitespace-nowrap text-xs sm:text-sm group-hover:scale-110 transition-transform">
@@ -34,7 +34,7 @@ export default function ComparisonSection() {
               {/* Table Header */}
               <div className="grid grid-cols-4 bg-slate-50 border-b border-slate-200">
                 <div className="p-6 text-sm font-bold text-slate-500 uppercase tracking-wider">Feature</div>
-                <div className="p-6 text-sm font-black text-[#2563EB] uppercase tracking-wider text-center border-x border-slate-200 bg-blue-50/50">4K IPTV USA</div>
+                <div className="p-6 text-sm font-black text-[#2E5BFF] uppercase tracking-wider text-center border-x border-slate-200 bg-blue-50/50">4K IPTV USA</div>
                 <div className="p-6 text-sm font-bold text-slate-500 uppercase tracking-wider text-center">Cable / Satellite</div>
                 <div className="p-6 text-sm font-bold text-slate-500 uppercase tracking-wider text-center border-l border-slate-200">Other IPTV</div>
               </div>
@@ -72,7 +72,7 @@ export default function ComparisonSection() {
         <div className="mt-12 text-center">
           <a
             href="#pricing"
-            className="inline-flex items-center justify-center bg-[#2563EB] text-white font-bold px-10 py-4 rounded-md shadow-[0_4px_14px_rgba(255,107,0,0.3)] hover:bg-[#E66000] hover:shadow-[0_6px_20px_rgba(255,107,0,0.4)] transition-all hover:scale-105"
+            className="inline-flex items-center justify-center bg-[#2E5BFF] text-white font-bold px-10 py-4 rounded-md shadow-[0_4px_14px_rgba(255,107,0,0.3)] hover:bg-[#2E5BFF] hover:shadow-[0_6px_20px_rgba(255,107,0,0.4)] transition-all hover:scale-105"
           >
             View Plans & Pricing
           </a>

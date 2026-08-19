@@ -19,11 +19,11 @@ const steps = [
     description: (
       <>
         Choose the plan that suits you from our{" "}
-        <Link href="/pricing" className="text-[#2563EB] font-semibold hover:text-blue-700 transition-colors">
+        <Link href="/pricing" className="text-[#2E5BFF] font-semibold hover:text-blue-700 transition-colors">
           pricing plans
         </Link>
         , complete the payment, and receive your subscription details within 20 minutes by email or{" "}
-        <Link href="/contact" className="text-[#2563EB] font-semibold hover:text-blue-700 transition-colors">
+        <Link href="/contact" className="text-[#2E5BFF] font-semibold hover:text-blue-700 transition-colors">
           WhatsApp
         </Link>
         .
@@ -39,7 +39,7 @@ const steps = [
     description: (
       <>
         Follow our step-by-step{" "}
-        <Link href="/installation" className="text-[#2563EB] font-semibold hover:text-blue-700 transition-colors">
+        <Link href="/installation" className="text-[#2E5BFF] font-semibold hover:text-blue-700 transition-colors">
           installation guide
         </Link>{" "}
         to configure IPTV on Smart TV, Firestick, Android, iOS, and PC effortlessly.
@@ -55,7 +55,7 @@ const steps = [
     description: (
       <>
         Stream all your favorite live sports, 4K movies, and premium channels from our complete{" "}
-        <Link href="/channels" className="text-[#2563EB] font-semibold hover:text-blue-700 transition-colors">
+        <Link href="/channels" className="text-[#2E5BFF] font-semibold hover:text-blue-700 transition-colors">
           channels catalog
         </Link>
         .
@@ -113,11 +113,11 @@ export default function HowItWorksPage() {
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05]">
             <span className="text-black">How Does It Work?</span>
             <br />
-            <span className="text-[#2563EB]">4K IPTV USA</span>
+            <span className="text-[#2E5BFF]">4K IPTV USA</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed">
             Get your{" "}
-            <Link href="/pricing" className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors">
+            <Link href="/pricing" className="text-[#2E5BFF] font-semibold hover:text-blue-400 transition-colors">
               IPTV subscription
             </Link>{" "}
             in 3 easy steps. Choose the right plan, complete the payment, and receive your login details. Within minutes you can enjoy your favorite programs.
@@ -125,7 +125,7 @@ export default function HowItWorksPage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/pricing"
-              className="inline-flex items-center justify-center gap-2 bg-[#2563EB] text-white font-bold px-8 py-3.5 rounded-md shadow-[0_4px_14px_rgba(255,107,0,0.3)] hover:bg-[#E66000] hover:shadow-[0_6px_20px_rgba(255,107,0,0.4)] transition-all"
+              className="inline-flex items-center justify-center gap-2 bg-[#2E5BFF] text-white font-bold px-8 py-3.5 rounded-md shadow-[0_4px_14px_rgba(255,107,0,0.3)] hover:bg-[#2E5BFF] hover:shadow-[0_6px_20px_rgba(255,107,0,0.4)] transition-all"
             >
               View Plans <ArrowRight className="h-4 w-4" />
             </Link>
@@ -149,7 +149,7 @@ export default function HowItWorksPage() {
             <div key={i} className={`relative ${i < steps.length - 1 ? "mb-20" : ""}`}>
               {/* Step Badge */}
               <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
-                <span className="bg-[#2563EB] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(255,107,0,0.4)]">
+                <span className="bg-[#2E5BFF] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(255,107,0,0.4)]">
                   {step.badge}
                 </span>
               </div>
@@ -161,7 +161,7 @@ export default function HowItWorksPage() {
                     step.align === "right" ? "order-1 md:order-2" : ""
                   }`}
                 >
-                  <h3 className="text-xl font-extrabold text-[#2563EB] mb-3">{step.title}</h3>
+                  <h3 className="text-xl font-extrabold text-[#2E5BFF] mb-3">{step.title}</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">{step.description}</p>
                 </div>
 
@@ -189,12 +189,12 @@ export default function HowItWorksPage() {
       <section className="py-20 bg-[#f8fafc] border-t border-slate-100">
         <div className="mx-auto max-w-[1200px] px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2563EB] tracking-tight italic">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2E5BFF] tracking-tight italic">
               Getting Started with 4K IPTV USA Is Easy
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed">
               Enjoy high quality IPTV streaming with 4K IPTV USA. Watch{" "}
-              <Link href="/channels" className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors">
+              <Link href="/channels" className="text-[#2E5BFF] font-semibold hover:text-blue-400 transition-colors">
                 live TV channels
               </Link>
               , movies, and sports anytime, anywhere.
@@ -214,18 +214,18 @@ export default function HowItWorksPage() {
                 />
               </div>
               <div className="space-y-4">
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2563EB] leading-snug">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2E5BFF] leading-snug">
                   <Link href="/pricing" className="hover:text-blue-400 transition-colors">
                     We Offer You A Complete IPTV Subscription Experience
                   </Link>
                 </h3>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                   Enjoy uninterrupted IPTV 4K/HD with an{" "}
-                  <Link href="/pricing" className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors">
+                  <Link href="/pricing" className="text-[#2E5BFF] font-semibold hover:text-blue-400 transition-colors">
                     IPTV subscription
                   </Link>{" "}
                   from 4K IPTV USA. Choose from 1, 3, 6 or 12 months packages and experience continuous entertainment with full access to our{" "}
-                  <Link href="/channels" className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors">
+                  <Link href="/channels" className="text-[#2E5BFF] font-semibold hover:text-blue-400 transition-colors">
                     streaming library
                   </Link>
                   .
@@ -236,18 +236,18 @@ export default function HowItWorksPage() {
             {/* Feature Block 2 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div className="space-y-4 order-2 md:order-1">
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2563EB] leading-snug">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2E5BFF] leading-snug">
                   <Link href="/channels" className="hover:text-blue-400 transition-colors">
                     +50,000 Channels &amp; 200,000+ VODs With Our IPTV Smarters Pro
                   </Link>
                 </h3>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                   Unlock a world of entertainment with over{" "}
-                  <Link href="/channels" className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors">
+                  <Link href="/channels" className="text-[#2E5BFF] font-semibold hover:text-blue-400 transition-colors">
                     +50,000 live channels and +120,000 films &amp; series
                   </Link>{" "}
                   for the ultimate viewing experience. Check out our{" "}
-                  <Link href="/pricing" className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors">
+                  <Link href="/pricing" className="text-[#2E5BFF] font-semibold hover:text-blue-400 transition-colors">
                     subscription plans
                   </Link>{" "}
                   to start watching immediately.
@@ -276,18 +276,18 @@ export default function HowItWorksPage() {
                 />
               </div>
               <div className="space-y-4">
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2563EB] leading-snug">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2E5BFF] leading-snug">
                   <Link href="/installation" className="hover:text-blue-400 transition-colors">
                     Live TV With IPTV Smarters Pro and TV Guide (EPG)
                   </Link>
                 </h3>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                   With 4K IPTV USA you get access to an interactive TV guide (EPG), Live TV, and replay options. Read our{" "}
-                  <Link href="/installation" className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors">
+                  <Link href="/installation" className="text-[#2E5BFF] font-semibold hover:text-blue-400 transition-colors">
                     IPTV setup guide
                   </Link>{" "}
                   or explore our{" "}
-                  <Link href="/faq" className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors">
+                  <Link href="/faq" className="text-[#2E5BFF] font-semibold hover:text-blue-400 transition-colors">
                     FAQ support
                   </Link>{" "}
                   for complete device instructions.
@@ -303,11 +303,11 @@ export default function HowItWorksPage() {
         <div className="mx-auto max-w-[1200px] px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-black uppercase">
-              Getting Started Is <span className="text-[#2563EB]">Easy</span>
+              Getting Started Is <span className="text-[#2E5BFF]">Easy</span>
             </h2>
             <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
               Enjoy high quality IPTV streaming with 4K IPTV USA. Watch{" "}
-              <Link href="/channels" className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors">
+              <Link href="/channels" className="text-[#2E5BFF] font-semibold hover:text-blue-400 transition-colors">
                 live TV channels
               </Link>
               , movies, and sports anytime, anywhere.
@@ -323,14 +323,14 @@ export default function HowItWorksPage() {
                   href={feature.link}
                   className="group flex flex-col rounded-2xl bg-white p-8 border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 hover:-translate-y-1 transition-all duration-300"
                 >
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-[#2563EB] group-hover:bg-[#2563EB] group-hover:text-white transition-colors">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-[#2E5BFF] group-hover:bg-[#2E5BFF] group-hover:text-white transition-colors">
                     <Icon className="h-7 w-7" strokeWidth={1.5} />
                   </div>
                   <h3 className="mt-6 text-xl font-bold text-black">{feature.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-slate-600 flex-grow">
                     {feature.description}
                   </p>
-                  <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-[#2563EB] group-hover:gap-2 transition-all">
+                  <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-[#2E5BFF] group-hover:gap-2 transition-all">
                     Learn more <ArrowRight className="h-4 w-4" />
                   </span>
                 </Link>
@@ -344,7 +344,7 @@ export default function HowItWorksPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-[1100px] px-6">
           <h2 className="text-center text-2xl sm:text-3xl font-black text-black mb-10 uppercase">
-            Why Choose <span className="text-[#2563EB]">4K IPTV USA</span>?
+            Why Choose <span className="text-[#2E5BFF]">4K IPTV USA</span>?
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
             {benefits.map((benefit, i) => {
@@ -354,7 +354,7 @@ export default function HowItWorksPage() {
                   key={i}
                   className="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-5 py-4 shadow-sm"
                 >
-                  <Icon className="h-5 w-5 text-[#2563EB] shrink-0" strokeWidth={2.5} />
+                  <Icon className="h-5 w-5 text-[#2E5BFF] shrink-0" strokeWidth={2.5} />
                   <span className="text-sm font-bold text-black">{benefit.text}</span>
                 </div>
               );
@@ -364,7 +364,7 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ─── CTA Banner ─── */}
-      <section className="py-20 bg-[#2563EB]">
+      <section className="py-20 bg-[#2E5BFF]">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-black text-white uppercase">
             Ready to Start Streaming?
@@ -377,7 +377,7 @@ export default function HowItWorksPage() {
               href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%204kiptvusa%20IPTV."
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[#2563EB] font-bold px-8 py-3.5 rounded-md shadow-lg hover:bg-blue-50 transition-all"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#2E5BFF] font-bold px-8 py-3.5 rounded-md shadow-lg hover:bg-blue-50 transition-all"
             >
               Get Free Trial <ArrowRight className="h-4 w-4" />
             </a>
