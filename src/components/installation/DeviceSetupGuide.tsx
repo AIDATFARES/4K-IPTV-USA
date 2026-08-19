@@ -17,7 +17,7 @@ const faqs = [
   { question: "1. How do I install IPTV on a Smart TV?", answer: "Install a compatible player such as Smart IPTV or IPTV Smarters from your TV's app store, then add the M3U URL or Xtream credentials from your welcome email." },
   { question: "2. Where do I find my M3U URL?", answer: "Your M3U URL is included in the welcome email sent after activation. Contact support if you need it resent." },
   { question: "3. How can I reduce buffering?", answer: "Use a stable internet connection, restart your device and router, and select an appropriate quality setting for your connection." },
-  { question: "4. How do I set up IPTV Fiesta using Xtream Codes API?", answer: "Choose Xtream Codes API in your player and enter the server URL, username, and password from your welcome email." },
+  { question: "4. How do I set up 4K IPTV USA using Xtream Codes API?", answer: "Choose Xtream Codes API in your player and enter the server URL, username, and password from your welcome email." },
   { question: "5. Can I connect using a MAC address (Portal URL)?", answer: "Yes. MAG and compatible portal devices can be activated using their MAC address. Send it to our support team for assistance." },
 ];
 
@@ -39,7 +39,7 @@ export default function DeviceSetupGuide() {
           const active = item.id === activeDevice;
           return (
             <button 
-              className={`inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors ${active ? "border-orange-600 bg-[#FF6B00] text-white shadow-lg shadow-orange-600/30" : "border-black/15 bg-white text-slate-600 hover:border-orange-500/60 hover:text-black hover:bg-orange-50"}`} 
+              className={`inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors ${active ? "border-blue-600 bg-[#2563EB] text-white shadow-lg shadow-blue-600/30" : "border-black/15 bg-white text-slate-600 hover:border-blue-500/60 hover:text-black hover:bg-blue-50"}`} 
               key={item.id} 
               onClick={() => setActiveDevice(item.id)} 
               type="button"
@@ -50,23 +50,23 @@ export default function DeviceSetupGuide() {
         })}
       </div>
 
-      <article className="mx-auto max-w-[1000px] rounded-3xl border-2 border-[#FF6B00] bg-white p-6 sm:p-10 shadow-2xl overflow-hidden">
+      <article className="mx-auto max-w-[1000px] rounded-3xl border-2 border-[#2563EB] bg-white p-6 sm:p-10 shadow-2xl overflow-hidden">
         
         {/* Device Header */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 border-b border-slate-100 pb-6 mb-8">
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-50 shrink-0">
-            <DeviceIcon className="h-8 w-8 text-[#FF6B00]" />
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 shrink-0">
+            <DeviceIcon className="h-8 w-8 text-[#2563EB]" />
           </div>
           <div>
             <h3 className="text-2xl font-black text-black sm:text-3xl">{device.title}</h3>
-            <p className="mt-1 text-slate-500 font-medium">Follow these steps to configure your {device.label} for IPTV Fiesta.</p>
+            <p className="mt-1 text-slate-500 font-medium">Follow these steps to configure your {device.label} for 4K IPTV USA.</p>
           </div>
         </div>
         
         {/* Important Note */}
         {device.note && (
-          <div className="mb-8 rounded-2xl border border-orange-200 bg-orange-50/50 p-5 flex items-start gap-4">
-            <HelpCircle className="h-6 w-6 text-[#FF6B00] shrink-0" />
+          <div className="mb-8 rounded-2xl border border-blue-200 bg-blue-50/50 p-5 flex items-start gap-4">
+            <HelpCircle className="h-6 w-6 text-[#2563EB] shrink-0" />
             <div>
               <h4 className="font-bold text-black mb-1">Important Note</h4>
               <p className="text-sm leading-relaxed text-slate-700">{device.note}</p>
@@ -106,9 +106,9 @@ export default function DeviceSetupGuide() {
         <h2 className="mb-8 text-center text-3xl font-extrabold tracking-tight text-black sm:text-4xl">Installation FAQ</h2>
         <div className="grid gap-5 md:grid-cols-2">
           {faqs.map((faq) => (
-            <div className="flex flex-col rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:border-orange-200 transition-colors" key={faq.question}>
+            <div className="flex flex-col rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:border-blue-200 transition-colors" key={faq.question}>
               <div className="bg-slate-50 border-b border-slate-100 px-5 py-4 flex items-center gap-3">
-                <HelpCircle className="w-5 h-5 text-[#FF6B00] shrink-0" />
+                <HelpCircle className="w-5 h-5 text-[#2563EB] shrink-0" />
                 <h3 className="text-base sm:text-lg font-bold text-black leading-snug">
                   {faq.question}
                 </h3>
@@ -126,11 +126,11 @@ export default function DeviceSetupGuide() {
 
 function SetupStep({ children, number, title }: { children: React.ReactNode; number: string; title: string }) {
   return (
-    <div className="flex flex-col sm:flex-row gap-6 bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm hover:border-orange-300 transition-colors">
+    <div className="flex flex-col sm:flex-row gap-6 bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm hover:border-blue-300 transition-colors">
       
       {/* Content */}
       <div className="flex flex-1 gap-5 items-start">
-         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FF6B00] text-lg font-extrabold text-white shadow-md">
+         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#2563EB] text-lg font-extrabold text-white shadow-md">
            {number}
          </span>
          <div className="flex-1 mt-1">
@@ -148,7 +148,7 @@ function SetupStep({ children, number, title }: { children: React.ReactNode; num
 function CodeLine({ label, text }: { label: string; text: string }) {
   return (
     <div className="rounded-xl bg-slate-50 border border-slate-200 px-4 py-3 font-mono text-xs text-slate-700 break-all">
-      <span className="font-bold text-[#FF6B00] mr-2">{label}:</span> 
+      <span className="font-bold text-[#2563EB] mr-2">{label}:</span> 
       {text}
     </div>
   );

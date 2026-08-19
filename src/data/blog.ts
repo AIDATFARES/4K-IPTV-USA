@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     title: "Best IPTV Players for Android TV in 2026",
     description: "Looking for the best IPTV players for Android TV in 2026? Compare TiviMate, IPTV Smarters Pro, Sparkle TV, OTT Navigator and Kodi.",
     date: "August 18, 2026",
-    author: "IPTV FIESTA Team",
+    author: "4K IPTV USA Team",
     category: "Guides",
     coverImage: "/images/blog/best-iptv-players-android-tv/best-iptv-players-android-tv.webp",
     content: `
@@ -474,7 +474,7 @@ Before choosing an application, check its current compatibility, supported playl
     title: "IPTV Login Failed: Username, Password and Server URL Fixes",
     description: "Getting an IPTV login failed error? Learn how to check your username, password, server URL, account status, app settings and connection.",
     date: "August 18, 2026",
-    author: "IPTV FIESTA Team",
+    author: "4K IPTV USA Team",
     category: "Troubleshooting",
     coverImage: "/images/blog/iptv-login-failed/iptv-login-failed.webp",
     content: `
@@ -860,7 +860,7 @@ By checking each possibility systematically, you can usually determine why the I
     title: "IPTV Not Working After an App Update: What to Do",
     description: "Is IPTV not working after an app update? Learn how to fix missing playlists, login errors, buffering, black screens, EPG problems and app crashes.",
     date: "August 18, 2026",
-    author: "IPTV FIESTA Team",
+    author: "4K IPTV USA Team",
     category: "Troubleshooting",
     coverImage: "/images/blog/iptv-app-update/iptv-app-update-not-working.webp",
     content: `
@@ -1273,7 +1273,7 @@ The key is to troubleshoot one variable at a time. This makes it much easier to 
     title: "IPTV Buffering Every Few Minutes: Causes and Fixes",
     description: "Is your IPTV buffering every few minutes? Learn the most common causes and practical fixes, from Wi-Fi problems and DNS settings to device performance and stream issues.",
     date: "August 16, 2026",
-    author: "IPTV FIESTA Team",
+    author: "4K IPTV USA Team",
     category: "Troubleshooting",
     coverImage: "/blog/iptv-buffering-every-few-minutes/image-1.webp",
     content: `
@@ -1563,7 +1563,7 @@ The key is to troubleshoot systematically instead of changing several settings a
     title: "Best IPTV Players for Firestick in 2026: Top Apps Compared",
     description: "Looking for the best IPTV player for Firestick in 2026? Compare TiviMate, IPTV Smarters, VLC and Kodi based on features, ease of use, EPG support and performance.",
     date: "August 16, 2026",
-    author: "IPTV FIESTA Team",
+    author: "4K IPTV USA Team",
     category: "Review",
     coverImage: "/blog/best-iptv-players-2026/image-1.webp",
     content: `
@@ -1878,7 +1878,7 @@ Whichever player you choose, remember that the application and the IPTV content 
     title: "IPTV Channels Not Loading: 10 Things to Check",
     description: "IPTV channels not loading? Learn the 10 most common causes and how to check your internet connection, playlist, credentials, EPG, IPTV player, and device.",
     date: "August 16, 2026",
-    author: "IPTV FIESTA Team",
+    author: "4K IPTV USA Team",
     category: "Troubleshooting",
     coverImage: "/blog/channels-not-loading/image-1.webp",
     content: `
@@ -1960,7 +1960,7 @@ If every channel suddenly stops loading at approximately the same time, the serv
 - An outage
 - A change in server configuration
 
-Check the provider's official support channel or status information if available. You can [contact our support team](/contact) to check server status for IPTV FIESTA.
+Check the provider's official support channel or status information if available. You can [contact our support team](/contact) to check server status for 4K IPTV USA.
 
 If only one or two channels are affected while the rest work normally, the issue is more likely to be specific to those streams.
 
@@ -2170,7 +2170,7 @@ For the best experience, use compatible hardware, a stable internet connection, 
     title: "How to Set Up IPTV on Firestick in 2026: Complete Guide",
     description: "Learn how to set up IPTV on Firestick in 2026, configure your IPTV player, add your playlist, fix common issues, and optimize streaming performance.",
     date: "August 16, 2026",
-    author: "IPTV FIESTA Team",
+    author: "4K IPTV USA Team",
     category: "Tutorial",
     coverImage: "/blog/firestick-2026/1-featured.webp",
     content: `
@@ -2325,7 +2325,7 @@ Depending on the service and player, the application may organize content into c
 
 Do not immediately close the application if a large playlist takes longer than expected to load.
 
-Once the process finishes, open several channels to confirm that playback works correctly. You can also browse the full [IPTV FIESTA Channel List](/channels) online to see what to expect.
+Once the process finishes, open several channels to confirm that playback works correctly. You can also browse the full [4K IPTV USA Channel List](/channels) online to see what to expect.
 
 ## Step 7: Configure the EPG
 

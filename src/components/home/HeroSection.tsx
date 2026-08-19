@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="/hero-family.webp"
-          alt="Family watching IPTV Fiesta"
+          alt="Family watching 4K IPTV USA"
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover opacity-80"
         />
@@ -21,17 +21,17 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-[1000px] mx-auto px-6 flex flex-col items-center gap-6">
 
         {/* Top Tag */}
-        <div className="inline-flex items-center border border-[#FF6B00] rounded-full px-4 py-1.5 backdrop-blur-sm bg-black/30">
-          <span className="w-2 h-2 rounded-full bg-[#FF6B00] mr-2 animate-pulse"></span>
-          <span className="text-[10px] sm:text-xs font-bold text-[#FF6B00] tracking-widest uppercase">
+        <div className="inline-flex items-center border border-[#2563EB] rounded-full px-4 py-1.5 backdrop-blur-sm bg-black/30">
+          <span className="w-2 h-2 rounded-full bg-[#2563EB] mr-2 animate-pulse"></span>
+          <span className="text-[10px] sm:text-xs font-bold text-[#2563EB] tracking-widest uppercase">
             TRUSTED BY 154,000+ STREAMERS WORLDWIDE
           </span>
         </div>
 
         {/* Headline */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-black tracking-tight leading-[1] text-white uppercase drop-shadow-2xl mt-4">
-          BEST <span className="text-[#FF6B00]">IPTV</span> STREAMING –<br />
-          IPTV FIESTA
+          BEST <span className="text-[#2563EB]">IPTV</span> STREAMING –<br />
+          4K IPTV USA
         </h1>
 
         {/* Subtitle */}
@@ -42,16 +42,16 @@ export default function HeroSection() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center w-full sm:w-auto">
           <a
-            href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20fiestaiptv%20IPTV."
+            href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%204kiptvusa%20IPTV."
             target="_blank"
             rel="noreferrer"
-            className="py-4 px-8 text-sm sm:text-base font-bold text-black bg-[#FF6B00] hover:bg-[#E66000] transition-all duration-300 flex items-center justify-center tracking-wider hover:scale-105"
+            className="py-4 px-8 text-sm sm:text-base font-bold text-black bg-[#2563EB] hover:bg-[#E66000] transition-all duration-300 flex items-center justify-center tracking-wider hover:scale-105"
           >
             GET 12 MONTHS — 2 MONTHS FREE →
           </a>
           <a
             href="#pricing"
-            className="py-4 px-8 text-sm sm:text-base font-bold text-[#FF6B00] bg-transparent border-2 border-[#FF6B00] hover:bg-[#FF6B00]/10 transition-all duration-300 flex items-center justify-center tracking-wider hover:scale-105"
+            className="py-4 px-8 text-sm sm:text-base font-bold text-[#2563EB] bg-transparent border-2 border-[#2563EB] hover:bg-[#2563EB]/10 transition-all duration-300 flex items-center justify-center tracking-wider hover:scale-105"
           >
             SEE PLANS →
           </a>
@@ -59,23 +59,23 @@ export default function HeroSection() {
 
         {/* Bottom Icons */}
         <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 text-white/90 mt-4">
-          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+          <div className="flex flex-col items-center gap-2 group hover:text-[#2563EB] transition-colors cursor-pointer">
             <Monitor className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
             <span className="text-[10px] sm:text-xs font-semibold tracking-wider">Smart TV</span>
           </div>
-          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+          <div className="flex flex-col items-center gap-2 group hover:text-[#2563EB] transition-colors cursor-pointer">
             <Laptop className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
             <span className="text-[10px] sm:text-xs font-semibold tracking-wider">Laptop / PC</span>
           </div>
-          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+          <div className="flex flex-col items-center gap-2 group hover:text-[#2563EB] transition-colors cursor-pointer">
             <Smartphone className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
             <span className="text-[10px] sm:text-xs font-semibold tracking-wider">Android</span>
           </div>
-          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+          <div className="flex flex-col items-center gap-2 group hover:text-[#2563EB] transition-colors cursor-pointer">
             <Tablet className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
             <span className="text-[10px] sm:text-xs font-semibold tracking-wider">IOS</span>
           </div>
-          <div className="flex flex-col items-center gap-2 group hover:text-[#FF6B00] transition-colors cursor-pointer">
+          <div className="flex flex-col items-center gap-2 group hover:text-[#2563EB] transition-colors cursor-pointer">
             <Monitor className="h-6 w-6 sm:h-8 sm:w-8 stroke-[1.2]" />
             <span className="text-[10px] sm:text-xs font-semibold tracking-wider">Windows</span>
           </div>

@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
   if (!post) {
-    return { title: 'Post Not Found | IPTV Fiesta' };
+    return { title: 'Post Not Found | 4K IPTV USA' };
   }
 
   return {
@@ -90,7 +90,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ol: ({ node, ...props }: any) => <ol className="list-decimal pl-6 mb-6 space-y-2" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    a: ({ node, ...props }: any) => <a className="text-orange-500 hover:text-orange-400 no-underline font-semibold transition-colors" {...props} />,
+    a: ({ node, ...props }: any) => <a className="text-blue-500 hover:text-blue-400 no-underline font-semibold transition-colors" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     blockquote: ({ node, ...props }: any) => <blockquote className="border-l-4 border-primary pl-4 py-1 mb-6 italic bg-surface-container/30 rounded-r" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

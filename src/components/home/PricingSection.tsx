@@ -24,7 +24,7 @@ type Plan = {
 const plans: Plan[] = [
   {
     id: "3-months",
-    name: "Fiesta Basic",
+    name: "USA Basic",
     subtitle: "Perfect for trying out our premium service.",
     price: 35,
     duration: "/ 3 Months",
@@ -40,7 +40,7 @@ const plans: Plan[] = [
   },
   {
     id: "12-months",
-    name: "Fiesta Ultimate",
+    name: "USA Ultimate",
     subtitle: "The ultimate entertainment experience for a full year.",
     price: 69.99,
     oldPrice: 80,
@@ -58,7 +58,7 @@ const plans: Plan[] = [
   },
   {
     id: "6-months",
-    name: "Fiesta Pro",
+    name: "USA Pro",
     subtitle: "A solid choice for half a year of uninterrupted joy.",
     price: 49.99,
     duration: "/ 6 Months",
@@ -91,9 +91,9 @@ export default function PricingSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         
         <header className="mx-auto max-w-3xl text-center mb-10">
-          <p className="inline-flex rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.2em] text-orange-600">IPTV SUBSCRIPTION PLANS</p>
+          <p className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.2em] text-blue-600">IPTV SUBSCRIPTION PLANS</p>
           <h2 className="mt-5 text-4xl font-black leading-[1.1] tracking-tight text-black sm:text-5xl uppercase">
-            Choose Your <span className="text-orange-500">Premium IPTV Plan</span>
+            Choose Your <span className="text-blue-500">Premium IPTV Plan</span>
           </h2>
           <p className="mt-5 text-xl font-bold tracking-wide text-black sm:text-2xl">Affordable, Buffer-Free Streaming</p>
           <p className="mt-2 text-sm text-slate-500 sm:text-base">No hidden fees. Instant activation. Unlock unlimited live TV and VOD today.</p>
@@ -102,13 +102,13 @@ export default function PricingSection() {
         {/* Device Selector */}
         <div className="mx-auto mb-10 max-w-2xl" role="radiogroup" aria-label="Number of device connections">
           <p className="mb-3 text-center text-xs font-bold uppercase tracking-[0.15em] text-slate-500">Choose your connections</p>
-          <div className="grid grid-cols-3 rounded-2xl border border-orange-500/30 bg-white p-1.5 shadow-sm">
+          <div className="grid grid-cols-3 rounded-2xl border border-blue-500/30 bg-white p-1.5 shadow-sm">
             {[1, 2, 3].map((count) => {
               const selected = devices === count;
               return (
                 <button
                   aria-checked={selected}
-                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-[#FF6B00] text-white shadow-lg shadow-orange-600/30" : "text-slate-500 hover:text-black hover:bg-orange-50"}`}
+                  className={`rounded-xl px-3 py-3 text-sm font-bold transition-all ${selected ? "bg-[#2563EB] text-white shadow-lg shadow-blue-600/30" : "text-slate-500 hover:text-black hover:bg-blue-50"}`}
                   key={count}
                   onClick={() => setDevices(count)}
                   role="radio"
@@ -128,12 +128,12 @@ export default function PricingSection() {
               key={plan.id}
               className={`relative flex flex-col rounded-2xl bg-white p-8 transition-transform duration-300 hover:-translate-y-1 border-2 ${
                 plan.popular 
-                  ? "border-orange-500 shadow-[0_15px_40px_-10px_rgba(255,107,0,0.25)] md:-mt-4" 
-                  : "border-orange-300 shadow-sm hover:shadow-md hover:border-orange-400"
+                  ? "border-blue-500 shadow-[0_15px_40px_-10px_rgba(255,107,0,0.25)] md:-mt-4" 
+                  : "border-blue-300 shadow-sm hover:shadow-md hover:border-blue-400"
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center justify-center rounded-b-xl rounded-t-sm bg-gradient-to-r from-orange-500 to-slate-800 px-5 py-1.5 shadow-md whitespace-nowrap">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center justify-center rounded-b-xl rounded-t-sm bg-gradient-to-r from-blue-500 to-slate-800 px-5 py-1.5 shadow-md whitespace-nowrap">
                   <span className="text-[10px] font-extrabold uppercase tracking-wide text-white">Best Value - Most Popular</span>
                 </div>
               )}
@@ -142,7 +142,7 @@ export default function PricingSection() {
               <p className="mt-2 text-sm text-slate-500 leading-relaxed min-h-[40px]">{plan.subtitle}</p>
               
               <div className="mt-6 flex items-baseline">
-                <span className="text-5xl font-black tracking-tighter text-orange-500">${priceFor(plan)}</span>
+                <span className="text-5xl font-black tracking-tighter text-blue-500">${priceFor(plan)}</span>
                 <span className="ml-1 text-xs font-semibold text-slate-400">{plan.duration}</span>
               </div>
               
@@ -159,7 +159,7 @@ export default function PricingSection() {
                 {plan.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     {feature.included ? (
-                      <CheckCircle2 className={`h-5 w-5 shrink-0 ${plan.popular ? "text-orange-500" : "text-blue-500"}`} strokeWidth={2.5} />
+                      <CheckCircle2 className={`h-5 w-5 shrink-0 ${plan.popular ? "text-blue-500" : "text-blue-500"}`} strokeWidth={2.5} />
                     ) : (
                       <X className="h-5 w-5 shrink-0 text-slate-300" strokeWidth={2.5} />
                     )}
@@ -175,7 +175,7 @@ export default function PricingSection() {
                 onClick={() => handleOrder(plan)}
                 className={`mt-8 w-full rounded-xl py-4 text-sm font-bold text-white transition-all duration-300 ${
                   plan.popular 
-                    ? "bg-[#FF6B00] shadow-[0_8px_20px_rgba(255,107,0,0.3)] hover:bg-[#E66000] hover:-translate-y-0.5" 
+                    ? "bg-[#2563EB] shadow-[0_8px_20px_rgba(255,107,0,0.3)] hover:bg-[#E66000] hover:-translate-y-0.5" 
                     : "bg-slate-800 hover:bg-black hover:shadow-lg hover:-translate-y-0.5"
                 }`}
               >
@@ -191,16 +191,16 @@ export default function PricingSection() {
             
             <div className="flex flex-col gap-2 text-center sm:text-left">
               <h4 className="text-base font-bold text-black flex items-center justify-center sm:justify-start gap-2">
-                <CheckCircle2 className="h-5 w-5 text-orange-500" />
+                <CheckCircle2 className="h-5 w-5 text-blue-500" />
                 Secure Payments & Instant Access
               </h4>
               <p className="text-sm text-slate-500">Pay safely using Crypto, Credit Card, or PayPal. Your details are encrypted instantly.</p>
             </div>
 
             <div className="flex items-center gap-4 text-slate-400">
-              <CreditCard className="h-8 w-8 hover:text-[#FF6B00] transition-colors" />
-              <Bitcoin className="h-8 w-8 hover:text-[#FF6B00] transition-colors" />
-              <Wallet className="h-8 w-8 hover:text-[#FF6B00] transition-colors" />
+              <CreditCard className="h-8 w-8 hover:text-[#2563EB] transition-colors" />
+              <Bitcoin className="h-8 w-8 hover:text-[#2563EB] transition-colors" />
+              <Wallet className="h-8 w-8 hover:text-[#2563EB] transition-colors" />
             </div>
 
           </div>

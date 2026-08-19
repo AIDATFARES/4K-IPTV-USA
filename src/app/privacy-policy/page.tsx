@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | IPTV Fiesta",
-  description: "Learn how IPTV Fiesta collects, uses, and protects personal information.",
+  title: "Privacy Policy | 4K IPTV USA",
+  description: "Learn how 4K IPTV USA collects, uses, and protects personal information.",
   alternates: {
     canonical: "/privacy-policy",
   },
@@ -13,7 +13,7 @@ const sections = [
   {
     title: "1. Data We Collect",
     content: [
-      <>We collect personal data that you voluntarily provide when you subscribe to our IPTV service, request information about our products or services, or <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">contact us</Link>. The personal data we collect may include the following:</>,
+      <>We collect personal data that you voluntarily provide when you subscribe to our IPTV service, request information about our products or services, or <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/contact">contact us</Link>. The personal data we collect may include the following:</>,
     ],
     items: [
       "Contact information: Your email address, which we use for account creation and communication.",
@@ -69,7 +69,7 @@ const sections = [
       "Request erasure of your personal information in certain circumstances.",
       "Opt out of marketing and promotional communications at any time.",
     ],
-    after: <>To exercise any of these rights, please <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">contact our support team</Link>.</>,
+    after: <>To exercise any of these rights, please <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/contact">contact our support team</Link>.</>,
   },
   {
     title: "9. Children's Privacy",
@@ -82,16 +82,16 @@ export default function PrivacyPolicyPage() {
     <main className="flex-grow px-5 pb-20 pt-12 sm:px-8 md:pt-16 text-format-legal">
       <article className="mx-auto max-w-4xl">
         <header className="border-b border-black/10 pb-10 text-center mx-auto max-w-3xl">
-          <span className="inline-flex rounded-full border border-orange-400/35 bg-orange-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-orange-300">Legal information</span>
+          <span className="inline-flex rounded-full border border-blue-400/35 bg-blue-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-blue-300">Legal information</span>
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
             <span className="block text-black">Privacy &amp; Data Protection</span>
-            <span className="mt-1 block text-[#FF6B00]">Official Policy.</span>
+            <span className="mt-1 block text-[#2563EB]">Official Policy.</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600">Last adjusted: September 14, 2025</p>
         </header>
 
         <div className="mt-10 space-y-10 text-base leading-7 text-on-surface-variant">
-          <p>Welcome to IPTV Fiesta. We are committed to protecting your personal information and respecting your privacy. If you have questions or concerns about this policy or our data practices, please <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">contact our support team</Link>.</p>
+          <p>Welcome to 4K IPTV USA. We are committed to protecting your personal information and respecting your privacy. If you have questions or concerns about this policy or our data practices, please <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/contact">contact our support team</Link>.</p>
           {sections.map((section) => (
             <section key={section.title}>
               <h2 className="text-2xl font-bold text-black">{section.title}</h2>
@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
           ))}
           <section>
             <h2 className="text-2xl font-bold text-black">10. Contact Us</h2>
-            <p className="mt-4">If you would like to discuss this policy or our handling of your personal information, please contact our <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">support team</Link>.</p>
+            <p className="mt-4">If you would like to discuss this policy or our handling of your personal information, please contact our <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/contact">support team</Link>.</p>
           </section>
         </div>
       </article>

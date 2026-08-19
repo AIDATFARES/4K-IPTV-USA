@@ -38,14 +38,14 @@ export default function Home() {
           "Sans-titre-6-1-2.webp", "Sans-titre-7-2.webp", "Sans-titre-8-2.webp", 
           "Sans-titre-9-1-2.webp", "Serie-A-1.webp"
         ]}
-        cardClassName="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[280px] relative rounded-xl overflow-hidden shadow-2xl border border-black/10 bg-white hover:border-[#FF6B00]/60 transition-all duration-300 group"
+        cardClassName="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[280px] relative rounded-xl overflow-hidden shadow-2xl border border-black/10 bg-white hover:border-[#2563EB]/60 transition-all duration-300 group"
         imageClassName="object-cover rounded-xl"
       />
 
       {/* Channel & Installation Quick Links */}
       <div className="w-full bg-white py-6 px-4 text-center border-t border-black/5 relative z-20">
         <p className="text-center text-sm md:text-base text-slate-600 max-w-3xl mx-auto">
-          Find the comprehensive <Link prefetch={false} className="font-semibold text-[#FF6B00] hover:text-[#f44336]" href="/channels">IPTV Fiesta Channel List</Link> or navigate to our <Link prefetch={false} className="font-semibold text-[#FF6B00] hover:text-[#f44336]" href="/installation">IPTV Fiesta Installation Guide</Link> for a quick start.
+          Find the comprehensive <Link prefetch={false} className="font-semibold text-[#2563EB] hover:text-[#f44336]" href="/channels">4K IPTV USA Channel List</Link> or navigate to our <Link prefetch={false} className="font-semibold text-[#2563EB] hover:text-[#f44336]" href="/installation">4K IPTV USA Installation Guide</Link> for a quick start.
         </p>
       </div>
 
@@ -74,7 +74,7 @@ export default function Home() {
             "Windows-krooz-tv.webp",
             "xbox-live-krooz-tv.webp"
           ]}
-          cardClassName="flex-shrink-0 w-[160px] h-[80px] md:w-[220px] md:h-[100px] relative bg-white border border-slate-200 rounded-2xl p-4 md:p-6 hover:border-orange-300 transition-all duration-300 shadow-md flex items-center justify-center"
+          cardClassName="flex-shrink-0 w-[160px] h-[80px] md:w-[220px] md:h-[100px] relative bg-white border border-slate-200 rounded-2xl p-4 md:p-6 hover:border-blue-300 transition-all duration-300 shadow-md flex items-center justify-center"
           imageClassName="object-contain drop-shadow-sm"
         />
       </div>

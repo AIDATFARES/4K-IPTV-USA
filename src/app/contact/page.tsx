@@ -6,10 +6,10 @@ export default function Contact() {
   return (
     <main className="flex-grow pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full relative z-10">
       <div className="mx-auto mb-14 max-w-3xl text-center">
-        <span className="inline-flex rounded-full border border-orange-400/35 bg-orange-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-orange-300">Contact Support</span>
+        <span className="inline-flex rounded-full border border-blue-400/35 bg-blue-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-blue-300">Contact Support</span>
         <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
           <span className="block text-black">Get in Touch with</span>
-          <span className="mt-1 block text-[#FF6B00]">Our Support Team.</span>
+          <span className="mt-1 block text-[#2563EB]">Our Support Team.</span>
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600">
           We&apos;re here to help you get the best streaming experience. Send us a message and we&apos;ll get back to you quickly.
@@ -27,9 +27,9 @@ export default function Contact() {
             <p className="font-body-sm text-body-sm text-on-surface-variant mb-md">For general inquiries and support.</p>
             <a
               className="text-primary font-medium hover:text-primary-fixed transition-colors"
-              href="mailto:support@fiestaiptv.shop"
+              href="mailto:support@4kiptvusa.com"
             >
-              support@fiestaiptv.shop
+              support@4kiptvusa.com
             </a>
           </div>
 
@@ -43,7 +43,7 @@ export default function Contact() {
             </p>
             <a
               className="text-emerald-400 font-medium hover:text-emerald-300 transition-colors flex items-center gap-xs"
-              href="https://wa.me/213552069874?text=Hello,%20I%20need%20support%20for%20IPTV Fiesta."
+              href="https://wa.me/213552069874?text=Hello,%20I%20need%20support%20for%204K IPTV USA."
               target="_blank"
               rel="noreferrer"
             >

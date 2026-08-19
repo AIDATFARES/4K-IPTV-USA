@@ -22,23 +22,23 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "IPTV Fiesta - Premium 4K Streaming Services",
+  title: "4K IPTV USA - Premium 4K Streaming Services",
   description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-  metadataBase: new URL("https://www.fiestaiptv.shop"),
+  metadataBase: new URL("https://www.4kiptvusa.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "IPTV Fiesta - Premium 4K Streaming",
+    title: "4K IPTV USA - Premium 4K Streaming",
     description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
-    url: "https://www.fiestaiptv.shop",
-    siteName: "IPTV Fiesta",
+    url: "https://www.4kiptvusa.com",
+    siteName: "4K IPTV USA",
     images: [
       {
         url: "/og-image-v2.webp",
         width: 1200,
         height: 630,
-        alt: "IPTV Fiesta Premium IPTV Service",
+        alt: "4K IPTV USA Premium IPTV Service",
       },
     ],
     locale: "en_US",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IPTV Fiesta - Premium 4K Streaming",
+    title: "4K IPTV USA - Premium 4K Streaming",
     description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
     images: ["/og-image-v2.webp"],
   },
@@ -73,7 +73,7 @@ export default function RootLayout({
             <div className="col-span-2 sm:col-span-4 xl:col-span-1 min-w-0 max-w-[310px] space-y-4">
               <Link href="/"><BrandLogo /></Link>
               <p className="max-w-[285px] whitespace-normal break-normal text-sm leading-6 text-slate-700">
-                © 2024 fiestaiptv. Premium 4K IPTV Streaming Services. All rights reserved.
+                © 2024 4kiptvusa. Premium 4K IPTV Streaming Services. All rights reserved.
               </p>
               <a href="https://wa.me/213552069874" target="_blank" rel="noreferrer" className="flex max-w-[270px] items-center gap-3 rounded-2xl border border-emerald-500/30 bg-emerald-500/[0.08] p-3.5 transition-colors hover:bg-emerald-500/[0.15] group">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-black shadow-lg shadow-emerald-500/20 transition-transform group-hover:scale-105">
@@ -90,7 +90,7 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-700"><span className="border-b-2 border-orange-500 pb-1.5">NAVIGATION</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-700"><span className="border-b-2 border-blue-500 pb-1.5">NAVIGATION</span></p>
               <ul className="space-y-3 font-body-sm text-sm">
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/">Home</Link></li>
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/pricing">Pricing</Link></li>
@@ -102,18 +102,18 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-700"><span className="border-b-2 border-orange-500 pb-1.5">SERVICE</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-700"><span className="border-b-2 border-blue-500 pb-1.5">SERVICE</span></p>
               <ul className="space-y-3 font-body-sm text-sm">
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/pricing">Get Started</Link></li>
                 <li><a className="text-slate-600 transition-colors hover:text-black" href="https://wa.me/213552069874" target="_blank" rel="noreferrer">WhatsApp</a></li>
-                <li><a className="text-slate-600 transition-colors hover:text-black" href="mailto:support@fiestaiptv.shop">Email</a></li>
+                <li><a className="text-slate-600 transition-colors hover:text-black" href="mailto:support@4kiptvusa.com">Email</a></li>
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/channels">Channels</Link></li>
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/installation">Setup Guide</Link></li>
               </ul>
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-700"><span className="border-b-2 border-orange-500 pb-1.5">LEGAL</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-700"><span className="border-b-2 border-blue-500 pb-1.5">LEGAL</span></p>
               <ul className="space-y-3 text-sm">
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/privacy-policy">Privacy Policy</Link></li>
                 <li><Link prefetch={false} className="text-slate-600 transition-colors hover:text-black" href="/refund-policy">Refund Policy</Link></li>
@@ -124,7 +124,7 @@ export default function RootLayout({
             </div>
             
             <div className="col-span-1 min-w-0 space-y-6">
-              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-700"><span className="border-b-2 border-orange-500 pb-1.5">PAYMENT</span></p>
+              <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-700"><span className="border-b-2 border-blue-500 pb-1.5">PAYMENT</span></p>
               <ul className="space-y-3 text-sm text-slate-600">
                 <li>PayPal</li>
                 <li>Credit Card</li>

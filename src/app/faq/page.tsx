@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown, CircleHelp, Clock3, CreditCard, HelpCircle, Mail, MessageCircle, MonitorPlay, Send, Settings2, UserRound } from "lucide-react";
 
-type Category = "About fiestaiptv" | "Setup & streaming" | "Plans & access" | "Payments & support";
+type Category = "About 4kiptvusa" | "Setup & streaming" | "Plans & access" | "Payments & support";
 
 type FAQItem = {
   category: Category;
@@ -13,7 +13,7 @@ type FAQItem = {
 };
 
 const categories: { label: Category; icon: typeof CircleHelp }[] = [
-  { label: "About fiestaiptv", icon: CircleHelp },
+  { label: "About 4kiptvusa", icon: CircleHelp },
   { label: "Setup & streaming", icon: Settings2 },
   { label: "Plans & access", icon: UserRound },
   { label: "Payments & support", icon: CreditCard },
@@ -21,73 +21,73 @@ const categories: { label: Category; icon: typeof CircleHelp }[] = [
 
 const faqs: FAQItem[] = [
   {
-    category: "About fiestaiptv",
-    question: "1. What is IPTV Fiesta?",
+    category: "About 4kiptvusa",
+    question: "1. What is 4K IPTV USA?",
     answer: (
       <>
-        IPTV Fiesta is a premium IPTV service that offers live TV, VOD movies, TV series, and sports channels in high-quality streaming, including 4K. Check out our{" "}
-        <Link href="/channels" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">live TV channels</Link> and{" "}
-        <Link href="/pricing" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">IPTV subscription plans</Link>.
+        4K IPTV USA is a premium IPTV service that offers live TV, VOD movies, TV series, and sports channels in high-quality streaming, including 4K. Check out our{" "}
+        <Link href="/channels" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">live TV channels</Link> and{" "}
+        <Link href="/pricing" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">IPTV subscription plans</Link>.
       </>
     ),
   },
   {
-    category: "About fiestaiptv",
-    question: "2. Is IPTV Fiesta authorized?",
+    category: "About 4kiptvusa",
+    question: "2. Is 4K IPTV USA authorized?",
     answer: (
       <>
-        IPTV Fiesta is intended to be used in accordance with applicable laws, local regulations, and our service terms. Please ensure that the content you access and the way you use the service are permitted in your location.
+        4K IPTV USA is intended to be used in accordance with applicable laws, local regulations, and our service terms. Please ensure that the content you access and the way you use the service are permitted in your location.
       </>
     ),
   },
   {
-    category: "About fiestaiptv",
-    question: "3. What channels and content are included with IPTV Fiesta?",
+    category: "About 4kiptvusa",
+    question: "3. What channels and content are included with 4K IPTV USA?",
     answer: (
       <>
-        IPTV Fiesta includes a broad selection of live channels covering sports, news, and entertainment, along with a regularly updated on-demand library of movies and TV series. Check our <Link href="/channels" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">full channels catalog</Link>.
+        4K IPTV USA includes a broad selection of live channels covering sports, news, and entertainment, along with a regularly updated on-demand library of movies and TV series. Check our <Link href="/channels" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">full channels catalog</Link>.
       </>
     ),
   },
   {
-    category: "About fiestaiptv",
-    question: "4. Can I watch live sports and PPV events on IPTV Fiesta?",
+    category: "About 4kiptvusa",
+    question: "4. Can I watch live sports and PPV events on 4K IPTV USA?",
     answer: (
       <>
-        IPTV Fiesta includes a range of live sports channels and events. Coverage can include football, NFL, NBA, UFC, and pay-per-view events. Explore our <Link href="/channels" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">live sports section</Link>.
+        4K IPTV USA includes a range of live sports channels and events. Coverage can include football, NFL, NBA, UFC, and pay-per-view events. Explore our <Link href="/channels" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">live sports section</Link>.
       </>
     ),
   },
   {
-    category: "About fiestaiptv",
+    category: "About 4kiptvusa",
     question: "5. Which devices can I use?",
     answer: (
       <>
-        IPTV Fiesta works with compatible IPTV apps on Smart TVs, Android TV, Firestick, Apple TV, smartphones, tablets, and computers. Follow our <Link href="/installation" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">installation guides</Link> to get started.
+        4K IPTV USA works with compatible IPTV apps on Smart TVs, Android TV, Firestick, Apple TV, smartphones, tablets, and computers. Follow our <Link href="/installation" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">installation guides</Link> to get started.
       </>
     ),
   },
   {
     category: "Setup & streaming",
-    question: "1. How do I install IPTV Fiesta on my device?",
+    question: "1. How do I install 4K IPTV USA on my device?",
     answer: (
       <>
-        Start by installing a compatible IPTV player on your device. Enter the IPTV Fiesta credentials from your email. View our step-by-step <Link href="/installation" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">installation guides</Link> for detailed instructions.
+        Start by installing a compatible IPTV player on your device. Enter the 4K IPTV USA credentials from your email. View our step-by-step <Link href="/installation" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">installation guides</Link> for detailed instructions.
       </>
     ),
   },
   {
     category: "Setup & streaming",
-    question: "2. Can I use IPTV Fiesta on a Smart TV?",
+    question: "2. Can I use 4K IPTV USA on a Smart TV?",
     answer: (
       <>
-        Yes, IPTV Fiesta can be used on Smart TVs including Samsung, LG, and Android TV models using compatible IPTV players like Tivimate or Smarters.
+        Yes, 4K IPTV USA can be used on Smart TVs including Samsung, LG, and Android TV models using compatible IPTV players like Tivimate or Smarters.
       </>
     ),
   },
   {
     category: "Setup & streaming",
-    question: "3. What internet speed do I need for smooth IPTV Fiesta streaming?",
+    question: "3. What internet speed do I need for smooth 4K IPTV USA streaming?",
     answer: (
       <>
         For reliable playback, allow at least 10 Mbps per stream for HD and 25 Mbps per stream for 4K. Ethernet or 5 GHz Wi-Fi is recommended.
@@ -96,43 +96,43 @@ const faqs: FAQItem[] = [
   },
   {
     category: "Setup & streaming",
-    question: "4. Why is IPTV Fiesta buffering or freezing?",
+    question: "4. Why is 4K IPTV USA buffering or freezing?",
     answer: (
       <>
-        Restart your IPTV app and router. If buffering persists, check your Wi-Fi signal or <Link href="/contact" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">contact support</Link> for quick assistance.
+        Restart your IPTV app and router. If buffering persists, check your Wi-Fi signal or <Link href="/contact" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">contact support</Link> for quick assistance.
       </>
     ),
   },
   {
     category: "Setup & streaming",
-    question: "5. Do I need a VPN to use IPTV Fiesta?",
+    question: "5. Do I need a VPN to use 4K IPTV USA?",
     answer: (
       <>
-        A VPN is not required but is recommended in some regions to ensure unrestricted access and added privacy. Contact our <Link href="/contact" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">support team</Link> for VPN setup recommendations.
+        A VPN is not required but is recommended in some regions to ensure unrestricted access and added privacy. Contact our <Link href="/contact" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">support team</Link> for VPN setup recommendations.
       </>
     ),
   },
   {
     category: "Plans & access",
-    question: "1. Are there any hidden fees or contracts with IPTV Fiesta?",
+    question: "1. Are there any hidden fees or contracts with 4K IPTV USA?",
     answer: (
       <>
-        No contracts and no hidden fees. Choose an <Link href="/pricing" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">IPTV subscription plan</Link> with transparent pricing and instant delivery.
+        No contracts and no hidden fees. Choose an <Link href="/pricing" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">IPTV subscription plan</Link> with transparent pricing and instant delivery.
       </>
     ),
   },
   {
     category: "Plans & access",
-    question: "2. Can I use IPTV Fiesta on multiple devices?",
+    question: "2. Can I use 4K IPTV USA on multiple devices?",
     answer: (
       <>
-        Yes! We offer multi-device subscription plans. Select the 1, 2, or 3 device option on our <Link href="/pricing" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">pricing page</Link>.
+        Yes! We offer multi-device subscription plans. Select the 1, 2, or 3 device option on our <Link href="/pricing" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">pricing page</Link>.
       </>
     ),
   },
   {
     category: "Plans & access",
-    question: "3. What are IPTV Fiesta M3U and Xtream Codes details?",
+    question: "3. What are 4K IPTV USA M3U and Xtream Codes details?",
     answer: (
       <>
         Your welcome email includes both M3U playlist URLs and Xtream Codes credentials for fast setup in any IPTV app.
@@ -141,19 +141,19 @@ const faqs: FAQItem[] = [
   },
   {
     category: "Payments & support",
-    question: "1. Does IPTV Fiesta offer a free trial?",
+    question: "1. Does 4K IPTV USA offer a free trial?",
     answer: (
       <>
-        Yes, we offer a <a href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%20fiestaiptv%20IPTV." target="_blank" rel="noreferrer" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">free trial</a> so you can test our service before subscribing.
+        Yes, we offer a <a href="https://wa.me/213552069874?text=Hello,%20I%20would%20like%20to%20request%20a%20free%20trial%20for%204kiptvusa%20IPTV." target="_blank" rel="noreferrer" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">free trial</a> so you can test our service before subscribing.
       </>
     ),
   },
   {
     category: "Payments & support",
-    question: "2. Which payment methods does IPTV Fiesta accept?",
+    question: "2. Which payment methods does 4K IPTV USA accept?",
     answer: (
       <>
-        We accept PayPal, Crypto (Bitcoin), Credit Cards, and Instant Bank Transfers. For help with payments, reach out to our <Link href="/contact" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">support team</Link>.
+        We accept PayPal, Crypto (Bitcoin), Credit Cards, and Instant Bank Transfers. For help with payments, reach out to our <Link href="/contact" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">support team</Link>.
       </>
     ),
   },
@@ -169,7 +169,7 @@ const faqs: FAQItem[] = [
 ];
 
 export default function FAQ() {
-  const [activeCategory, setActiveCategory] = useState<Category>("About fiestaiptv");
+  const [activeCategory, setActiveCategory] = useState<Category>("About 4kiptvusa");
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const visibleFaqs = faqs.filter((faq) => faq.category === activeCategory);
 
@@ -183,7 +183,7 @@ export default function FAQ() {
     const email = String(formData.get("email") || "").trim();
     const subject = String(formData.get("subject") || "General support").trim();
     const message = String(formData.get("message") || "").trim();
-    const text = encodeURIComponent(`Hello IPTV Fiesta support,\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`);
+    const text = encodeURIComponent(`Hello 4K IPTV USA support,\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`);
     window.open(`https://wa.me/213552069874?text=${text}`, "_blank", "noopener,noreferrer");
   }
 
@@ -191,15 +191,15 @@ export default function FAQ() {
     <main className="flex-grow px-4 sm:px-6 pb-20 pt-12 md:pt-16 bg-white">
       <div className="mx-auto max-w-[1140px]">
         <header className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-orange-400">Help center</p>
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-blue-400">Help center</p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black tracking-tight leading-tight">
             Frequently Asked Questions<br />(FAQ)
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-700">
             Find answers to common questions about our IPTV service, including{" "}
-            <Link href="/pricing" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">subscriptions</Link>,{" "}
-            <Link href="/installation" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">devices</Link>, streaming quality, payments, and more. If you need further help, our{" "}
-            <Link href="/contact" className="text-orange-500 font-semibold hover:text-orange-400 transition-colors">support team</Link> is here for you.
+            <Link href="/pricing" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">subscriptions</Link>,{" "}
+            <Link href="/installation" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">devices</Link>, streaming quality, payments, and more. If you need further help, our{" "}
+            <Link href="/contact" className="text-blue-500 font-semibold hover:text-blue-400 transition-colors">support team</Link> is here for you.
           </p>
         </header>
 
@@ -214,7 +214,7 @@ export default function FAQ() {
                       aria-pressed={isSelected}
                       className={`flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold transition-all md:w-full ${
                         isSelected
-                          ? "bg-orange-600 text-black shadow-lg shadow-orange-600/30"
+                          ? "bg-blue-600 text-black shadow-lg shadow-blue-600/30"
                           : "text-slate-600 hover:bg-white/[0.07] hover:text-black"
                       }`}
                       key={label}
@@ -232,7 +232,7 @@ export default function FAQ() {
 
           <section aria-live="polite" className="space-y-4">
             <div className="mb-5 flex items-center gap-3">
-              <MonitorPlay className="h-5 w-5 text-orange-500" />
+              <MonitorPlay className="h-5 w-5 text-blue-500" />
               <h2 className="text-xl font-bold text-black">{activeCategory}</h2>
             </div>
             <div className="grid grid-cols-1 gap-5">
@@ -241,11 +241,11 @@ export default function FAQ() {
                 const contentId = `faq-${activeCategory.replaceAll(" ", "-").toLowerCase()}-${index}`;
 
                 return (
-                  <article className="flex flex-col rounded-2xl overflow-hidden border border-black/10 bg-white shadow-xl hover:border-orange-500/40 transition-colors" key={faq.question}>
+                  <article className="flex flex-col rounded-2xl overflow-hidden border border-black/10 bg-white shadow-xl hover:border-blue-500/40 transition-colors" key={faq.question}>
                     {/* Header Banner */}
                     <div className="bg-slate-100 border-b border-black/10 px-5 py-4 flex items-center justify-between gap-3">
                       <div className="flex items-center gap-3">
-                        <HelpCircle className="w-5 h-5 text-orange-500 shrink-0" />
+                        <HelpCircle className="w-5 h-5 text-blue-500 shrink-0" />
                         <h3 className="text-base sm:text-lg font-bold text-black leading-snug">
                           {faq.question}
                         </h3>
@@ -257,7 +257,7 @@ export default function FAQ() {
                         onClick={() => setActiveIndex(isOpen ? null : index)}
                         type="button"
                       >
-                        <ChevronDown className={`h-5 w-5 shrink-0 text-orange-400 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
+                        <ChevronDown className={`h-5 w-5 shrink-0 text-blue-400 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
                       </button>
                     </div>
 
@@ -279,13 +279,13 @@ export default function FAQ() {
           </header>
           <div className="mt-10 grid gap-8 xl:grid-cols-[278px_minmax(0,1fr)] xl:gap-10">
             <div className="grid gap-3 sm:grid-cols-3 xl:grid-cols-1">
-              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center transition-colors hover:border-orange-500/50" href="mailto:support@fiestaiptv.shop">
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500/20 text-orange-400"><Mail className="h-5 w-5" /></span>
+              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center transition-colors hover:border-blue-500/50" href="mailto:support@4kiptvusa.com">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/20 text-blue-400"><Mail className="h-5 w-5" /></span>
                 <span className="mt-4 block text-base font-bold text-black">Email Us</span>
                 <span className="mt-2 block text-xs leading-5 text-slate-600">For general inquiries and support.</span>
-                <span className="mt-3 block text-xs font-semibold text-orange-400">support@fiestaiptv.shop</span>
+                <span className="mt-3 block text-xs font-semibold text-blue-400">support@4kiptvusa.com</span>
               </a>
-              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center transition-colors hover:border-orange-500/50" href="https://wa.me/213552069874?text=Hello%20fiestaiptv%20IPTV%20support%2C%20I%20need%20help." rel="noreferrer" target="_blank">
+              <a className="flex min-h-40 flex-col items-center justify-center rounded-2xl border border-black/10 bg-white p-5 text-center transition-colors hover:border-blue-500/50" href="https://wa.me/213552069874?text=Hello%204kiptvusa%20IPTV%20support%2C%20I%20need%20help." rel="noreferrer" target="_blank">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400"><MessageCircle className="h-5 w-5" /></span>
                 <span className="mt-4 block text-base font-bold text-black">WhatsApp Support</span>
                 <span className="mt-2 block text-xs leading-5 text-slate-600">Fastest way to reach us for technical issues.</span>
@@ -302,11 +302,11 @@ export default function FAQ() {
               <h3 className="text-xl font-bold text-black">Send us a message</h3>
               <form action={sendSupportMessage} className="mt-6 space-y-4">
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <label className="block text-xs font-semibold text-slate-600">Name<input className="mt-2 w-full rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-orange-500" name="name" placeholder="John Doe" required /></label>
-                  <label className="block text-xs font-semibold text-slate-600">Email address<input className="mt-2 w-full rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-orange-500" name="email" placeholder="john@example.com" required type="email" /></label>
+                  <label className="block text-xs font-semibold text-slate-600">Name<input className="mt-2 w-full rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-blue-500" name="name" placeholder="John Doe" required /></label>
+                  <label className="block text-xs font-semibold text-slate-600">Email address<input className="mt-2 w-full rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-blue-500" name="email" placeholder="john@example.com" required type="email" /></label>
                 </div>
-                <label className="block text-xs font-semibold text-slate-600">Subject<input className="mt-2 w-full rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-orange-500" name="subject" placeholder="How can we help?" /></label>
-                <label className="block text-xs font-semibold text-slate-600">Message<textarea className="mt-2 min-h-32 w-full resize-y rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-orange-500" name="message" placeholder="Describe your question or issue..." required /></label>
+                <label className="block text-xs font-semibold text-slate-600">Subject<input className="mt-2 w-full rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-blue-500" name="subject" placeholder="How can we help?" /></label>
+                <label className="block text-xs font-semibold text-slate-600">Message<textarea className="mt-2 min-h-32 w-full resize-y rounded-xl border border-black/10 bg-white px-3.5 py-3 text-sm text-black outline-none transition-colors placeholder:text-slate-500 focus:border-blue-500" name="message" placeholder="Describe your question or issue..." required /></label>
                 <button className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 py-3.5 text-sm font-bold text-black shadow-lg shadow-emerald-600/30 transition-all hover:-translate-y-0.5 active:translate-y-0" type="submit"><Send className="h-4 w-4" />Send message via WhatsApp</button>
               </form>
             </div>

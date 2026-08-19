@@ -9,14 +9,14 @@ export default function DeviceSupport() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#FF6B00] mb-3 block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#2563EB] mb-3 block">
             SUPPORTED IPTV DEVICES
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black tracking-tight">
             Watch the Best IPTV Service on{" "}
             <Link
               href="/installation"
-              className="text-[#FF6B00] hover:text-orange-400 transition-colors"
+              className="text-[#2563EB] hover:text-blue-400 transition-colors"
             >
               All Your Favorite Devices
             </Link>
@@ -26,7 +26,7 @@ export default function DeviceSupport() {
         {/* Center Image Display */}
         <div className="relative mx-auto max-w-[800px] mb-16 group">
           {/* Subtle background glow for the image */}
-          <div className="absolute inset-0 bg-orange-400/10 blur-[80px] rounded-full scale-90 -z-10 group-hover:bg-orange-400/20 transition-all duration-700"></div>
+          <div className="absolute inset-0 bg-blue-400/10 blur-[80px] rounded-full scale-90 -z-10 group-hover:bg-blue-400/20 transition-all duration-700"></div>
           
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-xl transition-transform duration-500 hover:scale-[1.02]">
             <Image
@@ -45,8 +45,8 @@ export default function DeviceSupport() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Card 1 */}
-          <div className="relative bg-white rounded-2xl p-8 border-y border-r border-slate-200 border-l-4 border-l-[#FF6B00] shadow-lg hover:shadow-xl hover:border-orange-200 hover:border-l-[#FF6B00] transition-all duration-300 group overflow-hidden">
-            <div className="h-12 w-12 rounded-xl bg-orange-50 text-[#FF6B00] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10">
+          <div className="relative bg-white rounded-2xl p-8 border-y border-r border-slate-200 border-l-4 border-l-[#2563EB] shadow-lg hover:shadow-xl hover:border-blue-200 hover:border-l-[#2563EB] transition-all duration-300 group overflow-hidden">
+            <div className="h-12 w-12 rounded-xl bg-blue-50 text-[#2563EB] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10">
               <Tv className="h-6 w-6 stroke-[2.5]" />
             </div>
             <h3 className="text-xl font-bold text-black mb-3">
@@ -56,7 +56,7 @@ export default function DeviceSupport() {
               Our premium IPTV subscription is fully compatible with Samsung and LG Smart TVs, Amazon Firestick, Android TV boxes, and smartphones. Enjoy buffer-free live TV on any screen using our simple{" "}
               <Link
                 href="/installation"
-                className="text-[#FF6B00] font-semibold hover:text-orange-400 transition-colors"
+                className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors"
               >
                 installation guide
               </Link>
@@ -65,8 +65,8 @@ export default function DeviceSupport() {
           </div>
 
           {/* Card 2 */}
-          <div className="relative bg-white rounded-2xl p-8 border-y border-r border-slate-200 border-l-4 border-l-[#FF6B00] shadow-lg hover:shadow-xl hover:border-orange-200 hover:border-l-[#FF6B00] transition-all duration-300 group overflow-hidden">
-            <div className="h-12 w-12 rounded-xl bg-orange-50 text-[#FF6B00] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10">
+          <div className="relative bg-white rounded-2xl p-8 border-y border-r border-slate-200 border-l-4 border-l-[#2563EB] shadow-lg hover:shadow-xl hover:border-blue-200 hover:border-l-[#2563EB] transition-all duration-300 group overflow-hidden">
+            <div className="h-12 w-12 rounded-xl bg-blue-50 text-[#2563EB] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10">
               <Box className="h-6 w-6 stroke-[2.5]" />
             </div>
             <h3 className="text-xl font-bold text-black mb-3">
@@ -76,7 +76,7 @@ export default function DeviceSupport() {
               Connect your MAG box or STB emulator instantly. Just provide your MAC address, and we will send you our high-speed IPTV portal for access to thousands of live channels and our{" "}
               <Link
                 href="/channels"
-                className="text-[#FF6B00] font-semibold hover:text-orange-400 transition-colors"
+                className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors"
               >
                 VOD library
               </Link>
@@ -85,8 +85,8 @@ export default function DeviceSupport() {
           </div>
 
           {/* Card 3 */}
-          <div className="relative bg-white rounded-2xl p-8 border-y border-r border-slate-200 border-l-4 border-l-[#FF6B00] shadow-lg hover:shadow-xl hover:border-orange-200 hover:border-l-[#FF6B00] transition-all duration-300 group overflow-hidden">
-            <div className="h-12 w-12 rounded-xl bg-orange-50 text-[#FF6B00] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10">
+          <div className="relative bg-white rounded-2xl p-8 border-y border-r border-slate-200 border-l-4 border-l-[#2563EB] shadow-lg hover:shadow-xl hover:border-blue-200 hover:border-l-[#2563EB] transition-all duration-300 group overflow-hidden">
+            <div className="h-12 w-12 rounded-xl bg-blue-50 text-[#2563EB] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10">
               <Laptop className="h-6 w-6 stroke-[2.5]" />
             </div>
             <h3 className="text-xl font-bold text-black mb-3">
@@ -96,7 +96,7 @@ export default function DeviceSupport() {
               Stream live sports and 4K movies directly on your computer. Whether you use Windows or Mac, you can easily watch our IPTV service using popular{" "}
               <Link
                 href="/installation"
-                className="text-[#FF6B00] font-semibold hover:text-orange-400 transition-colors"
+                className="text-[#2563EB] font-semibold hover:text-blue-400 transition-colors"
               >
                 IPTV players
               </Link>{" "}

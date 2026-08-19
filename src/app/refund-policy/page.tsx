@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | IPTV Fiesta",
-  description: "Learn about the refund policy, eligibility, and process for IPTV Fiesta.",
+  title: "Refund Policy | 4K IPTV USA",
+  description: "Learn about the refund policy, eligibility, and process for 4K IPTV USA.",
   alternates: {
     canonical: "/refund-policy",
   },
@@ -13,7 +13,7 @@ const sections = [
   {
     title: "Our Commitment to You",
     content: [
-      "At IPTV Fiesta, we uphold the standard of our IPTV subscription service. This policy specifies when refunds may be applicable, ensuring that we maintain a transparent and just process for every customer.",
+      "At 4K IPTV USA, we uphold the standard of our IPTV subscription service. This policy specifies when refunds may be applicable, ensuring that we maintain a transparent and just process for every customer.",
     ],
   },
   {
@@ -29,7 +29,7 @@ const sections = [
     title: "How to Request a Refund",
     content: ["To seek a refund, kindly follow these steps:"],
     items: [
-      <>Connect with our support team using our <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">Contact page</Link>.</>,
+      <>Connect with our support team using our <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/contact">Contact page</Link>.</>,
       "Please use the subject: 'Refund Request'.",
       "Please provide your complete name, the email linked to your subscription, and the purpose of your inquiry.",
     ],
@@ -37,7 +37,7 @@ const sections = [
   {
     title: "Sample Refund Request Message",
     content: [
-      <>Contact: Send a message via our <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">Contact page</Link></>,
+      <>Contact: Send a message via our <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/contact">Contact page</Link></>,
       "Message Title: Refund Request",
       "Hello,",
       "I am writing to ask for a refund regarding my IPTV subscription.",
@@ -71,7 +71,7 @@ const sections = [
     title: "Exceptions (When Refunds Are Not Provided)",
     content: ["Refunds will be denied in these outlined cases:"],
     items: [
-      <>You are discontent with the <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/channels">channel list</Link> or provided content.</>,
+      <>You are discontent with the <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/channels">channel list</Link> or provided content.</>,
       "Your connection speed is too slow or unstable to stream effectively.",
       "Your actions have breached our Terms of Service, including account sharing.",
       "Geo-blocking problems in your region are unfortunately outside of our influence and control.",
@@ -83,8 +83,8 @@ const sections = [
     items: [
       "Check Compatibility: Confirm your device/app supports M3U/Portal before purchase.",
       "Stable Internet: Use 30 Mbps+ and 5GHz Wi-Fi or Ethernet for 4K.",
-      <>Use Setup Guides: Follow our step by step <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/installation">Installation page</Link>.</>,
-      <>Ask Support First: Most issues are solved in minutes—please <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">contact support</Link>.</>,
+      <>Use Setup Guides: Follow our step by step <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/installation">Installation page</Link>.</>,
+      <>Ask Support First: Most issues are solved in minutes—please <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/contact">contact support</Link>.</>,
     ],
   },
 ];
@@ -96,10 +96,10 @@ export default function RefundPolicyPage() {
     <main className="flex-grow px-5 pb-20 pt-12 sm:px-8 md:pt-16 text-format-legal">
       <article className="mx-auto max-w-4xl">
         <header className="border-b border-black/10 pb-10 text-center mx-auto max-w-3xl">
-          <span className="inline-flex rounded-full border border-orange-400/35 bg-orange-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-orange-300">Legal information</span>
+          <span className="inline-flex rounded-full border border-blue-400/35 bg-blue-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] text-blue-300">Legal information</span>
           <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
             <span className="block text-black">Refund &amp; Money-Back</span>
-            <span className="mt-1 block text-[#FF6B00]">Official Policy.</span>
+            <span className="mt-1 block text-[#2563EB]">Official Policy.</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600">Last adjusted: {currentDate}</p>
         </header>
@@ -115,7 +115,7 @@ export default function RefundPolicyPage() {
           ))}
           <section>
             <h2 className="text-2xl font-bold text-black">9. Contact Us</h2>
-            <p className="mt-4">If you have any questions regarding our Refund Policy, please contact our <Link className="font-semibold text-orange-400 hover:text-orange-300" href="/contact">support team</Link>.</p>
+            <p className="mt-4">If you have any questions regarding our Refund Policy, please contact our <Link className="font-semibold text-blue-400 hover:text-blue-300" href="/contact">support team</Link>.</p>
           </section>
         </div>
       </article>
