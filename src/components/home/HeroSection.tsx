@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Monitor, Laptop, Smartphone, Tablet } from "lucide-react";
 
 export default function HeroSection() {
@@ -7,11 +8,13 @@ export default function HeroSection() {
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/hero-bg-new.png"
           alt="Family watching 4K IPTV USA"
-          fetchPriority="high"
-          className="absolute inset-0 w-full h-full object-cover opacity-80"
+          priority
+          fill
+          sizes="100vw"
+          className="object-cover opacity-80"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="absolute top-0 inset-x-0 h-16 md:h-24 bg-gradient-to-b from-white via-white/50 to-transparent" />

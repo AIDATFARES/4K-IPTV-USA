@@ -46,7 +46,6 @@ export default function BrandMarquee({
                 fill
                 sizes="(max-width: 640px) 100px, (max-width: 1024px) 140px, 160px"
                 className={imageClassName || "object-contain drop-shadow-md rounded-lg"}
-                unoptimized
               />
             </div>
           </div>
