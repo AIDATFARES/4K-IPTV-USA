@@ -22,15 +22,15 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "4K IPTV USA - Premium 4K Streaming Services",
-  description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
+  title: "4K IPTV USA | Best Premium IPTV Subscription & Streaming Service",
+  description: "Get the best 4K IPTV experience in the USA. Enjoy 50,000+ live channels, 120,000+ movies & series, and live sports with 99.9% uptime. No buffering. Sign up today!",
   metadataBase: new URL("https://www.iptv-us4k.shop"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "4K IPTV USA - Premium 4K Streaming",
-    description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
+    title: "4K IPTV USA | Best Premium IPTV Subscription & Streaming Service",
+    description: "Get the best 4K IPTV experience in the USA. Enjoy 50,000+ live channels, 120,000+ movies & series, and live sports with 99.9% uptime. No buffering. Sign up today!",
     url: "https://www.iptv-us4k.shop",
     siteName: "4K IPTV USA",
     images: [
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "4K IPTV USA - Premium 4K Streaming",
-    description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
+    title: "4K IPTV USA | Best Premium IPTV Subscription & Streaming Service",
+    description: "Get the best 4K IPTV experience in the USA. Enjoy 50,000+ live channels, 120,000+ movies & series, and live sports with 99.9% uptime. No buffering. Sign up today!",
     images: ["/og-image-new.png"],
   },
 };
