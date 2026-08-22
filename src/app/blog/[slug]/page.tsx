@@ -101,10 +101,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     td: ({ node, ...props }: any) => <td className="border-b border-outline-variant/30 py-3 px-4" {...props} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     img: ({ node, alt, src, ...props }: any) => (
-      <div className="my-8 flex flex-col items-center">
+      <span className="my-8 flex flex-col items-center">
         <img src={src} alt={alt} className="rounded-xl max-w-full" {...props} />
         {alt && <span className="text-sm text-center block mt-2 opacity-70">{alt}</span>}
-      </div>
+      </span>
     ),
   };
 
